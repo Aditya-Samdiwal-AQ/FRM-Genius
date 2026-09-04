@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function LogoHeader() {
   return (
-    <header>
+    <header className="bg-[var(--surface)]">
       <div aria-hidden className="h-[2px] w-full bg-[var(--magenta)]" />
       <div className="mx-auto flex max-w-[1440px] items-center px-8 py-3">
         <Image

@@ -15,7 +15,6 @@ import { ValueTransition } from "@/components/ui/ValueTransition";
 import { ProvenanceMeta } from "@/components/ui/ProvenanceMeta";
 import { Accordion } from "@/components/ui/Accordion";
 import { ResolutionSummaryAuditTrail } from "@/features/payer-change/ResolutionSummaryAuditTrail";
-import { ResolvedSummariesTable } from "@/features/payer-change/ResolvedSummariesTable";
 import { AppShell } from "@/components/layout/AppShell";
 import { PayerChangeDrawer } from "@/features/payer-change/PayerChangeDrawer";
 import { plural } from "@/lib/plural";
@@ -159,13 +158,6 @@ export default function PayerChangesPage() {
           );
         })}
       </div>
-
-      {/* Resolved summaries table */}
-      {resolvedConflicts.length > 0 && (
-        <div className="mt-4">
-          <ResolvedSummariesTable resolvedConflicts={resolvedConflicts} />
-        </div>
-      )}
 
       {/* Resolution Summary & Audit Trail */}
       <div className="mt-4">
