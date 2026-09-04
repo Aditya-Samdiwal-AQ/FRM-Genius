@@ -2,34 +2,33 @@
 
 import { useState } from "react";
 import { Check } from "lucide-react";
-import type { Conflict } from "@/data/synthetic";
-import {
-  CONFLICT_TYPE_LABEL,
-  PRODUCT,
-  SOURCE,
-  TERRITORY,
-} from "@/data/synthetic";
+import type { PayerChange } from "@/lib/types";
+import type { DetailAccount } from "@/services/api";
+import { formatDate } from "@/lib/format";
+import { PRODUCT, SOURCE, TERRITORY } from "@/data/synthetic";
 import { ComplianceBadge } from "@/components/ui/ComplianceBadge";
 import { CheckboxCard } from "@/components/ui/CheckboxCard";
 import { InfoBox } from "@/components/ui/InfoBox";
 
 export function Step1ReviewConfirm({
-  conflict,
+  change,
+  accounts,
   selectedIds,
   onToggle,
   onNext,
 }: {
-  conflict: Conflict;
+  change: PayerChange;
+  accounts: DetailAccount[];
   selectedIds: string[];
   onToggle: (id: string) => void;
   onNext: () => void;
 }) {
   const [showDetail, setShowDetail] = useState(false);
-  const typeLabel = CONFLICT_TYPE_LABEL[conflict.conflictType];
-  const planLabel = conflict.plan.plan_name;
-  const payerLabel = conflict.plan.payer;
+  const typeLabel = change.change_type_group;
+  const planLabel = change.plan_name;
+  const payerLabel = change.payer_name;
   const selectedCount = selectedIds.length;
-  const totalCount = conflict.accounts.length;
+  const totalCount = accounts.length;
 
   return (
     <div className="flex flex-col gap-5 px-6 py-5">
@@ -39,8 +38,8 @@ export function Step1ReviewConfirm({
           {payerLabel} — {planLabel}
         </h2>
         <p className="provenance mt-1">
-          {PRODUCT} · {TERRITORY} · Eff. {conflict.effective_date} · Source:{" "}
-          {SOURCE}
+          {PRODUCT} · {TERRITORY} · Eff. {formatDate(change.effective_date)} ·
+          Source: {SOURCE}
         </p>
       </div>
 
@@ -58,10 +57,11 @@ export function Step1ReviewConfirm({
               <span className="eyebrow">Previous — superseded</span>
             </div>
             <p className="text-[14px] text-[var(--muted)] line-through">
-              {conflict.old_value}
+              {change.previous.value}
             </p>
             <p className="provenance mt-1.5">
-              Internal · Jan 2026 · {planLabel}
+              {change.previous.source} · {change.previous.source_date} ·{" "}
+              {planLabel}
             </p>
           </div>
 
@@ -80,10 +80,11 @@ export function Step1ReviewConfirm({
               <ComplianceBadge />
             </div>
             <p className="text-[15px] font-bold text-[var(--ink)]">
-              {conflict.new_value}
+              {change.authoritative.value}
             </p>
             <p className="provenance mt-1.5">
-              Eff. {conflict.effective_date} · Source: {SOURCE}
+              Eff. {formatDate(change.effective_date)} · Source:{" "}
+              {change.authoritative.source} · {change.authoritative.source_date}
             </p>
           </div>
         </div>
@@ -110,13 +111,18 @@ export function Step1ReviewConfirm({
           </p>
         )}
         <div className="flex flex-col gap-2">
-          {conflict.accounts.map((a) => (
+          {accounts.map((a) => (
             <CheckboxCard
               key={a.id}
               checked={selectedIds.includes(a.id)}
               onChange={() => onToggle(a.id)}
               title={a.name}
-              subtitle={`${conflict.plan.payer} · ${planLabel} · ${a.zip}`}
+              subtitle={`${a.payer_name} · ${a.plan_name} · ${a.email}`}
+              right={
+                showDetail ? (
+                  <span className="provenance">{a.channel}</span>
+                ) : undefined
+              }
             />
           ))}
         </div>
@@ -126,13 +132,21 @@ export function Step1ReviewConfirm({
       <InfoBox variant="green">
         <p className="font-semibold text-[var(--ink)]">
           {selectedCount} account{selectedCount === 1 ? "" : "s"} will be updated
-          to: {conflict.new_value}
+          to: {change.authoritative.value}
         </p>
         <p className="mt-0.5 text-[var(--muted)]">
           System-generated from {SOURCE} data. Jordan Lee remains the
           decision-maker.
         </p>
       </InfoBox>
+
+      <button
+        type="button"
+        onClick={onNext}
+        className="self-start rounded-lg bg-[var(--indigo-dark)] px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--indigo)]"
+      >
+        Select materials →
+      </button>
     </div>
   );
 }

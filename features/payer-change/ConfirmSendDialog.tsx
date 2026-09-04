@@ -1,26 +1,25 @@
 "use client";
 
-import type { ConflictType } from "@/data/synthetic";
-import { CONFLICT_TYPE_LABEL } from "@/data/synthetic";
+import type { ChangeTypeGroup } from "@/lib/types";
 import { InfoBox } from "@/components/ui/InfoBox";
 import { plural } from "@/lib/plural";
 
 export function ConfirmSendDialog({
   recipientsCount,
-  conflictType,
+  changeTypeGroup,
   onConfirm,
   onCancel,
   sending,
   error,
 }: {
   recipientsCount: number;
-  conflictType: ConflictType;
+  changeTypeGroup: ChangeTypeGroup;
   onConfirm: () => void;
   onCancel: () => void;
   sending: boolean;
   error?: string;
 }) {
-  const typeLabel = CONFLICT_TYPE_LABEL[conflictType];
+  const typeLabel = changeTypeGroup;
   return (
     <div className="border-t border-[var(--border)] bg-[var(--surface)] px-6 py-4">
       {error && (
@@ -29,7 +28,7 @@ export function ConfirmSendDialog({
             <p className="font-semibold text-red-700">
               The email could not be sent.
             </p>
-            <p className="text-red-700">{error} You can retry — the conflict
+            <p className="text-red-700">{error} You can retry — the change
             has not been resolved.</p>
           </InfoBox>
         </div>

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "ACC001",
+    "name": "Lakeside Oncology Associates",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52000",
+    "primary_plan_name": "Meridian Choice PPO",
+    "payer_name": "Meridian Health",
+    "channel": "Commercial",
+    "email": "lakeside.associates@lakeside-oncology-associates.example.com"
+  },
+  {
+    "id": "ACC002",
+    "name": "Harbor Cancer Center",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52000",
+    "primary_plan_name": "Meridian Choice PPO",
+    "payer_name": "Meridian Health",
+    "channel": "Commercial",
+    "email": "harbor.center@harbor-cancer-center.example.com"
+  },
+  {
+    "id": "ACC003",
+    "name": "Fairview Infusion Suite",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52000",
+    "primary_plan_name": "Meridian Choice PPO",
+    "payer_name": "Meridian Health",
+    "channel": "Commercial",
+    "email": "fairview.suite@fairview-infusion-suite.example.com"
+  },
+  {
+    "id": "ACC004",
+    "name": "Northgate Hematology",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52001",
+    "primary_plan_name": "Cascade Select HMO",
+    "payer_name": "Cascade Care",
+    "channel": "Commercial",
+    "email": "northgate.hematology@northgate-hematology.example.com"
+  },
+  {
+    "id": "ACC005",
+    "name": "Riverbend Oncology Group",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52001",
+    "primary_plan_name": "Cascade Select HMO",
+    "payer_name": "Cascade Care",
+    "channel": "Commercial",
+    "email": "riverbend.group@riverbend-oncology-group.example.com"
+  },
+  {
+    "id": "ACC006",
+    "name": "Summit Cancer Institute",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52001",
+    "primary_plan_name": "Cascade Select HMO",
+    "payer_name": "Cascade Care",
+    "channel": "Commercial",
+    "email": "summit.institute@summit-cancer-institute.example.com"
+  },
+  {
+    "id": "ACC007",
+    "name": "Beacon Hill Oncology",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52002",
+    "primary_plan_name": "Granite MA Complete",
+    "payer_name": "Granite State Health",
+    "channel": "Medicare Advantage",
+    "email": "beacon.oncology@beacon-hill-oncology.example.com"
+  },
+  {
+    "id": "ACC008",
+    "name": "Cedar Valley Cancer Care",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52002",
+    "primary_plan_name": "Granite MA Complete",
+    "payer_name": "Granite State Health",
+    "channel": "Medicare Advantage",
+    "email": "cedar.care@cedar-valley-cancer-care.example.com"
+  },
+  {
+    "id": "ACC009",
+    "name": "Meadowbrook Infusion",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52002",
+    "primary_plan_name": "Granite MA Complete",
+    "payer_name": "Granite State Health",
+    "channel": "Medicare Advantage",
+    "email": "meadowbrook.infusion@meadowbrook-infusion.example.com"
+  },
+  {
+    "id": "ACC010",
+    "name": "Pinecrest Oncology",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52003",
+    "primary_plan_name": "Harborview Preferred PPO",
+    "payer_name": "Harborview Health Plan",
+    "channel": "Commercial",
+    "email": "pinecrest.oncology@pinecrest-oncology.example.com"
+  },
+  {
+    "id": "ACC011",
+    "name": "Stonegate Cancer Center",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52003",
+    "primary_plan_name": "Harborview Preferred PPO",
+    "payer_name": "Harborview Health Plan",
+    "channel": "Commercial",
+    "email": "stonegate.center@stonegate-cancer-center.example.com"
+  },
+  {
+    "id": "ACC012",
+    "name": "Willow Creek Hematology",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52003",
+    "primary_plan_name": "Harborview Preferred PPO",
+    "payer_name": "Harborview Health Plan",
+    "channel": "Commercial",
+    "email": "willow.hematology@willow-creek-hematology.example.com"
+  },
+  {
+    "id": "ACC013",
+    "name": "Ironwood Cancer Center",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52004",
+    "primary_plan_name": "Summit Advantage HMO",
+    "payer_name": "Summit Wellness",
+    "channel": "Medicare Advantage",
+    "email": "ironwood.center@ironwood-cancer-center.example.com"
+  },
+  {
+    "id": "ACC014",
+    "name": "Silverpeak Oncology",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52004",
+    "primary_plan_name": "Summit Advantage HMO",
+    "payer_name": "Summit Wellness",
+    "channel": "Medicare Advantage",
+    "email": "silverpeak.oncology@silverpeak-oncology.example.com"
+  },
+  {
+    "id": "ACC015",
+    "name": "Copperfield Infusion",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52004",
+    "primary_plan_name": "Summit Advantage HMO",
+    "payer_name": "Summit Wellness",
+    "channel": "Medicare Advantage",
+    "email": "copperfield.infusion@copperfield-infusion.example.com"
+  },
+  {
+    "id": "ACC016",
+    "name": "Highland Hematology",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52141",
+    "primary_plan_name": "Beacon POS",
+    "payer_name": "Beacon Insurance",
+    "channel": "Commercial",
+    "email": "highland.hematology@highland-hematology.example.com"
+  },
+  {
+    "id": "ACC017",
+    "name": "Juniper Cancer Care",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Hematology/Oncology",
+    "primary_plan_id": "PLN52436",
+    "primary_plan_name": "Bluegrass Advantage",
+    "payer_name": "Bluegrass Mutual",
+    "channel": "Medicare Advantage",
+    "email": "juniper.care@juniper-cancer-care.example.com"
+  },
+  {
+    "id": "ACC018",
+    "name": "Monarch Oncology",
+    "territory": "T-NE-04",
+    "hcp_specialty": "Medical Oncology",
+    "primary_plan_id": "PLN52927",
+    "primary_plan_name": "Nautilus Select PPO",
+    "payer_name": "Nautilus Alliance",
+    "channel": "Commercial",
+    "email": "monarch.oncology@monarch-oncology.example.com"
+  }
+]

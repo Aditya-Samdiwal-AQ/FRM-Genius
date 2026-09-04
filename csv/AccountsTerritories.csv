@@ -1,0 +1,19 @@
+Account_ID,Account_Name,Territory,HCP_Specialty,Primary_Plan_ID,Primary_Plan_Name,Payer_Name,Channel
+ACC001,Lakeside Oncology Associates,T-NE-04,Hematology/Oncology,PLN52000,Meridian Choice PPO,Meridian Health,Commercial
+ACC002,Harbor Cancer Center,T-NE-04,Medical Oncology,PLN52000,Meridian Choice PPO,Meridian Health,Commercial
+ACC003,Fairview Infusion Suite,T-NE-04,Hematology/Oncology,PLN52000,Meridian Choice PPO,Meridian Health,Commercial
+ACC004,Northgate Hematology,T-NE-04,Hematology/Oncology,PLN52001,Cascade Select HMO,Cascade Care,Commercial
+ACC005,Riverbend Oncology Group,T-NE-04,Medical Oncology,PLN52001,Cascade Select HMO,Cascade Care,Commercial
+ACC006,Summit Cancer Institute,T-NE-04,Medical Oncology,PLN52001,Cascade Select HMO,Cascade Care,Commercial
+ACC007,Beacon Hill Oncology,T-NE-04,Hematology/Oncology,PLN52002,Granite MA Complete,Granite State Health,Medicare Advantage
+ACC008,Cedar Valley Cancer Care,T-NE-04,Hematology/Oncology,PLN52002,Granite MA Complete,Granite State Health,Medicare Advantage
+ACC009,Meadowbrook Infusion,T-NE-04,Medical Oncology,PLN52002,Granite MA Complete,Granite State Health,Medicare Advantage
+ACC010,Pinecrest Oncology,T-NE-04,Hematology/Oncology,PLN52003,Harborview Preferred PPO,Harborview Health Plan,Commercial
+ACC011,Stonegate Cancer Center,T-NE-04,Medical Oncology,PLN52003,Harborview Preferred PPO,Harborview Health Plan,Commercial
+ACC012,Willow Creek Hematology,T-NE-04,Medical Oncology,PLN52003,Harborview Preferred PPO,Harborview Health Plan,Commercial
+ACC013,Ironwood Cancer Center,T-NE-04,Medical Oncology,PLN52004,Summit Advantage HMO,Summit Wellness,Medicare Advantage
+ACC014,Silverpeak Oncology,T-NE-04,Hematology/Oncology,PLN52004,Summit Advantage HMO,Summit Wellness,Medicare Advantage
+ACC015,Copperfield Infusion,T-NE-04,Medical Oncology,PLN52004,Summit Advantage HMO,Summit Wellness,Medicare Advantage
+ACC016,Highland Hematology,T-NE-04,Hematology/Oncology,PLN52141,Beacon POS,Beacon Insurance,Commercial
+ACC017,Juniper Cancer Care,T-NE-04,Hematology/Oncology,PLN52436,Bluegrass Advantage,Bluegrass Mutual,Medicare Advantage
+ACC018,Monarch Oncology,T-NE-04,Medical Oncology,PLN52927,Nautilus Select PPO,Nautilus Alliance,Commercial

@@ -1,115 +1,139 @@
 "use client";
 
-// ConflictStore — Plan.md §2.3 contract. Context + useReducer; deterministic seed.
+// ConflictStore — Plan.md §2.3 contract, now backed by the real API.
+// Holds PayerChange[] fetched from GET /api/payer-changes?status=all;
+// resolve/notify/reset call the backend endpoints and reconcile state.
 
 import {
   createContext,
   useContext,
+  useEffect,
   useMemo,
   useReducer,
   type ReactNode,
 } from "react";
+import type { ChangeSource, PayerChange } from "@/lib/types";
 import {
-  SEED_CONFLICTS,
-  type Conflict,
-  type Material,
-} from "@/data/synthetic";
+  getPayerChanges,
+  notifyPayerChange,
+  resetDemoData,
+  resolvePayerChange,
+} from "@/services/api";
 
 export type ConflictState = {
-  conflicts: Conflict[];
+  conflicts: PayerChange[];
+  loading: boolean;
+  error: string | null;
 };
 
 export type ConflictAction =
-  | {
-      type: "RESOLVE_CONFLICT";
-      conflictId: string;
-      accountIds: string[];
-      materialIds: string[];
-      message: string;
-    }
-  | { type: "RESET_DEMO" }
-  | { type: "SIMULATE_MMIT_UPDATE" };
+  | { type: "LOAD_START" }
+  | { type: "LOAD_SUCCESS"; conflicts: PayerChange[] }
+  | { type: "LOAD_ERROR"; error: string }
+  | { type: "UPSERT_CHANGE"; change: PayerChange }
+  | { type: "RESET_START" };
 
-function seedState(): ConflictState {
-  return { conflicts: SEED_CONFLICTS };
+function initialState(): ConflictState {
+  return { conflicts: [], loading: true, error: null };
 }
 
 function reducer(state: ConflictState, action: ConflictAction): ConflictState {
   switch (action.type) {
-    case "RESOLVE_CONFLICT": {
-      const now = new Date();
-      const resolvedAt = now.toLocaleString("en-US", {
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true,
-      });
+    case "LOAD_START":
+      return { ...state, loading: true, error: null };
+    case "LOAD_SUCCESS":
+      return { conflicts: action.conflicts, loading: false, error: null };
+    case "LOAD_ERROR":
+      return { ...state, loading: false, error: action.error };
+    case "UPSERT_CHANGE": {
+      const exists = state.conflicts.some((c) => c.id === action.change.id);
       return {
         ...state,
-        conflicts: state.conflicts.map((c) => {
-          if (c.id !== action.conflictId) return c;
-          const materials: Material[] = c.materials.filter((m) =>
-            action.materialIds.includes(m.id),
-          );
-          return {
-            ...c,
-            status: "resolved" as const,
-            resolved_by: "Jordan Lee",
-            resolved_at: resolvedAt,
-            materials,
-            notified_offices: action.accountIds.length,
-            accounts: c.accounts.map((a) =>
-              action.accountIds.includes(a.id)
-                ? { ...a, resolved: true, notified: true }
-                : a,
-            ),
-          };
-        }),
+        conflicts: exists
+          ? state.conflicts.map((c) =>
+              c.id === action.change.id ? action.change : c,
+            )
+          : [...state.conflicts, action.change],
       };
     }
-    case "RESET_DEMO":
-      return seedState();
-    case "SIMULATE_MMIT_UPDATE":
-      // Flips resolved rows back to open (demo trigger).
-      return {
-        ...state,
-        conflicts: state.conflicts.map((c) =>
-          c.status === "resolved"
-            ? {
-                ...c,
-                status: "open" as const,
-                resolved_by: undefined,
-                resolved_at: undefined,
-                notified_offices: undefined,
-                accounts: c.accounts.map((a) => ({
-                  ...a,
-                  resolved: false,
-                  notified: false,
-                })),
-              }
-            : c,
-        ),
-      };
+    case "RESET_START":
+      return { ...state, loading: true, error: null };
     default:
       return state;
   }
 }
 
 const ConflictStateContext = createContext<ConflictState | null>(null);
-const ConflictDispatchContext = createContext<
-  React.Dispatch<ConflictAction> | null
->(null);
+const ConflictActionsContext = createContext<{
+  refresh: () => Promise<void>;
+  resolveAndNotify: (args: {
+    changeId: string;
+    correctedPathSource: ChangeSource;
+    correctedPathValue: string;
+    materialIds: string[];
+  }) => Promise<void>;
+  resetDemo: () => Promise<void>;
+} | null>(null);
 
 export function ConflictStoreProvider({ children }: { children: ReactNode }) {
-  const [state, dispatch] = useReducer(reducer, undefined, seedState);
-  const stateValue = useMemo(() => state, [state]);
+  const [state, dispatch] = useReducer(reducer, undefined, initialState);
+
+  const actions: NonNullable<
+    typeof ConflictActionsContext extends React.Context<infer T> ? T : never
+  > = useMemo(
+    () => ({
+      async refresh() {
+        dispatch({ type: "LOAD_START" });
+        try {
+          // status=all so the UI can render both open and resolved sections.
+          const res = await getPayerChanges("all");
+          const conflicts = res.groups.flatMap((g) => g.changes);
+          dispatch({ type: "LOAD_SUCCESS", conflicts });
+        } catch (error) {
+          dispatch({
+            type: "LOAD_ERROR",
+            error:
+              error instanceof Error ? error.message : "Failed to load changes.",
+          });
+        }
+      },
+
+      async resolveAndNotify({
+        changeId,
+        correctedPathSource,
+        correctedPathValue,
+        materialIds,
+      }) {
+        // 1. Resolve (sets status + corrected path + audit events).
+        const { change } = await resolvePayerChange(changeId, {
+          corrected_path_source: correctedPathSource,
+          corrected_path_value: correctedPathValue,
+        });
+        // 2. Notify (sends email to affected accounts, persists Notification).
+        await notifyPayerChange(changeId, materialIds);
+        // 3. Reconcile the resolved change into local state.
+        dispatch({ type: "UPSERT_CHANGE", change });
+      },
+
+      async resetDemo() {
+        dispatch({ type: "RESET_START" });
+        await resetDemoData();
+        await actions.refresh();
+      },
+    }),
+    [],
+  );
+
+  // Initial fetch on mount.
+  useEffect(() => {
+    void actions.refresh();
+  }, [actions]);
+
   return (
-    <ConflictStateContext.Provider value={stateValue}>
-      <ConflictDispatchContext.Provider value={dispatch}>
+    <ConflictStateContext.Provider value={state}>
+      <ConflictActionsContext.Provider value={actions}>
         {children}
-      </ConflictDispatchContext.Provider>
+      </ConflictActionsContext.Provider>
     </ConflictStateContext.Provider>
   );
 }
@@ -120,23 +144,25 @@ export function useConflictState(): ConflictState {
   return ctx;
 }
 
-export function useConflictDispatch(): React.Dispatch<ConflictAction> {
-  const ctx = useContext(ConflictDispatchContext);
-  if (!ctx) throw new Error("useConflictDispatch must be used inside provider");
+export function useConflictActions() {
+  const ctx = useContext(ConflictActionsContext);
+  if (!ctx) throw new Error("useConflictActions must be used inside provider");
   return ctx;
 }
 
 // Selectors (derived, never hardcoded)
-export function selectOpenCount(conflicts: Conflict[]): number {
+export function selectOpenCount(conflicts: PayerChange[]): number {
   return conflicts.filter((c) => c.status === "open").length;
 }
 
-export function selectResolvedCount(conflicts: Conflict[]): number {
+export function selectResolvedCount(conflicts: PayerChange[]): number {
   return conflicts.filter((c) => c.status === "resolved").length;
 }
 
-export function selectResolvedConflicts(conflicts: Conflict[]): Conflict[] {
-  // Newest first — new entries prepend on send.
+export function selectResolvedConflicts(
+  conflicts: PayerChange[],
+): PayerChange[] {
+  // Newest first by resolved_at.
   return conflicts
     .filter((c) => c.status === "resolved")
     .sort((a, b) => (b.resolved_at ?? "").localeCompare(a.resolved_at ?? ""));

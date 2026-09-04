@@ -1,0 +1,32 @@
+[
+  {
+    "update_date": "2026-08-12",
+    "source": "Field Intel",
+    "payer_name": "Cascade Care",
+    "plan_name": "Cascade Select HMO",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvantra",
+    "field": "Site_of_Care_Restriction",
+    "prior_value": "Physician Office",
+    "new_value": "Physician Office; Outpatient Hospital",
+    "note": "Rep confirmed OP hospital allowed pending policy publish",
+    "entered_by": "A. Chauhan",
+    "plan_id": "",
+    "detection_id": ""
+  },
+  {
+    "update_date": "2026-08-18",
+    "source": "Payer Call",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview Preferred PPO",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvantra",
+    "field": "Prior_Auth_Note",
+    "prior_value": "",
+    "new_value": "Peer-to-peer required for step-edit exception",
+    "note": "Medical director requires P2P for override",
+    "entered_by": "N. Kumar",
+    "plan_id": "",
+    "detection_id": ""
+  }
+]

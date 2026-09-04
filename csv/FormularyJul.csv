@@ -1,0 +1,1001 @@
+Data_Date,Formulary_ID,Formulary_Name,Payer_Name,Channel,Lives,NDC,Product_Name,Formulary_Status,Restriction,Tier,Effective_Date,As_Of_Date
+2026-07-01,FRM88000,Meridian Choice PPO Formulary,Meridian Health,Commercial,951213,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88001,Cascade Select HMO Formulary,Cascade Care,Commercial,990850,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88002,Granite MA Complete Formulary,Granite State Health,Medicare Advantage,2943208,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88003,Harborview Preferred PPO Formulary,Harborview Health Plan,Commercial,420657,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88004,Summit Advantage HMO Formulary,Summit Wellness,Medicare Advantage,2330426,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88005,Granite Select PPO Formulary,Granite Wellness,Commercial,991395,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88006,Pinecrest Choice HMO Formulary,Pinecrest Benefit,Commercial,2825918,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88007,Pinecrest Advantage Formulary,Pinecrest Alliance,Commercial,2699353,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88008,Foundry Select PPO Formulary,Foundry Mutual,Commercial,899926,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88009,Beacon EPO Formulary,Beacon Insurance,Commercial,3139710,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88010,Lakeside HMO Formulary,Lakeside Alliance,Commercial,474901,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88011,Keystone Complete Formulary,Keystone Mutual,Managed Medicaid,1069507,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88012,Northgate Advantage Formulary,Northgate Insurance,Commercial,1918055,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88013,Everest EPO Formulary,Everest Wellness,Commercial,692585,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88014,Juniper POS Formulary,Juniper Insurance,Commercial,1025288,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88015,Lakeside Complete Formulary,Lakeside Health Plan,Managed Medicaid,707592,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88016,Everest Choice HMO Formulary,Everest Mutual,Medicare Advantage,2185870,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88017,Gateway Preferred Formulary,Gateway Health,Commercial,2483096,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88018,Ironwood PPO Formulary,Ironwood Care,Commercial,312197,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88019,Lakeside POS Formulary,Lakeside Alliance,Medicare Advantage,1722333,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88020,Highland Advantage Formulary,Highland Mutual,Medicare Advantage,3072965,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88021,Riverbend POS Formulary,Riverbend Wellness,Commercial,2264345,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88022,Prairie HMO Formulary,Prairie Wellness,Medicare Advantage,2323231,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88023,Pinecrest Complete Formulary,Pinecrest Mutual,Medicare Advantage,911521,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88024,Keystone Complete Formulary,Keystone Insurance,Commercial,1789221,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88025,Harborview Choice HMO Formulary,Harborview Health,Commercial,225312,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88026,Stonegate HMO Formulary,Stonegate Care,Health Exchange,1001516,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88027,Granite Advantage Formulary,Granite Care,Health Exchange,2463099,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88028,Silverpeak Advantage Formulary,Silverpeak Insurance,Commercial,2832272,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88029,Prairie HMO Formulary,Prairie Care,Managed Medicaid,909033,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88030,Juniper EPO Formulary,Juniper Insurance,Medicare Advantage,2293421,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88031,Lakeside HMO Formulary,Lakeside Insurance,Commercial,3128921,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88032,Gateway Select PPO Formulary,Gateway Wellness,Managed Medicaid,2064051,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88033,Redwood PPO Formulary,Redwood Health,Commercial,563697,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88034,Vantage HMO Formulary,Vantage Health,Commercial,2913346,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88035,Beacon EPO Formulary,Beacon Mutual,Commercial,1307929,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88036,Riverbend Preferred Formulary,Riverbend Benefit,Medicare Advantage,2618243,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88037,Cascade Choice HMO Formulary,Cascade Health Plan,Medicare Advantage,2824794,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88038,Keystone Complete Formulary,Keystone Health,Commercial,852069,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88039,Cascade Advantage Formulary,Cascade Wellness,Commercial,1183545,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88040,Lantern PPO Formulary,Lantern Benefit,Commercial,1110615,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88041,Nautilus Choice HMO Formulary,Nautilus Benefit,Medicare Advantage,2557624,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88042,Nautilus Preferred Formulary,Nautilus Health,Managed Medicaid,2895887,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88043,Brightwater HMO Formulary,Brightwater Benefit,Health Exchange,1274642,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88044,Vantage POS Formulary,Vantage Health Plan,Medicare Advantage,2803916,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88045,Meridian Select PPO Formulary,Meridian Insurance,Commercial,1818081,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88046,Sequoia EPO Formulary,Sequoia Alliance,Health Exchange,370658,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88047,Ironwood EPO Formulary,Ironwood Wellness,Commercial,208834,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88048,Wayfarer Advantage Formulary,Wayfarer Wellness,Medicare Advantage,1691265,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88049,Ironwood Preferred Formulary,Ironwood Health Plan,Medicare Advantage,225631,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88050,Trailhead Complete Formulary,Trailhead Benefit,Managed Medicaid,3031853,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88051,Oakmont POS Formulary,Oakmont Insurance,Health Exchange,1178128,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88052,Copperfield Select PPO Formulary,Copperfield Wellness,Commercial,1355959,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88053,Beacon HMO Formulary,Beacon Wellness,Medicare Advantage,1724595,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88054,Monarch PPO Formulary,Monarch Mutual,Managed Medicaid,1610433,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88055,Monarch Complete Formulary,Monarch Wellness,Commercial,1159773,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88056,Lantern Complete Formulary,Lantern Health Plan,Commercial,2624934,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88057,Lakeside EPO Formulary,Lakeside Alliance,Commercial,1106174,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88058,Gateway Select PPO Formulary,Gateway Mutual,Medicare Advantage,1073103,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88059,Harborview POS Formulary,Harborview Benefit,Health Exchange,302806,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88060,Brightwater POS Formulary,Brightwater Health Plan,Commercial,2001259,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88061,Juniper HMO Formulary,Juniper Health Plan,Commercial,1319591,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88062,Lantern HMO Formulary,Lantern Wellness,Managed Medicaid,2911646,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88063,Northgate Choice HMO Formulary,Northgate Health,Managed Medicaid,1811747,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88064,Ridgeline Advantage Formulary,Ridgeline Care,Commercial,2680837,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88065,Redwood Complete Formulary,Redwood Alliance,Medicare Advantage,3081146,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88066,Oakmont Complete Formulary,Oakmont Wellness,Managed Medicaid,2574916,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88067,Stonegate POS Formulary,Stonegate Alliance,Commercial,1098608,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88068,Trailhead HMO Formulary,Trailhead Wellness,Commercial,3035212,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88069,Ridgeline PPO Formulary,Ridgeline Alliance,Commercial,1249113,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88070,Juniper Preferred Formulary,Juniper Alliance,Managed Medicaid,1456823,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88071,Redwood Select PPO Formulary,Redwood Insurance,Commercial,521067,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88072,Stonegate POS Formulary,Stonegate Wellness,Health Exchange,2045876,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88073,Ironwood EPO Formulary,Ironwood Benefit,Commercial,74342,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88074,Copperfield Complete Formulary,Copperfield Health Plan,Commercial,66444,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88075,Stonegate Select PPO Formulary,Stonegate Health,Medicare Advantage,493516,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88076,Harborview EPO Formulary,Harborview Health Plan,Managed Medicaid,1289378,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88077,Zephyr Preferred Formulary,Zephyr Wellness,Medicare Advantage,1904594,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88078,Brightwater HMO Formulary,Brightwater Health,Commercial,2638600,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88079,Stonegate EPO Formulary,Stonegate Care,Commercial,1728446,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88080,Copperfield Complete Formulary,Copperfield Insurance,Commercial,2898101,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88081,Union EPO Formulary,Union Wellness,Commercial,611582,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88082,Wayfarer Complete Formulary,Wayfarer Insurance,Commercial,1980861,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88083,Ridgeline HMO Formulary,Ridgeline Alliance,Managed Medicaid,182188,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88084,Ironwood Select PPO Formulary,Ironwood Health,Managed Medicaid,183743,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88085,Yellowstone Complete Formulary,Yellowstone Mutual,Commercial,1986366,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88086,Pinecrest Advantage Formulary,Pinecrest Benefit,Health Exchange,2093147,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88087,Foundry Choice HMO Formulary,Foundry Insurance,Commercial,1710233,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88088,Trailhead Complete Formulary,Trailhead Benefit,Health Exchange,1869054,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88089,Copperfield Complete Formulary,Copperfield Alliance,Commercial,136087,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88090,Vantage HMO Formulary,Vantage Mutual,Commercial,490890,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88091,Sequoia Advantage Formulary,Sequoia Insurance,Medicare Advantage,1995633,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88092,Zephyr HMO Formulary,Zephyr Health Plan,Commercial,1755394,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88093,Yellowstone EPO Formulary,Yellowstone Alliance,Medicare Advantage,2273970,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88094,Keystone Choice HMO Formulary,Keystone Alliance,Commercial,2940520,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88095,Foundry Advantage Formulary,Foundry Alliance,Medicare Advantage,2798712,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88096,Yellowstone HMO Formulary,Yellowstone Benefit,Medicare Advantage,433221,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88097,Summit Select PPO Formulary,Summit Alliance,Commercial,2629139,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88098,Keystone Complete Formulary,Keystone Benefit,Managed Medicaid,165571,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88099,Nautilus HMO Formulary,Nautilus Care,Medicare Advantage,712784,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88100,Copperfield Choice HMO Formulary,Copperfield Benefit,Medicare Advantage,625563,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88101,Cedar POS Formulary,Cedar Mutual,Medicare Advantage,2460938,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88102,Prairie PPO Formulary,Prairie Insurance,Medicare Advantage,1221414,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88103,Everest Select PPO Formulary,Everest Mutual,Medicare Advantage,1282190,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88104,Keystone Select PPO Formulary,Keystone Benefit,Health Exchange,1253287,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88105,Harborview Select PPO Formulary,Harborview Alliance,Commercial,2561215,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88106,Lakeside PPO Formulary,Lakeside Care,Commercial,1863946,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88107,Foundry EPO Formulary,Foundry Mutual,Commercial,569318,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88108,Copperfield HMO Formulary,Copperfield Benefit,Medicare Advantage,330828,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88109,Cedar PPO Formulary,Cedar Mutual,Commercial,2265547,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88110,Yellowstone Choice HMO Formulary,Yellowstone Mutual,Commercial,2845469,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88111,Foundry HMO Formulary,Foundry Wellness,Health Exchange,1962279,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88112,Granite Complete Formulary,Granite Insurance,Commercial,422652,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88113,Union EPO Formulary,Union Mutual,Medicare Advantage,2761941,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88114,Juniper Complete Formulary,Juniper Wellness,Medicare Advantage,1005328,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88115,Harborview Select PPO Formulary,Harborview Mutual,Commercial,527374,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88116,Cascade Choice HMO Formulary,Cascade Health,Commercial,543163,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88117,Ironwood EPO Formulary,Ironwood Benefit,Managed Medicaid,26893,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88118,Stonegate PPO Formulary,Stonegate Care,Commercial,77328,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88119,Bluegrass EPO Formulary,Bluegrass Health,Health Exchange,1780636,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88120,Sequoia Complete Formulary,Sequoia Care,Managed Medicaid,944247,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88121,Harborview Advantage Formulary,Harborview Alliance,Medicare Advantage,2892701,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88122,Foundry HMO Formulary,Foundry Health Plan,Commercial,1168500,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88123,Zephyr HMO Formulary,Zephyr Mutual,Health Exchange,494887,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88124,Gateway Advantage Formulary,Gateway Alliance,Medicare Advantage,3075216,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88125,Juniper Complete Formulary,Juniper Health Plan,Commercial,397624,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88126,Lakeside Preferred Formulary,Lakeside Health,Managed Medicaid,1397635,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88127,Harborview Select PPO Formulary,Harborview Insurance,Commercial,449532,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88128,Highland HMO Formulary,Highland Benefit,Commercial,2422949,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88129,Cascade Select PPO Formulary,Cascade Health Plan,Health Exchange,1310975,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88130,Wayfarer HMO Formulary,Wayfarer Mutual,Commercial,3122849,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88131,Prairie EPO Formulary,Prairie Benefit,Commercial,1322101,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88132,Brightwater HMO Formulary,Brightwater Health,Commercial,1873550,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88133,Fairview Choice HMO Formulary,Fairview Care,Medicare Advantage,480105,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88134,Lantern PPO Formulary,Lantern Health,Commercial,1279244,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88135,Northgate Complete Formulary,Northgate Health,Health Exchange,1821298,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88136,Sequoia HMO Formulary,Sequoia Benefit,Medicare Advantage,3127346,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88137,Foundry Advantage Formulary,Foundry Mutual,Health Exchange,2699948,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88138,Foundry Complete Formulary,Foundry Health Plan,Health Exchange,1532720,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88139,Yellowstone Preferred Formulary,Yellowstone Mutual,Commercial,1674965,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88140,Summit Preferred Formulary,Summit Care,Managed Medicaid,828291,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88141,Beacon POS Formulary,Beacon Insurance,Commercial,2541644,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88142,Prairie Choice HMO Formulary,Prairie Alliance,Health Exchange,1340982,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88143,Everest PPO Formulary,Everest Insurance,Commercial,2142925,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88144,Harborview Select PPO Formulary,Harborview Benefit,Commercial,2718927,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88145,Granite POS Formulary,Granite Alliance,Commercial,2552578,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88146,Gateway Preferred Formulary,Gateway Care,Health Exchange,738764,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88147,Trailhead Choice HMO Formulary,Trailhead Health Plan,Commercial,1201541,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88148,Harborview HMO Formulary,Harborview Benefit,Commercial,411386,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88149,Beacon HMO Formulary,Beacon Benefit,Managed Medicaid,2798390,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88150,Lakeside Select PPO Formulary,Lakeside Care,Managed Medicaid,1594907,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88151,Sequoia PPO Formulary,Sequoia Benefit,Commercial,1310478,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88152,Ironwood EPO Formulary,Ironwood Health Plan,Commercial,1255641,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88153,Zephyr EPO Formulary,Zephyr Mutual,Commercial,773522,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88154,Silverpeak Select PPO Formulary,Silverpeak Alliance,Health Exchange,1897940,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88155,Juniper Complete Formulary,Juniper Alliance,Commercial,1616689,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88156,Bluegrass Complete Formulary,Bluegrass Health,Commercial,2340912,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88157,Redwood Preferred Formulary,Redwood Alliance,Commercial,1849892,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88158,Monarch Advantage Formulary,Monarch Health,Managed Medicaid,1583508,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88159,Cascade HMO Formulary,Cascade Benefit,Health Exchange,2741132,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88160,Quarry Complete Formulary,Quarry Health Plan,Medicare Advantage,2595957,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88161,Beacon HMO Formulary,Beacon Mutual,Commercial,1011735,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88162,Brightwater HMO Formulary,Brightwater Alliance,Commercial,2111435,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88163,Meridian POS Formulary,Meridian Benefit,Managed Medicaid,1762211,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88164,Union Advantage Formulary,Union Health,Medicare Advantage,197596,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88165,Highland Choice HMO Formulary,Highland Care,Commercial,3089177,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88166,Union EPO Formulary,Union Benefit,Health Exchange,1963769,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88167,Granite POS Formulary,Granite Insurance,Commercial,851637,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88168,Union Select PPO Formulary,Union Alliance,Commercial,3174531,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88169,Redwood Choice HMO Formulary,Redwood Care,Medicare Advantage,1692812,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88170,Ridgeline Preferred Formulary,Ridgeline Benefit,Commercial,361497,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88171,Union Choice HMO Formulary,Union Insurance,Commercial,350833,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88172,Nautilus Complete Formulary,Nautilus Health Plan,Commercial,1890397,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88173,Summit Choice HMO Formulary,Summit Mutual,Managed Medicaid,3160300,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88174,Granite HMO Formulary,Granite Health Plan,Commercial,2721009,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88175,Zephyr Complete Formulary,Zephyr Health Plan,Commercial,1575337,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88176,Lantern Select PPO Formulary,Lantern Benefit,Commercial,490837,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88177,Vantage Select PPO Formulary,Vantage Care,Commercial,2967948,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88178,Willow EPO Formulary,Willow Care,Commercial,1911004,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88179,Highland Preferred Formulary,Highland Care,Managed Medicaid,1232867,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88180,Ironwood POS Formulary,Ironwood Care,Commercial,1007943,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88181,Juniper Preferred Formulary,Juniper Alliance,Commercial,2581697,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88182,Trailhead Advantage Formulary,Trailhead Mutual,Managed Medicaid,324332,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88183,Trailhead EPO Formulary,Trailhead Benefit,Managed Medicaid,2698490,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88184,Northgate Select PPO Formulary,Northgate Health Plan,Commercial,694338,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88185,Cedar POS Formulary,Cedar Insurance,Health Exchange,2325396,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88186,Cedar EPO Formulary,Cedar Health Plan,Commercial,2777925,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88187,Wayfarer POS Formulary,Wayfarer Insurance,Managed Medicaid,1762291,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88188,Quarry Advantage Formulary,Quarry Wellness,Commercial,1917301,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88189,Quarry POS Formulary,Quarry Alliance,Commercial,2559517,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88190,Lantern Choice HMO Formulary,Lantern Health Plan,Managed Medicaid,2370735,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88191,Redwood POS Formulary,Redwood Alliance,Commercial,421057,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88192,Silverpeak Choice HMO Formulary,Silverpeak Health Plan,Managed Medicaid,3039631,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88193,Prairie Select PPO Formulary,Prairie Alliance,Medicare Advantage,112208,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88194,Yellowstone PPO Formulary,Yellowstone Benefit,Commercial,1195094,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88195,Riverbend EPO Formulary,Riverbend Mutual,Commercial,3066389,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88196,Harborview Choice HMO Formulary,Harborview Wellness,Managed Medicaid,1225483,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88197,Brightwater EPO Formulary,Brightwater Care,Commercial,1667151,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88198,Zephyr Preferred Formulary,Zephyr Mutual,Commercial,205016,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88199,Prairie Preferred Formulary,Prairie Health Plan,Commercial,1390588,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88200,Yellowstone Preferred Formulary,Yellowstone Benefit,Managed Medicaid,2247795,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88201,Gateway Advantage Formulary,Gateway Care,Managed Medicaid,1305494,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88202,Wayfarer PPO Formulary,Wayfarer Wellness,Managed Medicaid,2030148,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88203,Granite POS Formulary,Granite Care,Commercial,1864849,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88204,Monarch PPO Formulary,Monarch Alliance,Health Exchange,594159,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88205,Foundry Complete Formulary,Foundry Health Plan,Managed Medicaid,1450823,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88206,Redwood POS Formulary,Redwood Insurance,Commercial,1227171,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88207,Vantage Select PPO Formulary,Vantage Insurance,Commercial,2420336,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88208,Granite HMO Formulary,Granite Insurance,Commercial,1870459,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88209,Redwood EPO Formulary,Redwood Insurance,Commercial,2597336,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88210,Ironwood PPO Formulary,Ironwood Wellness,Commercial,1748511,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88211,Meridian Advantage Formulary,Meridian Health Plan,Health Exchange,2010228,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88212,Harborview POS Formulary,Harborview Care,Managed Medicaid,3113275,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88213,Lantern EPO Formulary,Lantern Alliance,Health Exchange,1229112,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88214,Riverbend Select PPO Formulary,Riverbend Benefit,Medicare Advantage,2704859,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88215,Northgate EPO Formulary,Northgate Benefit,Health Exchange,1939826,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88216,Copperfield EPO Formulary,Copperfield Wellness,Managed Medicaid,2694010,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88217,Riverbend EPO Formulary,Riverbend Health Plan,Medicare Advantage,1372283,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88218,Oakmont Choice HMO Formulary,Oakmont Insurance,Commercial,2458017,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88219,Harborview Complete Formulary,Harborview Care,Commercial,684900,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88220,Juniper POS Formulary,Juniper Wellness,Commercial,2020640,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88221,Quarry POS Formulary,Quarry Wellness,Health Exchange,3180607,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88222,Northgate Preferred Formulary,Northgate Health,Managed Medicaid,862906,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88223,Northgate Complete Formulary,Northgate Wellness,Commercial,2155669,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88224,Monarch PPO Formulary,Monarch Alliance,Managed Medicaid,1954355,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88225,Fairview PPO Formulary,Fairview Care,Medicare Advantage,1460058,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88226,Copperfield EPO Formulary,Copperfield Mutual,Commercial,2705750,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88227,Keystone Preferred Formulary,Keystone Care,Commercial,2756120,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88228,Trailhead POS Formulary,Trailhead Health Plan,Commercial,3186646,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88229,Nautilus POS Formulary,Nautilus Mutual,Commercial,1947002,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88230,Granite PPO Formulary,Granite Mutual,Commercial,879368,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88231,Harborview PPO Formulary,Harborview Wellness,Medicare Advantage,1856143,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88232,Copperfield Choice HMO Formulary,Copperfield Wellness,Managed Medicaid,2522848,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88233,Ironwood Select PPO Formulary,Ironwood Mutual,Commercial,270674,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88234,Keystone Advantage Formulary,Keystone Benefit,Medicare Advantage,640864,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88235,Silverpeak Select PPO Formulary,Silverpeak Wellness,Health Exchange,620455,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88236,Trailhead Advantage Formulary,Trailhead Health Plan,Commercial,1084529,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88237,Cedar PPO Formulary,Cedar Wellness,Commercial,1596957,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88238,Fairview POS Formulary,Fairview Alliance,Commercial,1286662,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88239,Quarry POS Formulary,Quarry Wellness,Medicare Advantage,1018826,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88240,Highland Select PPO Formulary,Highland Insurance,Commercial,2165908,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88241,Foundry Choice HMO Formulary,Foundry Wellness,Commercial,1751148,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88242,Vantage Select PPO Formulary,Vantage Mutual,Commercial,837887,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88243,Ridgeline Select PPO Formulary,Ridgeline Benefit,Medicare Advantage,3049821,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88244,Pinecrest Preferred Formulary,Pinecrest Health Plan,Medicare Advantage,786952,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88245,Meridian EPO Formulary,Meridian Mutual,Health Exchange,985702,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88246,Prairie PPO Formulary,Prairie Benefit,Managed Medicaid,2689827,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88247,Vantage PPO Formulary,Vantage Mutual,Commercial,2235538,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88248,Stonegate HMO Formulary,Stonegate Care,Managed Medicaid,639521,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88249,Lantern Choice HMO Formulary,Lantern Care,Medicare Advantage,1940176,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88250,Granite Advantage Formulary,Granite Care,Medicare Advantage,1596963,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88251,Cedar Advantage Formulary,Cedar Alliance,Health Exchange,1404449,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88252,Quarry PPO Formulary,Quarry Insurance,Commercial,2885702,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88253,Fairview Advantage Formulary,Fairview Health Plan,Commercial,1270258,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88254,Gateway EPO Formulary,Gateway Mutual,Health Exchange,3052362,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88255,Ironwood Choice HMO Formulary,Ironwood Care,Managed Medicaid,2589737,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88256,Oakmont POS Formulary,Oakmont Alliance,Commercial,2334608,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88257,Keystone Select PPO Formulary,Keystone Care,Commercial,3005993,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88258,Beacon Choice HMO Formulary,Beacon Mutual,Commercial,461906,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88259,Redwood EPO Formulary,Redwood Care,Commercial,800978,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88260,Cedar Preferred Formulary,Cedar Benefit,Commercial,2518683,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88261,Keystone Preferred Formulary,Keystone Care,Commercial,2413975,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88262,Everest Complete Formulary,Everest Insurance,Commercial,280361,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88263,Quarry Choice HMO Formulary,Quarry Care,Commercial,1049273,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88264,Everest Advantage Formulary,Everest Health,Commercial,2616274,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88265,Zephyr Select PPO Formulary,Zephyr Health Plan,Commercial,2545051,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88266,Foundry Complete Formulary,Foundry Insurance,Managed Medicaid,1031801,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88267,Northgate Preferred Formulary,Northgate Wellness,Commercial,2874310,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88268,Summit Complete Formulary,Summit Mutual,Commercial,2671403,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88269,Nautilus HMO Formulary,Nautilus Mutual,Medicare Advantage,2522916,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88270,Juniper HMO Formulary,Juniper Care,Commercial,2773181,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88271,Gateway HMO Formulary,Gateway Mutual,Commercial,428585,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88272,Lantern Preferred Formulary,Lantern Alliance,Commercial,1461898,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88273,Cedar EPO Formulary,Cedar Care,Commercial,1323162,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88274,Highland HMO Formulary,Highland Alliance,Medicare Advantage,3043262,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88275,Northgate Choice HMO Formulary,Northgate Health,Health Exchange,473700,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88276,Gateway Complete Formulary,Gateway Mutual,Commercial,1713892,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88277,Brightwater Complete Formulary,Brightwater Wellness,Managed Medicaid,1816675,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88278,Summit Preferred Formulary,Summit Care,Commercial,1549247,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88279,Ridgeline Advantage Formulary,Ridgeline Benefit,Managed Medicaid,1661448,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88280,Stonegate HMO Formulary,Stonegate Insurance,Health Exchange,576817,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88281,Stonegate EPO Formulary,Stonegate Benefit,Managed Medicaid,1644333,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88282,Ridgeline Preferred Formulary,Ridgeline Health Plan,Commercial,2068707,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88283,Brightwater Choice HMO Formulary,Brightwater Health,Commercial,2047597,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88284,Ridgeline Complete Formulary,Ridgeline Mutual,Medicare Advantage,2993552,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88285,Cascade Select PPO Formulary,Cascade Wellness,Commercial,1167816,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88286,Ridgeline HMO Formulary,Ridgeline Care,Commercial,2292952,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88287,Nautilus POS Formulary,Nautilus Care,Commercial,150184,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88288,Northgate POS Formulary,Northgate Wellness,Health Exchange,2480931,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88289,Fairview PPO Formulary,Fairview Wellness,Managed Medicaid,1486426,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88290,Copperfield Preferred Formulary,Copperfield Insurance,Health Exchange,414403,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88291,Lakeside EPO Formulary,Lakeside Wellness,Health Exchange,1365971,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88292,Redwood Advantage Formulary,Redwood Mutual,Medicare Advantage,331738,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88293,Prairie Choice HMO Formulary,Prairie Alliance,Managed Medicaid,25372,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88294,Lantern Advantage Formulary,Lantern Wellness,Commercial,2089984,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88295,Wayfarer Complete Formulary,Wayfarer Health Plan,Commercial,2877830,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88296,Cascade EPO Formulary,Cascade Care,Medicare Advantage,1929775,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88297,Everest Select PPO Formulary,Everest Health Plan,Commercial,2760540,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88298,Harborview Select PPO Formulary,Harborview Mutual,Health Exchange,2948669,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88299,Meridian Complete Formulary,Meridian Wellness,Commercial,571583,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88300,Northgate EPO Formulary,Northgate Mutual,Medicare Advantage,312075,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88301,Riverbend Choice HMO Formulary,Riverbend Benefit,Commercial,590161,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88302,Wayfarer EPO Formulary,Wayfarer Health,Medicare Advantage,1487988,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88303,Fairview HMO Formulary,Fairview Care,Commercial,3170985,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88304,Lakeside Select PPO Formulary,Lakeside Wellness,Health Exchange,368364,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88305,Fairview Advantage Formulary,Fairview Wellness,Commercial,2725232,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88306,Silverpeak HMO Formulary,Silverpeak Alliance,Managed Medicaid,65612,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88307,Monarch Preferred Formulary,Monarch Benefit,Health Exchange,739651,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88308,Meridian POS Formulary,Meridian Insurance,Commercial,268624,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88309,Cedar Select PPO Formulary,Cedar Health Plan,Commercial,1314843,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88310,Lantern Select PPO Formulary,Lantern Care,Health Exchange,1849949,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88311,Northgate PPO Formulary,Northgate Alliance,Commercial,2808740,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88312,Meridian Complete Formulary,Meridian Health Plan,Commercial,2208643,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88313,Northgate Choice HMO Formulary,Northgate Health,Medicare Advantage,1155769,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88314,Sequoia PPO Formulary,Sequoia Benefit,Medicare Advantage,2392692,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88315,Wayfarer POS Formulary,Wayfarer Care,Health Exchange,2149166,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88316,Quarry Advantage Formulary,Quarry Benefit,Commercial,765616,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88317,Monarch Select PPO Formulary,Monarch Benefit,Commercial,2412195,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88318,Trailhead Advantage Formulary,Trailhead Health,Commercial,1965746,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88319,Prairie Choice HMO Formulary,Prairie Health,Commercial,1238038,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88320,Ridgeline Preferred Formulary,Ridgeline Wellness,Commercial,646521,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88321,Highland Choice HMO Formulary,Highland Health,Commercial,3198179,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88322,Silverpeak Complete Formulary,Silverpeak Mutual,Commercial,612157,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88323,Monarch Complete Formulary,Monarch Benefit,Health Exchange,371106,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88324,Wayfarer Advantage Formulary,Wayfarer Health,Health Exchange,563230,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88325,Foundry Complete Formulary,Foundry Benefit,Commercial,994836,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88326,Beacon EPO Formulary,Beacon Care,Medicare Advantage,1969776,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88327,Fairview Select PPO Formulary,Fairview Alliance,Medicare Advantage,1126523,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88328,Zephyr POS Formulary,Zephyr Health,Commercial,637115,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88329,Harborview Select PPO Formulary,Harborview Insurance,Commercial,145367,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88330,Riverbend HMO Formulary,Riverbend Health Plan,Commercial,273659,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88331,Cedar HMO Formulary,Cedar Insurance,Commercial,285415,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88332,Northgate Complete Formulary,Northgate Health,Commercial,719597,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88333,Nautilus Choice HMO Formulary,Nautilus Health Plan,Commercial,799968,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88334,Brightwater Select PPO Formulary,Brightwater Wellness,Medicare Advantage,1743020,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88335,Lakeside POS Formulary,Lakeside Mutual,Health Exchange,2220424,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88336,Quarry Choice HMO Formulary,Quarry Alliance,Managed Medicaid,2122190,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88337,Foundry PPO Formulary,Foundry Wellness,Commercial,260749,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88338,Silverpeak Select PPO Formulary,Silverpeak Wellness,Managed Medicaid,3106454,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88339,Stonegate Choice HMO Formulary,Stonegate Wellness,Health Exchange,2941057,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88340,Beacon Complete Formulary,Beacon Wellness,Managed Medicaid,1311262,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88341,Ironwood PPO Formulary,Ironwood Wellness,Managed Medicaid,2019831,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88342,Stonegate PPO Formulary,Stonegate Benefit,Commercial,634549,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88343,Lantern Choice HMO Formulary,Lantern Care,Commercial,1368095,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88344,Foundry Preferred Formulary,Foundry Health Plan,Health Exchange,2589082,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88345,Copperfield EPO Formulary,Copperfield Health Plan,Health Exchange,22540,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88346,Brightwater HMO Formulary,Brightwater Wellness,Medicare Advantage,604901,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88347,Pinecrest Choice HMO Formulary,Pinecrest Care,Medicare Advantage,62796,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88348,Highland HMO Formulary,Highland Insurance,Health Exchange,20373,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88349,Pinecrest Complete Formulary,Pinecrest Mutual,Medicare Advantage,1488170,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88350,Pinecrest HMO Formulary,Pinecrest Alliance,Commercial,1251936,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88351,Gateway Advantage Formulary,Gateway Health Plan,Commercial,3085167,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88352,Quarry Advantage Formulary,Quarry Health,Health Exchange,707048,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88353,Fairview Advantage Formulary,Fairview Wellness,Health Exchange,2339115,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88354,Harborview Preferred Formulary,Harborview Mutual,Medicare Advantage,659202,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88355,Copperfield POS Formulary,Copperfield Alliance,Commercial,122943,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88356,Northgate Advantage Formulary,Northgate Insurance,Medicare Advantage,2066420,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88357,Keystone EPO Formulary,Keystone Benefit,Medicare Advantage,202136,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88358,Redwood EPO Formulary,Redwood Health,Health Exchange,2814565,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88359,Yellowstone Preferred Formulary,Yellowstone Wellness,Commercial,1638640,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88360,Cedar PPO Formulary,Cedar Mutual,Managed Medicaid,2410870,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88361,Fairview EPO Formulary,Fairview Wellness,Commercial,1790763,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88362,Zephyr Choice HMO Formulary,Zephyr Insurance,Health Exchange,296068,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88363,Redwood PPO Formulary,Redwood Alliance,Health Exchange,2628294,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88364,Wayfarer HMO Formulary,Wayfarer Care,Managed Medicaid,438584,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88365,Ridgeline PPO Formulary,Ridgeline Alliance,Commercial,1170170,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88366,Gateway PPO Formulary,Gateway Wellness,Health Exchange,2008209,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88367,Everest Complete Formulary,Everest Insurance,Health Exchange,2887477,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88368,Foundry Advantage Formulary,Foundry Insurance,Managed Medicaid,2722653,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88369,Ridgeline PPO Formulary,Ridgeline Benefit,Managed Medicaid,681778,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88370,Wayfarer EPO Formulary,Wayfarer Health,Commercial,856909,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88371,Juniper Select PPO Formulary,Juniper Wellness,Commercial,1962073,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88372,Ridgeline EPO Formulary,Ridgeline Alliance,Medicare Advantage,2476554,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88373,Copperfield Advantage Formulary,Copperfield Health,Commercial,698283,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88374,Redwood Preferred Formulary,Redwood Mutual,Commercial,2876353,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88375,Zephyr POS Formulary,Zephyr Health,Commercial,2566579,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88376,Prairie POS Formulary,Prairie Insurance,Medicare Advantage,1282288,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88377,Vantage Select PPO Formulary,Vantage Insurance,Health Exchange,468423,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88378,Redwood Select PPO Formulary,Redwood Insurance,Commercial,643849,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88379,Lakeside Complete Formulary,Lakeside Health,Commercial,1103112,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88380,Yellowstone Choice HMO Formulary,Yellowstone Wellness,Health Exchange,3007087,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88381,Pinecrest Select PPO Formulary,Pinecrest Health Plan,Commercial,1989598,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88382,Cedar Choice HMO Formulary,Cedar Wellness,Commercial,3136442,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88383,Yellowstone Complete Formulary,Yellowstone Insurance,Commercial,1988573,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88384,Northgate Preferred Formulary,Northgate Mutual,Commercial,1747697,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88385,Monarch EPO Formulary,Monarch Alliance,Commercial,3016731,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88386,Foundry PPO Formulary,Foundry Health,Medicare Advantage,1162259,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88387,Lakeside Advantage Formulary,Lakeside Mutual,Medicare Advantage,1814463,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88388,Willow PPO Formulary,Willow Benefit,Commercial,3189449,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88389,Ironwood Select PPO Formulary,Ironwood Benefit,Commercial,445789,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88390,Everest Complete Formulary,Everest Insurance,Health Exchange,2197247,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88391,Highland EPO Formulary,Highland Wellness,Medicare Advantage,95214,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88392,Yellowstone HMO Formulary,Yellowstone Health Plan,Commercial,2997611,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88393,Harborview HMO Formulary,Harborview Health,Health Exchange,97802,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88394,Northgate Complete Formulary,Northgate Insurance,Health Exchange,657261,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88395,Trailhead EPO Formulary,Trailhead Insurance,Medicare Advantage,455042,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88396,Willow Select PPO Formulary,Willow Wellness,Managed Medicaid,860878,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88397,Vantage POS Formulary,Vantage Alliance,Health Exchange,2031050,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88398,Northgate EPO Formulary,Northgate Alliance,Commercial,2161247,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88399,Prairie Select PPO Formulary,Prairie Insurance,Medicare Advantage,225051,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88400,Foundry HMO Formulary,Foundry Mutual,Commercial,3195138,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88401,Gateway Complete Formulary,Gateway Benefit,Managed Medicaid,1140371,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88402,Lantern Complete Formulary,Lantern Mutual,Commercial,1632808,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88403,Harborview HMO Formulary,Harborview Health Plan,Medicare Advantage,2492786,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88404,Highland EPO Formulary,Highland Health,Medicare Advantage,2062335,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88405,Bluegrass PPO Formulary,Bluegrass Benefit,Health Exchange,2858439,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88406,Quarry Advantage Formulary,Quarry Benefit,Commercial,2356865,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88407,Ridgeline HMO Formulary,Ridgeline Health Plan,Medicare Advantage,1359835,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88408,Ironwood Advantage Formulary,Ironwood Mutual,Commercial,345639,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88409,Oakmont HMO Formulary,Oakmont Benefit,Medicare Advantage,3140758,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88410,Vantage HMO Formulary,Vantage Health,Managed Medicaid,2611551,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88411,Harborview Complete Formulary,Harborview Wellness,Commercial,2364442,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88412,Ironwood Choice HMO Formulary,Ironwood Health,Commercial,2672767,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88413,Ridgeline Advantage Formulary,Ridgeline Health Plan,Commercial,1081566,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88414,Prairie Choice HMO Formulary,Prairie Wellness,Commercial,3190714,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88415,Yellowstone Complete Formulary,Yellowstone Health Plan,Commercial,2239509,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88416,Yellowstone EPO Formulary,Yellowstone Health Plan,Commercial,1639896,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88417,Redwood Choice HMO Formulary,Redwood Mutual,Commercial,1914372,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88418,Everest Preferred Formulary,Everest Benefit,Health Exchange,926600,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88419,Lakeside Preferred Formulary,Lakeside Health Plan,Managed Medicaid,2927155,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88420,Yellowstone Preferred Formulary,Yellowstone Mutual,Commercial,1786616,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88421,Harborview POS Formulary,Harborview Health,Commercial,3161504,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88422,Copperfield Preferred Formulary,Copperfield Wellness,Commercial,1519423,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88423,Keystone Preferred Formulary,Keystone Wellness,Health Exchange,1221443,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88424,Vantage PPO Formulary,Vantage Health,Health Exchange,1069201,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88425,Yellowstone POS Formulary,Yellowstone Wellness,Commercial,1897466,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88426,Northgate PPO Formulary,Northgate Mutual,Medicare Advantage,1185681,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88427,Meridian Complete Formulary,Meridian Benefit,Health Exchange,664302,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88428,Brightwater Complete Formulary,Brightwater Insurance,Managed Medicaid,2322539,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88429,Stonegate Preferred Formulary,Stonegate Care,Commercial,1759542,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88430,Gateway Choice HMO Formulary,Gateway Benefit,Commercial,931225,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88431,Oakmont POS Formulary,Oakmont Wellness,Commercial,2877827,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88432,Union PPO Formulary,Union Insurance,Managed Medicaid,1587688,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88433,Foundry HMO Formulary,Foundry Care,Commercial,2271429,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88434,Nautilus POS Formulary,Nautilus Care,Managed Medicaid,2962517,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88435,Gateway HMO Formulary,Gateway Health,Commercial,242616,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88436,Bluegrass Advantage Formulary,Bluegrass Mutual,Medicare Advantage,2658322,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88437,Northgate HMO Formulary,Northgate Health,Health Exchange,2471218,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88438,Copperfield HMO Formulary,Copperfield Insurance,Commercial,1850746,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88439,Union EPO Formulary,Union Wellness,Health Exchange,1654941,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88440,Meridian HMO Formulary,Meridian Health Plan,Commercial,36096,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88441,Fairview Preferred Formulary,Fairview Mutual,Commercial,690091,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88442,Stonegate Preferred Formulary,Stonegate Health,Medicare Advantage,2718960,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88443,Willow Choice HMO Formulary,Willow Alliance,Commercial,552773,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88444,Willow Complete Formulary,Willow Benefit,Medicare Advantage,1392183,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88445,Pinecrest Choice HMO Formulary,Pinecrest Health,Commercial,944146,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88446,Quarry Complete Formulary,Quarry Alliance,Commercial,1296241,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88447,Cedar EPO Formulary,Cedar Insurance,Managed Medicaid,838895,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88448,Cascade POS Formulary,Cascade Mutual,Commercial,2328552,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88449,Ironwood EPO Formulary,Ironwood Insurance,Medicare Advantage,2116862,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88450,Silverpeak Preferred Formulary,Silverpeak Health Plan,Commercial,1886584,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88451,Highland POS Formulary,Highland Health,Medicare Advantage,987029,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88452,Fairview Advantage Formulary,Fairview Benefit,Medicare Advantage,1921912,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88453,Redwood Preferred Formulary,Redwood Insurance,Managed Medicaid,744178,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88454,Trailhead Advantage Formulary,Trailhead Insurance,Commercial,2180820,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88455,Zephyr Preferred Formulary,Zephyr Health,Commercial,1860068,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88456,Fairview EPO Formulary,Fairview Health Plan,Commercial,1534273,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88457,Quarry Complete Formulary,Quarry Alliance,Commercial,2492956,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88458,Lakeside EPO Formulary,Lakeside Health Plan,Health Exchange,2165179,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88459,Stonegate PPO Formulary,Stonegate Mutual,Health Exchange,3068345,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88460,Quarry EPO Formulary,Quarry Alliance,Commercial,1737881,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88461,Prairie POS Formulary,Prairie Care,Medicare Advantage,1631744,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88462,Sequoia EPO Formulary,Sequoia Mutual,Managed Medicaid,418905,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88463,Northgate Complete Formulary,Northgate Care,Health Exchange,561638,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88464,Trailhead POS Formulary,Trailhead Mutual,Medicare Advantage,1614021,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88465,Quarry HMO Formulary,Quarry Wellness,Commercial,2524419,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88466,Wayfarer Preferred Formulary,Wayfarer Care,Commercial,1587989,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88467,Beacon Select PPO Formulary,Beacon Mutual,Commercial,2263586,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88468,Fairview Preferred Formulary,Fairview Mutual,Managed Medicaid,2038616,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88469,Wayfarer Advantage Formulary,Wayfarer Benefit,Health Exchange,594101,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88470,Riverbend Preferred Formulary,Riverbend Wellness,Medicare Advantage,1434511,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88471,Cedar Complete Formulary,Cedar Health Plan,Managed Medicaid,1841105,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88472,Cedar Advantage Formulary,Cedar Health,Medicare Advantage,2590158,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88473,Oakmont POS Formulary,Oakmont Health,Health Exchange,2188292,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88474,Trailhead EPO Formulary,Trailhead Wellness,Health Exchange,166251,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88475,Redwood Choice HMO Formulary,Redwood Mutual,Health Exchange,1672350,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88476,Cedar Preferred Formulary,Cedar Insurance,Managed Medicaid,1475017,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88477,Prairie PPO Formulary,Prairie Mutual,Commercial,749149,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88478,Gateway Preferred Formulary,Gateway Care,Commercial,2271130,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88479,Silverpeak Complete Formulary,Silverpeak Benefit,Health Exchange,1947401,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88480,Keystone POS Formulary,Keystone Wellness,Commercial,1744839,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88481,Cedar Choice HMO Formulary,Cedar Mutual,Commercial,2340957,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88482,Wayfarer EPO Formulary,Wayfarer Insurance,Health Exchange,2880159,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88483,Bluegrass POS Formulary,Bluegrass Wellness,Commercial,1062298,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88484,Ridgeline Preferred Formulary,Ridgeline Health,Commercial,2037879,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88485,Ridgeline Preferred Formulary,Ridgeline Health Plan,Commercial,1683827,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88486,Quarry Preferred Formulary,Quarry Health,Commercial,1666368,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88487,Prairie PPO Formulary,Prairie Benefit,Commercial,2842393,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88488,Brightwater EPO Formulary,Brightwater Insurance,Managed Medicaid,1117468,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88489,Juniper Complete Formulary,Juniper Health Plan,Medicare Advantage,898037,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88490,Oakmont EPO Formulary,Oakmont Health Plan,Managed Medicaid,2892342,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88491,Nautilus POS Formulary,Nautilus Mutual,Commercial,3112669,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88492,Ridgeline Preferred Formulary,Ridgeline Health Plan,Managed Medicaid,3037249,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88493,Wayfarer Advantage Formulary,Wayfarer Health,Commercial,2911348,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88494,Riverbend Choice HMO Formulary,Riverbend Alliance,Commercial,1528984,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88495,Northgate POS Formulary,Northgate Benefit,Managed Medicaid,2430476,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88496,Ridgeline HMO Formulary,Ridgeline Alliance,Medicare Advantage,2588892,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88497,Monarch HMO Formulary,Monarch Mutual,Commercial,694475,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88498,Redwood Select PPO Formulary,Redwood Mutual,Medicare Advantage,1538223,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88499,Lakeside Select PPO Formulary,Lakeside Wellness,Health Exchange,2953935,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88500,Riverbend Complete Formulary,Riverbend Care,Managed Medicaid,240760,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88501,Brightwater HMO Formulary,Brightwater Health Plan,Health Exchange,1650133,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88502,Oakmont EPO Formulary,Oakmont Health Plan,Managed Medicaid,730581,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88503,Prairie Preferred Formulary,Prairie Insurance,Medicare Advantage,581712,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88504,Everest Complete Formulary,Everest Benefit,Managed Medicaid,967645,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88505,Bluegrass Select PPO Formulary,Bluegrass Health Plan,Commercial,15387,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88506,Meridian Complete Formulary,Meridian Alliance,Commercial,53304,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88507,Juniper Advantage Formulary,Juniper Wellness,Managed Medicaid,1848356,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88508,Keystone Select PPO Formulary,Keystone Wellness,Commercial,1786000,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88509,Redwood POS Formulary,Redwood Mutual,Commercial,780071,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88510,Brightwater Select PPO Formulary,Brightwater Alliance,Health Exchange,2627018,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88511,Harborview EPO Formulary,Harborview Health,Commercial,1198274,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88512,Ironwood EPO Formulary,Ironwood Care,Commercial,2085222,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88513,Juniper PPO Formulary,Juniper Alliance,Commercial,351480,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88514,Union EPO Formulary,Union Alliance,Commercial,1063909,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88515,Keystone POS Formulary,Keystone Alliance,Health Exchange,155552,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88516,Quarry Select PPO Formulary,Quarry Mutual,Commercial,680264,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88517,Willow PPO Formulary,Willow Benefit,Health Exchange,928470,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88518,Pinecrest HMO Formulary,Pinecrest Insurance,Medicare Advantage,1034590,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88519,Beacon HMO Formulary,Beacon Benefit,Commercial,676435,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88520,Harborview EPO Formulary,Harborview Benefit,Health Exchange,2264628,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88521,Vantage Complete Formulary,Vantage Benefit,Health Exchange,824355,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88522,Bluegrass Complete Formulary,Bluegrass Health,Health Exchange,1850008,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88523,Union Choice HMO Formulary,Union Benefit,Health Exchange,1979589,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88524,Oakmont Select PPO Formulary,Oakmont Insurance,Managed Medicaid,1554782,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88525,Cascade POS Formulary,Cascade Benefit,Commercial,3039108,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88526,Vantage Select PPO Formulary,Vantage Health Plan,Commercial,1733844,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88527,Granite EPO Formulary,Granite Health Plan,Commercial,862580,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88528,Wayfarer Complete Formulary,Wayfarer Mutual,Managed Medicaid,2632121,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88529,Summit POS Formulary,Summit Health,Health Exchange,2076104,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88530,Monarch PPO Formulary,Monarch Benefit,Managed Medicaid,1129911,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88531,Trailhead HMO Formulary,Trailhead Care,Health Exchange,983959,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88532,Wayfarer Preferred Formulary,Wayfarer Health Plan,Health Exchange,2356015,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88533,Nautilus EPO Formulary,Nautilus Care,Commercial,2321722,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88534,Oakmont Choice HMO Formulary,Oakmont Benefit,Managed Medicaid,1376698,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88535,Zephyr Preferred Formulary,Zephyr Wellness,Commercial,1588128,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88536,Meridian Select PPO Formulary,Meridian Health,Managed Medicaid,83377,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88537,Fairview PPO Formulary,Fairview Benefit,Health Exchange,1172448,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88538,Beacon Select PPO Formulary,Beacon Health Plan,Commercial,2456738,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88539,Wayfarer POS Formulary,Wayfarer Mutual,Health Exchange,338806,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88540,Riverbend PPO Formulary,Riverbend Insurance,Health Exchange,2432109,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88541,Nautilus HMO Formulary,Nautilus Mutual,Commercial,3150991,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88542,Granite Preferred Formulary,Granite Benefit,Managed Medicaid,642384,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88543,Oakmont POS Formulary,Oakmont Care,Medicare Advantage,1230438,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88544,Quarry Preferred Formulary,Quarry Health,Medicare Advantage,1116247,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88545,Lakeside Preferred Formulary,Lakeside Alliance,Commercial,2061237,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88546,Redwood Choice HMO Formulary,Redwood Mutual,Health Exchange,2430995,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88547,Highland Choice HMO Formulary,Highland Wellness,Commercial,2505901,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88548,Oakmont Complete Formulary,Oakmont Health Plan,Commercial,994326,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88549,Northgate POS Formulary,Northgate Health,Managed Medicaid,634402,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88550,Everest Complete Formulary,Everest Alliance,Commercial,1406991,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88551,Bluegrass EPO Formulary,Bluegrass Alliance,Health Exchange,2945791,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88552,Harborview POS Formulary,Harborview Insurance,Health Exchange,2606932,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88553,Summit Select PPO Formulary,Summit Mutual,Health Exchange,2783661,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88554,Ironwood Preferred Formulary,Ironwood Mutual,Health Exchange,432768,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88555,Sequoia Preferred Formulary,Sequoia Alliance,Health Exchange,105129,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88556,Lantern PPO Formulary,Lantern Health Plan,Commercial,2885209,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88557,Redwood Select PPO Formulary,Redwood Health,Medicare Advantage,138588,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88558,Lakeside Advantage Formulary,Lakeside Care,Managed Medicaid,2858716,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88559,Nautilus Choice HMO Formulary,Nautilus Insurance,Medicare Advantage,2289293,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88560,Willow Select PPO Formulary,Willow Health Plan,Health Exchange,2972556,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88561,Pinecrest HMO Formulary,Pinecrest Benefit,Managed Medicaid,2250402,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88562,Foundry Advantage Formulary,Foundry Mutual,Commercial,1873095,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88563,Stonegate Select PPO Formulary,Stonegate Health,Managed Medicaid,2393351,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88564,Highland Complete Formulary,Highland Care,Commercial,2121902,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88565,Quarry EPO Formulary,Quarry Health Plan,Commercial,964058,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88566,Ironwood POS Formulary,Ironwood Wellness,Commercial,757719,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88567,Nautilus PPO Formulary,Nautilus Mutual,Managed Medicaid,3099205,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88568,Zephyr Preferred Formulary,Zephyr Health,Commercial,1909187,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88569,Lantern Preferred Formulary,Lantern Health,Medicare Advantage,2179792,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88570,Everest Complete Formulary,Everest Insurance,Commercial,1786934,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88571,Cedar EPO Formulary,Cedar Care,Managed Medicaid,2934714,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88572,Cascade Complete Formulary,Cascade Health Plan,Managed Medicaid,3004005,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88573,Pinecrest HMO Formulary,Pinecrest Care,Commercial,2977129,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88574,Sequoia Advantage Formulary,Sequoia Health Plan,Managed Medicaid,1611381,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88575,Pinecrest EPO Formulary,Pinecrest Health Plan,Health Exchange,230211,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88576,Copperfield HMO Formulary,Copperfield Health Plan,Commercial,865821,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88577,Ridgeline Complete Formulary,Ridgeline Health,Commercial,924634,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88578,Zephyr POS Formulary,Zephyr Health,Managed Medicaid,1181490,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88579,Highland EPO Formulary,Highland Health,Commercial,2812586,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88580,Monarch EPO Formulary,Monarch Health Plan,Health Exchange,1207778,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88581,Everest Choice HMO Formulary,Everest Benefit,Medicare Advantage,298814,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88582,Northgate Choice HMO Formulary,Northgate Insurance,Managed Medicaid,1750426,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88583,Trailhead Complete Formulary,Trailhead Care,Health Exchange,2903425,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88584,Wayfarer EPO Formulary,Wayfarer Benefit,Managed Medicaid,2374859,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88585,Ironwood POS Formulary,Ironwood Insurance,Commercial,510796,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88586,Brightwater Advantage Formulary,Brightwater Mutual,Commercial,1415026,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88587,Copperfield HMO Formulary,Copperfield Insurance,Commercial,1274482,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88588,Gateway PPO Formulary,Gateway Mutual,Commercial,828760,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88589,Lakeside EPO Formulary,Lakeside Alliance,Health Exchange,1946971,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88590,Trailhead Choice HMO Formulary,Trailhead Insurance,Managed Medicaid,2262666,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88591,Beacon PPO Formulary,Beacon Insurance,Commercial,1588873,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88592,Everest PPO Formulary,Everest Benefit,Commercial,1750894,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88593,Everest Preferred Formulary,Everest Wellness,Commercial,749056,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88594,Oakmont Complete Formulary,Oakmont Health,Managed Medicaid,661249,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88595,Everest EPO Formulary,Everest Benefit,Commercial,2179875,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88596,Trailhead PPO Formulary,Trailhead Care,Commercial,199675,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88597,Trailhead PPO Formulary,Trailhead Insurance,Managed Medicaid,3196353,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88598,Copperfield Preferred Formulary,Copperfield Insurance,Commercial,1865173,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88599,Northgate Preferred Formulary,Northgate Health,Managed Medicaid,444393,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88600,Copperfield EPO Formulary,Copperfield Wellness,Commercial,1321012,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88601,Quarry HMO Formulary,Quarry Health,Medicare Advantage,240653,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88602,Yellowstone Choice HMO Formulary,Yellowstone Alliance,Commercial,1408901,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88603,Cedar HMO Formulary,Cedar Alliance,Medicare Advantage,1316877,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88604,Brightwater Choice HMO Formulary,Brightwater Insurance,Medicare Advantage,784038,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88605,Summit HMO Formulary,Summit Alliance,Commercial,2022612,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88606,Wayfarer Preferred Formulary,Wayfarer Health Plan,Commercial,1716570,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88607,Prairie Advantage Formulary,Prairie Mutual,Commercial,2619137,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88608,Gateway Advantage Formulary,Gateway Wellness,Medicare Advantage,2394056,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88609,Wayfarer HMO Formulary,Wayfarer Alliance,Managed Medicaid,2515121,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88610,Everest HMO Formulary,Everest Mutual,Managed Medicaid,471108,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88611,Cedar EPO Formulary,Cedar Wellness,Managed Medicaid,3181651,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88612,Copperfield Complete Formulary,Copperfield Mutual,Commercial,877607,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88613,Cedar Preferred Formulary,Cedar Health,Medicare Advantage,550007,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88614,Meridian HMO Formulary,Meridian Benefit,Commercial,145798,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88615,Keystone Advantage Formulary,Keystone Mutual,Medicare Advantage,2301393,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88616,Vantage Choice HMO Formulary,Vantage Mutual,Medicare Advantage,662043,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88617,Cascade Complete Formulary,Cascade Health Plan,Health Exchange,1846799,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88618,Prairie EPO Formulary,Prairie Mutual,Medicare Advantage,2151641,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88619,Stonegate PPO Formulary,Stonegate Mutual,Managed Medicaid,2104421,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88620,Juniper PPO Formulary,Juniper Health,Managed Medicaid,2041973,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88621,Beacon Complete Formulary,Beacon Insurance,Managed Medicaid,343139,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88622,Union PPO Formulary,Union Insurance,Commercial,2259092,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88623,Wayfarer Advantage Formulary,Wayfarer Benefit,Commercial,1250717,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88624,Everest PPO Formulary,Everest Insurance,Health Exchange,1999579,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88625,Cascade Complete Formulary,Cascade Insurance,Commercial,546927,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88626,Redwood Select PPO Formulary,Redwood Insurance,Commercial,3124779,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88627,Juniper Select PPO Formulary,Juniper Health Plan,Health Exchange,1005677,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88628,Beacon Complete Formulary,Beacon Health Plan,Medicare Advantage,1622118,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88629,Highland Select PPO Formulary,Highland Health,Commercial,235298,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88630,Quarry Advantage Formulary,Quarry Wellness,Health Exchange,2974533,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88631,Nautilus Select PPO Formulary,Nautilus Health,Medicare Advantage,1617241,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88632,Nautilus Choice HMO Formulary,Nautilus Insurance,Commercial,1135247,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88633,Yellowstone Preferred Formulary,Yellowstone Wellness,Commercial,2857555,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88634,Summit Advantage Formulary,Summit Health,Commercial,2218118,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88635,Bluegrass PPO Formulary,Bluegrass Wellness,Commercial,2612940,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88636,Northgate EPO Formulary,Northgate Care,Medicare Advantage,2768118,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88637,Prairie Complete Formulary,Prairie Care,Commercial,1805898,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88638,Harborview Advantage Formulary,Harborview Mutual,Commercial,266904,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88639,Ridgeline Advantage Formulary,Ridgeline Wellness,Commercial,2722352,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88640,Fairview Complete Formulary,Fairview Care,Health Exchange,1101309,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88641,Bluegrass PPO Formulary,Bluegrass Alliance,Medicare Advantage,639340,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88642,Gateway PPO Formulary,Gateway Mutual,Managed Medicaid,2982913,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88643,Union PPO Formulary,Union Wellness,Medicare Advantage,2905971,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88644,Lantern HMO Formulary,Lantern Health,Commercial,2257385,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88645,Stonegate Advantage Formulary,Stonegate Health,Health Exchange,816125,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88646,Ridgeline Complete Formulary,Ridgeline Care,Health Exchange,809671,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88647,Silverpeak Advantage Formulary,Silverpeak Alliance,Commercial,2282239,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88648,Gateway Choice HMO Formulary,Gateway Health,Health Exchange,194577,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88649,Prairie POS Formulary,Prairie Health Plan,Commercial,169676,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88650,Granite EPO Formulary,Granite Wellness,Commercial,737464,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88651,Pinecrest HMO Formulary,Pinecrest Care,Commercial,2100170,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88652,Lantern HMO Formulary,Lantern Benefit,Health Exchange,2430780,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88653,Stonegate HMO Formulary,Stonegate Benefit,Commercial,1163792,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88654,Vantage Complete Formulary,Vantage Health Plan,Commercial,2456025,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88655,Keystone PPO Formulary,Keystone Health Plan,Medicare Advantage,353575,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88656,Copperfield Complete Formulary,Copperfield Mutual,Health Exchange,547225,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88657,Monarch EPO Formulary,Monarch Wellness,Managed Medicaid,2916089,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88658,Everest Advantage Formulary,Everest Benefit,Commercial,2354206,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88659,Brightwater Preferred Formulary,Brightwater Benefit,Managed Medicaid,934710,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88660,Northgate Complete Formulary,Northgate Health Plan,Medicare Advantage,754555,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88661,Copperfield Advantage Formulary,Copperfield Wellness,Commercial,1417133,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88662,Union EPO Formulary,Union Health Plan,Commercial,2049494,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88663,Yellowstone Advantage Formulary,Yellowstone Benefit,Commercial,3148508,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88664,Riverbend Advantage Formulary,Riverbend Wellness,Commercial,1590096,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88665,Harborview EPO Formulary,Harborview Mutual,Commercial,2571149,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88666,Prairie Choice HMO Formulary,Prairie Wellness,Commercial,863133,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88667,Harborview EPO Formulary,Harborview Insurance,Commercial,1967592,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88668,Copperfield EPO Formulary,Copperfield Health Plan,Managed Medicaid,2333425,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88669,Fairview Complete Formulary,Fairview Alliance,Commercial,75833,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88670,Yellowstone EPO Formulary,Yellowstone Wellness,Managed Medicaid,36296,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88671,Granite Preferred Formulary,Granite Mutual,Medicare Advantage,2025201,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88672,Vantage Advantage Formulary,Vantage Health,Commercial,571634,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88673,Cascade Select PPO Formulary,Cascade Alliance,Commercial,2964872,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88674,Lantern Choice HMO Formulary,Lantern Health Plan,Health Exchange,1962397,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88675,Trailhead Select PPO Formulary,Trailhead Health,Medicare Advantage,3172841,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88676,Harborview PPO Formulary,Harborview Benefit,Commercial,1621229,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88677,Stonegate Preferred Formulary,Stonegate Care,Health Exchange,873626,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88678,Quarry POS Formulary,Quarry Wellness,Commercial,1494379,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88679,Juniper Complete Formulary,Juniper Benefit,Medicare Advantage,2118234,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88680,Juniper POS Formulary,Juniper Care,Medicare Advantage,381199,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88681,Riverbend Select PPO Formulary,Riverbend Health Plan,Commercial,2938774,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88682,Cascade Advantage Formulary,Cascade Insurance,Health Exchange,2285942,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88683,Cascade POS Formulary,Cascade Insurance,Commercial,107428,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88684,Foundry Preferred Formulary,Foundry Alliance,Managed Medicaid,1882540,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88685,Bluegrass Complete Formulary,Bluegrass Wellness,Commercial,1223573,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88686,Pinecrest Preferred Formulary,Pinecrest Health Plan,Commercial,779539,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88687,Granite EPO Formulary,Granite Benefit,Medicare Advantage,1107226,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88688,Foundry EPO Formulary,Foundry Benefit,Commercial,1895847,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88689,Ridgeline Complete Formulary,Ridgeline Health Plan,Commercial,669534,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88690,Wayfarer Complete Formulary,Wayfarer Health Plan,Commercial,2905491,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88691,Northgate PPO Formulary,Northgate Insurance,Medicare Advantage,2605074,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88692,Harborview Preferred Formulary,Harborview Wellness,Commercial,1180711,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88693,Cedar POS Formulary,Cedar Mutual,Medicare Advantage,1347772,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88694,Juniper Choice HMO Formulary,Juniper Mutual,Commercial,1208910,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88695,Cedar Complete Formulary,Cedar Wellness,Health Exchange,1758193,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88696,Monarch HMO Formulary,Monarch Health Plan,Commercial,886508,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88697,Keystone PPO Formulary,Keystone Care,Medicare Advantage,2694346,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88698,Wayfarer POS Formulary,Wayfarer Health Plan,Commercial,1616257,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88699,Everest Preferred Formulary,Everest Alliance,Health Exchange,1958857,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88700,Everest HMO Formulary,Everest Alliance,Health Exchange,2808043,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88701,Cascade Select PPO Formulary,Cascade Care,Medicare Advantage,294864,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88702,Northgate Preferred Formulary,Northgate Benefit,Health Exchange,2427830,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88703,Beacon Complete Formulary,Beacon Benefit,Health Exchange,583317,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88704,Monarch PPO Formulary,Monarch Benefit,Commercial,1238327,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88705,Pinecrest Choice HMO Formulary,Pinecrest Benefit,Health Exchange,1277788,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88706,Highland PPO Formulary,Highland Health Plan,Commercial,2188365,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88707,Pinecrest POS Formulary,Pinecrest Care,Commercial,2126340,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88708,Summit EPO Formulary,Summit Care,Commercial,2026245,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88709,Zephyr EPO Formulary,Zephyr Benefit,Health Exchange,1292938,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88710,Ironwood EPO Formulary,Ironwood Insurance,Commercial,561174,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88711,Quarry PPO Formulary,Quarry Mutual,Commercial,467218,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88712,Granite Select PPO Formulary,Granite Care,Health Exchange,58085,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88713,Stonegate PPO Formulary,Stonegate Benefit,Commercial,625510,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88714,Brightwater Preferred Formulary,Brightwater Wellness,Managed Medicaid,301626,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88715,Copperfield Preferred Formulary,Copperfield Health Plan,Commercial,3057335,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88716,Stonegate HMO Formulary,Stonegate Alliance,Commercial,1503232,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88717,Monarch Choice HMO Formulary,Monarch Care,Commercial,1969133,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88718,Vantage HMO Formulary,Vantage Health,Commercial,2085781,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88719,Everest POS Formulary,Everest Alliance,Managed Medicaid,1723265,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88720,Juniper PPO Formulary,Juniper Health Plan,Health Exchange,2077122,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88721,Northgate Advantage Formulary,Northgate Health Plan,Medicare Advantage,2930196,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88722,Gateway Advantage Formulary,Gateway Wellness,Commercial,991726,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88723,Yellowstone Advantage Formulary,Yellowstone Insurance,Commercial,2010760,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88724,Riverbend Select PPO Formulary,Riverbend Care,Medicare Advantage,2100717,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88725,Summit PPO Formulary,Summit Alliance,Commercial,1619879,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88726,Riverbend Preferred Formulary,Riverbend Care,Medicare Advantage,1969637,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88727,Bluegrass Preferred Formulary,Bluegrass Benefit,Managed Medicaid,89114,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88728,Foundry Complete Formulary,Foundry Mutual,Medicare Advantage,165915,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88729,Ridgeline EPO Formulary,Ridgeline Mutual,Commercial,3016960,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88730,Vantage Complete Formulary,Vantage Alliance,Managed Medicaid,670615,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88731,Keystone Select PPO Formulary,Keystone Benefit,Commercial,272630,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88732,Yellowstone Choice HMO Formulary,Yellowstone Health,Medicare Advantage,423315,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88733,Harborview POS Formulary,Harborview Wellness,Commercial,2733256,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88734,Gateway PPO Formulary,Gateway Health Plan,Managed Medicaid,1382833,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88735,Monarch PPO Formulary,Monarch Insurance,Health Exchange,1985064,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88736,Foundry Complete Formulary,Foundry Care,Commercial,2912693,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88737,Pinecrest Choice HMO Formulary,Pinecrest Insurance,Medicare Advantage,861237,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88738,Harborview Advantage Formulary,Harborview Insurance,Commercial,2634646,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88739,Wayfarer Advantage Formulary,Wayfarer Alliance,Commercial,1471750,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88740,Foundry Advantage Formulary,Foundry Wellness,Medicare Advantage,1068880,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88741,Stonegate POS Formulary,Stonegate Alliance,Health Exchange,3128046,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88742,Trailhead Choice HMO Formulary,Trailhead Wellness,Medicare Advantage,634681,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88743,Foundry POS Formulary,Foundry Care,Medicare Advantage,1134605,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88744,Silverpeak POS Formulary,Silverpeak Mutual,Commercial,643987,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88745,Ridgeline Advantage Formulary,Ridgeline Mutual,Health Exchange,170204,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88746,Bluegrass Preferred Formulary,Bluegrass Insurance,Commercial,2717364,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88747,Foundry HMO Formulary,Foundry Insurance,Medicare Advantage,1539353,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88748,Wayfarer Preferred Formulary,Wayfarer Care,Health Exchange,2449456,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88749,Northgate Choice HMO Formulary,Northgate Benefit,Managed Medicaid,3107193,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88750,Riverbend POS Formulary,Riverbend Health Plan,Commercial,1858293,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88751,Juniper Choice HMO Formulary,Juniper Care,Managed Medicaid,1792467,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88752,Quarry Select PPO Formulary,Quarry Benefit,Commercial,2721993,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88753,Keystone Choice HMO Formulary,Keystone Insurance,Health Exchange,526930,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88754,Bluegrass HMO Formulary,Bluegrass Insurance,Commercial,1262482,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88755,Monarch Select PPO Formulary,Monarch Health,Commercial,2077305,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88756,Riverbend Select PPO Formulary,Riverbend Health Plan,Managed Medicaid,293364,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88757,Harborview Complete Formulary,Harborview Health Plan,Health Exchange,585812,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88758,Foundry HMO Formulary,Foundry Care,Commercial,1061913,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88759,Lakeside EPO Formulary,Lakeside Insurance,Health Exchange,2502307,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88760,Juniper Advantage Formulary,Juniper Health Plan,Medicare Advantage,2407391,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88761,Ironwood Complete Formulary,Ironwood Care,Commercial,1112998,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88762,Zephyr EPO Formulary,Zephyr Insurance,Commercial,1558168,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88763,Nautilus Complete Formulary,Nautilus Alliance,Commercial,956553,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88764,Keystone Advantage Formulary,Keystone Health Plan,Commercial,2531929,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88765,Monarch PPO Formulary,Monarch Health Plan,Commercial,1113066,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88766,Prairie PPO Formulary,Prairie Care,Medicare Advantage,573701,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88767,Nautilus HMO Formulary,Nautilus Insurance,Commercial,2351227,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88768,Highland PPO Formulary,Highland Health,Commercial,2131202,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88769,Lakeside EPO Formulary,Lakeside Health,Commercial,727471,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88770,Foundry EPO Formulary,Foundry Mutual,Commercial,505071,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88771,Juniper Select PPO Formulary,Juniper Mutual,Commercial,2585821,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88772,Ridgeline Preferred Formulary,Ridgeline Health Plan,Health Exchange,2685312,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88773,Ironwood PPO Formulary,Ironwood Health Plan,Medicare Advantage,1106458,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88774,Granite Choice HMO Formulary,Granite Alliance,Health Exchange,2367394,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88775,Northgate HMO Formulary,Northgate Benefit,Commercial,1206670,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88776,Fairview Preferred Formulary,Fairview Health,Managed Medicaid,772360,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88777,Gateway Select PPO Formulary,Gateway Health,Health Exchange,2869808,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88778,Foundry PPO Formulary,Foundry Health Plan,Commercial,1945357,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88779,Gateway Complete Formulary,Gateway Health,Commercial,3083323,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88780,Foundry HMO Formulary,Foundry Health,Managed Medicaid,2541193,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88781,Silverpeak HMO Formulary,Silverpeak Mutual,Commercial,888349,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88782,Northgate Complete Formulary,Northgate Insurance,Medicare Advantage,3101543,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88783,Juniper Complete Formulary,Juniper Wellness,Medicare Advantage,1642765,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88784,Juniper Advantage Formulary,Juniper Health Plan,Health Exchange,1801845,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88785,Beacon Preferred Formulary,Beacon Alliance,Health Exchange,2729660,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88786,Quarry EPO Formulary,Quarry Insurance,Commercial,2885220,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88787,Harborview PPO Formulary,Harborview Care,Managed Medicaid,466442,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88788,Bluegrass Select PPO Formulary,Bluegrass Benefit,Managed Medicaid,357966,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88789,Lantern HMO Formulary,Lantern Health,Medicare Advantage,2969377,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88790,Brightwater Choice HMO Formulary,Brightwater Insurance,Commercial,900284,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88791,Nautilus PPO Formulary,Nautilus Health,Medicare Advantage,504384,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88792,Zephyr Select PPO Formulary,Zephyr Alliance,Managed Medicaid,2601815,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88793,Lakeside POS Formulary,Lakeside Health,Commercial,81627,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88794,Silverpeak Preferred Formulary,Silverpeak Mutual,Commercial,376102,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88795,Cascade EPO Formulary,Cascade Care,Commercial,3113672,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88796,Yellowstone POS Formulary,Yellowstone Wellness,Commercial,2403364,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88797,Nautilus Complete Formulary,Nautilus Mutual,Health Exchange,2442081,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88798,Sequoia POS Formulary,Sequoia Alliance,Health Exchange,269613,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88799,Redwood Complete Formulary,Redwood Mutual,Commercial,2090294,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88800,Copperfield Complete Formulary,Copperfield Wellness,Commercial,1852569,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88801,Lakeside Advantage Formulary,Lakeside Insurance,Medicare Advantage,2838216,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88802,Copperfield Complete Formulary,Copperfield Care,Commercial,741835,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88803,Ridgeline POS Formulary,Ridgeline Insurance,Commercial,2350516,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88804,Pinecrest Preferred Formulary,Pinecrest Health Plan,Commercial,282032,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88805,Northgate Complete Formulary,Northgate Wellness,Commercial,1442423,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88806,Zephyr PPO Formulary,Zephyr Care,Medicare Advantage,1932365,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88807,Sequoia EPO Formulary,Sequoia Care,Health Exchange,510176,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88808,Oakmont HMO Formulary,Oakmont Alliance,Commercial,2729104,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88809,Oakmont PPO Formulary,Oakmont Mutual,Commercial,2001688,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88810,Juniper Choice HMO Formulary,Juniper Mutual,Health Exchange,2804192,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88811,Nautilus Advantage Formulary,Nautilus Mutual,Medicare Advantage,2179912,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88812,Trailhead HMO Formulary,Trailhead Care,Commercial,1335386,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88813,Granite PPO Formulary,Granite Health Plan,Health Exchange,3007088,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88814,Everest Choice HMO Formulary,Everest Benefit,Commercial,1188485,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88815,Union Choice HMO Formulary,Union Alliance,Health Exchange,1711619,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88816,Gateway EPO Formulary,Gateway Mutual,Managed Medicaid,2283238,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88817,Everest EPO Formulary,Everest Benefit,Commercial,131984,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88818,Sequoia PPO Formulary,Sequoia Care,Commercial,1104497,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88819,Oakmont PPO Formulary,Oakmont Insurance,Medicare Advantage,1436786,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88820,Wayfarer Advantage Formulary,Wayfarer Health Plan,Managed Medicaid,3108350,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88821,Willow Complete Formulary,Willow Benefit,Commercial,629688,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88822,Nautilus Complete Formulary,Nautilus Health Plan,Commercial,1886347,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88823,Trailhead Select PPO Formulary,Trailhead Mutual,Managed Medicaid,2107233,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88824,Pinecrest Preferred Formulary,Pinecrest Health Plan,Commercial,2048249,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88825,Prairie PPO Formulary,Prairie Alliance,Health Exchange,672833,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88826,Juniper PPO Formulary,Juniper Insurance,Managed Medicaid,658005,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88827,Copperfield PPO Formulary,Copperfield Alliance,Commercial,611177,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88828,Stonegate PPO Formulary,Stonegate Alliance,Commercial,2311537,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88829,Wayfarer Complete Formulary,Wayfarer Insurance,Commercial,1597534,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88830,Oakmont EPO Formulary,Oakmont Alliance,Health Exchange,1379055,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88831,Gateway Complete Formulary,Gateway Health,Health Exchange,1178395,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88832,Vantage Preferred Formulary,Vantage Care,Commercial,822096,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88833,Northgate PPO Formulary,Northgate Health Plan,Commercial,878208,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88834,Foundry PPO Formulary,Foundry Mutual,Medicare Advantage,112573,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88835,Trailhead Advantage Formulary,Trailhead Benefit,Commercial,396786,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88836,Stonegate HMO Formulary,Stonegate Insurance,Commercial,1301788,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88837,Stonegate PPO Formulary,Stonegate Health,Commercial,1650525,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88838,Bluegrass HMO Formulary,Bluegrass Mutual,Commercial,864595,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88839,Keystone Select PPO Formulary,Keystone Care,Commercial,1350199,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88840,Monarch PPO Formulary,Monarch Wellness,Commercial,2338960,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88841,Monarch HMO Formulary,Monarch Alliance,Health Exchange,2113965,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88842,Silverpeak Preferred Formulary,Silverpeak Mutual,Medicare Advantage,190288,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88843,Meridian Complete Formulary,Meridian Health,Commercial,2522639,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88844,Yellowstone PPO Formulary,Yellowstone Insurance,Commercial,3115357,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88845,Lakeside Advantage Formulary,Lakeside Insurance,Commercial,2575393,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88846,Redwood Choice HMO Formulary,Redwood Wellness,Commercial,898420,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88847,Meridian PPO Formulary,Meridian Alliance,Commercial,2836535,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88848,Cedar Preferred Formulary,Cedar Care,Commercial,2831949,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88849,Highland EPO Formulary,Highland Mutual,Health Exchange,50363,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88850,Meridian PPO Formulary,Meridian Wellness,Commercial,2869451,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88851,Ironwood Complete Formulary,Ironwood Wellness,Commercial,169333,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88852,Lantern Select PPO Formulary,Lantern Care,Managed Medicaid,2113517,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88853,Zephyr HMO Formulary,Zephyr Health Plan,Managed Medicaid,552904,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88854,Trailhead POS Formulary,Trailhead Insurance,Health Exchange,111961,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88855,Foundry Advantage Formulary,Foundry Mutual,Commercial,525521,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88856,Ironwood Select PPO Formulary,Ironwood Health,Medicare Advantage,2248090,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88857,Gateway PPO Formulary,Gateway Care,Health Exchange,961352,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88858,Gateway HMO Formulary,Gateway Insurance,Health Exchange,2637676,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88859,Yellowstone Select PPO Formulary,Yellowstone Benefit,Commercial,467316,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88860,Trailhead HMO Formulary,Trailhead Wellness,Managed Medicaid,2613650,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88861,Cedar PPO Formulary,Cedar Health,Medicare Advantage,1328989,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88862,Everest HMO Formulary,Everest Mutual,Commercial,2856911,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88863,Riverbend POS Formulary,Riverbend Mutual,Managed Medicaid,2782083,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88864,Brightwater Choice HMO Formulary,Brightwater Care,Health Exchange,2849410,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88865,Riverbend PPO Formulary,Riverbend Care,Managed Medicaid,3006794,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88866,Bluegrass Advantage Formulary,Bluegrass Benefit,Medicare Advantage,3054289,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88867,Harborview Select PPO Formulary,Harborview Health Plan,Managed Medicaid,1843079,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88868,Everest Select PPO Formulary,Everest Benefit,Commercial,48897,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88869,Harborview Choice HMO Formulary,Harborview Mutual,Commercial,855420,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88870,Prairie Choice HMO Formulary,Prairie Benefit,Managed Medicaid,1271745,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88871,Granite POS Formulary,Granite Alliance,Commercial,2694183,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88872,Silverpeak Choice HMO Formulary,Silverpeak Alliance,Health Exchange,1591688,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88873,Meridian Choice HMO Formulary,Meridian Care,Commercial,2341545,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88874,Yellowstone PPO Formulary,Yellowstone Benefit,Commercial,850181,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88875,Stonegate Preferred Formulary,Stonegate Benefit,Commercial,763857,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88876,Cascade Advantage Formulary,Cascade Health Plan,Health Exchange,480437,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88877,Juniper EPO Formulary,Juniper Benefit,Managed Medicaid,2628906,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88878,Willow Preferred Formulary,Willow Wellness,Medicare Advantage,2927331,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88879,Granite Preferred Formulary,Granite Wellness,Commercial,638134,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88880,Lakeside POS Formulary,Lakeside Alliance,Health Exchange,356448,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88881,Sequoia Complete Formulary,Sequoia Benefit,Managed Medicaid,1962278,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88882,Ridgeline Select PPO Formulary,Ridgeline Alliance,Managed Medicaid,1696689,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88883,Silverpeak POS Formulary,Silverpeak Mutual,Commercial,1797675,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88884,Cedar HMO Formulary,Cedar Health Plan,Commercial,1879390,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88885,Brightwater Advantage Formulary,Brightwater Benefit,Medicare Advantage,1976050,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88886,Redwood PPO Formulary,Redwood Mutual,Commercial,1867575,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88887,Copperfield Select PPO Formulary,Copperfield Care,Commercial,427757,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88888,Willow POS Formulary,Willow Benefit,Health Exchange,1395938,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88889,Lakeside PPO Formulary,Lakeside Insurance,Commercial,1197144,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88890,Quarry Advantage Formulary,Quarry Health Plan,Commercial,966797,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88891,Vantage Complete Formulary,Vantage Alliance,Commercial,375189,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88892,Fairview Complete Formulary,Fairview Alliance,Managed Medicaid,141265,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88893,Ridgeline Choice HMO Formulary,Ridgeline Benefit,Commercial,1773031,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88894,Cascade EPO Formulary,Cascade Health,Commercial,1400171,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88895,Union POS Formulary,Union Mutual,Medicare Advantage,470662,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88896,Riverbend PPO Formulary,Riverbend Health Plan,Health Exchange,2545691,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88897,Keystone POS Formulary,Keystone Insurance,Commercial,1235985,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88898,Meridian Choice HMO Formulary,Meridian Health Plan,Medicare Advantage,1655414,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88899,Quarry Advantage Formulary,Quarry Care,Commercial,559975,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88900,Pinecrest POS Formulary,Pinecrest Insurance,Managed Medicaid,3021359,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88901,Oakmont Advantage Formulary,Oakmont Care,Managed Medicaid,1050322,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88902,Granite Select PPO Formulary,Granite Care,Health Exchange,1928888,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88903,Monarch EPO Formulary,Monarch Wellness,Managed Medicaid,3090448,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88904,Wayfarer Advantage Formulary,Wayfarer Care,Health Exchange,198142,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88905,Copperfield POS Formulary,Copperfield Care,Medicare Advantage,1740025,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88906,Foundry Complete Formulary,Foundry Mutual,Commercial,1075180,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88907,Prairie Choice HMO Formulary,Prairie Mutual,Health Exchange,1689961,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88908,Northgate Choice HMO Formulary,Northgate Health Plan,Health Exchange,3155174,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88909,Vantage Complete Formulary,Vantage Wellness,Commercial,1989626,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88910,Riverbend Select PPO Formulary,Riverbend Health Plan,Commercial,2257500,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88911,Redwood Complete Formulary,Redwood Health Plan,Commercial,761335,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88912,Trailhead Advantage Formulary,Trailhead Care,Health Exchange,1308205,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88913,Willow Choice HMO Formulary,Willow Wellness,Commercial,853800,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88914,Gateway HMO Formulary,Gateway Wellness,Commercial,420183,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88915,Riverbend Choice HMO Formulary,Riverbend Benefit,Managed Medicaid,2643932,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88916,Ironwood HMO Formulary,Ironwood Wellness,Commercial,1371302,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88917,Meridian POS Formulary,Meridian Mutual,Medicare Advantage,938150,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88918,Fairview Select PPO Formulary,Fairview Mutual,Managed Medicaid,2110373,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88919,Foundry EPO Formulary,Foundry Mutual,Commercial,750391,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88920,Zephyr Advantage Formulary,Zephyr Alliance,Managed Medicaid,2701837,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88921,Northgate POS Formulary,Northgate Insurance,Health Exchange,1812250,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88922,Ridgeline POS Formulary,Ridgeline Insurance,Commercial,1591001,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88923,Oakmont EPO Formulary,Oakmont Benefit,Commercial,1346853,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88924,Gateway POS Formulary,Gateway Benefit,Commercial,2277037,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88925,Trailhead EPO Formulary,Trailhead Benefit,Medicare Advantage,2656499,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88926,Harborview POS Formulary,Harborview Health Plan,Commercial,399866,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88927,Nautilus Select PPO Formulary,Nautilus Alliance,Commercial,3041919,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88928,Silverpeak Select PPO Formulary,Silverpeak Insurance,Managed Medicaid,1895185,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88929,Lantern EPO Formulary,Lantern Mutual,Medicare Advantage,1866265,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88930,Keystone HMO Formulary,Keystone Mutual,Commercial,2511379,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88931,Everest Select PPO Formulary,Everest Alliance,Medicare Advantage,2372794,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88932,Willow POS Formulary,Willow Health Plan,Commercial,68830,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88933,Juniper Complete Formulary,Juniper Mutual,Commercial,2703753,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88934,Wayfarer POS Formulary,Wayfarer Health Plan,Medicare Advantage,1085631,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88935,Keystone POS Formulary,Keystone Mutual,Commercial,2018726,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88936,Bluegrass EPO Formulary,Bluegrass Alliance,Commercial,1052732,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88937,Lantern Preferred Formulary,Lantern Care,Commercial,1788959,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88938,Sequoia Select PPO Formulary,Sequoia Mutual,Health Exchange,1741413,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88939,Fairview Select PPO Formulary,Fairview Mutual,Commercial,721315,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88940,Trailhead Select PPO Formulary,Trailhead Mutual,Health Exchange,1822533,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88941,Willow EPO Formulary,Willow Alliance,Managed Medicaid,477372,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88942,Stonegate Select PPO Formulary,Stonegate Wellness,Medicare Advantage,1863557,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88943,Keystone Select PPO Formulary,Keystone Care,Commercial,1450089,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88944,Meridian Select PPO Formulary,Meridian Health,Commercial,2805563,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88945,Keystone Complete Formulary,Keystone Insurance,Medicare Advantage,3189717,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88946,Foundry Choice HMO Formulary,Foundry Wellness,Health Exchange,1686309,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88947,Meridian Advantage Formulary,Meridian Alliance,Health Exchange,597433,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88948,Juniper Complete Formulary,Juniper Alliance,Managed Medicaid,1747778,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88949,Granite Complete Formulary,Granite Benefit,Commercial,2559948,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88950,Quarry Advantage Formulary,Quarry Care,Commercial,2561671,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88951,Cedar Preferred Formulary,Cedar Insurance,Medicare Advantage,719864,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88952,Silverpeak POS Formulary,Silverpeak Wellness,Commercial,3174370,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88953,Pinecrest Advantage Formulary,Pinecrest Benefit,Commercial,939324,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88954,Union HMO Formulary,Union Alliance,Health Exchange,1410869,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88955,Vantage POS Formulary,Vantage Mutual,Commercial,1101718,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88956,Gateway HMO Formulary,Gateway Wellness,Managed Medicaid,1557400,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88957,Everest Preferred Formulary,Everest Health,Commercial,1643000,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88958,Trailhead HMO Formulary,Trailhead Wellness,Medicare Advantage,53539,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88959,Ridgeline EPO Formulary,Ridgeline Alliance,Managed Medicaid,1203635,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88960,Northgate Complete Formulary,Northgate Insurance,Health Exchange,919732,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88961,Beacon POS Formulary,Beacon Wellness,Health Exchange,3100856,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88962,Everest PPO Formulary,Everest Health Plan,Managed Medicaid,1660364,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88963,Lantern Preferred Formulary,Lantern Care,Health Exchange,1202155,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88964,Foundry Select PPO Formulary,Foundry Health,Medicare Advantage,2760733,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88965,Copperfield POS Formulary,Copperfield Health Plan,Commercial,3153943,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88966,Riverbend Advantage Formulary,Riverbend Health Plan,Medicare Advantage,2864799,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88967,Stonegate HMO Formulary,Stonegate Health,Managed Medicaid,2741707,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88968,Silverpeak HMO Formulary,Silverpeak Health,Commercial,1678648,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88969,Cedar Advantage Formulary,Cedar Alliance,Commercial,2667198,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88970,Cedar Complete Formulary,Cedar Care,Health Exchange,2820117,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88971,Yellowstone Advantage Formulary,Yellowstone Health Plan,Medicare Advantage,2718634,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88972,Summit Advantage Formulary,Summit Health Plan,Health Exchange,97822,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88973,Union POS Formulary,Union Care,Health Exchange,507101,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88974,Foundry PPO Formulary,Foundry Care,Commercial,2427064,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88975,Granite HMO Formulary,Granite Care,Managed Medicaid,1267326,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88976,Silverpeak PPO Formulary,Silverpeak Insurance,Managed Medicaid,1245595,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88977,Trailhead Preferred Formulary,Trailhead Benefit,Managed Medicaid,895130,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88978,Beacon POS Formulary,Beacon Insurance,Commercial,2540576,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88979,Nautilus Preferred Formulary,Nautilus Care,Commercial,1108347,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88980,Bluegrass EPO Formulary,Bluegrass Mutual,Managed Medicaid,869643,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88981,Wayfarer Advantage Formulary,Wayfarer Health Plan,Commercial,1341911,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88982,Summit HMO Formulary,Summit Insurance,Managed Medicaid,476332,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88983,Juniper Select PPO Formulary,Juniper Benefit,Commercial,961929,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88984,Keystone HMO Formulary,Keystone Care,Commercial,2223199,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88985,Wayfarer Preferred Formulary,Wayfarer Insurance,Commercial,2562901,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88986,Stonegate Preferred Formulary,Stonegate Benefit,Managed Medicaid,2509004,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88987,Sequoia EPO Formulary,Sequoia Health Plan,Commercial,1603805,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2025-11-01,2026-07-01
+2026-07-01,FRM88988,Zephyr Complete Formulary,Zephyr Mutual,Commercial,1856131,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88989,Trailhead Select PPO Formulary,Trailhead Wellness,Health Exchange,379662,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88990,Summit HMO Formulary,Summit Wellness,Commercial,2428053,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88991,Meridian Preferred Formulary,Meridian Mutual,Health Exchange,587222,00078-0912-01,Onvantra,On Formulary,None,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88992,Brightwater PPO Formulary,Brightwater Wellness,Health Exchange,1797490,00078-0912-01,Onvantra,On Formulary,PA;QL,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88993,Pinecrest EPO Formulary,Pinecrest Wellness,Commercial,1554523,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88994,Keystone Choice HMO Formulary,Keystone Health Plan,Commercial,1432501,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88995,Copperfield POS Formulary,Copperfield Insurance,Commercial,3110504,00078-0912-01,Onvantra,On Formulary,QL,Specialty,2026-05-01,2026-07-01
+2026-07-01,FRM88996,Granite Complete Formulary,Granite Alliance,Commercial,1507098,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2026-01-15,2026-07-01
+2026-07-01,FRM88997,Riverbend Choice HMO Formulary,Riverbend Health,Health Exchange,795802,00078-0912-01,Onvantra,On Formulary,None,Specialty,2026-03-01,2026-07-01
+2026-07-01,FRM88998,Ridgeline HMO Formulary,Ridgeline Wellness,Managed Medicaid,2172208,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-10-01,2026-07-01
+2026-07-01,FRM88999,Beacon POS Formulary,Beacon Insurance,Medicare Advantage,1673255,00078-0912-01,Onvantra,On Formulary,PA,Specialty,2025-11-01,2026-07-01

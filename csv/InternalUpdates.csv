@@ -1,0 +1,3 @@
+Update_Date,Source,Payer_Name,Plan_Name,HCPCS_Code,Product_Name,Field,Prior_Value,New_Value,Note,Entered_By
+2026-08-12,Field Intel,Cascade Care,Cascade Select HMO,J9345,Onvantra,Site_of_Care_Restriction,Physician Office,Physician Office; Outpatient Hospital,Rep confirmed OP hospital allowed pending policy publish,A. Chauhan
+2026-08-18,Payer Call,Harborview Health Plan,Harborview Preferred PPO,J9345,Onvantra,Prior_Auth_Note,,Peer-to-peer required for step-edit exception,Medical director requires P2P for override,N. Kumar

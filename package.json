@@ -6,17 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed": "node scripts/seed.mjs",
+    "diff": "node lib/diff.mjs",
+    "reset": "npm run seed && npm run diff",
+    "smoke": "bash scripts/api-smoke.sh"
   },
   "dependencies": {
     "lucide-react": "^1.41.0",
     "next": "16.3.4",
+    "nodemailer": "^10.0.0",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "zod": "^4.5.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/nodemailer": "^8.0.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

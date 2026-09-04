@@ -1,18 +1,18 @@
 "use client";
 
-import type { ConflictType, Material } from "@/data/synthetic";
-import { CONFLICT_TYPE_LABEL } from "@/data/synthetic";
+import type { ChangeTypeGroup, Material } from "@/lib/types";
+import { formatDate } from "@/lib/format";
 import { ComplianceBadge } from "@/components/ui/ComplianceBadge";
 import { CheckboxCard } from "@/components/ui/CheckboxCard";
 import { InfoBox } from "@/components/ui/InfoBox";
 
 export function Step2Materials({
-  conflictType,
+  changeTypeGroup,
   materials,
   selectedIds,
   onToggle,
 }: {
-  conflictType: ConflictType;
+  changeTypeGroup: ChangeTypeGroup;
   materials: Material[];
   selectedIds: string[];
   onToggle: (id: string) => void;
@@ -22,7 +22,7 @@ export function Step2Materials({
     <div className="flex flex-col gap-5 px-6 py-5">
       <div>
         <p className="eyebrow">
-          MLR-approved materials — {CONFLICT_TYPE_LABEL[conflictType]}
+          MLR-approved materials — {changeTypeGroup}
         </p>
         <p className="mt-1.5 text-[13px] leading-relaxed text-[var(--muted)]">
           All relevant materials are pre-selected. Deselect any you wish to
@@ -37,7 +37,7 @@ export function Step2Materials({
             checked={selectedIds.includes(m.id)}
             onChange={() => onToggle(m.id)}
             title={m.title}
-            subtitle={`${m.category} · ${m.owner} · ${m.date}`}
+            subtitle={`${m.category} · ${m.owner} · ${formatDate(m.reviewed_at)}`}
             right={<ComplianceBadge />}
           />
         ))}
