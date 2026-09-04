@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import type { ChangeTypeGroup, PayerChange } from "@/lib/types";
 import { GROUP_ORDER } from "@/lib/types";
 import { formatDate, formatTimestamp } from "@/lib/format";
@@ -15,9 +16,9 @@ import { ValueTransition } from "@/components/ui/ValueTransition";
 import { ProvenanceMeta } from "@/components/ui/ProvenanceMeta";
 import { Accordion } from "@/components/ui/Accordion";
 import { ResolutionSummaryAuditTrail } from "@/features/payer-change/ResolutionSummaryAuditTrail";
-import { ResolvedSummariesTable } from "@/features/payer-change/ResolvedSummariesTable";
 import { AppShell } from "@/components/layout/AppShell";
 import { PayerChangeDrawer } from "@/features/payer-change/PayerChangeDrawer";
+import { plural } from "@/lib/plural";
 
 function ChangeRow({
   change,
@@ -45,7 +46,7 @@ function ChangeRow({
           {resolved ? (
             <ProvenanceMeta
               parts={[
-                `${change.affected_account_ids.length} accounts resolved`,
+                `${(change.resolved_account_ids ?? change.affected_account_ids).length} ${plural((change.resolved_account_ids ?? change.affected_account_ids).length, "account")} resolved`,
                 `Eff. ${formatDate(change.effective_date)}`,
                 `by ${change.resolved_by ?? ""}`,
                 change.resolved_at ? formatTimestamp(change.resolved_at) : "",
@@ -54,7 +55,7 @@ function ChangeRow({
           ) : (
             <ProvenanceMeta
               parts={[
-                `${change.affected_account_ids.length} accounts affected`,
+                `${change.affected_account_ids.length} ${plural(change.affected_account_ids.length, "account")} affected`,
                 `Eff. ${formatDate(change.effective_date)}`,
               ]}
             />
@@ -75,8 +76,14 @@ function ChangeRow({
 }
 
 export default function PayerChangesPage() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const { conflicts, loading, error } = useConflictState();
   const [drawerChangeId, setDrawerChangeId] = useState<string | null>(null);
+  const reviewPlanId = searchParams.get("reviewPlan");
+  const reviewedChangeId =
+    conflicts.find((conflict) => conflict.plan_id === reviewPlanId)?.id ??
+    drawerChangeId;
 
   const openCount = selectOpenCount(conflicts);
   const resolvedCount = selectResolvedCount(conflicts);
@@ -99,11 +106,18 @@ export default function PayerChangesPage() {
   }, [conflicts]);
 
   const drawerChange =
-    conflicts.find((c) => c.id === drawerChangeId) ?? null;
+    conflicts.find((c) => c.id === reviewedChangeId) ?? null;
+  const closeDrawer = () => {
+    setDrawerChangeId(null);
+    if (reviewPlanId) router.replace("/payer-changes");
+  };
 
   return (
     <AppShell>
-      <main className="mx-auto max-w-[1440px] px-8 py-6">
+      {/* w-full: body is a column flex container, so mx-auto alone would
+          disable stretch and shrink-wrap main to its content (mobile-like
+          narrow column). w-full restores desktop full-width up to max-w. */}
+      <main className="mx-auto w-full max-w-[1440px] px-8 py-6">
       {/* Banner — conflict is the hero */}
       <section className="card overflow-hidden" aria-label="Payer change alert">
         <div className="bg-[var(--magenta)] px-6 py-4">
@@ -111,8 +125,8 @@ export default function PayerChangesPage() {
             <h1 className="text-[18px] font-bold text-white">Payer Change</h1>
             <StatusPill variant="open" count={openCount} />
             <span className="text-[13px] text-white/90">
-              · {resolvedCount} of {conflicts.length} plan conflicts resolved
-              today
+              · {resolvedCount} of {conflicts.length} plan{" "}
+              {conflicts.length === 1 ? "conflict" : "conflicts"} resolved today
             </span>
           </div>
         </div>
@@ -138,7 +152,7 @@ export default function PayerChangesPage() {
               title={group}
               right={
                 <span className="text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--magenta)]">
-                  {openPlans} plans open
+                  {openPlans} {plural(openPlans, "plan")} open
                 </span>
               }
             >
@@ -156,13 +170,6 @@ export default function PayerChangesPage() {
         })}
       </div>
 
-      {/* Resolved summaries table */}
-      {resolvedConflicts.length > 0 && (
-        <div className="mt-4">
-          <ResolvedSummariesTable resolvedConflicts={resolvedConflicts} />
-        </div>
-      )}
-
       {/* Resolution Summary & Audit Trail */}
       <div className="mt-4">
         <ResolutionSummaryAuditTrail resolvedConflicts={resolvedConflicts} />
@@ -173,7 +180,7 @@ export default function PayerChangesPage() {
           key={drawerChange.id}
           change={drawerChange}
           openCount={openCount}
-          onClose={() => setDrawerChangeId(null)}
+          onClose={closeDrawer}
         />
       )}
       </main>

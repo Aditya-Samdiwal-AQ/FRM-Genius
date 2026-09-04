@@ -79,6 +79,9 @@ export interface PayerChange {
   resolved_by?: string;
   corrected_path_source?: ChangeSource;
   corrected_path_value?: string;
+  // Accounts the FRM actually resolved/notified (subset of
+  // affected_account_ids). Absent when the whole territory was resolved.
+  resolved_account_ids?: string[];
 }
 
 export interface InternalUpdate {

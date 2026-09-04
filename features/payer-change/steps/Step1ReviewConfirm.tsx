@@ -15,13 +15,11 @@ export function Step1ReviewConfirm({
   accounts,
   selectedIds,
   onToggle,
-  onNext,
 }: {
   change: PayerChange;
   accounts: DetailAccount[];
   selectedIds: string[];
   onToggle: (id: string) => void;
-  onNext: () => void;
 }) {
   const [showDetail, setShowDetail] = useState(false);
   const typeLabel = change.change_type_group;
@@ -131,22 +129,14 @@ export function Step1ReviewConfirm({
       {/* Action summary */}
       <InfoBox variant="green">
         <p className="font-semibold text-[var(--ink)]">
-          {selectedCount} account{selectedCount === 1 ? "" : "s"} will be updated
-          to: {change.authoritative.value}
+          {selectedCount} {selectedCount === 1 ? "account" : "accounts"} will be
+          updated to: {change.authoritative.value}
         </p>
         <p className="mt-0.5 text-[var(--muted)]">
           System-generated from {SOURCE} data. Jordan Lee remains the
           decision-maker.
         </p>
       </InfoBox>
-
-      <button
-        type="button"
-        onClick={onNext}
-        className="self-start rounded-lg bg-[var(--indigo-dark)] px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--indigo)]"
-      >
-        Select materials →
-      </button>
     </div>
   );
 }

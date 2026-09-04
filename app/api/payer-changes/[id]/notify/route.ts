@@ -34,7 +34,7 @@ export async function POST(
       { status: 400 },
     );
   }
-  const { material_ids } = parsed.data;
+  const { material_ids, account_ids } = parsed.data;
 
   const change = (db.payerChanges() as PayerChange[]).find((c) => c.id === id);
   if (!change) {
@@ -47,10 +47,26 @@ export async function POST(
     );
   }
 
+  // Truth rule: only the accounts the FRM selected in Step 1 receive the
+  // email. Defaults to every affected account when account_ids is omitted.
+  const targetAccountIds = account_ids ?? change.resolved_account_ids ?? change.affected_account_ids;
+  const invalidAccounts = targetAccountIds.some(
+    (aid) => !change.affected_account_ids.includes(aid),
+  );
+  if (targetAccountIds.length === 0 || invalidAccounts) {
+    return Response.json(
+      {
+        error:
+          "account_ids must be a non-empty subset of the change's affected accounts.",
+      },
+      { status: 400 },
+    );
+  }
+
   try {
     const notification = await sendChangeNotification({
       change,
-      accountIds: change.affected_account_ids,
+      accountIds: targetAccountIds,
       materialIds: material_ids,
     });
     return Response.json({ ok: true, notification });

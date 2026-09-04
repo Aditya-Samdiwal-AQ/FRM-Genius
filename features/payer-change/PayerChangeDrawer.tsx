@@ -11,6 +11,7 @@ import { Step1ReviewConfirm } from "@/features/payer-change/steps/Step1ReviewCon
 import { Step2Materials } from "@/features/payer-change/steps/Step2Materials";
 import { Step3Communicate } from "@/features/payer-change/steps/Step3Communicate";
 import { ConfirmSendDialog } from "@/features/payer-change/ConfirmSendDialog";
+import { plural } from "@/lib/plural";
 
 type Step = 1 | 2 | 3;
 
@@ -84,8 +85,9 @@ export function PayerChangeDrawer({
     setSending(true);
     setError(undefined);
     try {
-      // Backend contract: resolve first (sets corrected path + audit events),
-      // then notify (sends the templated email to affected accounts).
+      // Backend contract: resolve first (sets corrected path + resolved
+      // accounts + audit events), then notify (sends the templated email to
+      // exactly the accounts the FRM kept selected in Step 1).
       await resolveAndNotify({
         changeId: change.id,
         correctedPathSource: (change.corrected_path_source ??
@@ -93,6 +95,7 @@ export function PayerChangeDrawer({
         correctedPathValue:
           change.corrected_path_value ?? change.authoritative.value,
         materialIds: selectedMaterialIds,
+        accountIds: selectedAccountIds,
       });
       setSending(false);
       setConfirmOpen(false);
@@ -117,7 +120,7 @@ export function PayerChangeDrawer({
       ? "Select materials →"
       : step === 2
         ? "Preview message →"
-        : `Send to ${selectedAccountIds.length} offices →`;
+        : `Send to ${selectedAccountIds.length} ${plural(selectedAccountIds.length, "office")} →`;
 
   const footer = confirmOpen ? (
     <ConfirmSendDialog
@@ -178,7 +181,6 @@ export function PayerChangeDrawer({
               accounts={accounts}
               selectedIds={selectedAccountIds}
               onToggle={toggleAccount}
-              onNext={() => setStep(2)}
             />
           )}
           {step === 2 && (

@@ -44,7 +44,7 @@ export function Step2Materials({
       </div>
 
       <InfoBox variant="gray">
-        {selectedCount} material{selectedCount === 1 ? "" : "s"} will be
+        {selectedCount} {selectedCount === 1 ? "material" : "materials"} will be
         attached. No promotional or non-approved content is selectable.
       </InfoBox>
     </div>
