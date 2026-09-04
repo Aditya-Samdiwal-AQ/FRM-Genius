@@ -179,7 +179,6 @@ export function PayerChangeDrawer({
               accounts={accounts}
               selectedIds={selectedAccountIds}
               onToggle={toggleAccount}
-              onNext={() => setStep(2)}
             />
           )}
           {step === 2 && (

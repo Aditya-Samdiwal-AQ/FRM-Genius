@@ -26,6 +26,33 @@ export function useAssistant() {
 
   const faqs = useMemo(() => loadFaqs(), []);
 
+  // Live-entity aliases (payer/plan names) fetched once from the real DB —
+  // questions that name a specific conflict must be answered from live data,
+  // not the canned FAQ deck (user requirement: real-time DB answers).
+  const aliasesRef = useRef<string[] | null>(null);
+  const ensureAliases = useCallback(async (): Promise<string[]> => {
+    if (aliasesRef.current) return aliasesRef.current;
+    try {
+      const res = await fetch("/api/payer-changes?status=all", {
+        cache: "no-store",
+      });
+      const data = (await res.json()) as {
+        groups?: { changes?: { payer_name?: string; plan_name?: string }[] }[];
+      };
+      const aliases: string[] = [];
+      for (const g of data.groups ?? []) {
+        for (const c of g.changes ?? []) {
+          if (c.payer_name) aliases.push(c.payer_name.toLowerCase());
+          if (c.plan_name) aliases.push(c.plan_name.toLowerCase());
+        }
+      }
+      aliasesRef.current = aliases;
+    } catch {
+      aliasesRef.current = [];
+    }
+    return aliasesRef.current;
+  }, []);
+
   /** §11.3 step 2 — accordion toggle; opening one closes the others. */
   const toggleFaq = useCallback(
     (id: string) => {
@@ -33,6 +60,19 @@ export function useAssistant() {
     },
     [],
   );
+
+  /**
+   * Related FAQs for the currently open FAQ entry: 3 closely-related
+   * suggestions (scored against the open entry's question + keywords),
+   * excluding the open entry itself. Empty when nothing is open.
+   */
+  const relatedFaqs = useMemo((): FaqEntry[] => {
+    if (openFaqId === null) return [];
+    const openEntry = faqs.find((f) => f.id === openFaqId);
+    if (!openEntry) return [];
+    const context = `${openEntry.question} ${openEntry.keywords.join(" ")}`;
+    return suggestFaqs(context, [openEntry.id], 3, faqs);
+  }, [openFaqId, faqs]);
 
   /** §11.5 — resolve an ask through the pipeline and append the reply. */
   const ask = useCallback(
@@ -49,7 +89,16 @@ export function useAssistant() {
         { id: makeId(), role: "user", kind: "faq", text: trimmed },
       ]);
 
-      const match = matchFaq(trimmed, faqs);
+      // Entity-aware routing: a question that names a specific conflict
+      // (payer/plan alias) must be answered from the live DB, not the canned
+      // FAQ deck — the user's requirement is real-time DB answers.
+      const aliases = await ensureAliases();
+      const lower = trimmed.toLowerCase();
+      const namesSpecificConflict = aliases.some((alias) =>
+        lower.includes(alias),
+      );
+
+      const match = namesSpecificConflict ? null : matchFaq(trimmed, faqs);
       if (match) {
         // 3a — verbatim FAQ answer; the agent is NOT called.
         setMessages((prev) => [
@@ -65,7 +114,8 @@ export function useAssistant() {
         return;
       }
 
-      // 3b — no local match: escalate to the agent (mock until backend lands).
+      // 3b — no local match (or a specific conflict was named): escalate to
+      // the real-DB agent endpoint.
       setSending(true);
       try {
         const result = await askAgent(trimmed);
@@ -134,6 +184,7 @@ export function useAssistant() {
     error,
     faqs,
     suggestions,
+    relatedFaqs,
     toggleFaq,
     ask,
     clear,

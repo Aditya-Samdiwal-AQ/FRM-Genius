@@ -2,8 +2,8 @@
 
 // Resolved summaries table — one row per resolved plan conflict.
 // Enriches each row with the audit endpoint's resolution_summary
-// (accounts notified + materials sent); falls back to the PayerChange
-// record while those load.
+// (accounts notified + materials sent). Numbers reflect only what was
+// actually recorded — no fallback to reference values.
 
 import { useEffect, useState } from "react";
 import type { PayerChange } from "@/lib/types";
@@ -87,19 +87,14 @@ export function ResolvedSummariesTable({
           <tbody>
             {resolvedConflicts.map((c) => {
               const summary = summaries[c.id];
-              const corrected =
-                summary?.corrected_path_value ??
-                c.corrected_path_value ??
-                c.authoritative.value;
-              const source =
-                summary?.corrected_path_source ??
-                c.corrected_path_source ??
-                c.authoritative.source;
+              // Truth rule: corrected path + accounts come ONLY from what was
+              // actually recorded (resolve/notify records), never from the
+              // reference (authoritative) values or the affected-account list.
+              const corrected = summary?.corrected_path_value ?? c.corrected_path_value;
+              const source = summary?.corrected_path_source ?? c.corrected_path_source;
               const resolvedBy = summary?.resolved_by ?? c.resolved_by ?? FRM_NAME;
               const resolvedAt = summary?.resolved_at ?? c.resolved_at ?? null;
-              const accounts = summary
-                ? summary.accounts_notified.length
-                : c.affected_account_ids.length;
+              const accounts = summary ? summary.accounts_notified.length : null;
               const materials =
                 summary === undefined
                   ? "…"
@@ -115,10 +110,16 @@ export function ResolvedSummariesTable({
                     <p className="provenance mt-0.5">{c.change_type_group}</p>
                   </td>
                   <td className="px-4 py-3">
-                    <p className="font-semibold text-[var(--green)]">{corrected}</p>
-                    <p className="provenance mt-0.5">
-                      {source} · {c.authoritative.source_date}
-                    </p>
+                    {corrected ? (
+                      <>
+                        <p className="font-semibold text-[var(--green)]">{corrected}</p>
+                        <p className="provenance mt-0.5">
+                          {source} · {c.authoritative.source_date}
+                        </p>
+                      </>
+                    ) : (
+                      <p className="provenance text-[var(--muted)]">Not recorded</p>
+                    )}
                   </td>
                   <td className="px-4 py-3 text-[var(--ink)]">
                     {formatDate(c.effective_date)}
@@ -130,7 +131,7 @@ export function ResolvedSummariesTable({
                     </p>
                   </td>
                   <td className="px-4 py-3 text-right font-semibold text-[var(--ink)]">
-                    {accounts}
+                    {accounts === null ? "—" : accounts}
                   </td>
                   <td className="px-6 py-3 text-right font-semibold text-[var(--ink)]">
                     {materials}

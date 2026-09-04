@@ -42,7 +42,7 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtn0pqx8-001i"
+    "detection_id": "chg-mtn5zehh-0007"
   },
   {
     "update_date": "2026-08-01",
@@ -57,7 +57,7 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtn0pqx8-001j"
+    "detection_id": "chg-mtn5zehh-0008"
   },
   {
     "update_date": "2026-08-01",
@@ -72,7 +72,7 @@
     "new_value": "Not Covered",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtn0pqx8-001k"
+    "detection_id": "chg-mtn5zehh-0009"
   },
   {
     "update_date": "2026-08-01",
@@ -87,7 +87,7 @@
     "new_value": "Physician Office",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtn0pqx8-001l"
+    "detection_id": "chg-mtn5zehh-000a"
   },
   {
     "update_date": "2026-08-01",
@@ -102,6 +102,6 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtn0pqx8-001m"
+    "detection_id": "chg-mtn5zehh-000b"
   }
 ]

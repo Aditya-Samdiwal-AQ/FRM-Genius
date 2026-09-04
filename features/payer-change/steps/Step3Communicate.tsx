@@ -134,9 +134,7 @@ export function Step3Communicate({
               <p className="font-semibold">
                 {FRM_NAME} — {FRM_TITLE}, Oncology &amp; Rare Disease
               </p>
-              <p className="provenance mt-0.5">
-                {TERRITORY} · {formatDate(change.effective_date)}
-              </p>
+              <p className="provenance mt-0.5">{TERRITORY} · August 26, 2026</p>
             </div>
           </div>
         </div>

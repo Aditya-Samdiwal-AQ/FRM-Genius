@@ -1,9 +1,5 @@
 "use client";
 
-// FRM Assistant — FAQ mode body (Plan.md §11.2 #4).
-// SUGGESTED eyebrow + one FaqItem per entry, grouped under its category label.
-// The list is long enough to scroll — later FAQs are reachable by scrolling.
-
 import type { FaqEntry } from "@/lib/faq";
 import { FaqItem } from "./FaqItem";
 
@@ -11,26 +7,28 @@ interface FaqListProps {
   faqs: FaqEntry[];
   openId: string | null;
   onToggle: (id: string) => void;
+  /** 3 closely-related suggested FAQs for the currently open entry. */
+  relatedFaqs?: FaqEntry[];
 }
 
-export function FaqList({ faqs, openId, onToggle }: FaqListProps) {
-  const categories: string[] = [];
-  for (const faq of faqs) {
-    if (!categories.includes(faq.category)) categories.push(faq.category);
-  }
-
+/**
+ * FAQ fast-path list (§11.3 step 2). Shows at most 4 entries under a single
+ * "FAQs" header — the full 13-item deck was overwhelming. When the user opens
+ * one, FaqItem renders 3 closely-related suggested FAQs below the answer.
+ */
+export function FaqList({ faqs, openId, onToggle, relatedFaqs }: FaqListProps) {
   return (
     <div>
-      <p className="eyebrow mb-1">Suggested</p>
-      {categories.map((category) => (
-        <section key={category}>
-          <p className="provenance mt-3 mb-1 uppercase">{category}</p>
-          {faqs
-            .filter((faq) => faq.category === category)
-            .map((faq) => (
-              <FaqItem key={faq.id} faq={faq} open={openId === faq.id} onToggle={onToggle} />
-            ))}
-        </section>
+      <p className="eyebrow mb-1">FAQs</p>
+      {faqs.slice(0, 4).map((faq) => (
+        <FaqItem
+          key={faq.id}
+          faq={faq}
+          open={openId === faq.id}
+          onToggle={onToggle}
+          related={openId === faq.id ? relatedFaqs : undefined}
+          onRelatedToggle={onToggle}
+        />
       ))}
     </div>
   );

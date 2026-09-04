@@ -79,11 +79,14 @@ function ResolvedChangeCard({ changeId }: { changeId: string }) {
   const { change, audit_events, resolution_summary } = audit;
   const typeLabel = change.change_type_group;
   const planLabel = change.plan_name;
-  const corrected =
-    resolution_summary.corrected_path_value ?? change.authoritative.value;
-  const correctedSource =
-    resolution_summary.corrected_path_source ?? change.authoritative.source;
-  const notified = resolution_summary.accounts_notified.length;
+  // Truth rule: show ONLY what was actually recorded. The resolve endpoint
+  // always stamps corrected_path_* on the change, so no fallback to the
+  // reference (authoritative) values — those are inputs, not events.
+  const corrected = resolution_summary.corrected_path_value;
+  const correctedSource = resolution_summary.corrected_path_source;
+  // "Accounts notified" is true only when a Notification record exists.
+  const notifiedIds = resolution_summary.accounts_notified;
+  const notified = notifiedIds.length;
   const materials = resolution_summary.materials_sent;
   const resolvedTs = resolution_summary.resolved_at
     ? formatTimestamp(resolution_summary.resolved_at)
@@ -117,13 +120,21 @@ function ResolvedChangeCard({ changeId }: { changeId: string }) {
         <div>
           <p className="eyebrow mb-2">Corrected path</p>
           <div className="rounded-xl border border-[var(--green-border)] bg-[var(--green-bg)] px-4 py-3">
-            <p className="text-[14px] font-semibold text-[var(--green)]">
-              {corrected}
-            </p>
-            <p className="provenance mt-1.5">
-              {correctedSource} · {change.authoritative.source_date} ·{" "}
-              {planLabel}
-            </p>
+            {corrected ? (
+              <>
+                <p className="text-[14px] font-semibold text-[var(--green)]">
+                  {corrected}
+                </p>
+                <p className="provenance mt-1.5">
+                  {correctedSource} · {change.authoritative.source_date} ·{" "}
+                  {planLabel}
+                </p>
+              </>
+            ) : (
+              <p className="provenance text-[var(--muted)]">
+                Not recorded — no corrected path was selected for this conflict.
+              </p>
+            )}
             <p className="provenance">
               Effective: {formatDate(change.effective_date)}
             </p>
@@ -143,44 +154,56 @@ function ResolvedChangeCard({ changeId }: { changeId: string }) {
           </ol>
         </div>
 
-        {/* RIGHT — accounts notified + materials sent */}
+        {/* RIGHT — accounts notified + materials sent (truth: from records) */}
         <div>
           <p className="eyebrow mb-2">Accounts notified ({notified})</p>
-          <ul className="flex flex-col gap-2">
-            {resolution_summary.accounts_notified.map((accountId) => (
-              <li
-                key={accountId}
-                className="flex items-center justify-between rounded-lg border border-[var(--border)] px-3 py-2"
-              >
-                <span className="text-[13px] font-semibold text-[var(--ink)]">
-                  {accountId}
-                </span>
-                <span className="text-[10px] font-semibold tracking-wide text-[var(--green)]">
-                  RESOLVED
-                </span>
-              </li>
-            ))}
-          </ul>
+          {notified === 0 ? (
+            <p className="provenance">
+              None yet — no notification has been sent for this conflict.
+            </p>
+          ) : (
+            <ul className="flex flex-col gap-2">
+              {notifiedIds.map((accountId) => (
+                <li
+                  key={accountId}
+                  className="flex items-center justify-between rounded-lg border border-[var(--border)] px-3 py-2"
+                >
+                  <span className="text-[13px] font-semibold text-[var(--ink)]">
+                    {accountId}
+                  </span>
+                  <span className="text-[10px] font-semibold tracking-wide text-[var(--green)]">
+                    NOTIFIED
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
 
           <p className="eyebrow mb-2 mt-4">
             Materials sent ({materials.length})
           </p>
-          <ul className="flex flex-col gap-2">
-            {materials.map((m) => (
-              <li
-                key={m.id}
-                className="flex items-center justify-between rounded-lg border border-[var(--border)] px-3 py-2"
-              >
-                <span className="text-[13px] font-semibold text-[var(--ink)]">
-                  {m.title}
-                </span>
-                <span className="inline-flex items-center gap-1 text-[10px] font-semibold tracking-wide text-[var(--green)]">
-                  <ShieldCheck size={11} aria-hidden />
-                  COMPLIANCE-REVIEWED
-                </span>
-              </li>
-            ))}
-          </ul>
+          {materials.length === 0 ? (
+            <p className="provenance">
+              None yet — no materials have been sent for this conflict.
+            </p>
+          ) : (
+            <ul className="flex flex-col gap-2">
+              {materials.map((m) => (
+                <li
+                  key={m.id}
+                  className="flex items-center justify-between rounded-lg border border-[var(--border)] px-3 py-2"
+                >
+                  <span className="text-[13px] font-semibold text-[var(--ink)]">
+                    {m.title}
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-[10px] font-semibold tracking-wide text-[var(--green)]">
+                    <ShieldCheck size={11} aria-hidden />
+                    COMPLIANCE-REVIEWED
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </article>

@@ -85,6 +85,14 @@ export interface DevResetResponse {
   resolved_changes: number;
 }
 
+/** POST /api/dev/diff — re-run the MMIT diff engine against the live DB. */
+export interface DevDiffResponse {
+  ok: true;
+  total_changes: number;
+  open_changes: number;
+  resolved_changes: number;
+}
+
 // ---------------------------------------------------------------------------
 // Fetch helpers.
 // ---------------------------------------------------------------------------
@@ -184,4 +192,9 @@ export function getAccounts(): Promise<AccountsResponse> {
 
 export function resetDemoData(): Promise<DevResetResponse> {
   return post<DevResetResponse>("/api/dev/reset");
+}
+
+/** POST /api/dev/diff — simulate a fresh MMIT data drop (dev/demo only). */
+export function simulateMmitUpdate(): Promise<DevDiffResponse> {
+  return post<DevDiffResponse>("/api/dev/diff");
 }

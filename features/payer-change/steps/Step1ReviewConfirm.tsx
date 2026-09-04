@@ -15,13 +15,11 @@ export function Step1ReviewConfirm({
   accounts,
   selectedIds,
   onToggle,
-  onNext,
 }: {
   change: PayerChange;
   accounts: DetailAccount[];
   selectedIds: string[];
   onToggle: (id: string) => void;
-  onNext: () => void;
 }) {
   const [showDetail, setShowDetail] = useState(false);
   const typeLabel = change.change_type_group;
@@ -139,14 +137,6 @@ export function Step1ReviewConfirm({
           decision-maker.
         </p>
       </InfoBox>
-
-      <button
-        type="button"
-        onClick={onNext}
-        className="self-start rounded-lg bg-[var(--indigo-dark)] px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--indigo)]"
-      >
-        Select materials →
-      </button>
     </div>
   );
 }

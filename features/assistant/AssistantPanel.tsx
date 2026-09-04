@@ -40,8 +40,19 @@ export function AssistantPanel({ open, onClose }: AssistantPanelProps) {
 
   if (!open) return null;
 
-  const { mode, messages, openFaqId, sending, faqs, suggestions, toggleFaq, ask, clear, retry } =
-    assistant;
+  const {
+    mode,
+    messages,
+    openFaqId,
+    sending,
+    faqs,
+    suggestions,
+    relatedFaqs,
+    toggleFaq,
+    ask,
+    clear,
+    retry,
+  } = assistant;
 
   return (
     <div
@@ -78,7 +89,12 @@ export function AssistantPanel({ open, onClose }: AssistantPanelProps) {
       {/* Body — scrollable; FAQ list in faq mode, transcript in chat mode */}
       <div className="min-h-0 flex-1 overflow-y-auto px-4 py-3">
         {mode === "faq" ? (
-          <FaqList faqs={faqs} openId={openFaqId} onToggle={toggleFaq} />
+          <FaqList
+            faqs={faqs}
+            openId={openFaqId}
+            onToggle={toggleFaq}
+            relatedFaqs={relatedFaqs}
+          />
         ) : (
           <div className="flex flex-col gap-3">
             {messages.map((msg) => (
