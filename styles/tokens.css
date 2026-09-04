@@ -15,6 +15,9 @@
   --indigo-dark: #1f2a7a;
   --indigo-bg: #eef2ff;
   --border: #e5e7eb;
+  --accent: #2563eb; /* Assistant user bubble (Plan.md §11.2) */
+  --danger: #b91c1c; /* Assistant error bubble (Plan.md §11.2) */
+  --danger-bg: #fef2f2;
 }
 
 /* Tailwind v4 CSS-first theme mapping — enables classes like bg-[var(--magenta)] */
@@ -33,6 +36,9 @@
   --color-indigo-dark: var(--indigo-dark);
   --color-indigo-bg: var(--indigo-bg);
   --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-danger: var(--danger);
+  --color-danger-bg: var(--danger-bg);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains);
 }

@@ -1,0 +1,212 @@
+{
+  "faqs": [
+    {
+      "id": "website-purpose",
+      "question": "Hi, what can FRM Genius help me do?",
+      "answer": "FRM Genius helps Field Reimbursement Managers detect a payer-policy change, see the territory accounts affected by the resulting conflict, resolve the conflict once at the territory level, and notify the impacted offices of the corrected path.",
+      "keywords": [
+        "FRM Genius",
+        "purpose",
+        "field reimbursement manager",
+        "workflow",
+        "conflict resolution"
+      ],
+      "category": "General",
+      "url": "/",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "source-update-alert",
+      "question": "Why am I seeing a warning about an MMIT update?",
+      "answer": "The warning means the synthetic MMIT policy data source was updated and the new value conflicts with an existing policy record for one or more accounts in your territory. Review the alert before the discrepancy causes a treatment-access delay.",
+      "keywords": [
+        "MMIT",
+        "source update",
+        "warning",
+        "alert",
+        "policy change"
+      ],
+      "category": "Alerts",
+      "url": "/",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "affected-accounts",
+      "question": "Which accounts are affected by the policy change?",
+      "answer": "Open the territory impact view from the alert to see the accounts affected by the update. The list shows each account, its plan, the conflicting field, and the previous and updated values.",
+      "keywords": [
+        "affected accounts",
+        "impact",
+        "territory",
+        "plan",
+        "conflict"
+      ],
+      "category": "Conflicts",
+      "url": "/coverage",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "old-vs-new-values",
+      "question": "What changed in the policy record?",
+      "answer": "The conflict view compares the old policy value with the new MMIT value so you can see exactly what changed. The source name, last-updated date, plan, and channel are shown alongside the values.",
+      "keywords": [
+        "old value",
+        "new value",
+        "policy record",
+        "changed field",
+        "comparison"
+      ],
+      "category": "Conflicts",
+      "url": "/coverage",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "provenance-details",
+      "question": "How do I verify where a coverage value came from?",
+      "answer": "Use the provenance details displayed with each record. They identify the source, value, last-updated or effective date, plan, and channel so you can understand where the information came from and which accounts it applies to.",
+      "keywords": [
+        "provenance",
+        "source",
+        "effective date",
+        "last updated",
+        "channel"
+      ],
+      "category": "Compliance",
+      "url": "/coverage",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "resolve-territory-conflict",
+      "question": "Can I resolve the conflict for all affected accounts at once?",
+      "answer": "Yes. Select the territory-level resolve action, review the confirmation step, and choose the true path once. The action updates all affected accounts without requiring you to open them individually.",
+      "keywords": [
+        "resolve",
+        "territory level",
+        "all accounts",
+        "true path",
+        "bulk action"
+      ],
+      "category": "Resolution",
+      "url": "/coverage",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "resolve-confirmation",
+      "question": "What happens when I confirm the true path?",
+      "answer": "The conflict is cleared for the affected territory accounts, and they return to a resolved state. The resolution is recorded so the action and its supporting source remain visible.",
+      "keywords": [
+        "confirm",
+        "true path",
+        "resolved state",
+        "audit trail",
+        "recorded action"
+      ],
+      "category": "Resolution",
+      "url": "/coverage",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "notify-impacted-accounts",
+      "question": "How do I notify every impacted office about the correction?",
+      "answer": "After resolving the conflict, use the territory-level notification action to send the corrected path to every impacted account in one motion. The notification includes the supporting source and effective date.",
+      "keywords": [
+        "notify",
+        "impacted offices",
+        "corrected path",
+        "territory notification",
+        "effective date"
+      ],
+      "category": "Communication",
+      "url": "/contact",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "notification-content",
+      "question": "What does the account notification contain?",
+      "answer": "The notification is a factual, MLR-safe template describing the corrected path and identifying the source and effective date. It is designed for compliant communication and does not include free-text promotional content.",
+      "keywords": [
+        "notification",
+        "MLR-safe",
+        "message",
+        "source",
+        "promotional content"
+      ],
+      "category": "Communication",
+      "url": "/contact",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "post-action-status",
+      "question": "How can I tell whether the workflow is complete?",
+      "answer": "The post-action state shows that the conflicts are cleared, the affected accounts are resolved, and the accounts have been notified. The recorded action and provenance details remain visible for review.",
+      "keywords": [
+        "complete",
+        "resolved",
+        "notified",
+        "status",
+        "confirmation"
+      ],
+      "category": "Status",
+      "url": "/coverage",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "synthetic-data",
+      "question": "Is this website using real payer or patient data?",
+      "answer": "No. The core demonstration uses synthetic data, including a synthetic infused oncology product, payers, plans, accounts, policy records, and the seeded MMIT update.",
+      "keywords": [
+        "synthetic data",
+        "patient data",
+        "payer data",
+        "demo",
+        "privacy"
+      ],
+      "category": "General",
+      "url": "/",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "policy-monitoring-scope",
+      "question": "Does FRM Genius automatically monitor live payer policy pages?",
+      "answer": "Live policy monitoring is a stretch goal, not part of the core workflow. The core demonstration injects the synthetic MMIT update as an event; any future public-source monitoring would require provenance capture, source terms review, and legal review.",
+      "keywords": [
+        "monitoring",
+        "live payer page",
+        "public source",
+        "stretch goal",
+        "legal review"
+      ],
+      "category": "Support",
+      "url": "/contact",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "additional-help",
+      "question": "What should I do if I need additional help?",
+      "answer": "Review the source, effective date, plan, channel, and affected-account details shown in the workflow. For assistance beyond the demonstrated scenario, contact your designated support representative.",
+      "keywords": [
+        "help",
+        "support",
+        "assistance",
+        "source details",
+        "contact"
+      ],
+      "category": "Support",
+      "url": "/contact",
+      "status": "published",
+      "locale": "en-US"
+    }
+  ]
+}
