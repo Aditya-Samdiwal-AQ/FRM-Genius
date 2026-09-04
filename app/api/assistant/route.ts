@@ -43,6 +43,82 @@ function words(text: string): string[] {
   return norm(text).split(" ").filter(Boolean);
 }
 
+// ---------------------------------------------------------------------------
+// Topic-awareness — classify the question before composing an answer.
+// FRM-topic questions are answered from the live DB; meaningful but
+// off-topic messages (greetings, thanks, small talk) get a brief, appropriate
+// reply that steers back to FRM topics; gibberish gets a polite
+// "not able to understand" reply.
+// ---------------------------------------------------------------------------
+
+/** Words that signal a substantive FRM-domain question. */
+const TOPIC_WORDS = new Set([
+  "payer", "payor", "plan", "plans", "conflict", "conflicts", "account",
+  "accounts", "office", "offices", "territory", "policy", "policies",
+  "formulary", "mmit", "prior", "authorization", "auth", "step", "therapy",
+  "site", "care", "effective", "material", "materials", "audit", "trail",
+  "notification", "notifications", "notify", "notified", "resolved",
+  "resolve", "resolution", "corrected", "path", "guidance", "change",
+  "changes", "update", "updates", "affected", "open", "status", "provenance",
+  "source", "compliance", "onvexa", "drug", "medication", "coverage",
+  "criteria", "requirement", "requirements", "summary", "summaries",
+  "email", "communicate", "communication", "alert", "alerts", "payer",
+]);
+
+/** Greeting / small-talk / thanks phrases (meaningful, but not FRM topics). */
+const GREETING_RE =
+  /\b(hi|hello|hey|howdy|good\s+(morning|afternoon|evening)|greetings|thanks|thank\s+you|thx|ty|bye|goodbye|see\s+you|nice|great|cool|ok(ay)?|sure|help|what'?s\s+up|sup|yo)\b/;
+
+/** A message is "gibberish" when it has no real words at all. */
+function isGibberish(text: string): boolean {
+  const tokens = words(text);
+  if (tokens.length === 0) return true;
+  // Every token is a short non-word (no vowels or all-consonant noise).
+  return tokens.every(
+    (t) =>
+      t.length <= 3 ||
+      !/[aeiouy]/.test(t) ||
+      !/^[a-z]+$/.test(t),
+  );
+}
+
+type Intent = "topic" | "smalltalk" | "gibberish";
+
+function classifyIntent(question: string): Intent {
+  const q = ` ${norm(question)} `;
+  if (isGibberish(question)) return "gibberish";
+  for (const word of TOPIC_WORDS) {
+    if (q.includes(` ${word} `)) return "topic";
+  }
+  // Multi-word FRM phrases that single-token matching would miss.
+  if (
+    /\b(payer|plan|policy|formulary|coverage|material|audit|notification|conflict|account)\b/.test(
+      q,
+    )
+  ) {
+    return "topic";
+  }
+  if (GREETING_RE.test(q)) return "smalltalk";
+  // A real question mark with several words is treated as a topic attempt.
+  if (question.includes("?") && words(question).length >= 3) return "topic";
+  return "smalltalk";
+}
+
+/** Off-topic but meaningful — greet and steer back to FRM topics. */
+function smallTalkReply(question: string): string {
+  const q = norm(question);
+  if (/\b(thanks|thank you|thx|ty)\b/.test(q)) {
+    return "You're welcome. If you need anything else about payer changes, affected accounts, materials, or audit trails, just ask.";
+  }
+  if (/\b(bye|goodbye|see you)\b/.test(q)) {
+    return "Goodbye! I'm here whenever you need live answers about Territory 14 payer conflicts.";
+  }
+  if (/\b(help|what'?s up|sup)\b/.test(q)) {
+    return "I can answer questions about payer-policy conflicts, affected accounts, corrected paths, notifications, materials, and audit trails. What would you like to know?";
+  }
+  return "Hello! I'm the FRM Assistant for Territory 14 — Great Lakes. I can answer questions about payer-policy conflicts, affected accounts, corrected paths, notifications, materials, and audit trails. What would you like to know?";
+}
+
 /** Distinctive aliases for one payer change (payer + plan name tokens). */
 function changeAliases(change: PayerChange): string[] {
   const aliases = new Set<string>();
@@ -332,6 +408,18 @@ export async function POST(request: NextRequest) {
   }
 
   try {
+    // Topic-awareness: answer FRM-topic questions from the live DB; reply
+    // appropriately to greetings/small talk; ask for a rephrase on gibberish.
+    const intent = classifyIntent(question);
+    if (intent === "gibberish") {
+      return Response.json({
+        answer:
+          "I'm not able to understand that. Could you rephrase your question? I can help with payer changes, affected accounts, materials, notifications, and audit trails.",
+      });
+    }
+    if (intent === "smalltalk") {
+      return Response.json({ answer: smallTalkReply(question) });
+    }
     return Response.json({ answer: composeAnswer(question) });
   } catch {
     return Response.json(

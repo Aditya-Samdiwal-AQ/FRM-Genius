@@ -42,13 +42,18 @@ export interface PayerChangeDetailResponse {
   suggested_materials: Material[];
 }
 
+export interface NotifiedAccount {
+  id: string;
+  name: string;
+}
+
 export interface ResolutionSummary {
   status: "open" | "resolved";
   resolved_at: string | null;
   resolved_by: string | null;
   corrected_path_source: ChangeSource | null;
   corrected_path_value: string | null;
-  accounts_notified: string[];
+  accounts_notified: NotifiedAccount[];
   materials_sent: { id: string; title: string }[];
 }
 
@@ -79,14 +84,6 @@ export interface AccountsResponse {
 }
 
 export interface DevResetResponse {
-  ok: true;
-  total_changes: number;
-  open_changes: number;
-  resolved_changes: number;
-}
-
-/** POST /api/dev/diff — re-run the MMIT diff engine against the live DB. */
-export interface DevDiffResponse {
   ok: true;
   total_changes: number;
   open_changes: number;
@@ -192,9 +189,4 @@ export function getAccounts(): Promise<AccountsResponse> {
 
 export function resetDemoData(): Promise<DevResetResponse> {
   return post<DevResetResponse>("/api/dev/reset");
-}
-
-/** POST /api/dev/diff — simulate a fresh MMIT data drop (dev/demo only). */
-export function simulateMmitUpdate(): Promise<DevDiffResponse> {
-  return post<DevDiffResponse>("/api/dev/diff");
 }

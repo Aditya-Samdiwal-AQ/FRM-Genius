@@ -118,7 +118,7 @@ export function PayerChangeDrawer({
       ? "Select materials →"
       : step === 2
         ? "Preview message →"
-        : `Send to ${selectedAccountIds.length} offices →`;
+        : `Send to ${selectedAccountIds.length} ${plural(selectedAccountIds.length, "office")} →`;
 
   const footer = confirmOpen ? (
     <ConfirmSendDialog

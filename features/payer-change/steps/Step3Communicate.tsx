@@ -59,7 +59,8 @@ export function Step3Communicate({
                 <p>
                   <span className="font-semibold text-[var(--ink)]">To:</span>{" "}
                   <span className="text-[var(--muted)]">
-                    {count} selected offices — {TERRITORY}
+                    {count} selected {count === 1 ? "office" : "offices"} —{" "}
+                    {TERRITORY}
                   </span>
                 </p>
                 <p>

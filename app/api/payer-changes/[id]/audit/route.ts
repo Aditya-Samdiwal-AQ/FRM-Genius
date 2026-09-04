@@ -24,14 +24,18 @@ export async function GET(
     .filter((e) => e.payer_change_id === id)
     .sort((a, b) => a.at.localeCompare(b.at));
 
-  const notification =
-    (db.notifications() as Notification[]).find((n) => n.payer_change_id === id) ?? null;
+  // Truth rule: the LATEST notification for this change is the record of what
+  // was actually communicated (a re-send replaces the earlier one).
+  const notifications = (db.notifications() as Notification[])
+    .filter((n) => n.payer_change_id === id)
+    .sort((a, b) => a.sent_at.localeCompare(b.sent_at));
+  const notification = notifications.at(-1) ?? null;
 
-  const accounts = (db.accounts() as Account[]).filter((a) =>
-    change.affected_account_ids.includes(a.id),
-  );
   const materials = (db.materials() as Material[]).filter((m) =>
     notification?.message.materials.includes(m.title),
+  );
+  const accountsById = new Map(
+    (db.accounts() as Account[]).map((a) => [a.id, a]),
   );
 
   return Response.json({
@@ -44,7 +48,12 @@ export async function GET(
       resolved_by: change.resolved_by ?? null,
       corrected_path_source: change.corrected_path_source ?? null,
       corrected_path_value: change.corrected_path_value ?? null,
-      accounts_notified: notification?.recipient_account_ids ?? [],
+      accounts_notified: (notification?.recipient_account_ids ?? []).map(
+        (accountId) => ({
+          id: accountId,
+          name: accountsById.get(accountId)?.name ?? accountId,
+        }),
+      ),
       materials_sent: materials.map((m) => ({ id: m.id, title: m.title })),
     },
   });

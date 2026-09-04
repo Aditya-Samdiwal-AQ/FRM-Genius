@@ -46,7 +46,7 @@ function ChangeRow({
           {resolved ? (
             <ProvenanceMeta
               parts={[
-                `${change.affected_account_ids.length} accounts resolved`,
+                `${change.affected_account_ids.length} ${plural(change.affected_account_ids.length, "account")} resolved`,
                 `Eff. ${formatDate(change.effective_date)}`,
                 `by ${change.resolved_by ?? ""}`,
                 change.resolved_at ? formatTimestamp(change.resolved_at) : "",
@@ -55,7 +55,7 @@ function ChangeRow({
           ) : (
             <ProvenanceMeta
               parts={[
-                `${change.affected_account_ids.length} accounts affected`,
+                `${change.affected_account_ids.length} ${plural(change.affected_account_ids.length, "account")} affected`,
                 `Eff. ${formatDate(change.effective_date)}`,
               ]}
             />
@@ -112,8 +112,8 @@ export default function PayerChangesPage() {
             <h1 className="text-[18px] font-bold text-white">Payer Change</h1>
             <StatusPill variant="open" count={openCount} />
             <span className="text-[13px] text-white/90">
-              · {resolvedCount} of {conflicts.length} plan conflicts resolved
-              today
+              · {resolvedCount} of {conflicts.length} plan{" "}
+              {conflicts.length === 1 ? "conflict" : "conflicts"} resolved today
             </span>
           </div>
         </div>

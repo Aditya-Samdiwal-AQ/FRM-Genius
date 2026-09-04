@@ -1,6 +1,6 @@
 [
   {
-    "id": "chg-mtn5zehh-0007",
+    "id": "chg-mtn7g7mi-0001",
     "change_type": "step_therapy_required",
     "change_type_group": "PA / step-therapy requirement",
     "field": "step_therapy_required",
@@ -26,10 +26,14 @@
       "ACC003"
     ],
     "detected_at": "2026-08-01",
-    "status": "open"
+    "status": "resolved",
+    "resolved_at": "2026-09-04T17:06:09.762Z",
+    "resolved_by": "Jordan Lee",
+    "corrected_path_source": "MMIT",
+    "corrected_path_value": "Y"
   },
   {
-    "id": "chg-mtn5zehh-0008",
+    "id": "chg-mtn7g7mi-0002",
     "change_type": "pa_required",
     "change_type_group": "PA / step-therapy requirement",
     "field": "pa_required",
@@ -58,7 +62,7 @@
     "status": "open"
   },
   {
-    "id": "chg-mtn5zehh-0009",
+    "id": "chg-mtn7g7mi-0003",
     "change_type": "coverage_status",
     "change_type_group": "Coverage status change",
     "field": "coverage_status",
@@ -87,7 +91,7 @@
     "status": "open"
   },
   {
-    "id": "chg-mtn5zehh-000a",
+    "id": "chg-mtn7g7mi-0004",
     "change_type": "site_of_care_restriction",
     "change_type_group": "Site-of-care requirement",
     "field": "site_of_care_restriction",
@@ -116,7 +120,7 @@
     "status": "open"
   },
   {
-    "id": "chg-mtn5zehh-000b",
+    "id": "chg-mtn7g7mi-0005",
     "change_type": "quantity_limit",
     "change_type_group": "Quantity limit change",
     "field": "quantity_limit",

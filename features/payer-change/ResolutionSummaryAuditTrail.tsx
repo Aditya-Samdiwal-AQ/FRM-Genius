@@ -7,7 +7,6 @@ import { formatDate, formatTimestamp } from "@/lib/format";
 import { FRM_NAME } from "@/data/synthetic";
 import { getPayerChangeAudit, type PayerChangeAuditResponse } from "@/services/api";
 import { ComplianceBadge } from "@/components/ui/ComplianceBadge";
-import { plural } from "@/lib/plural";
 
 function AuditEventRow({
   event,
@@ -85,8 +84,9 @@ function ResolvedChangeCard({ changeId }: { changeId: string }) {
   const corrected = resolution_summary.corrected_path_value;
   const correctedSource = resolution_summary.corrected_path_source;
   // "Accounts notified" is true only when a Notification record exists.
-  const notifiedIds = resolution_summary.accounts_notified;
-  const notified = notifiedIds.length;
+  // The audit endpoint resolves each ID to the account's display name.
+  const notifiedAccounts = resolution_summary.accounts_notified;
+  const notified = notifiedAccounts.length;
   const materials = resolution_summary.materials_sent;
   const resolvedTs = resolution_summary.resolved_at
     ? formatTimestamp(resolution_summary.resolved_at)
@@ -163,13 +163,13 @@ function ResolvedChangeCard({ changeId }: { changeId: string }) {
             </p>
           ) : (
             <ul className="flex flex-col gap-2">
-              {notifiedIds.map((accountId) => (
+              {notifiedAccounts.map((account) => (
                 <li
-                  key={accountId}
+                  key={account.id}
                   className="flex items-center justify-between rounded-lg border border-[var(--border)] px-3 py-2"
                 >
                   <span className="text-[13px] font-semibold text-[var(--ink)]">
-                    {accountId}
+                    {account.name}
                   </span>
                   <span className="text-[10px] font-semibold tracking-wide text-[var(--green)]">
                     NOTIFIED

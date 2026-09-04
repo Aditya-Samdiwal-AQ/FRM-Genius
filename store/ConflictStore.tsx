@@ -18,7 +18,6 @@ import {
   notifyPayerChange,
   resetDemoData,
   resolvePayerChange,
-  simulateMmitUpdate,
 } from "@/services/api";
 
 export type ConflictState = {
@@ -74,7 +73,6 @@ const ConflictActionsContext = createContext<{
     materialIds: string[];
   }) => Promise<void>;
   resetDemo: () => Promise<void>;
-  simulateMmitUpdate: () => Promise<void>;
 } | null>(null);
 
 export function ConflictStoreProvider({ children }: { children: ReactNode }) {
@@ -120,13 +118,6 @@ export function ConflictStoreProvider({ children }: { children: ReactNode }) {
       async resetDemo() {
         dispatch({ type: "RESET_START" });
         await resetDemoData();
-        await actions.refresh();
-      },
-
-      async simulateMmitUpdate() {
-        // Simulate a fresh MMIT data drop: re-run the diff engine against the
-        // live DB, then reload so any new/updated conflicts appear.
-        await simulateMmitUpdate();
         await actions.refresh();
       },
     }),

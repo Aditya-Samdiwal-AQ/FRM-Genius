@@ -129,8 +129,8 @@ export function Step1ReviewConfirm({
       {/* Action summary */}
       <InfoBox variant="green">
         <p className="font-semibold text-[var(--ink)]">
-          {selectedCount} account{selectedCount === 1 ? "" : "s"} will be updated
-          to: {change.authoritative.value}
+          {selectedCount} {selectedCount === 1 ? "account" : "accounts"} will be
+          updated to: {change.authoritative.value}
         </p>
         <p className="mt-0.5 text-[var(--muted)]">
           System-generated from {SOURCE} data. Jordan Lee remains the

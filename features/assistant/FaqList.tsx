@@ -17,10 +17,20 @@ interface FaqListProps {
  * one, FaqItem renders 3 closely-related suggested FAQs below the answer.
  */
 export function FaqList({ faqs, openId, onToggle, relatedFaqs }: FaqListProps) {
+  // Chip navigation fix: a suggested FAQ opened via a chip may live outside the
+  // top-4 slice. Include the open entry in the visible list so it renders
+  // expanded (with its own Suggested chips) instead of silently closing.
+  const topFour = faqs.slice(0, 4);
+  const openEntry = openId ? faqs.find((f) => f.id === openId) : undefined;
+  const visible =
+    openEntry && !topFour.some((f) => f.id === openEntry.id)
+      ? [...topFour, openEntry]
+      : topFour;
+
   return (
     <div>
       <p className="eyebrow mb-1">FAQs</p>
-      {faqs.slice(0, 4).map((faq) => (
+      {visible.map((faq) => (
         <FaqItem
           key={faq.id}
           faq={faq}
