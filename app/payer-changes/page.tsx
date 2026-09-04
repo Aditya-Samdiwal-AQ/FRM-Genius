@@ -104,7 +104,10 @@ export default function PayerChangesPage() {
 
   return (
     <AppShell>
-      <main className="mx-auto max-w-[1440px] px-8 py-6">
+      {/* w-full: body is a column flex container, so mx-auto alone would
+          disable stretch and shrink-wrap main to its content (mobile-like
+          narrow column). w-full restores desktop full-width up to max-w. */}
+      <main className="mx-auto w-full max-w-[1440px] px-8 py-6">
       {/* Banner — conflict is the hero */}
       <section className="card overflow-hidden" aria-label="Payer change alert">
         <div className="bg-[var(--magenta)] px-6 py-4">
