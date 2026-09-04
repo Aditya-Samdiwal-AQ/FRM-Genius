@@ -207,6 +207,64 @@
       "url": "/contact",
       "status": "published",
       "locale": "en-US"
+    },
+    {
+      "id": "frm-terms-and-abbreviations",
+      "question": "What do the FRM terms and abbreviations mean?",
+      "answer": "FRM means Field Reimbursement Manager. HCP means Healthcare Provider. A payer is the insurance organization covering healthcare costs, and a plan is a specific insurance plan under that payer. A formulary is the list of drugs covered by a health plan; a medical policy contains rules governing a drug's coverage and reimbursement. An account is a hospital, clinic, oncology practice, or healthcare organization managed by an FRM. A territory is the geographic region assigned to an FRM, and lives are the covered members or patients under a plan. PA means Prior Authorization, ST means Step Therapy, and QL means Quantity Limit.",
+      "keywords": [
+        "FRM abbreviation",
+        "HCP",
+        "PA",
+        "ST",
+        "QL",
+        "prior authorization",
+        "step therapy",
+        "quantity limit",
+        "what does FRM mean"
+      ],
+      "category": "Glossary",
+      "url": "/",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "formulary-data-fields",
+      "question": "What do the formulary data fields mean?",
+      "answer": "Formulary_ID is the unique formulary identifier; Formulary_Name is the formulary name; Payer_Name is the insurance company; Channel is the market segment, such as Commercial, Medicare, or Medicaid; Lives is the covered population; NDC is the National Drug Code; Product_Name is the drug or therapy name; Formulary_Status is the coverage status within the formulary; Restriction identifies coverage restrictions; Tier is the drug placement or tier; Effective_Date is when the policy takes effect; and As_Of_Date is the snapshot or extract date.",
+      "keywords": [
+        "formulary fields",
+        "formulary column",
+        "Formulary_ID",
+        "Formulary_Status",
+        "NDC",
+        "tier",
+        "As_Of_Date"
+      ],
+      "category": "Glossary",
+      "url": "/",
+      "status": "published",
+      "locale": "en-US"
+    },
+    {
+      "id": "medical-policy-and-account-fields",
+      "question": "What do the medical policy and account data fields mean?",
+      "answer": "In the medical policy dataset, Payer_ID and Plan_ID are unique payer and plan identifiers; Plan_Name is the insurance plan; HCPCS_Code is the healthcare billing code; Product_Name is the drug name; Medical_Policy_Number is the policy reference; Coverage_Status shows whether it is covered; PA_Required, Step_Therapy_Required, and Quantity_Limit indicate whether those restrictions apply; Site_of_Care_Restriction lists allowed treatment locations; Bulletin_URL is the source policy document; and Policy_Effective_Date is the policy effective date. In the account dataset, Account_ID is the unique account identifier; Account_Name is the provider organization; Territory is the assigned geographic region; HCP_Specialty is the provider specialty; Primary_Plan_ID and Primary_Plan_Name identify the associated plan; Payer_Name is the payer; and Channel is the market segment.",
+      "keywords": [
+        "medical policy fields",
+        "medical policy column",
+        "Medical_Policy_Number",
+        "HCPCS_Code",
+        "PA_Required",
+        "Site_of_Care_Restriction",
+        "account fields",
+        "Account_ID",
+        "HCP_Specialty"
+      ],
+      "category": "Glossary",
+      "url": "/",
+      "status": "published",
+      "locale": "en-US"
     }
   ]
 }

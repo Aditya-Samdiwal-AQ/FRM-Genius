@@ -119,6 +119,11 @@ function smallTalkReply(question: string): string {
   return "Hello! I'm the FRM Assistant for Territory 14 — Great Lakes. I can answer questions about payer-policy conflicts, affected accounts, corrected paths, notifications, materials, and audit trails. What would you like to know?";
 }
 
+function isUnintelligible(text: string): boolean {
+  const tokens = words(text);
+  return tokens.length === 1 && tokens[0].length >= 4 && !/[aeiou]/.test(tokens[0]);
+}
+
 /** Distinctive aliases for one payer change (payer + plan name tokens). */
 function changeAliases(change: PayerChange): string[] {
   const aliases = new Set<string>();
@@ -371,16 +376,18 @@ function composeAnswer(question: string): string {
     );
   }
 
-  // 8. Fallback — live territory snapshot.
-  const openList = open
-    .map((c) => `${c.payer_name} — ${c.plan_name}`)
-    .join("; ");
-  return (
-    `FRM Genius watches payer-policy changes for Territory 14 — Great Lakes. ` +
-    `Right now: ${open.length} open plan conflict${open.length === 1 ? "" : "s"}` +
-    (open.length > 0 ? ` (${openList})` : "") +
-    `, ${resolved.length} resolved. Ask about a specific payer (Meridian, Cascade, Granite, Harborview, Summit), plan, account, notification, or audit trail for live answers.`
-  );
+  // 8. Standalone greetings receive a welcome without exposing territory data.
+  if (/^(hi|hello|hey|greetings|good (morning|afternoon|evening))( there)?$/.test(norm(question))) {
+    return "Hello! Welcome to FRM Genius. I can help with payer-policy changes, plans, accounts, notifications, materials, and audit trails.";
+  }
+
+  // 9. Clearly malformed input receives a clarification request.
+  if (isUnintelligible(question)) {
+    return "I did not understand your question. Please rephrase it or ask an FRM-related question.";
+  }
+
+  // 10. Unrecognized requests must not expose an unsolicited territory summary.
+  return "I can only help with FRM Genius payer-policy changes, plans, accounts, notifications, materials, and audit trails. Please ask an FRM-related question.";
 }
 
 export async function POST(request: NextRequest) {
