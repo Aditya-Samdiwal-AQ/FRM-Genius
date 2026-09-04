@@ -22,6 +22,9 @@ export interface Account {
   territory: string;
   plan_id: PlanId;
   zip: string;
+  /** Truth flags — set only when this account was actually resolved/notified. */
+  resolved?: boolean;
+  notified?: boolean;
 }
 
 export interface PolicyRecord {
@@ -150,6 +153,8 @@ function accountsFor(planId: PlanId, count: number): Account[] {
 }
 
 // Seed: 5 plan conflicts — 1 resolved (Aetna PPO), 4 open. Plan.md §2.3.
+// The resolved seed is internally consistent: its 3 accounts carry
+// resolved/notified flags, so every derived count matches what happened.
 export const SEED_CONFLICTS: Conflict[] = [
   {
     id: "conf-aetna-ppo-soc",
@@ -160,7 +165,11 @@ export const SEED_CONFLICTS: Conflict[] = [
     source: SOURCE,
     source_updated: SOURCE_UPDATED,
     effective_date: "2026-09-01",
-    accounts: accountsFor("aetna-ppo", 3),
+    accounts: accountsFor("aetna-ppo", 3).map((a) => ({
+      ...a,
+      resolved: true,
+      notified: true,
+    })),
     status: "resolved",
     resolved_by: FRM_NAME,
     resolved_at: "Aug 26, 2026, 21:36",

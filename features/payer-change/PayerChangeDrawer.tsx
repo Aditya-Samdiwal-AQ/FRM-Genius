@@ -18,6 +18,7 @@ import { Step1ReviewConfirm } from "@/features/payer-change/steps/Step1ReviewCon
 import { Step2Materials } from "@/features/payer-change/steps/Step2Materials";
 import { Step3Communicate } from "@/features/payer-change/steps/Step3Communicate";
 import { ConfirmSendDialog } from "@/features/payer-change/ConfirmSendDialog";
+import { plural } from "@/lib/plural";
 
 type Step = 1 | 2 | 3;
 
@@ -120,7 +121,7 @@ export function PayerChangeDrawer({
     (step === 2 && selectedMaterialIds.length === 0);
 
   const primaryLabel =
-    step === 1 ? "Select materials →" : step === 2 ? "Preview message →" : `Send to ${selectedAccountIds.length} offices →`;
+    step === 1 ? "Select materials →" : step === 2 ? "Preview message →" : `Send to ${selectedAccountIds.length} ${plural(selectedAccountIds.length, "office")} →`;
 
   const footer = confirmOpen ? (
     <ConfirmSendDialog

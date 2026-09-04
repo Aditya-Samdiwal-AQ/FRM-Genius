@@ -2,6 +2,7 @@ import { Check, ShieldCheck } from "lucide-react";
 import type { Conflict } from "@/data/synthetic";
 import { CONFLICT_TYPE_LABEL, FRM_NAME, SOURCE, SOURCE_UPDATED, TERRITORY } from "@/data/synthetic";
 import { ComplianceBadge } from "@/components/ui/ComplianceBadge";
+import { plural } from "@/lib/plural";
 
 function AuditEvent({
   event,
@@ -66,7 +67,9 @@ export function ResolutionSummaryAuditTrail({
           const typeLabel = CONFLICT_TYPE_LABEL[c.conflictType];
           const planLabel = c.plan.plan_name;
           const accounts = c.accounts;
-          const notified = c.notified_offices ?? accounts.length;
+          // Truth: only what actually happened in this resolution.
+          const notifiedAccounts = accounts.filter((a) => a.notified);
+          const resolvedAccounts = accounts.filter((a) => a.resolved);
           const materials = c.materials;
           const resolvedTs = c.resolved_at ?? "";
           return (
@@ -113,7 +116,7 @@ export function ResolutionSummaryAuditTrail({
                       ts={resolvedTs}
                     />
                     <AuditEvent
-                      event={`Conflict flagged: ${accounts.length} accounts in ${TERRITORY}`}
+                      event={`Conflict flagged: ${accounts.length} ${plural(accounts.length, "account")} in ${TERRITORY}`}
                       actor="System"
                       ts={resolvedTs}
                     />
@@ -123,17 +126,17 @@ export function ResolutionSummaryAuditTrail({
                       ts={resolvedTs}
                     />
                     <AuditEvent
-                      event={`${accounts.length} accounts resolved at territory level`}
+                      event={`${resolvedAccounts.length} ${plural(resolvedAccounts.length, "account")} resolved at territory level`}
                       actor={FRM_NAME}
                       ts={resolvedTs}
                     />
                     <AuditEvent
-                      event={`${materials.length} compliance-reviewed materials attached`}
+                      event={`${materials.length} compliance-reviewed ${plural(materials.length, "material")} attached`}
                       actor={FRM_NAME}
                       ts={resolvedTs}
                     />
                     <AuditEvent
-                      event={`Corrected path communicated to ${notified} offices`}
+                      event={`Corrected path communicated to ${notifiedAccounts.length} ${plural(notifiedAccounts.length, "office")}`}
                       actor={FRM_NAME}
                       ts={resolvedTs}
                     />
@@ -148,9 +151,11 @@ export function ResolutionSummaryAuditTrail({
 
                 {/* RIGHT — accounts notified + materials sent */}
                 <div>
-                  <p className="eyebrow mb-2">Accounts notified ({notified})</p>
+                  <p className="eyebrow mb-2">
+                    Accounts notified ({notifiedAccounts.length} {plural(notifiedAccounts.length, "office")})
+                  </p>
                   <ul className="flex flex-col gap-2">
-                    {accounts.map((a) => (
+                    {notifiedAccounts.map((a) => (
                       <li
                         key={a.id}
                         className="flex items-center justify-between rounded-lg border border-[var(--border)] px-3 py-2"
@@ -171,7 +176,7 @@ export function ResolutionSummaryAuditTrail({
                   </ul>
 
                   <p className="eyebrow mb-2 mt-4">
-                    Materials sent ({materials.length})
+                    Materials sent ({materials.length} {plural(materials.length, "material")})
                   </p>
                   <ul className="flex flex-col gap-2">
                     {materials.map((m) => (

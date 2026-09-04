@@ -3,6 +3,7 @@
 import type { ConflictType } from "@/data/synthetic";
 import { CONFLICT_TYPE_LABEL } from "@/data/synthetic";
 import { InfoBox } from "@/components/ui/InfoBox";
+import { plural } from "@/lib/plural";
 
 export function ConfirmSendDialog({
   recipientsCount,
@@ -36,10 +37,10 @@ export function ConfirmSendDialog({
       <div className="flex items-center justify-between gap-6">
         <div className="min-w-0">
           <p className="text-[15px] font-bold text-[var(--ink)]">
-            Send to {recipientsCount} offices?
+            Send to {recipientsCount} {plural(recipientsCount, "office")}?
           </p>
           <p className="mt-0.5 text-[13px] leading-relaxed text-[var(--muted)]">
-            This will notify {recipientsCount} offices of the corrected{" "}
+            This will notify {recipientsCount} {plural(recipientsCount, "office")} of the corrected{" "}
             {typeLabel} guidance. The email is generated from the
             compliance-reviewed template above.
           </p>

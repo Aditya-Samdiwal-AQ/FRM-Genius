@@ -19,6 +19,7 @@ import { Accordion } from "@/components/ui/Accordion";
 import { ResolutionSummaryAuditTrail } from "@/features/payer-change/ResolutionSummaryAuditTrail";
 import { AppShell } from "@/components/layout/AppShell";
 import { PayerChangeDrawer } from "@/features/payer-change/PayerChangeDrawer";
+import { plural } from "@/lib/plural";
 
 function ChangeRow({
   conflict,
@@ -46,7 +47,7 @@ function ChangeRow({
           {resolved ? (
             <ProvenanceMeta
               parts={[
-                `${conflict.notified_offices ?? conflict.accounts.length} accounts resolved`,
+                `${conflict.notified_offices ?? conflict.accounts.length} ${plural(conflict.notified_offices ?? conflict.accounts.length, "account")} resolved`,
                 `Eff. ${conflict.effective_date}`,
                 `by ${conflict.resolved_by}`,
                 conflict.resolved_at ?? "",
@@ -55,7 +56,7 @@ function ChangeRow({
           ) : (
             <ProvenanceMeta
               parts={[
-                `${conflict.accounts.length} accounts affected`,
+                `${conflict.accounts.length} ${plural(conflict.accounts.length, "account")} affected`,
                 `Eff. ${conflict.effective_date}`,
               ]}
             />
@@ -125,7 +126,7 @@ export default function PayerChangesPage() {
               title={CONFLICT_TYPE_LABEL[type]}
               right={
                 <span className="text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--magenta)]">
-                  {openPlans} plans open
+                  {openPlans} {plural(openPlans, "plan")} open
                 </span>
               }
             >

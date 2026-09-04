@@ -12,6 +12,7 @@ import {
 } from "@/data/synthetic";
 import { ComplianceBadge } from "@/components/ui/ComplianceBadge";
 import { InfoBox } from "@/components/ui/InfoBox";
+import { plural } from "@/lib/plural";
 
 export function Step3Communicate({
   conflict,
@@ -30,7 +31,7 @@ export function Step3Communicate({
     <div className="flex flex-col gap-5 px-6 py-5">
       {/* RECIPIENTS */}
       <section aria-label="Recipients">
-        <p className="eyebrow mb-2">Recipients ({count} offices)</p>
+        <p className="eyebrow mb-2">Recipients ({count} {plural(count, "office")})</p>
         <div className="flex flex-wrap gap-2">
           {recipients.map((r) => (
             <span
@@ -54,7 +55,7 @@ export function Step3Communicate({
                 <p>
                   <span className="font-semibold text-[var(--ink)]">To:</span>{" "}
                   <span className="text-[var(--muted)]">
-                    {count} selected offices — Territory 14
+                    {count} selected {plural(count, "office")} — Territory 14
                   </span>
                 </p>
                 <p>
