@@ -46,7 +46,7 @@ function ChangeRow({
           {resolved ? (
             <ProvenanceMeta
               parts={[
-                `${change.affected_account_ids.length} ${plural(change.affected_account_ids.length, "account")} resolved`,
+                `${(change.resolved_account_ids ?? change.affected_account_ids).length} ${plural((change.resolved_account_ids ?? change.affected_account_ids).length, "account")} resolved`,
                 `Eff. ${formatDate(change.effective_date)}`,
                 `by ${change.resolved_by ?? ""}`,
                 change.resolved_at ? formatTimestamp(change.resolved_at) : "",

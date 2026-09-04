@@ -71,6 +71,7 @@ const ConflictActionsContext = createContext<{
     correctedPathSource: ChangeSource;
     correctedPathValue: string;
     materialIds: string[];
+    accountIds?: string[];
   }) => Promise<void>;
   resetDemo: () => Promise<void>;
 } | null>(null);
@@ -103,14 +104,16 @@ export function ConflictStoreProvider({ children }: { children: ReactNode }) {
         correctedPathSource,
         correctedPathValue,
         materialIds,
+        accountIds,
       }) {
-        // 1. Resolve (sets status + corrected path + audit events).
+        // 1. Resolve (sets corrected path + resolved accounts + audit events).
         const { change } = await resolvePayerChange(changeId, {
           corrected_path_source: correctedPathSource,
           corrected_path_value: correctedPathValue,
+          account_ids: accountIds,
         });
-        // 2. Notify (sends email to affected accounts, persists Notification).
-        await notifyPayerChange(changeId, materialIds);
+        // 2. Notify (sends email to the selected accounts, persists Notification).
+        await notifyPayerChange(changeId, materialIds, accountIds);
         // 3. Reconcile the resolved change into local state.
         dispatch({ type: "UPSERT_CHANGE", change });
       },
@@ -124,9 +127,11 @@ export function ConflictStoreProvider({ children }: { children: ReactNode }) {
     [],
   );
 
-  // Initial fetch on mount.
+  // Initial fetch on mount. Every full page load (refresh) first restores the
+  // seeded state, so resolutions are session-scoped: resolve a conflict →
+  // summaries/audit appear → refresh the page → back to 0 resolved.
   useEffect(() => {
-    void actions.refresh();
+    void actions.resetDemo();
   }, [actions]);
 
   return (

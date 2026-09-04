@@ -85,8 +85,9 @@ export function PayerChangeDrawer({
     setSending(true);
     setError(undefined);
     try {
-      // Backend contract: resolve first (sets corrected path + audit events),
-      // then notify (sends the templated email to affected accounts).
+      // Backend contract: resolve first (sets corrected path + resolved
+      // accounts + audit events), then notify (sends the templated email to
+      // exactly the accounts the FRM kept selected in Step 1).
       await resolveAndNotify({
         changeId: change.id,
         correctedPathSource: (change.corrected_path_source ??
@@ -94,6 +95,7 @@ export function PayerChangeDrawer({
         correctedPathValue:
           change.corrected_path_value ?? change.authoritative.value,
         materialIds: selectedMaterialIds,
+        accountIds: selectedAccountIds,
       });
       setSending(false);
       setConfirmOpen(false);

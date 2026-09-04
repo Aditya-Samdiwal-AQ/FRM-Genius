@@ -33,10 +33,12 @@ export async function POST(
       { status: 400 },
     );
   }
-  const { corrected_path_source, corrected_path_value } = parsed.data;
+  const { corrected_path_source, corrected_path_value, account_ids } =
+    parsed.data;
 
   let notFound = false;
   let alreadyResolved = false;
+  let invalidAccounts = false;
 
   await mutateStore("payerChanges.json", (current: unknown) => {
     const changes = current as PayerChange[];
@@ -49,6 +51,17 @@ export async function POST(
       alreadyResolved = true; // idempotent — no state change, no audit spam
       return current;
     }
+    // Truth rule: only accounts the FRM kept selected are resolved/notified.
+    // Default (no account_ids) = every affected account.
+    const selected = account_ids ?? changes[idx].affected_account_ids;
+    invalidAccounts = selected.some(
+      (aid) => !changes[idx].affected_account_ids.includes(aid),
+    );
+    if (invalidAccounts) return current;
+    if (selected.length === 0) {
+      invalidAccounts = true; // cannot resolve zero accounts
+      return current;
+    }
     const next = [...changes];
     next[idx] = {
       ...changes[idx],
@@ -57,6 +70,7 @@ export async function POST(
       resolved_by: "Jordan Lee",
       corrected_path_source,
       corrected_path_value,
+      resolved_account_ids: selected,
     };
     return next;
   });
@@ -64,9 +78,19 @@ export async function POST(
   if (notFound) {
     return Response.json({ error: `Payer change ${id} not found.` }, { status: 404 });
   }
+  if (invalidAccounts) {
+    return Response.json(
+      {
+        error:
+          "account_ids must be a non-empty subset of the change's affected accounts.",
+      },
+      { status: 400 },
+    );
+  }
 
   const change = (db.payerChanges() as PayerChange[]).find((c) => c.id === id)!;
   const fieldLabel = FIELD_LABEL[change.field] ?? change.field;
+  const resolvedAccounts = change.resolved_account_ids ?? [];
 
   if (!alreadyResolved) {
     await appendAuditEvents([
@@ -80,7 +104,7 @@ export async function POST(
         payer_change_id: id,
         actor: "Jordan Lee",
         event_type: "accounts_resolved",
-        description: `${change.affected_account_ids.length} account${change.affected_account_ids.length === 1 ? "" : "s"} resolved at territory level`,
+        description: `${resolvedAccounts.length} account${resolvedAccounts.length === 1 ? "" : "s"} resolved at territory level`,
       },
     ]);
   }

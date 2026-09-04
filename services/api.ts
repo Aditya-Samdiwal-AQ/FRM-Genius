@@ -160,7 +160,11 @@ export function getPayerChangeAudit(
 
 export function resolvePayerChange(
   id: string,
-  body: { corrected_path_source: ChangeSource; corrected_path_value: string },
+  body: {
+    corrected_path_source: ChangeSource;
+    corrected_path_value: string;
+    account_ids?: string[];
+  },
 ): Promise<ResolveResponse> {
   return post<ResolveResponse>(
     `/api/payer-changes/${encodeURIComponent(id)}/resolve`,
@@ -171,10 +175,11 @@ export function resolvePayerChange(
 export function notifyPayerChange(
   id: string,
   materialIds: string[],
+  accountIds?: string[],
 ): Promise<NotifyResponse> {
   return post<NotifyResponse>(
     `/api/payer-changes/${encodeURIComponent(id)}/notify`,
-    { material_ids: materialIds },
+    { material_ids: materialIds, account_ids: accountIds },
   );
 }
 
