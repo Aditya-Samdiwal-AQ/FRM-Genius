@@ -48,7 +48,7 @@ export function AssistantPanel({ open, onClose }: AssistantPanelProps) {
       ref={rootRef}
       role="dialog"
       aria-label="FRM Assistant"
-      className="card fixed bottom-24 right-6 z-50 flex max-h-[min(560px,calc(100vh-120px))] w-[380px] flex-col overflow-hidden print:hidden"
+      className="card fixed bottom-40 right-6 z-50 flex max-h-[min(560px,calc(100vh-136px))] w-[380px] flex-col overflow-hidden print:hidden"
     >
       {/* Header — dark bar: sparkle + title · Clear · ✕ (§11.2 #3) */}
       <div className="flex items-center justify-between bg-[var(--nav-bg)] px-4 py-3">

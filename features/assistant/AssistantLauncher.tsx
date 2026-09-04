@@ -18,7 +18,7 @@ export function AssistantLauncher({ open, onToggle }: AssistantLauncherProps) {
       aria-label={open ? "Close FRM Assistant" : "Open FRM Assistant"}
       aria-expanded={open}
       onClick={onToggle}
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--magenta)] text-white shadow-lg transition-transform hover:scale-105 print:hidden"
+      className="fixed bottom-20 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--magenta)] text-white shadow-lg transition-transform hover:scale-105 print:hidden"
     >
       {open ? <X size={24} aria-hidden /> : <MessageCircle size={24} aria-hidden />}
     </button>
