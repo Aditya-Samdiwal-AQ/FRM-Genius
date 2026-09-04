@@ -1,5 +1,4 @@
 import { db } from "@/lib/db.mjs";
-import { loadFaqs } from "@/lib/faq";
 import { FIELD_LABEL } from "@/lib/constants.mjs";
 import { formatDate, formatTimestamp } from "@/lib/format";
 import type {
@@ -19,14 +18,16 @@ import type {
  * Builds the live data briefing that grounds the agentic assistant.
  *
  * Everything is read from the data folder (via lib/db.mjs) at request time,
- * so the agent always answers from real-time state. The briefing is FOCUSED:
- * only the rows relevant to the question are serialized, and every aggregate
- * (counts, group-bys, per-status stats) is PRECOMPUTED here — the gateway
- * model cannot reliably count across 1000 rows, so it must never have to.
- *
- * Latency contract: the gateway spends ~1.75 s on a tiny prompt and ~2.3 s on
- * a 200-token prompt, but ~40 s reading a 100 KB briefing. Keeping the
- * serialized payload small is what makes sub-2-second answers possible.
+ * so the agent always answers from real-time state. The briefing is ADAPTIVE:
+ * it is sized to what the question needs, because the gateway generates only
+ * ~23 tokens/s — the LLM can compose an answer inside the 2.8 s budget only
+ * when both the briefing and the expected answer are tiny. Modes:
+ * - "plan":      the matched medical-policy/formulary rows (~150 tokens).
+ * - "aggregate": precomputed counts only (~200 tokens).
+ * - "conflict":  the matched conflict records (rich — the route answers
+ *                from the deterministic snapshot composer, not the LLM).
+ * - "rich":      everything else (rich — same, snapshot composer answers).
+ * Every aggregate is PRECOMPUTED here — the model must never count rows.
  */
 
 function countBy<T>(rows: T[], key: (row: T) => string): string[] {
@@ -101,7 +102,10 @@ const GENERIC_WORDS = new Set([
   "group", "institute", "suite", "clinic",
 ]);
 
+export type BriefingMode = "plan" | "aggregate" | "conflict" | "rich";
+
 export interface AgentBriefing {
+  mode: BriefingMode;
   systemPrompt: string;
   userPrompt: string;
   stats: {
@@ -197,31 +201,10 @@ export function buildAgentBriefing(question: string): AgentBriefing {
     return lines.join("\n");
   });
 
-  const materialLines = materials.map(
-    (m) =>
-      `${m.id}: ${m.title} (${m.category}, owner ${m.owner}, reviewed ${formatDate(m.reviewed_at)}, applies to: ${m.applicable_change_types.join(", ")})`,
-  );
-
-  const internalLines = internalUpdates.map(
-    (u) =>
-      `${u.update_date} | ${u.source} | ${u.payer_name} — ${u.plan_name} (${u.plan_id}) | HCPCS ${u.hcpcs_code} | ${u.product_name} | ${u.field}: "${u.prior_value}" → "${u.new_value}" | note: ${u.note} | entered by ${u.entered_by}`,
-  );
-
-  const notificationLines = notifications.map((n) => {
-    const change = changes.find((c) => c.id === n.payer_change_id);
-    const names = accounts
-      .filter((a) => n.recipient_account_ids.includes(a.id))
-      .map((a) => a.name);
-    return `${change ? `${change.payer_name} — ${change.plan_name}` : n.payer_change_id} | sent ${formatTimestamp(n.sent_at)} by ${n.sent_by} | ${n.recipient_account_ids.length} office(s): ${names.join(", ")} | materials: ${n.message.materials.join("; ")} | transport: ${n.transport}`;
-  });
-
   const accountLines = accounts.map(
     (a) =>
       `${a.id}: ${a.name} | ${a.territory} | ${a.hcp_specialty} | primary plan ${a.primary_plan_name} (${a.payer_name}, ${a.channel}) | ${a.email}`,
   );
-
-  const faqs = loadFaqs();
-  const faqLines = faqs.map((f) => `Q: ${f.question}`);
 
   // ---- Focused snapshot selection: only rows the question can be about ----
   // A row is included when the question names its payer, plan, formulary,
@@ -264,14 +247,85 @@ export function buildAgentBriefing(question: string): AgentBriefing {
     );
   };
 
-  const focusedMedPolicy = includeSnapshots
-    ? medPolicy.filter((r) => rowMatchesQuestion(r.payer_name, r.plan_name))
+  // Exact plan-name matches win: when the question contains a full plan or
+  // formulary name, serialize ONLY those rows — a token match would pull
+  // every plan the payer owns and blow the micro-briefing budget. Otherwise
+  // fall back to token matches, capped so the briefing stays tiny.
+  const MAX_FOCUS_ROWS = 8;
+  const exactMed = includeSnapshots
+    ? medPolicy.filter((r) => qIncludes(r.plan_name.toLowerCase()))
     : [];
-  const focusedFormulary = includeSnapshots
-    ? formulary.filter((r) => rowMatchesQuestion(r.payer_name, r.formulary_name))
+  const focusedMedPolicy =
+    exactMed.length > 0
+      ? exactMed.slice(0, MAX_FOCUS_ROWS)
+      : includeSnapshots
+        ? medPolicy
+            .filter((r) => rowMatchesQuestion(r.payer_name, r.plan_name))
+            .slice(0, MAX_FOCUS_ROWS)
+        : [];
+  const exactForm = includeSnapshots
+    ? formulary.filter(
+        (r) =>
+          qIncludes(r.formulary_name.toLowerCase()) ||
+          qIncludes(
+            r.formulary_name.toLowerCase().replace(/\s+formulary$/, ""),
+          ),
+      )
     : [];
+  const focusedFormulary =
+    exactForm.length > 0
+      ? exactForm.slice(0, MAX_FOCUS_ROWS)
+      : includeSnapshots
+        ? formulary
+            .filter((r) => rowMatchesQuestion(r.payer_name, r.formulary_name))
+            .slice(0, MAX_FOCUS_ROWS)
+        : [];
 
-  const systemPrompt = [
+  // ---- Mode selection: size the briefing to what the question needs ----
+  // The gateway generates only ~23 tokens/s, so an LLM-composed answer fits
+  // the 2.8 s budget only when BOTH the briefing and the expected answer are
+  // tiny. Single-fact questions (plan rows, counts) get a micro-briefing;
+  // rich multi-part questions (conflict detail, notifications, materials,
+  // audit) are answered by the deterministic snapshot composer in route.ts.
+  const mentionedAccountIds = new Set(
+    accounts
+      .filter(
+        (a) =>
+          rowMatchesQuestion(a.name, a.name) || qIncludes(a.id.toLowerCase()),
+      )
+      .map((a) => a.id),
+  );
+  const matchedConflicts = changes.filter(
+    (c) =>
+      rowMatchesQuestion(c.payer_name, c.plan_name) ||
+      c.affected_account_ids.some((id) => mentionedAccountIds.has(id)),
+  );
+  const matchedConflictText = changes
+    .map((change, i) =>
+      matchedConflicts.includes(change) ? conflictLines[i] : null,
+    )
+    .filter((text): text is string => text !== null);
+
+  const mode: BriefingMode = (() => {
+    if (matchedConflicts.length > 0 && !wantsRawRows) return "conflict";
+    if (broadQuestion) return "aggregate";
+    if (
+      includeSnapshots &&
+      (focusedMedPolicy.length > 0 || focusedFormulary.length > 0)
+    ) {
+      return "plan";
+    }
+    if (matchedConflicts.length > 0) return "conflict";
+    return "rich";
+  })();
+
+  const minimalSystem = [
+    "You are the FRM Assistant for Jordan Lee, Field Reimbursement Manager for Onvexa (HCPCS J9345), Territory 14 — Great Lakes.",
+    "Answer ONLY from the data below — it was read live from the FRM database moments ago. Never invent values.",
+    "Answer in one or two short sentences. No markdown, no preamble.",
+  ].join("\n");
+
+  const fullSystem = [
     "You are the FRM Assistant, an AI agent for Jordan Lee, a Field Reimbursement Manager for Onvexa (HCPCS J9345) covering Territory 14 — Great Lakes.",
     "You answer ONLY from the LIVE DATA BRIEFING provided in the user message. It is real-time data read moments ago from the FRM database.",
     "Rules:",
@@ -300,7 +354,39 @@ export function buildAgentBriefing(question: string): AgentBriefing {
     `- Rows by payer: ${payerCounts.join("; ")}`,
   ].join("\n");
 
-  const userPrompt = [
+  const planUser = [
+    `LIVE ROWS (medical policy as of ${asOf}; formulary as of ${formulary[0]?.as_of_date ?? asOf}).`,
+    "Medical policy (plan_id|payer|plan|channel|lives|hcpcs|product|coverage|pa|step_therapy|site_of_care|qty_limit|policy_effective):",
+    focusedMedPolicy.length > 0
+      ? focusedMedPolicy.map(medPolicyRow).join("\n")
+      : "(no medical-policy row matched the question)",
+    "Formulary (formulary_id|payer|formulary|channel|lives|ndc|product|status|restriction|tier|effective):",
+    focusedFormulary.length > 0
+      ? focusedFormulary.map(formularyRow).join("\n")
+      : "(no formulary row matched the question)",
+    `QUESTION: ${question}`,
+  ].join("\n");
+
+  const aggregateUser = [
+    `PRECOMPUTED AGGREGATES (medical policy as of ${asOf}; ${medPolicy.length} plans tracked):`,
+    `- Coverage status counts: ${coverageCounts.join("; ")}`,
+    `- Prior auth required: ${medPolicy.filter((r) => r.pa_required === "Y").length} of ${medPolicy.length} plans`,
+    `- Step therapy required: ${medPolicy.filter((r) => r.step_therapy_required === "Y").length} of ${medPolicy.length} plans`,
+    `- Covered with NO prior auth: ${coveredNoPa.length} rows across ${coveredNoPaNames.length} distinct plan names`,
+    `- Not Covered rows: ${notCovered.length}`,
+    `- Total covered lives: ${totalLives.toLocaleString()}`,
+    `QUESTION: ${question}`,
+  ].join("\n");
+
+  const conflictUser = [
+    "LIVE CONFLICT RECORDS (read from the FRM database just now):",
+    matchedConflictText.length > 0
+      ? matchedConflictText.join("\n\n")
+      : "(none matched)",
+    `QUESTION: ${question}`,
+  ].join("\n");
+
+  const richUser = [
     "LIVE DATA BRIEFING (read from the FRM database just now):",
     "",
     "=== OPEN/RESOLVED PAYER CHANGES ===",
@@ -309,36 +395,27 @@ export function buildAgentBriefing(question: string): AgentBriefing {
     "=== TERRITORY ACCOUNTS ===",
     accountLines.join("\n"),
     "",
-    "=== NOTIFICATIONS SENT ===",
-    notificationLines.length > 0 ? notificationLines.join("\n") : "(none yet)",
-    "",
-    "=== COMPLIANCE-REVIEWED MATERIALS ===",
-    materialLines.length > 0 ? materialLines.join("\n") : "(none)",
-    "",
-    "=== INTERNAL UPDATES ===",
-    internalLines.length > 0 ? internalLines.join("\n") : "(none)",
-    "",
-    includeSnapshots
-      ? `=== MEDICAL POLICY SNAPSHOT (as of ${asOf}; rows matching the question; plan_id|payer|plan|channel|lives|hcpcs|product|coverage|pa|step_therapy|site_of_care|qty_limit|policy_effective) ===`
-      : `=== MEDICAL POLICY SNAPSHOT (as of ${asOf}; aggregates above cover counts; ask about a specific plan for its row) ===`,
-    focusedMedPolicy.length > 0
-      ? focusedMedPolicy.map(medPolicyRow).join("\n")
-      : "(no specific rows selected — use the precomputed aggregates)",
-    "",
-    includeSnapshots
-      ? `=== FORMULARY SNAPSHOT (as of ${formulary[0]?.as_of_date ?? asOf}; rows matching the question; formulary_id|payer|formulary|channel|lives|ndc|product|status|restriction|tier|effective) ===`
-      : `=== FORMULARY SNAPSHOT (as of ${formulary[0]?.as_of_date ?? asOf}; aggregates above cover counts; ask about a specific plan for its row) ===`,
-    focusedFormulary.length > 0
-      ? focusedFormulary.map(formularyRow).join("\n")
-      : "(no specific rows selected — use the precomputed aggregates)",
-    "",
-    "=== PUBLISHED FAQ TOPICS (for awareness; do not quote verbatim) ===",
-    faqLines.join("\n"),
+    "=== AGGREGATES ===",
+    `- Coverage status counts: ${coverageCounts.join("; ")}`,
+    `- Covered with NO prior auth: ${coveredNoPa.length} rows across ${coveredNoPaNames.length} distinct plan names`,
+    `- Total covered lives: ${totalLives.toLocaleString()}`,
     "",
     `QUESTION: ${question}`,
   ].join("\n");
 
+  const systemPrompt =
+    mode === "plan" || mode === "aggregate" ? minimalSystem : fullSystem;
+  const userPrompt =
+    mode === "plan"
+      ? planUser
+      : mode === "aggregate"
+        ? aggregateUser
+        : mode === "conflict"
+          ? conflictUser
+          : richUser;
+
   return {
+    mode,
     systemPrompt,
     userPrompt,
     stats: {
