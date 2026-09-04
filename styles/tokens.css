@@ -1,0 +1,67 @@
+/* FRM Conflict Watch — design tokens (Plan.md §1.6). Single source of truth for color. */
+
+:root {
+  --nav-bg: #161616;
+  --magenta: #c40d7e;
+  --magenta-soft: #d6258f;
+  --page-bg: #f4f4f5;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --muted: #6b7280;
+  --green: #0e7a3d;
+  --green-bg: #f0fdf4;
+  --green-border: #16a34a;
+  --indigo: #2f3aa0;
+  --indigo-dark: #1f2a7a;
+  --indigo-bg: #eef2ff;
+  --border: #e5e7eb;
+}
+
+/* Tailwind v4 CSS-first theme mapping — enables classes like bg-[var(--magenta)] */
+@theme inline {
+  --color-nav-bg: var(--nav-bg);
+  --color-magenta: var(--magenta);
+  --color-magenta-soft: var(--magenta-soft);
+  --color-page-bg: var(--page-bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-green: var(--green);
+  --color-green-bg: var(--green-bg);
+  --color-green-border: var(--green-border);
+  --color-indigo: var(--indigo);
+  --color-indigo-dark: var(--indigo-dark);
+  --color-indigo-bg: var(--indigo-bg);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Eyebrow labels: 11–12px, uppercase, letter-spacing 0.08em, muted */
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Mono provenance metadata */
+.provenance {
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Card base: white, radius 12px, subtle shadow */
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
