@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { HomeDashboard } from "@/features/home/HomeDashboard";
 
 export default function Home() {
-  redirect("/payer-changes");
+  return <HomeDashboard />;
 }

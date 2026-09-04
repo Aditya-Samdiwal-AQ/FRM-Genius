@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import type { ChangeTypeGroup, PayerChange } from "@/lib/types";
 import { GROUP_ORDER } from "@/lib/types";
 import { formatDate, formatTimestamp } from "@/lib/format";
@@ -75,8 +76,14 @@ function ChangeRow({
 }
 
 export default function PayerChangesPage() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const { conflicts, loading, error } = useConflictState();
   const [drawerChangeId, setDrawerChangeId] = useState<string | null>(null);
+  const reviewPlanId = searchParams.get("reviewPlan");
+  const reviewedChangeId =
+    conflicts.find((conflict) => conflict.plan_id === reviewPlanId)?.id ??
+    drawerChangeId;
 
   const openCount = selectOpenCount(conflicts);
   const resolvedCount = selectResolvedCount(conflicts);
@@ -99,7 +106,11 @@ export default function PayerChangesPage() {
   }, [conflicts]);
 
   const drawerChange =
-    conflicts.find((c) => c.id === drawerChangeId) ?? null;
+    conflicts.find((c) => c.id === reviewedChangeId) ?? null;
+  const closeDrawer = () => {
+    setDrawerChangeId(null);
+    if (reviewPlanId) router.replace("/payer-changes");
+  };
 
   return (
     <AppShell>
@@ -169,7 +180,7 @@ export default function PayerChangesPage() {
           key={drawerChange.id}
           change={drawerChange}
           openCount={openCount}
-          onClose={() => setDrawerChangeId(null)}
+          onClose={closeDrawer}
         />
       )}
       </main>
