@@ -1,29 +1,33 @@
 "use client";
 
-import type { Account, Conflict, Material } from "@/data/synthetic";
+import type { PayerChange } from "@/lib/types";
+import type { Material } from "@/lib/types";
+import type { DetailAccount } from "@/services/api";
+import { formatDate } from "@/lib/format";
 import {
-  CONFLICT_TYPE_LABEL,
   FRM_NAME,
   FRM_TITLE,
   PRODUCT,
-  SOURCE,
-  SOURCE_UPDATED,
   TERRITORY,
 } from "@/data/synthetic";
 import { ComplianceBadge } from "@/components/ui/ComplianceBadge";
 import { InfoBox } from "@/components/ui/InfoBox";
 
 export function Step3Communicate({
-  conflict,
+  change,
   materials,
   recipients,
 }: {
-  conflict: Conflict;
+  change: PayerChange;
   materials: Material[];
-  recipients: Account[];
+  recipients: DetailAccount[];
 }) {
-  const typeLabel = CONFLICT_TYPE_LABEL[conflict.conflictType];
-  const planLabel = conflict.plan.plan_name;
+  const typeLabel = change.change_type_group;
+  const planLabel = change.plan_name;
+  const corrected =
+    change.corrected_path_value ?? change.authoritative.value;
+  const source = change.corrected_path_source ?? change.authoritative.source;
+  const sourceDate = change.authoritative.source_date;
   const count = recipients.length;
 
   return (
@@ -37,7 +41,7 @@ export function Step3Communicate({
               key={r.id}
               className="provenance rounded-full border border-[var(--border)] bg-[var(--page-bg)] px-3 py-1"
             >
-              {r.name} · {planLabel}
+              {r.name} · {r.plan_name}
             </span>
           ))}
         </div>
@@ -54,7 +58,7 @@ export function Step3Communicate({
                 <p>
                   <span className="font-semibold text-[var(--ink)]">To:</span>{" "}
                   <span className="text-[var(--muted)]">
-                    {count} selected offices — Territory 14
+                    {count} selected offices — {TERRITORY}
                   </span>
                 </p>
                 <p>
@@ -87,23 +91,23 @@ export function Step3Communicate({
             <div className="rounded-xl border border-[var(--indigo)] bg-[var(--indigo-bg)] px-4 py-3">
               <p className="eyebrow text-[var(--indigo)]">Updated guidance</p>
               <p className="mt-1 text-[14px] font-bold text-[var(--indigo-dark)]">
-                {conflict.new_value}
+                {corrected}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 <span className="provenance rounded border border-[var(--border)] bg-white px-2 py-0.5">
-                  {SOURCE} · {SOURCE_UPDATED} · {planLabel}
+                  {source} · {sourceDate} · {planLabel}
                 </span>
                 <span className="provenance rounded border border-[var(--border)] bg-white px-2 py-0.5">
-                  Effective: {conflict.effective_date}
+                  Effective: {formatDate(change.effective_date)}
                 </span>
               </div>
             </div>
 
             <p>
               This update reflects the latest authoritative payer policy from{" "}
-              <strong>{SOURCE}</strong>, effective{" "}
-              <strong>{conflict.effective_date}</strong>. Please update your
-              office workflows accordingly.
+              <strong>{source}</strong>, effective{" "}
+              <strong>{formatDate(change.effective_date)}</strong>. Please update
+              your office workflows accordingly.
             </p>
 
             {/* ATTACHED MATERIALS */}
@@ -130,7 +134,7 @@ export function Step3Communicate({
                 {FRM_NAME} — {FRM_TITLE}, Oncology &amp; Rare Disease
               </p>
               <p className="provenance mt-0.5">
-                {TERRITORY} · August 26, 2026
+                {TERRITORY} · {formatDate(change.effective_date)}
               </p>
             </div>
           </div>
@@ -140,8 +144,8 @@ export function Step3Communicate({
       {/* Template notice */}
       <InfoBox variant="gray">
         Generated from a compliance-reviewed, MLR-approved template. No
-        free-text promotional content included. Source provenance ({SOURCE} ·{" "}
-        {SOURCE_UPDATED}) is embedded throughout.
+        free-text promotional content included. Source provenance ({source} ·{" "}
+        {sourceDate}) is embedded throughout.
       </InfoBox>
     </div>
   );

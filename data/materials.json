@@ -1,0 +1,72 @@
+[
+  {
+    "id": "mat-01",
+    "title": "Onvexa Site-of-Care Guidance Sheet",
+    "category": "Clinical",
+    "owner": "Medical Affairs",
+    "reviewed_at": "2026-08-15",
+    "applicable_change_types": [
+      "site_of_care_restriction"
+    ]
+  },
+  {
+    "id": "mat-02",
+    "title": "Onvexa Coding Quick Reference (J9345)",
+    "category": "Coding",
+    "owner": "Market Access",
+    "reviewed_at": "2026-08-10",
+    "applicable_change_types": [
+      "coverage_status",
+      "pa_required",
+      "step_therapy_required",
+      "quantity_limit",
+      "formulary_status",
+      "restriction",
+      "tier"
+    ]
+  },
+  {
+    "id": "mat-03",
+    "title": "Prior Authorization Requirements — Onvexa (Aug 2026)",
+    "category": "Policy",
+    "owner": "MMIT",
+    "reviewed_at": "2026-08-26",
+    "applicable_change_types": [
+      "pa_required",
+      "step_therapy_required"
+    ]
+  },
+  {
+    "id": "mat-04",
+    "title": "Patient Support Enrollment — Site Update",
+    "category": "Patient",
+    "owner": "Patient Services",
+    "reviewed_at": "2026-08-20",
+    "applicable_change_types": [
+      "site_of_care_restriction",
+      "coverage_status"
+    ]
+  },
+  {
+    "id": "mat-05",
+    "title": "Quantity Limit & Billing Guidance — Onvexa",
+    "category": "Coding",
+    "owner": "Market Access",
+    "reviewed_at": "2026-08-22",
+    "applicable_change_types": [
+      "quantity_limit"
+    ]
+  },
+  {
+    "id": "mat-06",
+    "title": "Formulary Tier Placement Overview — Onvexa",
+    "category": "Policy",
+    "owner": "MMIT",
+    "reviewed_at": "2026-08-24",
+    "applicable_change_types": [
+      "formulary_status",
+      "restriction",
+      "tier"
+    ]
+  }
+]

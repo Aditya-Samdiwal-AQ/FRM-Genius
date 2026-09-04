@@ -1,0 +1,147 @@
+[
+  {
+    "id": "chg-mtn0pqx8-001i",
+    "change_type": "step_therapy_required",
+    "change_type_group": "PA / step-therapy requirement",
+    "field": "step_therapy_required",
+    "plan_id": "PLN52000",
+    "payer_name": "Meridian Health",
+    "plan_name": "Meridian Choice PPO",
+    "channel": "Commercial",
+    "previous": {
+      "value": "N",
+      "source": "MMIT",
+      "source_date": "2026-07-01"
+    },
+    "authoritative": {
+      "value": "Y",
+      "source": "MMIT",
+      "source_date": "2026-08-01"
+    },
+    "effective_date": "2026-08-01",
+    "bulletin_url": "https://policies.example/meridian-choice-ppo/mp-onc-91000",
+    "affected_account_ids": [
+      "ACC001",
+      "ACC002",
+      "ACC003"
+    ],
+    "detected_at": "2026-08-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtn0pqx8-001j",
+    "change_type": "pa_required",
+    "change_type_group": "PA / step-therapy requirement",
+    "field": "pa_required",
+    "plan_id": "PLN52001",
+    "payer_name": "Cascade Care",
+    "plan_name": "Cascade Select HMO",
+    "channel": "Commercial",
+    "previous": {
+      "value": "N",
+      "source": "MMIT",
+      "source_date": "2026-07-01"
+    },
+    "authoritative": {
+      "value": "Y",
+      "source": "MMIT",
+      "source_date": "2026-08-01"
+    },
+    "effective_date": "2026-08-01",
+    "bulletin_url": "https://policies.example/cascade-select-hmo/mp-onc-91001",
+    "affected_account_ids": [
+      "ACC004",
+      "ACC005",
+      "ACC006"
+    ],
+    "detected_at": "2026-08-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtn0pqx8-001k",
+    "change_type": "coverage_status",
+    "change_type_group": "Coverage status change",
+    "field": "coverage_status",
+    "plan_id": "PLN52002",
+    "payer_name": "Granite State Health",
+    "plan_name": "Granite MA Complete",
+    "channel": "Medicare Advantage",
+    "previous": {
+      "value": "Covered",
+      "source": "MMIT",
+      "source_date": "2026-07-01"
+    },
+    "authoritative": {
+      "value": "Not Covered",
+      "source": "MMIT",
+      "source_date": "2026-08-01"
+    },
+    "effective_date": "2026-08-01",
+    "bulletin_url": "https://policies.example/granite-ma-complete/mp-onc-91002",
+    "affected_account_ids": [
+      "ACC007",
+      "ACC008",
+      "ACC009"
+    ],
+    "detected_at": "2026-08-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtn0pqx8-001l",
+    "change_type": "site_of_care_restriction",
+    "change_type_group": "Site-of-care requirement",
+    "field": "site_of_care_restriction",
+    "plan_id": "PLN52003",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview Preferred PPO",
+    "channel": "Commercial",
+    "previous": {
+      "value": "Outpatient Hospital; Physician Office; Home Infusion",
+      "source": "MMIT",
+      "source_date": "2026-07-01"
+    },
+    "authoritative": {
+      "value": "Physician Office",
+      "source": "MMIT",
+      "source_date": "2026-08-01"
+    },
+    "effective_date": "2026-08-01",
+    "bulletin_url": "https://policies.example/harborview-preferred-ppo/mp-onc-91003",
+    "affected_account_ids": [
+      "ACC010",
+      "ACC011",
+      "ACC012"
+    ],
+    "detected_at": "2026-08-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtn0pqx8-001m",
+    "change_type": "quantity_limit",
+    "change_type_group": "Quantity limit change",
+    "field": "quantity_limit",
+    "plan_id": "PLN52004",
+    "payer_name": "Summit Wellness",
+    "plan_name": "Summit Advantage HMO",
+    "channel": "Medicare Advantage",
+    "previous": {
+      "value": "N",
+      "source": "MMIT",
+      "source_date": "2026-07-01"
+    },
+    "authoritative": {
+      "value": "Y",
+      "source": "MMIT",
+      "source_date": "2026-08-01"
+    },
+    "effective_date": "2026-08-01",
+    "bulletin_url": "https://policies.example/summit-advantage-hmo/mp-onc-91004",
+    "affected_account_ids": [
+      "ACC013",
+      "ACC014",
+      "ACC015"
+    ],
+    "detected_at": "2026-08-01",
+    "status": "open"
+  }
+]

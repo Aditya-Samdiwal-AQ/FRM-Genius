@@ -1,17 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { Conflict } from "@/data/synthetic";
-import {
-  CONFLICT_TYPE_LABEL,
-  FRM_NAME,
-  PRODUCT,
-  SOURCE,
-  SOURCE_UPDATED,
-  TERRITORY,
-} from "@/data/synthetic";
-import { useConflictDispatch } from "@/store/ConflictStore";
-import { sendNotificationEmail } from "@/services/api";
+import type { ChangeSource, PayerChange } from "@/lib/types";
+import { useConflictActions } from "@/store/ConflictStore";
+import { getPayerChangeDetail, type DetailAccount } from "@/services/api";
+import type { Material } from "@/lib/types";
 import { Drawer, DrawerHeader } from "@/components/ui/Drawer";
 import { Stepper } from "@/components/ui/Stepper";
 import { Step1ReviewConfirm } from "@/features/payer-change/steps/Step1ReviewConfirm";
@@ -21,56 +14,60 @@ import { ConfirmSendDialog } from "@/features/payer-change/ConfirmSendDialog";
 
 type Step = 1 | 2 | 3;
 
-function buildMessageHtml(conflict: Conflict, materials: { title: string }[]): string {
-  const typeLabel = CONFLICT_TYPE_LABEL[conflict.conflictType];
-  return [
-    `<p>Dear Office,</p>`,
-    `<p>This message confirms an update to the ${typeLabel} guidance for ${PRODUCT} administered through your plan.</p>`,
-    `<p><strong>Updated guidance:</strong> ${conflict.new_value}</p>`,
-    `<p>Source: ${SOURCE} · ${SOURCE_UPDATED} · ${conflict.plan.plan_name}. Effective: ${conflict.effective_date}.</p>`,
-    `<p>Attached materials: ${materials.map((m) => m.title).join("; ")}.</p>`,
-    `<p>${FRM_NAME} — Field Reimbursement Manager, Oncology &amp; Rare Disease · ${TERRITORY}</p>`,
-  ].join("\n");
-}
-
 export function PayerChangeDrawer({
-  conflict,
+  change,
   openCount,
   onClose,
 }: {
-  conflict: Conflict;
+  change: PayerChange;
   openCount: number;
   onClose: () => void;
 }) {
-  const dispatch = useConflictDispatch();
+  const { resolveAndNotify } = useConflictActions();
   const [step, setStep] = useState<Step>(1);
-  const [selectedAccountIds, setSelectedAccountIds] = useState<string[]>(
-    conflict.accounts.map((a) => a.id),
-  );
-  const [selectedMaterialIds, setSelectedMaterialIds] = useState<string[]>(
-    conflict.materials.map((m) => m.id),
-  );
+  const [accounts, setAccounts] = useState<DetailAccount[]>([]);
+  const [materials, setMaterials] = useState<Material[]>([]);
+  const [detailLoading, setDetailLoading] = useState(true);
+  const [detailError, setDetailError] = useState<string | null>(null);
+  const [selectedAccountIds, setSelectedAccountIds] = useState<string[]>([]);
+  const [selectedMaterialIds, setSelectedMaterialIds] = useState<string[]>([]);
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | undefined>(undefined);
 
-  // Reset to step 1 whenever a different conflict is opened.
+  // Fetch detail (accounts + suggested materials) whenever a change is opened.
+  // The drawer is keyed by change.id (see page.tsx), so this effect runs once
+  // per opened change; initial state already covers the loading case.
   useEffect(() => {
-    setStep(1);
-    setSelectedAccountIds(conflict.accounts.map((a) => a.id));
-    setSelectedMaterialIds(conflict.materials.map((m) => m.id));
-    setConfirmOpen(false);
-    setSending(false);
-    setError(undefined);
-  }, [conflict.id, conflict.accounts, conflict.materials]);
+    let cancelled = false;
+    getPayerChangeDetail(change.id)
+      .then((res) => {
+        if (cancelled) return;
+        setAccounts(res.accounts);
+        setMaterials(res.suggested_materials);
+        setSelectedAccountIds(res.accounts.map((a) => a.id));
+        setSelectedMaterialIds(res.suggested_materials.map((m) => m.id));
+        setDetailLoading(false);
+      })
+      .catch((err: unknown) => {
+        if (cancelled) return;
+        setDetailError(
+          err instanceof Error ? err.message : "Failed to load detail.",
+        );
+        setDetailLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [change.id]);
 
   const selectedMaterials = useMemo(
-    () => conflict.materials.filter((m) => selectedMaterialIds.includes(m.id)),
-    [conflict.materials, selectedMaterialIds],
+    () => materials.filter((m) => selectedMaterialIds.includes(m.id)),
+    [materials, selectedMaterialIds],
   );
   const selectedAccounts = useMemo(
-    () => conflict.accounts.filter((a) => selectedAccountIds.includes(a.id)),
-    [conflict.accounts, selectedAccountIds],
+    () => accounts.filter((a) => selectedAccountIds.includes(a.id)),
+    [accounts, selectedAccountIds],
   );
 
   const toggleAccount = (id: string) =>
@@ -87,45 +84,45 @@ export function PayerChangeDrawer({
     setSending(true);
     setError(undefined);
     try {
-      const result = await sendNotificationEmail({
-        recipients: selectedAccounts.map((a) => a.name),
-        subject: `${PRODUCT} ${CONFLICT_TYPE_LABEL[conflict.conflictType]} Update — Corrected Path`,
-        messageHtml: buildMessageHtml(conflict, selectedMaterials),
-        materials: selectedMaterials,
-        conflict,
-      });
-      if (!result.ok) {
-        setError(result.error ?? "Unknown error.");
-        setSending(false);
-        return;
-      }
-      dispatch({
-        type: "RESOLVE_CONFLICT",
-        conflictId: conflict.id,
-        accountIds: selectedAccountIds,
+      // Backend contract: resolve first (sets corrected path + audit events),
+      // then notify (sends the templated email to affected accounts).
+      await resolveAndNotify({
+        changeId: change.id,
+        correctedPathSource: (change.corrected_path_source ??
+          change.authoritative.source) as ChangeSource,
+        correctedPathValue:
+          change.corrected_path_value ?? change.authoritative.value,
         materialIds: selectedMaterialIds,
-        message: buildMessageHtml(conflict, selectedMaterials),
       });
       setSending(false);
       setConfirmOpen(false);
       onClose();
-    } catch {
-      setError("Network error while dispatching the email.");
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Network error while dispatching the email.",
+      );
       setSending(false);
     }
   };
 
   const primaryDisabled =
+    detailLoading ||
     (step === 1 && selectedAccountIds.length === 0) ||
     (step === 2 && selectedMaterialIds.length === 0);
 
   const primaryLabel =
-    step === 1 ? "Select materials →" : step === 2 ? "Preview message →" : `Send to ${selectedAccountIds.length} offices →`;
+    step === 1
+      ? "Select materials →"
+      : step === 2
+        ? "Preview message →"
+        : `Send to ${selectedAccountIds.length} offices →`;
 
   const footer = confirmOpen ? (
     <ConfirmSendDialog
       recipientsCount={selectedAccountIds.length}
-      conflictType={conflict.conflictType}
+      changeTypeGroup={change.change_type_group}
       onConfirm={handleConfirmSend}
       onCancel={() => setConfirmOpen(false)}
       sending={sending}
@@ -163,28 +160,43 @@ export function PayerChangeDrawer({
       <div className="border-b border-[var(--border)] px-6 py-4">
         <Stepper current={step} />
       </div>
-      {step === 1 && (
-        <Step1ReviewConfirm
-          conflict={conflict}
-          selectedIds={selectedAccountIds}
-          onToggle={toggleAccount}
-          onNext={() => setStep(2)}
-        />
+      {detailError && (
+        <div className="px-6 pt-4">
+          <div className="rounded-xl border border-red-300 bg-red-50 px-4 py-3 text-[13px] text-red-700">
+            {detailError}
+          </div>
+        </div>
       )}
-      {step === 2 && (
-        <Step2Materials
-          conflictType={conflict.conflictType}
-          materials={conflict.materials}
-          selectedIds={selectedMaterialIds}
-          onToggle={toggleMaterial}
-        />
+      {detailLoading && (
+        <p className="provenance px-6 pt-4">Loading detail…</p>
       )}
-      {step === 3 && (
-        <Step3Communicate
-          conflict={conflict}
-          materials={selectedMaterials}
-          recipients={selectedAccounts}
-        />
+      {!detailLoading && !detailError && (
+        <>
+          {step === 1 && (
+            <Step1ReviewConfirm
+              change={change}
+              accounts={accounts}
+              selectedIds={selectedAccountIds}
+              onToggle={toggleAccount}
+              onNext={() => setStep(2)}
+            />
+          )}
+          {step === 2 && (
+            <Step2Materials
+              changeTypeGroup={change.change_type_group}
+              materials={materials}
+              selectedIds={selectedMaterialIds}
+              onToggle={toggleMaterial}
+            />
+          )}
+          {step === 3 && (
+            <Step3Communicate
+              change={change}
+              materials={selectedMaterials}
+              recipients={selectedAccounts}
+            />
+          )}
+        </>
       )}
     </Drawer>
   );

@@ -1,0 +1,8002 @@
+[
+  {
+    "id": "PLN52000",
+    "payer_id": "PYR10000",
+    "payer_name": "Meridian Health",
+    "plan_name": "Meridian Choice PPO",
+    "channel": "Commercial",
+    "lives": "951213"
+  },
+  {
+    "id": "PLN52001",
+    "payer_id": "PYR10001",
+    "payer_name": "Cascade Care",
+    "plan_name": "Cascade Select HMO",
+    "channel": "Commercial",
+    "lives": "990850"
+  },
+  {
+    "id": "PLN52002",
+    "payer_id": "PYR10002",
+    "payer_name": "Granite State Health",
+    "plan_name": "Granite MA Complete",
+    "channel": "Medicare Advantage",
+    "lives": "2943208"
+  },
+  {
+    "id": "PLN52003",
+    "payer_id": "PYR10003",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview Preferred PPO",
+    "channel": "Commercial",
+    "lives": "420657"
+  },
+  {
+    "id": "PLN52004",
+    "payer_id": "PYR10004",
+    "payer_name": "Summit Wellness",
+    "plan_name": "Summit Advantage HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2330426"
+  },
+  {
+    "id": "PLN52005",
+    "payer_id": "PYR10005",
+    "payer_name": "Granite Wellness",
+    "plan_name": "Granite Select PPO",
+    "channel": "Commercial",
+    "lives": "991395"
+  },
+  {
+    "id": "PLN52006",
+    "payer_id": "PYR10006",
+    "payer_name": "Pinecrest Benefit",
+    "plan_name": "Pinecrest Choice HMO",
+    "channel": "Commercial",
+    "lives": "2825918"
+  },
+  {
+    "id": "PLN52007",
+    "payer_id": "PYR10007",
+    "payer_name": "Pinecrest Alliance",
+    "plan_name": "Pinecrest Advantage",
+    "channel": "Commercial",
+    "lives": "2699353"
+  },
+  {
+    "id": "PLN52008",
+    "payer_id": "PYR10008",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry Select PPO",
+    "channel": "Commercial",
+    "lives": "899926"
+  },
+  {
+    "id": "PLN52009",
+    "payer_id": "PYR10009",
+    "payer_name": "Beacon Insurance",
+    "plan_name": "Beacon EPO",
+    "channel": "Commercial",
+    "lives": "3139710"
+  },
+  {
+    "id": "PLN52010",
+    "payer_id": "PYR10010",
+    "payer_name": "Lakeside Alliance",
+    "plan_name": "Lakeside HMO",
+    "channel": "Commercial",
+    "lives": "474901"
+  },
+  {
+    "id": "PLN52011",
+    "payer_id": "PYR10011",
+    "payer_name": "Keystone Mutual",
+    "plan_name": "Keystone Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1069507"
+  },
+  {
+    "id": "PLN52012",
+    "payer_id": "PYR10012",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate Advantage",
+    "channel": "Commercial",
+    "lives": "1918055"
+  },
+  {
+    "id": "PLN52013",
+    "payer_id": "PYR10013",
+    "payer_name": "Everest Wellness",
+    "plan_name": "Everest EPO",
+    "channel": "Commercial",
+    "lives": "692585"
+  },
+  {
+    "id": "PLN52014",
+    "payer_id": "PYR10014",
+    "payer_name": "Juniper Insurance",
+    "plan_name": "Juniper POS",
+    "channel": "Commercial",
+    "lives": "1025288"
+  },
+  {
+    "id": "PLN52015",
+    "payer_id": "PYR10015",
+    "payer_name": "Lakeside Health Plan",
+    "plan_name": "Lakeside Complete",
+    "channel": "Managed Medicaid",
+    "lives": "707592"
+  },
+  {
+    "id": "PLN52016",
+    "payer_id": "PYR10016",
+    "payer_name": "Everest Mutual",
+    "plan_name": "Everest Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2185870"
+  },
+  {
+    "id": "PLN52017",
+    "payer_id": "PYR10017",
+    "payer_name": "Gateway Health",
+    "plan_name": "Gateway Preferred",
+    "channel": "Commercial",
+    "lives": "2483096"
+  },
+  {
+    "id": "PLN52018",
+    "payer_id": "PYR10018",
+    "payer_name": "Ironwood Care",
+    "plan_name": "Ironwood PPO",
+    "channel": "Commercial",
+    "lives": "312197"
+  },
+  {
+    "id": "PLN52019",
+    "payer_id": "PYR10019",
+    "payer_name": "Lakeside Alliance",
+    "plan_name": "Lakeside POS",
+    "channel": "Medicare Advantage",
+    "lives": "1722333"
+  },
+  {
+    "id": "PLN52020",
+    "payer_id": "PYR10020",
+    "payer_name": "Highland Mutual",
+    "plan_name": "Highland Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "3072965"
+  },
+  {
+    "id": "PLN52021",
+    "payer_id": "PYR10021",
+    "payer_name": "Riverbend Wellness",
+    "plan_name": "Riverbend POS",
+    "channel": "Commercial",
+    "lives": "2264345"
+  },
+  {
+    "id": "PLN52022",
+    "payer_id": "PYR10022",
+    "payer_name": "Prairie Wellness",
+    "plan_name": "Prairie HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2323231"
+  },
+  {
+    "id": "PLN52023",
+    "payer_id": "PYR10023",
+    "payer_name": "Pinecrest Mutual",
+    "plan_name": "Pinecrest Complete",
+    "channel": "Medicare Advantage",
+    "lives": "911521"
+  },
+  {
+    "id": "PLN52024",
+    "payer_id": "PYR10024",
+    "payer_name": "Keystone Insurance",
+    "plan_name": "Keystone Complete",
+    "channel": "Commercial",
+    "lives": "1789221"
+  },
+  {
+    "id": "PLN52025",
+    "payer_id": "PYR10025",
+    "payer_name": "Harborview Health",
+    "plan_name": "Harborview Choice HMO",
+    "channel": "Commercial",
+    "lives": "225312"
+  },
+  {
+    "id": "PLN52026",
+    "payer_id": "PYR10026",
+    "payer_name": "Stonegate Care",
+    "plan_name": "Stonegate HMO",
+    "channel": "Health Exchange",
+    "lives": "1001516"
+  },
+  {
+    "id": "PLN52027",
+    "payer_id": "PYR10027",
+    "payer_name": "Granite Care",
+    "plan_name": "Granite Advantage",
+    "channel": "Health Exchange",
+    "lives": "2463099"
+  },
+  {
+    "id": "PLN52028",
+    "payer_id": "PYR10028",
+    "payer_name": "Silverpeak Insurance",
+    "plan_name": "Silverpeak Advantage",
+    "channel": "Commercial",
+    "lives": "2832272"
+  },
+  {
+    "id": "PLN52029",
+    "payer_id": "PYR10029",
+    "payer_name": "Prairie Care",
+    "plan_name": "Prairie HMO",
+    "channel": "Managed Medicaid",
+    "lives": "909033"
+  },
+  {
+    "id": "PLN52030",
+    "payer_id": "PYR10030",
+    "payer_name": "Juniper Insurance",
+    "plan_name": "Juniper EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2293421"
+  },
+  {
+    "id": "PLN52031",
+    "payer_id": "PYR10031",
+    "payer_name": "Lakeside Insurance",
+    "plan_name": "Lakeside HMO",
+    "channel": "Commercial",
+    "lives": "3128921"
+  },
+  {
+    "id": "PLN52032",
+    "payer_id": "PYR10032",
+    "payer_name": "Gateway Wellness",
+    "plan_name": "Gateway Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2064051"
+  },
+  {
+    "id": "PLN52033",
+    "payer_id": "PYR10033",
+    "payer_name": "Redwood Health",
+    "plan_name": "Redwood PPO",
+    "channel": "Commercial",
+    "lives": "563697"
+  },
+  {
+    "id": "PLN52034",
+    "payer_id": "PYR10034",
+    "payer_name": "Vantage Health",
+    "plan_name": "Vantage HMO",
+    "channel": "Commercial",
+    "lives": "2913346"
+  },
+  {
+    "id": "PLN52035",
+    "payer_id": "PYR10035",
+    "payer_name": "Beacon Mutual",
+    "plan_name": "Beacon EPO",
+    "channel": "Commercial",
+    "lives": "1307929"
+  },
+  {
+    "id": "PLN52036",
+    "payer_id": "PYR10036",
+    "payer_name": "Riverbend Benefit",
+    "plan_name": "Riverbend Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "2618243"
+  },
+  {
+    "id": "PLN52037",
+    "payer_id": "PYR10037",
+    "payer_name": "Cascade Health Plan",
+    "plan_name": "Cascade Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2824794"
+  },
+  {
+    "id": "PLN52038",
+    "payer_id": "PYR10038",
+    "payer_name": "Keystone Health",
+    "plan_name": "Keystone Complete",
+    "channel": "Commercial",
+    "lives": "852069"
+  },
+  {
+    "id": "PLN52039",
+    "payer_id": "PYR10039",
+    "payer_name": "Cascade Wellness",
+    "plan_name": "Cascade Advantage",
+    "channel": "Commercial",
+    "lives": "1183545"
+  },
+  {
+    "id": "PLN52040",
+    "payer_id": "PYR10040",
+    "payer_name": "Lantern Benefit",
+    "plan_name": "Lantern PPO",
+    "channel": "Commercial",
+    "lives": "1110615"
+  },
+  {
+    "id": "PLN52041",
+    "payer_id": "PYR10041",
+    "payer_name": "Nautilus Benefit",
+    "plan_name": "Nautilus Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2557624"
+  },
+  {
+    "id": "PLN52042",
+    "payer_id": "PYR10042",
+    "payer_name": "Nautilus Health",
+    "plan_name": "Nautilus Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "2895887"
+  },
+  {
+    "id": "PLN52043",
+    "payer_id": "PYR10043",
+    "payer_name": "Brightwater Benefit",
+    "plan_name": "Brightwater HMO",
+    "channel": "Health Exchange",
+    "lives": "1274642"
+  },
+  {
+    "id": "PLN52044",
+    "payer_id": "PYR10044",
+    "payer_name": "Vantage Health Plan",
+    "plan_name": "Vantage POS",
+    "channel": "Medicare Advantage",
+    "lives": "2803916"
+  },
+  {
+    "id": "PLN52045",
+    "payer_id": "PYR10045",
+    "payer_name": "Meridian Insurance",
+    "plan_name": "Meridian Select PPO",
+    "channel": "Commercial",
+    "lives": "1818081"
+  },
+  {
+    "id": "PLN52046",
+    "payer_id": "PYR10046",
+    "payer_name": "Sequoia Alliance",
+    "plan_name": "Sequoia EPO",
+    "channel": "Health Exchange",
+    "lives": "370658"
+  },
+  {
+    "id": "PLN52047",
+    "payer_id": "PYR10047",
+    "payer_name": "Ironwood Wellness",
+    "plan_name": "Ironwood EPO",
+    "channel": "Commercial",
+    "lives": "208834"
+  },
+  {
+    "id": "PLN52048",
+    "payer_id": "PYR10048",
+    "payer_name": "Wayfarer Wellness",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "1691265"
+  },
+  {
+    "id": "PLN52049",
+    "payer_id": "PYR10049",
+    "payer_name": "Ironwood Health Plan",
+    "plan_name": "Ironwood Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "225631"
+  },
+  {
+    "id": "PLN52050",
+    "payer_id": "PYR10050",
+    "payer_name": "Trailhead Benefit",
+    "plan_name": "Trailhead Complete",
+    "channel": "Managed Medicaid",
+    "lives": "3031853"
+  },
+  {
+    "id": "PLN52051",
+    "payer_id": "PYR10051",
+    "payer_name": "Oakmont Insurance",
+    "plan_name": "Oakmont POS",
+    "channel": "Health Exchange",
+    "lives": "1178128"
+  },
+  {
+    "id": "PLN52052",
+    "payer_id": "PYR10052",
+    "payer_name": "Copperfield Wellness",
+    "plan_name": "Copperfield Select PPO",
+    "channel": "Commercial",
+    "lives": "1355959"
+  },
+  {
+    "id": "PLN52053",
+    "payer_id": "PYR10053",
+    "payer_name": "Beacon Wellness",
+    "plan_name": "Beacon HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1724595"
+  },
+  {
+    "id": "PLN52054",
+    "payer_id": "PYR10054",
+    "payer_name": "Monarch Mutual",
+    "plan_name": "Monarch PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1610433"
+  },
+  {
+    "id": "PLN52055",
+    "payer_id": "PYR10055",
+    "payer_name": "Monarch Wellness",
+    "plan_name": "Monarch Complete",
+    "channel": "Commercial",
+    "lives": "1159773"
+  },
+  {
+    "id": "PLN52056",
+    "payer_id": "PYR10056",
+    "payer_name": "Lantern Health Plan",
+    "plan_name": "Lantern Complete",
+    "channel": "Commercial",
+    "lives": "2624934"
+  },
+  {
+    "id": "PLN52057",
+    "payer_id": "PYR10057",
+    "payer_name": "Lakeside Alliance",
+    "plan_name": "Lakeside EPO",
+    "channel": "Commercial",
+    "lives": "1106174"
+  },
+  {
+    "id": "PLN52058",
+    "payer_id": "PYR10058",
+    "payer_name": "Gateway Mutual",
+    "plan_name": "Gateway Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1073103"
+  },
+  {
+    "id": "PLN52059",
+    "payer_id": "PYR10059",
+    "payer_name": "Harborview Benefit",
+    "plan_name": "Harborview POS",
+    "channel": "Health Exchange",
+    "lives": "302806"
+  },
+  {
+    "id": "PLN52060",
+    "payer_id": "PYR10060",
+    "payer_name": "Brightwater Health Plan",
+    "plan_name": "Brightwater POS",
+    "channel": "Commercial",
+    "lives": "2001259"
+  },
+  {
+    "id": "PLN52061",
+    "payer_id": "PYR10061",
+    "payer_name": "Juniper Health Plan",
+    "plan_name": "Juniper HMO",
+    "channel": "Commercial",
+    "lives": "1319591"
+  },
+  {
+    "id": "PLN52062",
+    "payer_id": "PYR10062",
+    "payer_name": "Lantern Wellness",
+    "plan_name": "Lantern HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2911646"
+  },
+  {
+    "id": "PLN52063",
+    "payer_id": "PYR10063",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "1811747"
+  },
+  {
+    "id": "PLN52064",
+    "payer_id": "PYR10064",
+    "payer_name": "Ridgeline Care",
+    "plan_name": "Ridgeline Advantage",
+    "channel": "Commercial",
+    "lives": "2680837"
+  },
+  {
+    "id": "PLN52065",
+    "payer_id": "PYR10065",
+    "payer_name": "Redwood Alliance",
+    "plan_name": "Redwood Complete",
+    "channel": "Medicare Advantage",
+    "lives": "3081146"
+  },
+  {
+    "id": "PLN52066",
+    "payer_id": "PYR10066",
+    "payer_name": "Oakmont Wellness",
+    "plan_name": "Oakmont Complete",
+    "channel": "Managed Medicaid",
+    "lives": "2574916"
+  },
+  {
+    "id": "PLN52067",
+    "payer_id": "PYR10067",
+    "payer_name": "Stonegate Alliance",
+    "plan_name": "Stonegate POS",
+    "channel": "Commercial",
+    "lives": "1098608"
+  },
+  {
+    "id": "PLN52068",
+    "payer_id": "PYR10068",
+    "payer_name": "Trailhead Wellness",
+    "plan_name": "Trailhead HMO",
+    "channel": "Commercial",
+    "lives": "3035212"
+  },
+  {
+    "id": "PLN52069",
+    "payer_id": "PYR10069",
+    "payer_name": "Ridgeline Alliance",
+    "plan_name": "Ridgeline PPO",
+    "channel": "Commercial",
+    "lives": "1249113"
+  },
+  {
+    "id": "PLN52070",
+    "payer_id": "PYR10070",
+    "payer_name": "Juniper Alliance",
+    "plan_name": "Juniper Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "1456823"
+  },
+  {
+    "id": "PLN52071",
+    "payer_id": "PYR10071",
+    "payer_name": "Redwood Insurance",
+    "plan_name": "Redwood Select PPO",
+    "channel": "Commercial",
+    "lives": "521067"
+  },
+  {
+    "id": "PLN52072",
+    "payer_id": "PYR10072",
+    "payer_name": "Stonegate Wellness",
+    "plan_name": "Stonegate POS",
+    "channel": "Health Exchange",
+    "lives": "2045876"
+  },
+  {
+    "id": "PLN52073",
+    "payer_id": "PYR10073",
+    "payer_name": "Ironwood Benefit",
+    "plan_name": "Ironwood EPO",
+    "channel": "Commercial",
+    "lives": "74342"
+  },
+  {
+    "id": "PLN52074",
+    "payer_id": "PYR10074",
+    "payer_name": "Copperfield Health Plan",
+    "plan_name": "Copperfield Complete",
+    "channel": "Commercial",
+    "lives": "66444"
+  },
+  {
+    "id": "PLN52075",
+    "payer_id": "PYR10075",
+    "payer_name": "Stonegate Health",
+    "plan_name": "Stonegate Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "493516"
+  },
+  {
+    "id": "PLN52076",
+    "payer_id": "PYR10076",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview EPO",
+    "channel": "Managed Medicaid",
+    "lives": "1289378"
+  },
+  {
+    "id": "PLN52077",
+    "payer_id": "PYR10077",
+    "payer_name": "Zephyr Wellness",
+    "plan_name": "Zephyr Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "1904594"
+  },
+  {
+    "id": "PLN52078",
+    "payer_id": "PYR10078",
+    "payer_name": "Brightwater Health",
+    "plan_name": "Brightwater HMO",
+    "channel": "Commercial",
+    "lives": "2638600"
+  },
+  {
+    "id": "PLN52079",
+    "payer_id": "PYR10079",
+    "payer_name": "Stonegate Care",
+    "plan_name": "Stonegate EPO",
+    "channel": "Commercial",
+    "lives": "1728446"
+  },
+  {
+    "id": "PLN52080",
+    "payer_id": "PYR10080",
+    "payer_name": "Copperfield Insurance",
+    "plan_name": "Copperfield Complete",
+    "channel": "Commercial",
+    "lives": "2898101"
+  },
+  {
+    "id": "PLN52081",
+    "payer_id": "PYR10081",
+    "payer_name": "Union Wellness",
+    "plan_name": "Union EPO",
+    "channel": "Commercial",
+    "lives": "611582"
+  },
+  {
+    "id": "PLN52082",
+    "payer_id": "PYR10082",
+    "payer_name": "Wayfarer Insurance",
+    "plan_name": "Wayfarer Complete",
+    "channel": "Commercial",
+    "lives": "1980861"
+  },
+  {
+    "id": "PLN52083",
+    "payer_id": "PYR10083",
+    "payer_name": "Ridgeline Alliance",
+    "plan_name": "Ridgeline HMO",
+    "channel": "Managed Medicaid",
+    "lives": "182188"
+  },
+  {
+    "id": "PLN52084",
+    "payer_id": "PYR10084",
+    "payer_name": "Ironwood Health",
+    "plan_name": "Ironwood Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "183743"
+  },
+  {
+    "id": "PLN52085",
+    "payer_id": "PYR10085",
+    "payer_name": "Yellowstone Mutual",
+    "plan_name": "Yellowstone Complete",
+    "channel": "Commercial",
+    "lives": "1986366"
+  },
+  {
+    "id": "PLN52086",
+    "payer_id": "PYR10086",
+    "payer_name": "Pinecrest Benefit",
+    "plan_name": "Pinecrest Advantage",
+    "channel": "Health Exchange",
+    "lives": "2093147"
+  },
+  {
+    "id": "PLN52087",
+    "payer_id": "PYR10087",
+    "payer_name": "Foundry Insurance",
+    "plan_name": "Foundry Choice HMO",
+    "channel": "Commercial",
+    "lives": "1710233"
+  },
+  {
+    "id": "PLN52088",
+    "payer_id": "PYR10088",
+    "payer_name": "Trailhead Benefit",
+    "plan_name": "Trailhead Complete",
+    "channel": "Health Exchange",
+    "lives": "1869054"
+  },
+  {
+    "id": "PLN52089",
+    "payer_id": "PYR10089",
+    "payer_name": "Copperfield Alliance",
+    "plan_name": "Copperfield Complete",
+    "channel": "Commercial",
+    "lives": "136087"
+  },
+  {
+    "id": "PLN52090",
+    "payer_id": "PYR10090",
+    "payer_name": "Vantage Mutual",
+    "plan_name": "Vantage HMO",
+    "channel": "Commercial",
+    "lives": "490890"
+  },
+  {
+    "id": "PLN52091",
+    "payer_id": "PYR10091",
+    "payer_name": "Sequoia Insurance",
+    "plan_name": "Sequoia Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "1995633"
+  },
+  {
+    "id": "PLN52092",
+    "payer_id": "PYR10092",
+    "payer_name": "Zephyr Health Plan",
+    "plan_name": "Zephyr HMO",
+    "channel": "Commercial",
+    "lives": "1755394"
+  },
+  {
+    "id": "PLN52093",
+    "payer_id": "PYR10093",
+    "payer_name": "Yellowstone Alliance",
+    "plan_name": "Yellowstone EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2273970"
+  },
+  {
+    "id": "PLN52094",
+    "payer_id": "PYR10094",
+    "payer_name": "Keystone Alliance",
+    "plan_name": "Keystone Choice HMO",
+    "channel": "Commercial",
+    "lives": "2940520"
+  },
+  {
+    "id": "PLN52095",
+    "payer_id": "PYR10095",
+    "payer_name": "Foundry Alliance",
+    "plan_name": "Foundry Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2798712"
+  },
+  {
+    "id": "PLN52096",
+    "payer_id": "PYR10096",
+    "payer_name": "Yellowstone Benefit",
+    "plan_name": "Yellowstone HMO",
+    "channel": "Medicare Advantage",
+    "lives": "433221"
+  },
+  {
+    "id": "PLN52097",
+    "payer_id": "PYR10097",
+    "payer_name": "Summit Alliance",
+    "plan_name": "Summit Select PPO",
+    "channel": "Commercial",
+    "lives": "2629139"
+  },
+  {
+    "id": "PLN52098",
+    "payer_id": "PYR10098",
+    "payer_name": "Keystone Benefit",
+    "plan_name": "Keystone Complete",
+    "channel": "Managed Medicaid",
+    "lives": "165571"
+  },
+  {
+    "id": "PLN52099",
+    "payer_id": "PYR10099",
+    "payer_name": "Nautilus Care",
+    "plan_name": "Nautilus HMO",
+    "channel": "Medicare Advantage",
+    "lives": "712784"
+  },
+  {
+    "id": "PLN52100",
+    "payer_id": "PYR10100",
+    "payer_name": "Copperfield Benefit",
+    "plan_name": "Copperfield Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "625563"
+  },
+  {
+    "id": "PLN52101",
+    "payer_id": "PYR10101",
+    "payer_name": "Cedar Mutual",
+    "plan_name": "Cedar POS",
+    "channel": "Medicare Advantage",
+    "lives": "2460938"
+  },
+  {
+    "id": "PLN52102",
+    "payer_id": "PYR10102",
+    "payer_name": "Prairie Insurance",
+    "plan_name": "Prairie PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1221414"
+  },
+  {
+    "id": "PLN52103",
+    "payer_id": "PYR10103",
+    "payer_name": "Everest Mutual",
+    "plan_name": "Everest Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1282190"
+  },
+  {
+    "id": "PLN52104",
+    "payer_id": "PYR10104",
+    "payer_name": "Keystone Benefit",
+    "plan_name": "Keystone Select PPO",
+    "channel": "Health Exchange",
+    "lives": "1253287"
+  },
+  {
+    "id": "PLN52105",
+    "payer_id": "PYR10105",
+    "payer_name": "Harborview Alliance",
+    "plan_name": "Harborview Select PPO",
+    "channel": "Commercial",
+    "lives": "2561215"
+  },
+  {
+    "id": "PLN52106",
+    "payer_id": "PYR10106",
+    "payer_name": "Lakeside Care",
+    "plan_name": "Lakeside PPO",
+    "channel": "Commercial",
+    "lives": "1863946"
+  },
+  {
+    "id": "PLN52107",
+    "payer_id": "PYR10107",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry EPO",
+    "channel": "Commercial",
+    "lives": "569318"
+  },
+  {
+    "id": "PLN52108",
+    "payer_id": "PYR10108",
+    "payer_name": "Copperfield Benefit",
+    "plan_name": "Copperfield HMO",
+    "channel": "Medicare Advantage",
+    "lives": "330828"
+  },
+  {
+    "id": "PLN52109",
+    "payer_id": "PYR10109",
+    "payer_name": "Cedar Mutual",
+    "plan_name": "Cedar PPO",
+    "channel": "Commercial",
+    "lives": "2265547"
+  },
+  {
+    "id": "PLN52110",
+    "payer_id": "PYR10110",
+    "payer_name": "Yellowstone Mutual",
+    "plan_name": "Yellowstone Choice HMO",
+    "channel": "Commercial",
+    "lives": "2845469"
+  },
+  {
+    "id": "PLN52111",
+    "payer_id": "PYR10111",
+    "payer_name": "Foundry Wellness",
+    "plan_name": "Foundry HMO",
+    "channel": "Health Exchange",
+    "lives": "1962279"
+  },
+  {
+    "id": "PLN52112",
+    "payer_id": "PYR10112",
+    "payer_name": "Granite Insurance",
+    "plan_name": "Granite Complete",
+    "channel": "Commercial",
+    "lives": "422652"
+  },
+  {
+    "id": "PLN52113",
+    "payer_id": "PYR10113",
+    "payer_name": "Union Mutual",
+    "plan_name": "Union EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2761941"
+  },
+  {
+    "id": "PLN52114",
+    "payer_id": "PYR10114",
+    "payer_name": "Juniper Wellness",
+    "plan_name": "Juniper Complete",
+    "channel": "Medicare Advantage",
+    "lives": "1005328"
+  },
+  {
+    "id": "PLN52115",
+    "payer_id": "PYR10115",
+    "payer_name": "Harborview Mutual",
+    "plan_name": "Harborview Select PPO",
+    "channel": "Commercial",
+    "lives": "527374"
+  },
+  {
+    "id": "PLN52116",
+    "payer_id": "PYR10116",
+    "payer_name": "Cascade Health",
+    "plan_name": "Cascade Choice HMO",
+    "channel": "Commercial",
+    "lives": "543163"
+  },
+  {
+    "id": "PLN52117",
+    "payer_id": "PYR10117",
+    "payer_name": "Ironwood Benefit",
+    "plan_name": "Ironwood EPO",
+    "channel": "Managed Medicaid",
+    "lives": "26893"
+  },
+  {
+    "id": "PLN52118",
+    "payer_id": "PYR10118",
+    "payer_name": "Stonegate Care",
+    "plan_name": "Stonegate PPO",
+    "channel": "Commercial",
+    "lives": "77328"
+  },
+  {
+    "id": "PLN52119",
+    "payer_id": "PYR10119",
+    "payer_name": "Bluegrass Health",
+    "plan_name": "Bluegrass EPO",
+    "channel": "Health Exchange",
+    "lives": "1780636"
+  },
+  {
+    "id": "PLN52120",
+    "payer_id": "PYR10120",
+    "payer_name": "Sequoia Care",
+    "plan_name": "Sequoia Complete",
+    "channel": "Managed Medicaid",
+    "lives": "944247"
+  },
+  {
+    "id": "PLN52121",
+    "payer_id": "PYR10121",
+    "payer_name": "Harborview Alliance",
+    "plan_name": "Harborview Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2892701"
+  },
+  {
+    "id": "PLN52122",
+    "payer_id": "PYR10122",
+    "payer_name": "Foundry Health Plan",
+    "plan_name": "Foundry HMO",
+    "channel": "Commercial",
+    "lives": "1168500"
+  },
+  {
+    "id": "PLN52123",
+    "payer_id": "PYR10123",
+    "payer_name": "Zephyr Mutual",
+    "plan_name": "Zephyr HMO",
+    "channel": "Health Exchange",
+    "lives": "494887"
+  },
+  {
+    "id": "PLN52124",
+    "payer_id": "PYR10124",
+    "payer_name": "Gateway Alliance",
+    "plan_name": "Gateway Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "3075216"
+  },
+  {
+    "id": "PLN52125",
+    "payer_id": "PYR10125",
+    "payer_name": "Juniper Health Plan",
+    "plan_name": "Juniper Complete",
+    "channel": "Commercial",
+    "lives": "397624"
+  },
+  {
+    "id": "PLN52126",
+    "payer_id": "PYR10126",
+    "payer_name": "Lakeside Health",
+    "plan_name": "Lakeside Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "1397635"
+  },
+  {
+    "id": "PLN52127",
+    "payer_id": "PYR10127",
+    "payer_name": "Harborview Insurance",
+    "plan_name": "Harborview Select PPO",
+    "channel": "Commercial",
+    "lives": "449532"
+  },
+  {
+    "id": "PLN52128",
+    "payer_id": "PYR10128",
+    "payer_name": "Highland Benefit",
+    "plan_name": "Highland HMO",
+    "channel": "Commercial",
+    "lives": "2422949"
+  },
+  {
+    "id": "PLN52129",
+    "payer_id": "PYR10129",
+    "payer_name": "Cascade Health Plan",
+    "plan_name": "Cascade Select PPO",
+    "channel": "Health Exchange",
+    "lives": "1310975"
+  },
+  {
+    "id": "PLN52130",
+    "payer_id": "PYR10130",
+    "payer_name": "Wayfarer Mutual",
+    "plan_name": "Wayfarer HMO",
+    "channel": "Commercial",
+    "lives": "3122849"
+  },
+  {
+    "id": "PLN52131",
+    "payer_id": "PYR10131",
+    "payer_name": "Prairie Benefit",
+    "plan_name": "Prairie EPO",
+    "channel": "Commercial",
+    "lives": "1322101"
+  },
+  {
+    "id": "PLN52132",
+    "payer_id": "PYR10132",
+    "payer_name": "Brightwater Health",
+    "plan_name": "Brightwater HMO",
+    "channel": "Commercial",
+    "lives": "1873550"
+  },
+  {
+    "id": "PLN52133",
+    "payer_id": "PYR10133",
+    "payer_name": "Fairview Care",
+    "plan_name": "Fairview Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "480105"
+  },
+  {
+    "id": "PLN52134",
+    "payer_id": "PYR10134",
+    "payer_name": "Lantern Health",
+    "plan_name": "Lantern PPO",
+    "channel": "Commercial",
+    "lives": "1279244"
+  },
+  {
+    "id": "PLN52135",
+    "payer_id": "PYR10135",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate Complete",
+    "channel": "Health Exchange",
+    "lives": "1821298"
+  },
+  {
+    "id": "PLN52136",
+    "payer_id": "PYR10136",
+    "payer_name": "Sequoia Benefit",
+    "plan_name": "Sequoia HMO",
+    "channel": "Medicare Advantage",
+    "lives": "3127346"
+  },
+  {
+    "id": "PLN52137",
+    "payer_id": "PYR10137",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry Advantage",
+    "channel": "Health Exchange",
+    "lives": "2699948"
+  },
+  {
+    "id": "PLN52138",
+    "payer_id": "PYR10138",
+    "payer_name": "Foundry Health Plan",
+    "plan_name": "Foundry Complete",
+    "channel": "Health Exchange",
+    "lives": "1532720"
+  },
+  {
+    "id": "PLN52139",
+    "payer_id": "PYR10139",
+    "payer_name": "Yellowstone Mutual",
+    "plan_name": "Yellowstone Preferred",
+    "channel": "Commercial",
+    "lives": "1674965"
+  },
+  {
+    "id": "PLN52140",
+    "payer_id": "PYR10140",
+    "payer_name": "Summit Care",
+    "plan_name": "Summit Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "828291"
+  },
+  {
+    "id": "PLN52141",
+    "payer_id": "PYR10141",
+    "payer_name": "Beacon Insurance",
+    "plan_name": "Beacon POS",
+    "channel": "Commercial",
+    "lives": "2541644"
+  },
+  {
+    "id": "PLN52142",
+    "payer_id": "PYR10142",
+    "payer_name": "Prairie Alliance",
+    "plan_name": "Prairie Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1340982"
+  },
+  {
+    "id": "PLN52143",
+    "payer_id": "PYR10143",
+    "payer_name": "Everest Insurance",
+    "plan_name": "Everest PPO",
+    "channel": "Commercial",
+    "lives": "2142925"
+  },
+  {
+    "id": "PLN52144",
+    "payer_id": "PYR10144",
+    "payer_name": "Harborview Benefit",
+    "plan_name": "Harborview Select PPO",
+    "channel": "Commercial",
+    "lives": "2718927"
+  },
+  {
+    "id": "PLN52145",
+    "payer_id": "PYR10145",
+    "payer_name": "Granite Alliance",
+    "plan_name": "Granite POS",
+    "channel": "Commercial",
+    "lives": "2552578"
+  },
+  {
+    "id": "PLN52146",
+    "payer_id": "PYR10146",
+    "payer_name": "Gateway Care",
+    "plan_name": "Gateway Preferred",
+    "channel": "Health Exchange",
+    "lives": "738764"
+  },
+  {
+    "id": "PLN52147",
+    "payer_id": "PYR10147",
+    "payer_name": "Trailhead Health Plan",
+    "plan_name": "Trailhead Choice HMO",
+    "channel": "Commercial",
+    "lives": "1201541"
+  },
+  {
+    "id": "PLN52148",
+    "payer_id": "PYR10148",
+    "payer_name": "Harborview Benefit",
+    "plan_name": "Harborview HMO",
+    "channel": "Commercial",
+    "lives": "411386"
+  },
+  {
+    "id": "PLN52149",
+    "payer_id": "PYR10149",
+    "payer_name": "Beacon Benefit",
+    "plan_name": "Beacon HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2798390"
+  },
+  {
+    "id": "PLN52150",
+    "payer_id": "PYR10150",
+    "payer_name": "Lakeside Care",
+    "plan_name": "Lakeside Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1594907"
+  },
+  {
+    "id": "PLN52151",
+    "payer_id": "PYR10151",
+    "payer_name": "Sequoia Benefit",
+    "plan_name": "Sequoia PPO",
+    "channel": "Commercial",
+    "lives": "1310478"
+  },
+  {
+    "id": "PLN52152",
+    "payer_id": "PYR10152",
+    "payer_name": "Ironwood Health Plan",
+    "plan_name": "Ironwood EPO",
+    "channel": "Commercial",
+    "lives": "1255641"
+  },
+  {
+    "id": "PLN52153",
+    "payer_id": "PYR10153",
+    "payer_name": "Zephyr Mutual",
+    "plan_name": "Zephyr EPO",
+    "channel": "Commercial",
+    "lives": "773522"
+  },
+  {
+    "id": "PLN52154",
+    "payer_id": "PYR10154",
+    "payer_name": "Silverpeak Alliance",
+    "plan_name": "Silverpeak Select PPO",
+    "channel": "Health Exchange",
+    "lives": "1897940"
+  },
+  {
+    "id": "PLN52155",
+    "payer_id": "PYR10155",
+    "payer_name": "Juniper Alliance",
+    "plan_name": "Juniper Complete",
+    "channel": "Commercial",
+    "lives": "1616689"
+  },
+  {
+    "id": "PLN52156",
+    "payer_id": "PYR10156",
+    "payer_name": "Bluegrass Health",
+    "plan_name": "Bluegrass Complete",
+    "channel": "Commercial",
+    "lives": "2340912"
+  },
+  {
+    "id": "PLN52157",
+    "payer_id": "PYR10157",
+    "payer_name": "Redwood Alliance",
+    "plan_name": "Redwood Preferred",
+    "channel": "Commercial",
+    "lives": "1849892"
+  },
+  {
+    "id": "PLN52158",
+    "payer_id": "PYR10158",
+    "payer_name": "Monarch Health",
+    "plan_name": "Monarch Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "1583508"
+  },
+  {
+    "id": "PLN52159",
+    "payer_id": "PYR10159",
+    "payer_name": "Cascade Benefit",
+    "plan_name": "Cascade HMO",
+    "channel": "Health Exchange",
+    "lives": "2741132"
+  },
+  {
+    "id": "PLN52160",
+    "payer_id": "PYR10160",
+    "payer_name": "Quarry Health Plan",
+    "plan_name": "Quarry Complete",
+    "channel": "Medicare Advantage",
+    "lives": "2595957"
+  },
+  {
+    "id": "PLN52161",
+    "payer_id": "PYR10161",
+    "payer_name": "Beacon Mutual",
+    "plan_name": "Beacon HMO",
+    "channel": "Commercial",
+    "lives": "1011735"
+  },
+  {
+    "id": "PLN52162",
+    "payer_id": "PYR10162",
+    "payer_name": "Brightwater Alliance",
+    "plan_name": "Brightwater HMO",
+    "channel": "Commercial",
+    "lives": "2111435"
+  },
+  {
+    "id": "PLN52163",
+    "payer_id": "PYR10163",
+    "payer_name": "Meridian Benefit",
+    "plan_name": "Meridian POS",
+    "channel": "Managed Medicaid",
+    "lives": "1762211"
+  },
+  {
+    "id": "PLN52164",
+    "payer_id": "PYR10164",
+    "payer_name": "Union Health",
+    "plan_name": "Union Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "197596"
+  },
+  {
+    "id": "PLN52165",
+    "payer_id": "PYR10165",
+    "payer_name": "Highland Care",
+    "plan_name": "Highland Choice HMO",
+    "channel": "Commercial",
+    "lives": "3089177"
+  },
+  {
+    "id": "PLN52166",
+    "payer_id": "PYR10166",
+    "payer_name": "Union Benefit",
+    "plan_name": "Union EPO",
+    "channel": "Health Exchange",
+    "lives": "1963769"
+  },
+  {
+    "id": "PLN52167",
+    "payer_id": "PYR10167",
+    "payer_name": "Granite Insurance",
+    "plan_name": "Granite POS",
+    "channel": "Commercial",
+    "lives": "851637"
+  },
+  {
+    "id": "PLN52168",
+    "payer_id": "PYR10168",
+    "payer_name": "Union Alliance",
+    "plan_name": "Union Select PPO",
+    "channel": "Commercial",
+    "lives": "3174531"
+  },
+  {
+    "id": "PLN52169",
+    "payer_id": "PYR10169",
+    "payer_name": "Redwood Care",
+    "plan_name": "Redwood Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1692812"
+  },
+  {
+    "id": "PLN52170",
+    "payer_id": "PYR10170",
+    "payer_name": "Ridgeline Benefit",
+    "plan_name": "Ridgeline Preferred",
+    "channel": "Commercial",
+    "lives": "361497"
+  },
+  {
+    "id": "PLN52171",
+    "payer_id": "PYR10171",
+    "payer_name": "Union Insurance",
+    "plan_name": "Union Choice HMO",
+    "channel": "Commercial",
+    "lives": "350833"
+  },
+  {
+    "id": "PLN52172",
+    "payer_id": "PYR10172",
+    "payer_name": "Nautilus Health Plan",
+    "plan_name": "Nautilus Complete",
+    "channel": "Commercial",
+    "lives": "1890397"
+  },
+  {
+    "id": "PLN52173",
+    "payer_id": "PYR10173",
+    "payer_name": "Summit Mutual",
+    "plan_name": "Summit Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "3160300"
+  },
+  {
+    "id": "PLN52174",
+    "payer_id": "PYR10174",
+    "payer_name": "Granite Health Plan",
+    "plan_name": "Granite HMO",
+    "channel": "Commercial",
+    "lives": "2721009"
+  },
+  {
+    "id": "PLN52175",
+    "payer_id": "PYR10175",
+    "payer_name": "Zephyr Health Plan",
+    "plan_name": "Zephyr Complete",
+    "channel": "Commercial",
+    "lives": "1575337"
+  },
+  {
+    "id": "PLN52176",
+    "payer_id": "PYR10176",
+    "payer_name": "Lantern Benefit",
+    "plan_name": "Lantern Select PPO",
+    "channel": "Commercial",
+    "lives": "490837"
+  },
+  {
+    "id": "PLN52177",
+    "payer_id": "PYR10177",
+    "payer_name": "Vantage Care",
+    "plan_name": "Vantage Select PPO",
+    "channel": "Commercial",
+    "lives": "2967948"
+  },
+  {
+    "id": "PLN52178",
+    "payer_id": "PYR10178",
+    "payer_name": "Willow Care",
+    "plan_name": "Willow EPO",
+    "channel": "Commercial",
+    "lives": "1911004"
+  },
+  {
+    "id": "PLN52179",
+    "payer_id": "PYR10179",
+    "payer_name": "Highland Care",
+    "plan_name": "Highland Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "1232867"
+  },
+  {
+    "id": "PLN52180",
+    "payer_id": "PYR10180",
+    "payer_name": "Ironwood Care",
+    "plan_name": "Ironwood POS",
+    "channel": "Commercial",
+    "lives": "1007943"
+  },
+  {
+    "id": "PLN52181",
+    "payer_id": "PYR10181",
+    "payer_name": "Juniper Alliance",
+    "plan_name": "Juniper Preferred",
+    "channel": "Commercial",
+    "lives": "2581697"
+  },
+  {
+    "id": "PLN52182",
+    "payer_id": "PYR10182",
+    "payer_name": "Trailhead Mutual",
+    "plan_name": "Trailhead Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "324332"
+  },
+  {
+    "id": "PLN52183",
+    "payer_id": "PYR10183",
+    "payer_name": "Trailhead Benefit",
+    "plan_name": "Trailhead EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2698490"
+  },
+  {
+    "id": "PLN52184",
+    "payer_id": "PYR10184",
+    "payer_name": "Northgate Health Plan",
+    "plan_name": "Northgate Select PPO",
+    "channel": "Commercial",
+    "lives": "694338"
+  },
+  {
+    "id": "PLN52185",
+    "payer_id": "PYR10185",
+    "payer_name": "Cedar Insurance",
+    "plan_name": "Cedar POS",
+    "channel": "Health Exchange",
+    "lives": "2325396"
+  },
+  {
+    "id": "PLN52186",
+    "payer_id": "PYR10186",
+    "payer_name": "Cedar Health Plan",
+    "plan_name": "Cedar EPO",
+    "channel": "Commercial",
+    "lives": "2777925"
+  },
+  {
+    "id": "PLN52187",
+    "payer_id": "PYR10187",
+    "payer_name": "Wayfarer Insurance",
+    "plan_name": "Wayfarer POS",
+    "channel": "Managed Medicaid",
+    "lives": "1762291"
+  },
+  {
+    "id": "PLN52188",
+    "payer_id": "PYR10188",
+    "payer_name": "Quarry Wellness",
+    "plan_name": "Quarry Advantage",
+    "channel": "Commercial",
+    "lives": "1917301"
+  },
+  {
+    "id": "PLN52189",
+    "payer_id": "PYR10189",
+    "payer_name": "Quarry Alliance",
+    "plan_name": "Quarry POS",
+    "channel": "Commercial",
+    "lives": "2559517"
+  },
+  {
+    "id": "PLN52190",
+    "payer_id": "PYR10190",
+    "payer_name": "Lantern Health Plan",
+    "plan_name": "Lantern Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2370735"
+  },
+  {
+    "id": "PLN52191",
+    "payer_id": "PYR10191",
+    "payer_name": "Redwood Alliance",
+    "plan_name": "Redwood POS",
+    "channel": "Commercial",
+    "lives": "421057"
+  },
+  {
+    "id": "PLN52192",
+    "payer_id": "PYR10192",
+    "payer_name": "Silverpeak Health Plan",
+    "plan_name": "Silverpeak Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "3039631"
+  },
+  {
+    "id": "PLN52193",
+    "payer_id": "PYR10193",
+    "payer_name": "Prairie Alliance",
+    "plan_name": "Prairie Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "112208"
+  },
+  {
+    "id": "PLN52194",
+    "payer_id": "PYR10194",
+    "payer_name": "Yellowstone Benefit",
+    "plan_name": "Yellowstone PPO",
+    "channel": "Commercial",
+    "lives": "1195094"
+  },
+  {
+    "id": "PLN52195",
+    "payer_id": "PYR10195",
+    "payer_name": "Riverbend Mutual",
+    "plan_name": "Riverbend EPO",
+    "channel": "Commercial",
+    "lives": "3066389"
+  },
+  {
+    "id": "PLN52196",
+    "payer_id": "PYR10196",
+    "payer_name": "Harborview Wellness",
+    "plan_name": "Harborview Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "1225483"
+  },
+  {
+    "id": "PLN52197",
+    "payer_id": "PYR10197",
+    "payer_name": "Brightwater Care",
+    "plan_name": "Brightwater EPO",
+    "channel": "Commercial",
+    "lives": "1667151"
+  },
+  {
+    "id": "PLN52198",
+    "payer_id": "PYR10198",
+    "payer_name": "Zephyr Mutual",
+    "plan_name": "Zephyr Preferred",
+    "channel": "Commercial",
+    "lives": "205016"
+  },
+  {
+    "id": "PLN52199",
+    "payer_id": "PYR10199",
+    "payer_name": "Prairie Health Plan",
+    "plan_name": "Prairie Preferred",
+    "channel": "Commercial",
+    "lives": "1390588"
+  },
+  {
+    "id": "PLN52200",
+    "payer_id": "PYR10200",
+    "payer_name": "Yellowstone Benefit",
+    "plan_name": "Yellowstone Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "2247795"
+  },
+  {
+    "id": "PLN52201",
+    "payer_id": "PYR10201",
+    "payer_name": "Gateway Care",
+    "plan_name": "Gateway Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "1305494"
+  },
+  {
+    "id": "PLN52202",
+    "payer_id": "PYR10202",
+    "payer_name": "Wayfarer Wellness",
+    "plan_name": "Wayfarer PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2030148"
+  },
+  {
+    "id": "PLN52203",
+    "payer_id": "PYR10203",
+    "payer_name": "Granite Care",
+    "plan_name": "Granite POS",
+    "channel": "Commercial",
+    "lives": "1864849"
+  },
+  {
+    "id": "PLN52204",
+    "payer_id": "PYR10204",
+    "payer_name": "Monarch Alliance",
+    "plan_name": "Monarch PPO",
+    "channel": "Health Exchange",
+    "lives": "594159"
+  },
+  {
+    "id": "PLN52205",
+    "payer_id": "PYR10205",
+    "payer_name": "Foundry Health Plan",
+    "plan_name": "Foundry Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1450823"
+  },
+  {
+    "id": "PLN52206",
+    "payer_id": "PYR10206",
+    "payer_name": "Redwood Insurance",
+    "plan_name": "Redwood POS",
+    "channel": "Commercial",
+    "lives": "1227171"
+  },
+  {
+    "id": "PLN52207",
+    "payer_id": "PYR10207",
+    "payer_name": "Vantage Insurance",
+    "plan_name": "Vantage Select PPO",
+    "channel": "Commercial",
+    "lives": "2420336"
+  },
+  {
+    "id": "PLN52208",
+    "payer_id": "PYR10208",
+    "payer_name": "Granite Insurance",
+    "plan_name": "Granite HMO",
+    "channel": "Commercial",
+    "lives": "1870459"
+  },
+  {
+    "id": "PLN52209",
+    "payer_id": "PYR10209",
+    "payer_name": "Redwood Insurance",
+    "plan_name": "Redwood EPO",
+    "channel": "Commercial",
+    "lives": "2597336"
+  },
+  {
+    "id": "PLN52210",
+    "payer_id": "PYR10210",
+    "payer_name": "Ironwood Wellness",
+    "plan_name": "Ironwood PPO",
+    "channel": "Commercial",
+    "lives": "1748511"
+  },
+  {
+    "id": "PLN52211",
+    "payer_id": "PYR10211",
+    "payer_name": "Meridian Health Plan",
+    "plan_name": "Meridian Advantage",
+    "channel": "Health Exchange",
+    "lives": "2010228"
+  },
+  {
+    "id": "PLN52212",
+    "payer_id": "PYR10212",
+    "payer_name": "Harborview Care",
+    "plan_name": "Harborview POS",
+    "channel": "Managed Medicaid",
+    "lives": "3113275"
+  },
+  {
+    "id": "PLN52213",
+    "payer_id": "PYR10213",
+    "payer_name": "Lantern Alliance",
+    "plan_name": "Lantern EPO",
+    "channel": "Health Exchange",
+    "lives": "1229112"
+  },
+  {
+    "id": "PLN52214",
+    "payer_id": "PYR10214",
+    "payer_name": "Riverbend Benefit",
+    "plan_name": "Riverbend Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2704859"
+  },
+  {
+    "id": "PLN52215",
+    "payer_id": "PYR10215",
+    "payer_name": "Northgate Benefit",
+    "plan_name": "Northgate EPO",
+    "channel": "Health Exchange",
+    "lives": "1939826"
+  },
+  {
+    "id": "PLN52216",
+    "payer_id": "PYR10216",
+    "payer_name": "Copperfield Wellness",
+    "plan_name": "Copperfield EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2694010"
+  },
+  {
+    "id": "PLN52217",
+    "payer_id": "PYR10217",
+    "payer_name": "Riverbend Health Plan",
+    "plan_name": "Riverbend EPO",
+    "channel": "Medicare Advantage",
+    "lives": "1372283"
+  },
+  {
+    "id": "PLN52218",
+    "payer_id": "PYR10218",
+    "payer_name": "Oakmont Insurance",
+    "plan_name": "Oakmont Choice HMO",
+    "channel": "Commercial",
+    "lives": "2458017"
+  },
+  {
+    "id": "PLN52219",
+    "payer_id": "PYR10219",
+    "payer_name": "Harborview Care",
+    "plan_name": "Harborview Complete",
+    "channel": "Commercial",
+    "lives": "684900"
+  },
+  {
+    "id": "PLN52220",
+    "payer_id": "PYR10220",
+    "payer_name": "Juniper Wellness",
+    "plan_name": "Juniper POS",
+    "channel": "Commercial",
+    "lives": "2020640"
+  },
+  {
+    "id": "PLN52221",
+    "payer_id": "PYR10221",
+    "payer_name": "Quarry Wellness",
+    "plan_name": "Quarry POS",
+    "channel": "Health Exchange",
+    "lives": "3180607"
+  },
+  {
+    "id": "PLN52222",
+    "payer_id": "PYR10222",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "862906"
+  },
+  {
+    "id": "PLN52223",
+    "payer_id": "PYR10223",
+    "payer_name": "Northgate Wellness",
+    "plan_name": "Northgate Complete",
+    "channel": "Commercial",
+    "lives": "2155669"
+  },
+  {
+    "id": "PLN52224",
+    "payer_id": "PYR10224",
+    "payer_name": "Monarch Alliance",
+    "plan_name": "Monarch PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1954355"
+  },
+  {
+    "id": "PLN52225",
+    "payer_id": "PYR10225",
+    "payer_name": "Fairview Care",
+    "plan_name": "Fairview PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1460058"
+  },
+  {
+    "id": "PLN52226",
+    "payer_id": "PYR10226",
+    "payer_name": "Copperfield Mutual",
+    "plan_name": "Copperfield EPO",
+    "channel": "Commercial",
+    "lives": "2705750"
+  },
+  {
+    "id": "PLN52227",
+    "payer_id": "PYR10227",
+    "payer_name": "Keystone Care",
+    "plan_name": "Keystone Preferred",
+    "channel": "Commercial",
+    "lives": "2756120"
+  },
+  {
+    "id": "PLN52228",
+    "payer_id": "PYR10228",
+    "payer_name": "Trailhead Health Plan",
+    "plan_name": "Trailhead POS",
+    "channel": "Commercial",
+    "lives": "3186646"
+  },
+  {
+    "id": "PLN52229",
+    "payer_id": "PYR10229",
+    "payer_name": "Nautilus Mutual",
+    "plan_name": "Nautilus POS",
+    "channel": "Commercial",
+    "lives": "1947002"
+  },
+  {
+    "id": "PLN52230",
+    "payer_id": "PYR10230",
+    "payer_name": "Granite Mutual",
+    "plan_name": "Granite PPO",
+    "channel": "Commercial",
+    "lives": "879368"
+  },
+  {
+    "id": "PLN52231",
+    "payer_id": "PYR10231",
+    "payer_name": "Harborview Wellness",
+    "plan_name": "Harborview PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1856143"
+  },
+  {
+    "id": "PLN52232",
+    "payer_id": "PYR10232",
+    "payer_name": "Copperfield Wellness",
+    "plan_name": "Copperfield Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2522848"
+  },
+  {
+    "id": "PLN52233",
+    "payer_id": "PYR10233",
+    "payer_name": "Ironwood Mutual",
+    "plan_name": "Ironwood Select PPO",
+    "channel": "Commercial",
+    "lives": "270674"
+  },
+  {
+    "id": "PLN52234",
+    "payer_id": "PYR10234",
+    "payer_name": "Keystone Benefit",
+    "plan_name": "Keystone Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "640864"
+  },
+  {
+    "id": "PLN52235",
+    "payer_id": "PYR10235",
+    "payer_name": "Silverpeak Wellness",
+    "plan_name": "Silverpeak Select PPO",
+    "channel": "Health Exchange",
+    "lives": "620455"
+  },
+  {
+    "id": "PLN52236",
+    "payer_id": "PYR10236",
+    "payer_name": "Trailhead Health Plan",
+    "plan_name": "Trailhead Advantage",
+    "channel": "Commercial",
+    "lives": "1084529"
+  },
+  {
+    "id": "PLN52237",
+    "payer_id": "PYR10237",
+    "payer_name": "Cedar Wellness",
+    "plan_name": "Cedar PPO",
+    "channel": "Commercial",
+    "lives": "1596957"
+  },
+  {
+    "id": "PLN52238",
+    "payer_id": "PYR10238",
+    "payer_name": "Fairview Alliance",
+    "plan_name": "Fairview POS",
+    "channel": "Commercial",
+    "lives": "1286662"
+  },
+  {
+    "id": "PLN52239",
+    "payer_id": "PYR10239",
+    "payer_name": "Quarry Wellness",
+    "plan_name": "Quarry POS",
+    "channel": "Medicare Advantage",
+    "lives": "1018826"
+  },
+  {
+    "id": "PLN52240",
+    "payer_id": "PYR10240",
+    "payer_name": "Highland Insurance",
+    "plan_name": "Highland Select PPO",
+    "channel": "Commercial",
+    "lives": "2165908"
+  },
+  {
+    "id": "PLN52241",
+    "payer_id": "PYR10241",
+    "payer_name": "Foundry Wellness",
+    "plan_name": "Foundry Choice HMO",
+    "channel": "Commercial",
+    "lives": "1751148"
+  },
+  {
+    "id": "PLN52242",
+    "payer_id": "PYR10242",
+    "payer_name": "Vantage Mutual",
+    "plan_name": "Vantage Select PPO",
+    "channel": "Commercial",
+    "lives": "837887"
+  },
+  {
+    "id": "PLN52243",
+    "payer_id": "PYR10243",
+    "payer_name": "Ridgeline Benefit",
+    "plan_name": "Ridgeline Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "3049821"
+  },
+  {
+    "id": "PLN52244",
+    "payer_id": "PYR10244",
+    "payer_name": "Pinecrest Health Plan",
+    "plan_name": "Pinecrest Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "786952"
+  },
+  {
+    "id": "PLN52245",
+    "payer_id": "PYR10245",
+    "payer_name": "Meridian Mutual",
+    "plan_name": "Meridian EPO",
+    "channel": "Health Exchange",
+    "lives": "985702"
+  },
+  {
+    "id": "PLN52246",
+    "payer_id": "PYR10246",
+    "payer_name": "Prairie Benefit",
+    "plan_name": "Prairie PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2689827"
+  },
+  {
+    "id": "PLN52247",
+    "payer_id": "PYR10247",
+    "payer_name": "Vantage Mutual",
+    "plan_name": "Vantage PPO",
+    "channel": "Commercial",
+    "lives": "2235538"
+  },
+  {
+    "id": "PLN52248",
+    "payer_id": "PYR10248",
+    "payer_name": "Stonegate Care",
+    "plan_name": "Stonegate HMO",
+    "channel": "Managed Medicaid",
+    "lives": "639521"
+  },
+  {
+    "id": "PLN52249",
+    "payer_id": "PYR10249",
+    "payer_name": "Lantern Care",
+    "plan_name": "Lantern Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1940176"
+  },
+  {
+    "id": "PLN52250",
+    "payer_id": "PYR10250",
+    "payer_name": "Granite Care",
+    "plan_name": "Granite Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "1596963"
+  },
+  {
+    "id": "PLN52251",
+    "payer_id": "PYR10251",
+    "payer_name": "Cedar Alliance",
+    "plan_name": "Cedar Advantage",
+    "channel": "Health Exchange",
+    "lives": "1404449"
+  },
+  {
+    "id": "PLN52252",
+    "payer_id": "PYR10252",
+    "payer_name": "Quarry Insurance",
+    "plan_name": "Quarry PPO",
+    "channel": "Commercial",
+    "lives": "2885702"
+  },
+  {
+    "id": "PLN52253",
+    "payer_id": "PYR10253",
+    "payer_name": "Fairview Health Plan",
+    "plan_name": "Fairview Advantage",
+    "channel": "Commercial",
+    "lives": "1270258"
+  },
+  {
+    "id": "PLN52254",
+    "payer_id": "PYR10254",
+    "payer_name": "Gateway Mutual",
+    "plan_name": "Gateway EPO",
+    "channel": "Health Exchange",
+    "lives": "3052362"
+  },
+  {
+    "id": "PLN52255",
+    "payer_id": "PYR10255",
+    "payer_name": "Ironwood Care",
+    "plan_name": "Ironwood Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2589737"
+  },
+  {
+    "id": "PLN52256",
+    "payer_id": "PYR10256",
+    "payer_name": "Oakmont Alliance",
+    "plan_name": "Oakmont POS",
+    "channel": "Commercial",
+    "lives": "2334608"
+  },
+  {
+    "id": "PLN52257",
+    "payer_id": "PYR10257",
+    "payer_name": "Keystone Care",
+    "plan_name": "Keystone Select PPO",
+    "channel": "Commercial",
+    "lives": "3005993"
+  },
+  {
+    "id": "PLN52258",
+    "payer_id": "PYR10258",
+    "payer_name": "Beacon Mutual",
+    "plan_name": "Beacon Choice HMO",
+    "channel": "Commercial",
+    "lives": "461906"
+  },
+  {
+    "id": "PLN52259",
+    "payer_id": "PYR10259",
+    "payer_name": "Redwood Care",
+    "plan_name": "Redwood EPO",
+    "channel": "Commercial",
+    "lives": "800978"
+  },
+  {
+    "id": "PLN52260",
+    "payer_id": "PYR10260",
+    "payer_name": "Cedar Benefit",
+    "plan_name": "Cedar Preferred",
+    "channel": "Commercial",
+    "lives": "2518683"
+  },
+  {
+    "id": "PLN52261",
+    "payer_id": "PYR10261",
+    "payer_name": "Keystone Care",
+    "plan_name": "Keystone Preferred",
+    "channel": "Commercial",
+    "lives": "2413975"
+  },
+  {
+    "id": "PLN52262",
+    "payer_id": "PYR10262",
+    "payer_name": "Everest Insurance",
+    "plan_name": "Everest Complete",
+    "channel": "Commercial",
+    "lives": "280361"
+  },
+  {
+    "id": "PLN52263",
+    "payer_id": "PYR10263",
+    "payer_name": "Quarry Care",
+    "plan_name": "Quarry Choice HMO",
+    "channel": "Commercial",
+    "lives": "1049273"
+  },
+  {
+    "id": "PLN52264",
+    "payer_id": "PYR10264",
+    "payer_name": "Everest Health",
+    "plan_name": "Everest Advantage",
+    "channel": "Commercial",
+    "lives": "2616274"
+  },
+  {
+    "id": "PLN52265",
+    "payer_id": "PYR10265",
+    "payer_name": "Zephyr Health Plan",
+    "plan_name": "Zephyr Select PPO",
+    "channel": "Commercial",
+    "lives": "2545051"
+  },
+  {
+    "id": "PLN52266",
+    "payer_id": "PYR10266",
+    "payer_name": "Foundry Insurance",
+    "plan_name": "Foundry Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1031801"
+  },
+  {
+    "id": "PLN52267",
+    "payer_id": "PYR10267",
+    "payer_name": "Northgate Wellness",
+    "plan_name": "Northgate Preferred",
+    "channel": "Commercial",
+    "lives": "2874310"
+  },
+  {
+    "id": "PLN52268",
+    "payer_id": "PYR10268",
+    "payer_name": "Summit Mutual",
+    "plan_name": "Summit Complete",
+    "channel": "Commercial",
+    "lives": "2671403"
+  },
+  {
+    "id": "PLN52269",
+    "payer_id": "PYR10269",
+    "payer_name": "Nautilus Mutual",
+    "plan_name": "Nautilus HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2522916"
+  },
+  {
+    "id": "PLN52270",
+    "payer_id": "PYR10270",
+    "payer_name": "Juniper Care",
+    "plan_name": "Juniper HMO",
+    "channel": "Commercial",
+    "lives": "2773181"
+  },
+  {
+    "id": "PLN52271",
+    "payer_id": "PYR10271",
+    "payer_name": "Gateway Mutual",
+    "plan_name": "Gateway HMO",
+    "channel": "Commercial",
+    "lives": "428585"
+  },
+  {
+    "id": "PLN52272",
+    "payer_id": "PYR10272",
+    "payer_name": "Lantern Alliance",
+    "plan_name": "Lantern Preferred",
+    "channel": "Commercial",
+    "lives": "1461898"
+  },
+  {
+    "id": "PLN52273",
+    "payer_id": "PYR10273",
+    "payer_name": "Cedar Care",
+    "plan_name": "Cedar EPO",
+    "channel": "Commercial",
+    "lives": "1323162"
+  },
+  {
+    "id": "PLN52274",
+    "payer_id": "PYR10274",
+    "payer_name": "Highland Alliance",
+    "plan_name": "Highland HMO",
+    "channel": "Medicare Advantage",
+    "lives": "3043262"
+  },
+  {
+    "id": "PLN52275",
+    "payer_id": "PYR10275",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "473700"
+  },
+  {
+    "id": "PLN52276",
+    "payer_id": "PYR10276",
+    "payer_name": "Gateway Mutual",
+    "plan_name": "Gateway Complete",
+    "channel": "Commercial",
+    "lives": "1713892"
+  },
+  {
+    "id": "PLN52277",
+    "payer_id": "PYR10277",
+    "payer_name": "Brightwater Wellness",
+    "plan_name": "Brightwater Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1816675"
+  },
+  {
+    "id": "PLN52278",
+    "payer_id": "PYR10278",
+    "payer_name": "Summit Care",
+    "plan_name": "Summit Preferred",
+    "channel": "Commercial",
+    "lives": "1549247"
+  },
+  {
+    "id": "PLN52279",
+    "payer_id": "PYR10279",
+    "payer_name": "Ridgeline Benefit",
+    "plan_name": "Ridgeline Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "1661448"
+  },
+  {
+    "id": "PLN52280",
+    "payer_id": "PYR10280",
+    "payer_name": "Stonegate Insurance",
+    "plan_name": "Stonegate HMO",
+    "channel": "Health Exchange",
+    "lives": "576817"
+  },
+  {
+    "id": "PLN52281",
+    "payer_id": "PYR10281",
+    "payer_name": "Stonegate Benefit",
+    "plan_name": "Stonegate EPO",
+    "channel": "Managed Medicaid",
+    "lives": "1644333"
+  },
+  {
+    "id": "PLN52282",
+    "payer_id": "PYR10282",
+    "payer_name": "Ridgeline Health Plan",
+    "plan_name": "Ridgeline Preferred",
+    "channel": "Commercial",
+    "lives": "2068707"
+  },
+  {
+    "id": "PLN52283",
+    "payer_id": "PYR10283",
+    "payer_name": "Brightwater Health",
+    "plan_name": "Brightwater Choice HMO",
+    "channel": "Commercial",
+    "lives": "2047597"
+  },
+  {
+    "id": "PLN52284",
+    "payer_id": "PYR10284",
+    "payer_name": "Ridgeline Mutual",
+    "plan_name": "Ridgeline Complete",
+    "channel": "Medicare Advantage",
+    "lives": "2993552"
+  },
+  {
+    "id": "PLN52285",
+    "payer_id": "PYR10285",
+    "payer_name": "Cascade Wellness",
+    "plan_name": "Cascade Select PPO",
+    "channel": "Commercial",
+    "lives": "1167816"
+  },
+  {
+    "id": "PLN52286",
+    "payer_id": "PYR10286",
+    "payer_name": "Ridgeline Care",
+    "plan_name": "Ridgeline HMO",
+    "channel": "Commercial",
+    "lives": "2292952"
+  },
+  {
+    "id": "PLN52287",
+    "payer_id": "PYR10287",
+    "payer_name": "Nautilus Care",
+    "plan_name": "Nautilus POS",
+    "channel": "Commercial",
+    "lives": "150184"
+  },
+  {
+    "id": "PLN52288",
+    "payer_id": "PYR10288",
+    "payer_name": "Northgate Wellness",
+    "plan_name": "Northgate POS",
+    "channel": "Health Exchange",
+    "lives": "2480931"
+  },
+  {
+    "id": "PLN52289",
+    "payer_id": "PYR10289",
+    "payer_name": "Fairview Wellness",
+    "plan_name": "Fairview PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1486426"
+  },
+  {
+    "id": "PLN52290",
+    "payer_id": "PYR10290",
+    "payer_name": "Copperfield Insurance",
+    "plan_name": "Copperfield Preferred",
+    "channel": "Health Exchange",
+    "lives": "414403"
+  },
+  {
+    "id": "PLN52291",
+    "payer_id": "PYR10291",
+    "payer_name": "Lakeside Wellness",
+    "plan_name": "Lakeside EPO",
+    "channel": "Health Exchange",
+    "lives": "1365971"
+  },
+  {
+    "id": "PLN52292",
+    "payer_id": "PYR10292",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "331738"
+  },
+  {
+    "id": "PLN52293",
+    "payer_id": "PYR10293",
+    "payer_name": "Prairie Alliance",
+    "plan_name": "Prairie Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "25372"
+  },
+  {
+    "id": "PLN52294",
+    "payer_id": "PYR10294",
+    "payer_name": "Lantern Wellness",
+    "plan_name": "Lantern Advantage",
+    "channel": "Commercial",
+    "lives": "2089984"
+  },
+  {
+    "id": "PLN52295",
+    "payer_id": "PYR10295",
+    "payer_name": "Wayfarer Health Plan",
+    "plan_name": "Wayfarer Complete",
+    "channel": "Commercial",
+    "lives": "2877830"
+  },
+  {
+    "id": "PLN52296",
+    "payer_id": "PYR10296",
+    "payer_name": "Cascade Care",
+    "plan_name": "Cascade EPO",
+    "channel": "Medicare Advantage",
+    "lives": "1929775"
+  },
+  {
+    "id": "PLN52297",
+    "payer_id": "PYR10297",
+    "payer_name": "Everest Health Plan",
+    "plan_name": "Everest Select PPO",
+    "channel": "Commercial",
+    "lives": "2760540"
+  },
+  {
+    "id": "PLN52298",
+    "payer_id": "PYR10298",
+    "payer_name": "Harborview Mutual",
+    "plan_name": "Harborview Select PPO",
+    "channel": "Health Exchange",
+    "lives": "2948669"
+  },
+  {
+    "id": "PLN52299",
+    "payer_id": "PYR10299",
+    "payer_name": "Meridian Wellness",
+    "plan_name": "Meridian Complete",
+    "channel": "Commercial",
+    "lives": "571583"
+  },
+  {
+    "id": "PLN52300",
+    "payer_id": "PYR10300",
+    "payer_name": "Northgate Mutual",
+    "plan_name": "Northgate EPO",
+    "channel": "Medicare Advantage",
+    "lives": "312075"
+  },
+  {
+    "id": "PLN52301",
+    "payer_id": "PYR10301",
+    "payer_name": "Riverbend Benefit",
+    "plan_name": "Riverbend Choice HMO",
+    "channel": "Commercial",
+    "lives": "590161"
+  },
+  {
+    "id": "PLN52302",
+    "payer_id": "PYR10302",
+    "payer_name": "Wayfarer Health",
+    "plan_name": "Wayfarer EPO",
+    "channel": "Medicare Advantage",
+    "lives": "1487988"
+  },
+  {
+    "id": "PLN52303",
+    "payer_id": "PYR10303",
+    "payer_name": "Fairview Care",
+    "plan_name": "Fairview HMO",
+    "channel": "Commercial",
+    "lives": "3170985"
+  },
+  {
+    "id": "PLN52304",
+    "payer_id": "PYR10304",
+    "payer_name": "Lakeside Wellness",
+    "plan_name": "Lakeside Select PPO",
+    "channel": "Health Exchange",
+    "lives": "368364"
+  },
+  {
+    "id": "PLN52305",
+    "payer_id": "PYR10305",
+    "payer_name": "Fairview Wellness",
+    "plan_name": "Fairview Advantage",
+    "channel": "Commercial",
+    "lives": "2725232"
+  },
+  {
+    "id": "PLN52306",
+    "payer_id": "PYR10306",
+    "payer_name": "Silverpeak Alliance",
+    "plan_name": "Silverpeak HMO",
+    "channel": "Managed Medicaid",
+    "lives": "65612"
+  },
+  {
+    "id": "PLN52307",
+    "payer_id": "PYR10307",
+    "payer_name": "Monarch Benefit",
+    "plan_name": "Monarch Preferred",
+    "channel": "Health Exchange",
+    "lives": "739651"
+  },
+  {
+    "id": "PLN52308",
+    "payer_id": "PYR10308",
+    "payer_name": "Meridian Insurance",
+    "plan_name": "Meridian POS",
+    "channel": "Commercial",
+    "lives": "268624"
+  },
+  {
+    "id": "PLN52309",
+    "payer_id": "PYR10309",
+    "payer_name": "Cedar Health Plan",
+    "plan_name": "Cedar Select PPO",
+    "channel": "Commercial",
+    "lives": "1314843"
+  },
+  {
+    "id": "PLN52310",
+    "payer_id": "PYR10310",
+    "payer_name": "Lantern Care",
+    "plan_name": "Lantern Select PPO",
+    "channel": "Health Exchange",
+    "lives": "1849949"
+  },
+  {
+    "id": "PLN52311",
+    "payer_id": "PYR10311",
+    "payer_name": "Northgate Alliance",
+    "plan_name": "Northgate PPO",
+    "channel": "Commercial",
+    "lives": "2808740"
+  },
+  {
+    "id": "PLN52312",
+    "payer_id": "PYR10312",
+    "payer_name": "Meridian Health Plan",
+    "plan_name": "Meridian Complete",
+    "channel": "Commercial",
+    "lives": "2208643"
+  },
+  {
+    "id": "PLN52313",
+    "payer_id": "PYR10313",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1155769"
+  },
+  {
+    "id": "PLN52314",
+    "payer_id": "PYR10314",
+    "payer_name": "Sequoia Benefit",
+    "plan_name": "Sequoia PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2392692"
+  },
+  {
+    "id": "PLN52315",
+    "payer_id": "PYR10315",
+    "payer_name": "Wayfarer Care",
+    "plan_name": "Wayfarer POS",
+    "channel": "Health Exchange",
+    "lives": "2149166"
+  },
+  {
+    "id": "PLN52316",
+    "payer_id": "PYR10316",
+    "payer_name": "Quarry Benefit",
+    "plan_name": "Quarry Advantage",
+    "channel": "Commercial",
+    "lives": "765616"
+  },
+  {
+    "id": "PLN52317",
+    "payer_id": "PYR10317",
+    "payer_name": "Monarch Benefit",
+    "plan_name": "Monarch Select PPO",
+    "channel": "Commercial",
+    "lives": "2412195"
+  },
+  {
+    "id": "PLN52318",
+    "payer_id": "PYR10318",
+    "payer_name": "Trailhead Health",
+    "plan_name": "Trailhead Advantage",
+    "channel": "Commercial",
+    "lives": "1965746"
+  },
+  {
+    "id": "PLN52319",
+    "payer_id": "PYR10319",
+    "payer_name": "Prairie Health",
+    "plan_name": "Prairie Choice HMO",
+    "channel": "Commercial",
+    "lives": "1238038"
+  },
+  {
+    "id": "PLN52320",
+    "payer_id": "PYR10320",
+    "payer_name": "Ridgeline Wellness",
+    "plan_name": "Ridgeline Preferred",
+    "channel": "Commercial",
+    "lives": "646521"
+  },
+  {
+    "id": "PLN52321",
+    "payer_id": "PYR10321",
+    "payer_name": "Highland Health",
+    "plan_name": "Highland Choice HMO",
+    "channel": "Commercial",
+    "lives": "3198179"
+  },
+  {
+    "id": "PLN52322",
+    "payer_id": "PYR10322",
+    "payer_name": "Silverpeak Mutual",
+    "plan_name": "Silverpeak Complete",
+    "channel": "Commercial",
+    "lives": "612157"
+  },
+  {
+    "id": "PLN52323",
+    "payer_id": "PYR10323",
+    "payer_name": "Monarch Benefit",
+    "plan_name": "Monarch Complete",
+    "channel": "Health Exchange",
+    "lives": "371106"
+  },
+  {
+    "id": "PLN52324",
+    "payer_id": "PYR10324",
+    "payer_name": "Wayfarer Health",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Health Exchange",
+    "lives": "563230"
+  },
+  {
+    "id": "PLN52325",
+    "payer_id": "PYR10325",
+    "payer_name": "Foundry Benefit",
+    "plan_name": "Foundry Complete",
+    "channel": "Commercial",
+    "lives": "994836"
+  },
+  {
+    "id": "PLN52326",
+    "payer_id": "PYR10326",
+    "payer_name": "Beacon Care",
+    "plan_name": "Beacon EPO",
+    "channel": "Medicare Advantage",
+    "lives": "1969776"
+  },
+  {
+    "id": "PLN52327",
+    "payer_id": "PYR10327",
+    "payer_name": "Fairview Alliance",
+    "plan_name": "Fairview Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1126523"
+  },
+  {
+    "id": "PLN52328",
+    "payer_id": "PYR10328",
+    "payer_name": "Zephyr Health",
+    "plan_name": "Zephyr POS",
+    "channel": "Commercial",
+    "lives": "637115"
+  },
+  {
+    "id": "PLN52329",
+    "payer_id": "PYR10329",
+    "payer_name": "Harborview Insurance",
+    "plan_name": "Harborview Select PPO",
+    "channel": "Commercial",
+    "lives": "145367"
+  },
+  {
+    "id": "PLN52330",
+    "payer_id": "PYR10330",
+    "payer_name": "Riverbend Health Plan",
+    "plan_name": "Riverbend HMO",
+    "channel": "Commercial",
+    "lives": "273659"
+  },
+  {
+    "id": "PLN52331",
+    "payer_id": "PYR10331",
+    "payer_name": "Cedar Insurance",
+    "plan_name": "Cedar HMO",
+    "channel": "Commercial",
+    "lives": "285415"
+  },
+  {
+    "id": "PLN52332",
+    "payer_id": "PYR10332",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate Complete",
+    "channel": "Commercial",
+    "lives": "719597"
+  },
+  {
+    "id": "PLN52333",
+    "payer_id": "PYR10333",
+    "payer_name": "Nautilus Health Plan",
+    "plan_name": "Nautilus Choice HMO",
+    "channel": "Commercial",
+    "lives": "799968"
+  },
+  {
+    "id": "PLN52334",
+    "payer_id": "PYR10334",
+    "payer_name": "Brightwater Wellness",
+    "plan_name": "Brightwater Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1743020"
+  },
+  {
+    "id": "PLN52335",
+    "payer_id": "PYR10335",
+    "payer_name": "Lakeside Mutual",
+    "plan_name": "Lakeside POS",
+    "channel": "Health Exchange",
+    "lives": "2220424"
+  },
+  {
+    "id": "PLN52336",
+    "payer_id": "PYR10336",
+    "payer_name": "Quarry Alliance",
+    "plan_name": "Quarry Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2122190"
+  },
+  {
+    "id": "PLN52337",
+    "payer_id": "PYR10337",
+    "payer_name": "Foundry Wellness",
+    "plan_name": "Foundry PPO",
+    "channel": "Commercial",
+    "lives": "260749"
+  },
+  {
+    "id": "PLN52338",
+    "payer_id": "PYR10338",
+    "payer_name": "Silverpeak Wellness",
+    "plan_name": "Silverpeak Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "3106454"
+  },
+  {
+    "id": "PLN52339",
+    "payer_id": "PYR10339",
+    "payer_name": "Stonegate Wellness",
+    "plan_name": "Stonegate Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "2941057"
+  },
+  {
+    "id": "PLN52340",
+    "payer_id": "PYR10340",
+    "payer_name": "Beacon Wellness",
+    "plan_name": "Beacon Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1311262"
+  },
+  {
+    "id": "PLN52341",
+    "payer_id": "PYR10341",
+    "payer_name": "Ironwood Wellness",
+    "plan_name": "Ironwood PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2019831"
+  },
+  {
+    "id": "PLN52342",
+    "payer_id": "PYR10342",
+    "payer_name": "Stonegate Benefit",
+    "plan_name": "Stonegate PPO",
+    "channel": "Commercial",
+    "lives": "634549"
+  },
+  {
+    "id": "PLN52343",
+    "payer_id": "PYR10343",
+    "payer_name": "Lantern Care",
+    "plan_name": "Lantern Choice HMO",
+    "channel": "Commercial",
+    "lives": "1368095"
+  },
+  {
+    "id": "PLN52344",
+    "payer_id": "PYR10344",
+    "payer_name": "Foundry Health Plan",
+    "plan_name": "Foundry Preferred",
+    "channel": "Health Exchange",
+    "lives": "2589082"
+  },
+  {
+    "id": "PLN52345",
+    "payer_id": "PYR10345",
+    "payer_name": "Copperfield Health Plan",
+    "plan_name": "Copperfield EPO",
+    "channel": "Health Exchange",
+    "lives": "22540"
+  },
+  {
+    "id": "PLN52346",
+    "payer_id": "PYR10346",
+    "payer_name": "Brightwater Wellness",
+    "plan_name": "Brightwater HMO",
+    "channel": "Medicare Advantage",
+    "lives": "604901"
+  },
+  {
+    "id": "PLN52347",
+    "payer_id": "PYR10347",
+    "payer_name": "Pinecrest Care",
+    "plan_name": "Pinecrest Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "62796"
+  },
+  {
+    "id": "PLN52348",
+    "payer_id": "PYR10348",
+    "payer_name": "Highland Insurance",
+    "plan_name": "Highland HMO",
+    "channel": "Health Exchange",
+    "lives": "20373"
+  },
+  {
+    "id": "PLN52349",
+    "payer_id": "PYR10349",
+    "payer_name": "Pinecrest Mutual",
+    "plan_name": "Pinecrest Complete",
+    "channel": "Medicare Advantage",
+    "lives": "1488170"
+  },
+  {
+    "id": "PLN52350",
+    "payer_id": "PYR10350",
+    "payer_name": "Pinecrest Alliance",
+    "plan_name": "Pinecrest HMO",
+    "channel": "Commercial",
+    "lives": "1251936"
+  },
+  {
+    "id": "PLN52351",
+    "payer_id": "PYR10351",
+    "payer_name": "Gateway Health Plan",
+    "plan_name": "Gateway Advantage",
+    "channel": "Commercial",
+    "lives": "3085167"
+  },
+  {
+    "id": "PLN52352",
+    "payer_id": "PYR10352",
+    "payer_name": "Quarry Health",
+    "plan_name": "Quarry Advantage",
+    "channel": "Health Exchange",
+    "lives": "707048"
+  },
+  {
+    "id": "PLN52353",
+    "payer_id": "PYR10353",
+    "payer_name": "Fairview Wellness",
+    "plan_name": "Fairview Advantage",
+    "channel": "Health Exchange",
+    "lives": "2339115"
+  },
+  {
+    "id": "PLN52354",
+    "payer_id": "PYR10354",
+    "payer_name": "Harborview Mutual",
+    "plan_name": "Harborview Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "659202"
+  },
+  {
+    "id": "PLN52355",
+    "payer_id": "PYR10355",
+    "payer_name": "Copperfield Alliance",
+    "plan_name": "Copperfield POS",
+    "channel": "Commercial",
+    "lives": "122943"
+  },
+  {
+    "id": "PLN52356",
+    "payer_id": "PYR10356",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2066420"
+  },
+  {
+    "id": "PLN52357",
+    "payer_id": "PYR10357",
+    "payer_name": "Keystone Benefit",
+    "plan_name": "Keystone EPO",
+    "channel": "Medicare Advantage",
+    "lives": "202136"
+  },
+  {
+    "id": "PLN52358",
+    "payer_id": "PYR10358",
+    "payer_name": "Redwood Health",
+    "plan_name": "Redwood EPO",
+    "channel": "Health Exchange",
+    "lives": "2814565"
+  },
+  {
+    "id": "PLN52359",
+    "payer_id": "PYR10359",
+    "payer_name": "Yellowstone Wellness",
+    "plan_name": "Yellowstone Preferred",
+    "channel": "Commercial",
+    "lives": "1638640"
+  },
+  {
+    "id": "PLN52360",
+    "payer_id": "PYR10360",
+    "payer_name": "Cedar Mutual",
+    "plan_name": "Cedar PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2410870"
+  },
+  {
+    "id": "PLN52361",
+    "payer_id": "PYR10361",
+    "payer_name": "Fairview Wellness",
+    "plan_name": "Fairview EPO",
+    "channel": "Commercial",
+    "lives": "1790763"
+  },
+  {
+    "id": "PLN52362",
+    "payer_id": "PYR10362",
+    "payer_name": "Zephyr Insurance",
+    "plan_name": "Zephyr Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "296068"
+  },
+  {
+    "id": "PLN52363",
+    "payer_id": "PYR10363",
+    "payer_name": "Redwood Alliance",
+    "plan_name": "Redwood PPO",
+    "channel": "Health Exchange",
+    "lives": "2628294"
+  },
+  {
+    "id": "PLN52364",
+    "payer_id": "PYR10364",
+    "payer_name": "Wayfarer Care",
+    "plan_name": "Wayfarer HMO",
+    "channel": "Managed Medicaid",
+    "lives": "438584"
+  },
+  {
+    "id": "PLN52365",
+    "payer_id": "PYR10365",
+    "payer_name": "Ridgeline Alliance",
+    "plan_name": "Ridgeline PPO",
+    "channel": "Commercial",
+    "lives": "1170170"
+  },
+  {
+    "id": "PLN52366",
+    "payer_id": "PYR10366",
+    "payer_name": "Gateway Wellness",
+    "plan_name": "Gateway PPO",
+    "channel": "Health Exchange",
+    "lives": "2008209"
+  },
+  {
+    "id": "PLN52367",
+    "payer_id": "PYR10367",
+    "payer_name": "Everest Insurance",
+    "plan_name": "Everest Complete",
+    "channel": "Health Exchange",
+    "lives": "2887477"
+  },
+  {
+    "id": "PLN52368",
+    "payer_id": "PYR10368",
+    "payer_name": "Foundry Insurance",
+    "plan_name": "Foundry Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "2722653"
+  },
+  {
+    "id": "PLN52369",
+    "payer_id": "PYR10369",
+    "payer_name": "Ridgeline Benefit",
+    "plan_name": "Ridgeline PPO",
+    "channel": "Managed Medicaid",
+    "lives": "681778"
+  },
+  {
+    "id": "PLN52370",
+    "payer_id": "PYR10370",
+    "payer_name": "Wayfarer Health",
+    "plan_name": "Wayfarer EPO",
+    "channel": "Commercial",
+    "lives": "856909"
+  },
+  {
+    "id": "PLN52371",
+    "payer_id": "PYR10371",
+    "payer_name": "Juniper Wellness",
+    "plan_name": "Juniper Select PPO",
+    "channel": "Commercial",
+    "lives": "1962073"
+  },
+  {
+    "id": "PLN52372",
+    "payer_id": "PYR10372",
+    "payer_name": "Ridgeline Alliance",
+    "plan_name": "Ridgeline EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2476554"
+  },
+  {
+    "id": "PLN52373",
+    "payer_id": "PYR10373",
+    "payer_name": "Copperfield Health",
+    "plan_name": "Copperfield Advantage",
+    "channel": "Commercial",
+    "lives": "698283"
+  },
+  {
+    "id": "PLN52374",
+    "payer_id": "PYR10374",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood Preferred",
+    "channel": "Commercial",
+    "lives": "2876353"
+  },
+  {
+    "id": "PLN52375",
+    "payer_id": "PYR10375",
+    "payer_name": "Zephyr Health",
+    "plan_name": "Zephyr POS",
+    "channel": "Commercial",
+    "lives": "2566579"
+  },
+  {
+    "id": "PLN52376",
+    "payer_id": "PYR10376",
+    "payer_name": "Prairie Insurance",
+    "plan_name": "Prairie POS",
+    "channel": "Medicare Advantage",
+    "lives": "1282288"
+  },
+  {
+    "id": "PLN52377",
+    "payer_id": "PYR10377",
+    "payer_name": "Vantage Insurance",
+    "plan_name": "Vantage Select PPO",
+    "channel": "Health Exchange",
+    "lives": "468423"
+  },
+  {
+    "id": "PLN52378",
+    "payer_id": "PYR10378",
+    "payer_name": "Redwood Insurance",
+    "plan_name": "Redwood Select PPO",
+    "channel": "Commercial",
+    "lives": "643849"
+  },
+  {
+    "id": "PLN52379",
+    "payer_id": "PYR10379",
+    "payer_name": "Lakeside Health",
+    "plan_name": "Lakeside Complete",
+    "channel": "Commercial",
+    "lives": "1103112"
+  },
+  {
+    "id": "PLN52380",
+    "payer_id": "PYR10380",
+    "payer_name": "Yellowstone Wellness",
+    "plan_name": "Yellowstone Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "3007087"
+  },
+  {
+    "id": "PLN52381",
+    "payer_id": "PYR10381",
+    "payer_name": "Pinecrest Health Plan",
+    "plan_name": "Pinecrest Select PPO",
+    "channel": "Commercial",
+    "lives": "1989598"
+  },
+  {
+    "id": "PLN52382",
+    "payer_id": "PYR10382",
+    "payer_name": "Cedar Wellness",
+    "plan_name": "Cedar Choice HMO",
+    "channel": "Commercial",
+    "lives": "3136442"
+  },
+  {
+    "id": "PLN52383",
+    "payer_id": "PYR10383",
+    "payer_name": "Yellowstone Insurance",
+    "plan_name": "Yellowstone Complete",
+    "channel": "Commercial",
+    "lives": "1988573"
+  },
+  {
+    "id": "PLN52384",
+    "payer_id": "PYR10384",
+    "payer_name": "Northgate Mutual",
+    "plan_name": "Northgate Preferred",
+    "channel": "Commercial",
+    "lives": "1747697"
+  },
+  {
+    "id": "PLN52385",
+    "payer_id": "PYR10385",
+    "payer_name": "Monarch Alliance",
+    "plan_name": "Monarch EPO",
+    "channel": "Commercial",
+    "lives": "3016731"
+  },
+  {
+    "id": "PLN52386",
+    "payer_id": "PYR10386",
+    "payer_name": "Foundry Health",
+    "plan_name": "Foundry PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1162259"
+  },
+  {
+    "id": "PLN52387",
+    "payer_id": "PYR10387",
+    "payer_name": "Lakeside Mutual",
+    "plan_name": "Lakeside Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "1814463"
+  },
+  {
+    "id": "PLN52388",
+    "payer_id": "PYR10388",
+    "payer_name": "Willow Benefit",
+    "plan_name": "Willow PPO",
+    "channel": "Commercial",
+    "lives": "3189449"
+  },
+  {
+    "id": "PLN52389",
+    "payer_id": "PYR10389",
+    "payer_name": "Ironwood Benefit",
+    "plan_name": "Ironwood Select PPO",
+    "channel": "Commercial",
+    "lives": "445789"
+  },
+  {
+    "id": "PLN52390",
+    "payer_id": "PYR10390",
+    "payer_name": "Everest Insurance",
+    "plan_name": "Everest Complete",
+    "channel": "Health Exchange",
+    "lives": "2197247"
+  },
+  {
+    "id": "PLN52391",
+    "payer_id": "PYR10391",
+    "payer_name": "Highland Wellness",
+    "plan_name": "Highland EPO",
+    "channel": "Medicare Advantage",
+    "lives": "95214"
+  },
+  {
+    "id": "PLN52392",
+    "payer_id": "PYR10392",
+    "payer_name": "Yellowstone Health Plan",
+    "plan_name": "Yellowstone HMO",
+    "channel": "Commercial",
+    "lives": "2997611"
+  },
+  {
+    "id": "PLN52393",
+    "payer_id": "PYR10393",
+    "payer_name": "Harborview Health",
+    "plan_name": "Harborview HMO",
+    "channel": "Health Exchange",
+    "lives": "97802"
+  },
+  {
+    "id": "PLN52394",
+    "payer_id": "PYR10394",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate Complete",
+    "channel": "Health Exchange",
+    "lives": "657261"
+  },
+  {
+    "id": "PLN52395",
+    "payer_id": "PYR10395",
+    "payer_name": "Trailhead Insurance",
+    "plan_name": "Trailhead EPO",
+    "channel": "Medicare Advantage",
+    "lives": "455042"
+  },
+  {
+    "id": "PLN52396",
+    "payer_id": "PYR10396",
+    "payer_name": "Willow Wellness",
+    "plan_name": "Willow Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "860878"
+  },
+  {
+    "id": "PLN52397",
+    "payer_id": "PYR10397",
+    "payer_name": "Vantage Alliance",
+    "plan_name": "Vantage POS",
+    "channel": "Health Exchange",
+    "lives": "2031050"
+  },
+  {
+    "id": "PLN52398",
+    "payer_id": "PYR10398",
+    "payer_name": "Northgate Alliance",
+    "plan_name": "Northgate EPO",
+    "channel": "Commercial",
+    "lives": "2161247"
+  },
+  {
+    "id": "PLN52399",
+    "payer_id": "PYR10399",
+    "payer_name": "Prairie Insurance",
+    "plan_name": "Prairie Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "225051"
+  },
+  {
+    "id": "PLN52400",
+    "payer_id": "PYR10400",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry HMO",
+    "channel": "Commercial",
+    "lives": "3195138"
+  },
+  {
+    "id": "PLN52401",
+    "payer_id": "PYR10401",
+    "payer_name": "Gateway Benefit",
+    "plan_name": "Gateway Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1140371"
+  },
+  {
+    "id": "PLN52402",
+    "payer_id": "PYR10402",
+    "payer_name": "Lantern Mutual",
+    "plan_name": "Lantern Complete",
+    "channel": "Commercial",
+    "lives": "1632808"
+  },
+  {
+    "id": "PLN52403",
+    "payer_id": "PYR10403",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2492786"
+  },
+  {
+    "id": "PLN52404",
+    "payer_id": "PYR10404",
+    "payer_name": "Highland Health",
+    "plan_name": "Highland EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2062335"
+  },
+  {
+    "id": "PLN52405",
+    "payer_id": "PYR10405",
+    "payer_name": "Bluegrass Benefit",
+    "plan_name": "Bluegrass PPO",
+    "channel": "Health Exchange",
+    "lives": "2858439"
+  },
+  {
+    "id": "PLN52406",
+    "payer_id": "PYR10406",
+    "payer_name": "Quarry Benefit",
+    "plan_name": "Quarry Advantage",
+    "channel": "Commercial",
+    "lives": "2356865"
+  },
+  {
+    "id": "PLN52407",
+    "payer_id": "PYR10407",
+    "payer_name": "Ridgeline Health Plan",
+    "plan_name": "Ridgeline HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1359835"
+  },
+  {
+    "id": "PLN52408",
+    "payer_id": "PYR10408",
+    "payer_name": "Ironwood Mutual",
+    "plan_name": "Ironwood Advantage",
+    "channel": "Commercial",
+    "lives": "345639"
+  },
+  {
+    "id": "PLN52409",
+    "payer_id": "PYR10409",
+    "payer_name": "Oakmont Benefit",
+    "plan_name": "Oakmont HMO",
+    "channel": "Medicare Advantage",
+    "lives": "3140758"
+  },
+  {
+    "id": "PLN52410",
+    "payer_id": "PYR10410",
+    "payer_name": "Vantage Health",
+    "plan_name": "Vantage HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2611551"
+  },
+  {
+    "id": "PLN52411",
+    "payer_id": "PYR10411",
+    "payer_name": "Harborview Wellness",
+    "plan_name": "Harborview Complete",
+    "channel": "Commercial",
+    "lives": "2364442"
+  },
+  {
+    "id": "PLN52412",
+    "payer_id": "PYR10412",
+    "payer_name": "Ironwood Health",
+    "plan_name": "Ironwood Choice HMO",
+    "channel": "Commercial",
+    "lives": "2672767"
+  },
+  {
+    "id": "PLN52413",
+    "payer_id": "PYR10413",
+    "payer_name": "Ridgeline Health Plan",
+    "plan_name": "Ridgeline Advantage",
+    "channel": "Commercial",
+    "lives": "1081566"
+  },
+  {
+    "id": "PLN52414",
+    "payer_id": "PYR10414",
+    "payer_name": "Prairie Wellness",
+    "plan_name": "Prairie Choice HMO",
+    "channel": "Commercial",
+    "lives": "3190714"
+  },
+  {
+    "id": "PLN52415",
+    "payer_id": "PYR10415",
+    "payer_name": "Yellowstone Health Plan",
+    "plan_name": "Yellowstone Complete",
+    "channel": "Commercial",
+    "lives": "2239509"
+  },
+  {
+    "id": "PLN52416",
+    "payer_id": "PYR10416",
+    "payer_name": "Yellowstone Health Plan",
+    "plan_name": "Yellowstone EPO",
+    "channel": "Commercial",
+    "lives": "1639896"
+  },
+  {
+    "id": "PLN52417",
+    "payer_id": "PYR10417",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood Choice HMO",
+    "channel": "Commercial",
+    "lives": "1914372"
+  },
+  {
+    "id": "PLN52418",
+    "payer_id": "PYR10418",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest Preferred",
+    "channel": "Health Exchange",
+    "lives": "926600"
+  },
+  {
+    "id": "PLN52419",
+    "payer_id": "PYR10419",
+    "payer_name": "Lakeside Health Plan",
+    "plan_name": "Lakeside Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "2927155"
+  },
+  {
+    "id": "PLN52420",
+    "payer_id": "PYR10420",
+    "payer_name": "Yellowstone Mutual",
+    "plan_name": "Yellowstone Preferred",
+    "channel": "Commercial",
+    "lives": "1786616"
+  },
+  {
+    "id": "PLN52421",
+    "payer_id": "PYR10421",
+    "payer_name": "Harborview Health",
+    "plan_name": "Harborview POS",
+    "channel": "Commercial",
+    "lives": "3161504"
+  },
+  {
+    "id": "PLN52422",
+    "payer_id": "PYR10422",
+    "payer_name": "Copperfield Wellness",
+    "plan_name": "Copperfield Preferred",
+    "channel": "Commercial",
+    "lives": "1519423"
+  },
+  {
+    "id": "PLN52423",
+    "payer_id": "PYR10423",
+    "payer_name": "Keystone Wellness",
+    "plan_name": "Keystone Preferred",
+    "channel": "Health Exchange",
+    "lives": "1221443"
+  },
+  {
+    "id": "PLN52424",
+    "payer_id": "PYR10424",
+    "payer_name": "Vantage Health",
+    "plan_name": "Vantage PPO",
+    "channel": "Health Exchange",
+    "lives": "1069201"
+  },
+  {
+    "id": "PLN52425",
+    "payer_id": "PYR10425",
+    "payer_name": "Yellowstone Wellness",
+    "plan_name": "Yellowstone POS",
+    "channel": "Commercial",
+    "lives": "1897466"
+  },
+  {
+    "id": "PLN52426",
+    "payer_id": "PYR10426",
+    "payer_name": "Northgate Mutual",
+    "plan_name": "Northgate PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1185681"
+  },
+  {
+    "id": "PLN52427",
+    "payer_id": "PYR10427",
+    "payer_name": "Meridian Benefit",
+    "plan_name": "Meridian Complete",
+    "channel": "Health Exchange",
+    "lives": "664302"
+  },
+  {
+    "id": "PLN52428",
+    "payer_id": "PYR10428",
+    "payer_name": "Brightwater Insurance",
+    "plan_name": "Brightwater Complete",
+    "channel": "Managed Medicaid",
+    "lives": "2322539"
+  },
+  {
+    "id": "PLN52429",
+    "payer_id": "PYR10429",
+    "payer_name": "Stonegate Care",
+    "plan_name": "Stonegate Preferred",
+    "channel": "Commercial",
+    "lives": "1759542"
+  },
+  {
+    "id": "PLN52430",
+    "payer_id": "PYR10430",
+    "payer_name": "Gateway Benefit",
+    "plan_name": "Gateway Choice HMO",
+    "channel": "Commercial",
+    "lives": "931225"
+  },
+  {
+    "id": "PLN52431",
+    "payer_id": "PYR10431",
+    "payer_name": "Oakmont Wellness",
+    "plan_name": "Oakmont POS",
+    "channel": "Commercial",
+    "lives": "2877827"
+  },
+  {
+    "id": "PLN52432",
+    "payer_id": "PYR10432",
+    "payer_name": "Union Insurance",
+    "plan_name": "Union PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1587688"
+  },
+  {
+    "id": "PLN52433",
+    "payer_id": "PYR10433",
+    "payer_name": "Foundry Care",
+    "plan_name": "Foundry HMO",
+    "channel": "Commercial",
+    "lives": "2271429"
+  },
+  {
+    "id": "PLN52434",
+    "payer_id": "PYR10434",
+    "payer_name": "Nautilus Care",
+    "plan_name": "Nautilus POS",
+    "channel": "Managed Medicaid",
+    "lives": "2962517"
+  },
+  {
+    "id": "PLN52435",
+    "payer_id": "PYR10435",
+    "payer_name": "Gateway Health",
+    "plan_name": "Gateway HMO",
+    "channel": "Commercial",
+    "lives": "242616"
+  },
+  {
+    "id": "PLN52436",
+    "payer_id": "PYR10436",
+    "payer_name": "Bluegrass Mutual",
+    "plan_name": "Bluegrass Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2658322"
+  },
+  {
+    "id": "PLN52437",
+    "payer_id": "PYR10437",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate HMO",
+    "channel": "Health Exchange",
+    "lives": "2471218"
+  },
+  {
+    "id": "PLN52438",
+    "payer_id": "PYR10438",
+    "payer_name": "Copperfield Insurance",
+    "plan_name": "Copperfield HMO",
+    "channel": "Commercial",
+    "lives": "1850746"
+  },
+  {
+    "id": "PLN52439",
+    "payer_id": "PYR10439",
+    "payer_name": "Union Wellness",
+    "plan_name": "Union EPO",
+    "channel": "Health Exchange",
+    "lives": "1654941"
+  },
+  {
+    "id": "PLN52440",
+    "payer_id": "PYR10440",
+    "payer_name": "Meridian Health Plan",
+    "plan_name": "Meridian HMO",
+    "channel": "Commercial",
+    "lives": "36096"
+  },
+  {
+    "id": "PLN52441",
+    "payer_id": "PYR10441",
+    "payer_name": "Fairview Mutual",
+    "plan_name": "Fairview Preferred",
+    "channel": "Commercial",
+    "lives": "690091"
+  },
+  {
+    "id": "PLN52442",
+    "payer_id": "PYR10442",
+    "payer_name": "Stonegate Health",
+    "plan_name": "Stonegate Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "2718960"
+  },
+  {
+    "id": "PLN52443",
+    "payer_id": "PYR10443",
+    "payer_name": "Willow Alliance",
+    "plan_name": "Willow Choice HMO",
+    "channel": "Commercial",
+    "lives": "552773"
+  },
+  {
+    "id": "PLN52444",
+    "payer_id": "PYR10444",
+    "payer_name": "Willow Benefit",
+    "plan_name": "Willow Complete",
+    "channel": "Medicare Advantage",
+    "lives": "1392183"
+  },
+  {
+    "id": "PLN52445",
+    "payer_id": "PYR10445",
+    "payer_name": "Pinecrest Health",
+    "plan_name": "Pinecrest Choice HMO",
+    "channel": "Commercial",
+    "lives": "944146"
+  },
+  {
+    "id": "PLN52446",
+    "payer_id": "PYR10446",
+    "payer_name": "Quarry Alliance",
+    "plan_name": "Quarry Complete",
+    "channel": "Commercial",
+    "lives": "1296241"
+  },
+  {
+    "id": "PLN52447",
+    "payer_id": "PYR10447",
+    "payer_name": "Cedar Insurance",
+    "plan_name": "Cedar EPO",
+    "channel": "Managed Medicaid",
+    "lives": "838895"
+  },
+  {
+    "id": "PLN52448",
+    "payer_id": "PYR10448",
+    "payer_name": "Cascade Mutual",
+    "plan_name": "Cascade POS",
+    "channel": "Commercial",
+    "lives": "2328552"
+  },
+  {
+    "id": "PLN52449",
+    "payer_id": "PYR10449",
+    "payer_name": "Ironwood Insurance",
+    "plan_name": "Ironwood EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2116862"
+  },
+  {
+    "id": "PLN52450",
+    "payer_id": "PYR10450",
+    "payer_name": "Silverpeak Health Plan",
+    "plan_name": "Silverpeak Preferred",
+    "channel": "Commercial",
+    "lives": "1886584"
+  },
+  {
+    "id": "PLN52451",
+    "payer_id": "PYR10451",
+    "payer_name": "Highland Health",
+    "plan_name": "Highland POS",
+    "channel": "Medicare Advantage",
+    "lives": "987029"
+  },
+  {
+    "id": "PLN52452",
+    "payer_id": "PYR10452",
+    "payer_name": "Fairview Benefit",
+    "plan_name": "Fairview Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "1921912"
+  },
+  {
+    "id": "PLN52453",
+    "payer_id": "PYR10453",
+    "payer_name": "Redwood Insurance",
+    "plan_name": "Redwood Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "744178"
+  },
+  {
+    "id": "PLN52454",
+    "payer_id": "PYR10454",
+    "payer_name": "Trailhead Insurance",
+    "plan_name": "Trailhead Advantage",
+    "channel": "Commercial",
+    "lives": "2180820"
+  },
+  {
+    "id": "PLN52455",
+    "payer_id": "PYR10455",
+    "payer_name": "Zephyr Health",
+    "plan_name": "Zephyr Preferred",
+    "channel": "Commercial",
+    "lives": "1860068"
+  },
+  {
+    "id": "PLN52456",
+    "payer_id": "PYR10456",
+    "payer_name": "Fairview Health Plan",
+    "plan_name": "Fairview EPO",
+    "channel": "Commercial",
+    "lives": "1534273"
+  },
+  {
+    "id": "PLN52457",
+    "payer_id": "PYR10457",
+    "payer_name": "Quarry Alliance",
+    "plan_name": "Quarry Complete",
+    "channel": "Commercial",
+    "lives": "2492956"
+  },
+  {
+    "id": "PLN52458",
+    "payer_id": "PYR10458",
+    "payer_name": "Lakeside Health Plan",
+    "plan_name": "Lakeside EPO",
+    "channel": "Health Exchange",
+    "lives": "2165179"
+  },
+  {
+    "id": "PLN52459",
+    "payer_id": "PYR10459",
+    "payer_name": "Stonegate Mutual",
+    "plan_name": "Stonegate PPO",
+    "channel": "Health Exchange",
+    "lives": "3068345"
+  },
+  {
+    "id": "PLN52460",
+    "payer_id": "PYR10460",
+    "payer_name": "Quarry Alliance",
+    "plan_name": "Quarry EPO",
+    "channel": "Commercial",
+    "lives": "1737881"
+  },
+  {
+    "id": "PLN52461",
+    "payer_id": "PYR10461",
+    "payer_name": "Prairie Care",
+    "plan_name": "Prairie POS",
+    "channel": "Medicare Advantage",
+    "lives": "1631744"
+  },
+  {
+    "id": "PLN52462",
+    "payer_id": "PYR10462",
+    "payer_name": "Sequoia Mutual",
+    "plan_name": "Sequoia EPO",
+    "channel": "Managed Medicaid",
+    "lives": "418905"
+  },
+  {
+    "id": "PLN52463",
+    "payer_id": "PYR10463",
+    "payer_name": "Northgate Care",
+    "plan_name": "Northgate Complete",
+    "channel": "Health Exchange",
+    "lives": "561638"
+  },
+  {
+    "id": "PLN52464",
+    "payer_id": "PYR10464",
+    "payer_name": "Trailhead Mutual",
+    "plan_name": "Trailhead POS",
+    "channel": "Medicare Advantage",
+    "lives": "1614021"
+  },
+  {
+    "id": "PLN52465",
+    "payer_id": "PYR10465",
+    "payer_name": "Quarry Wellness",
+    "plan_name": "Quarry HMO",
+    "channel": "Commercial",
+    "lives": "2524419"
+  },
+  {
+    "id": "PLN52466",
+    "payer_id": "PYR10466",
+    "payer_name": "Wayfarer Care",
+    "plan_name": "Wayfarer Preferred",
+    "channel": "Commercial",
+    "lives": "1587989"
+  },
+  {
+    "id": "PLN52467",
+    "payer_id": "PYR10467",
+    "payer_name": "Beacon Mutual",
+    "plan_name": "Beacon Select PPO",
+    "channel": "Commercial",
+    "lives": "2263586"
+  },
+  {
+    "id": "PLN52468",
+    "payer_id": "PYR10468",
+    "payer_name": "Fairview Mutual",
+    "plan_name": "Fairview Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "2038616"
+  },
+  {
+    "id": "PLN52469",
+    "payer_id": "PYR10469",
+    "payer_name": "Wayfarer Benefit",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Health Exchange",
+    "lives": "594101"
+  },
+  {
+    "id": "PLN52470",
+    "payer_id": "PYR10470",
+    "payer_name": "Riverbend Wellness",
+    "plan_name": "Riverbend Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "1434511"
+  },
+  {
+    "id": "PLN52471",
+    "payer_id": "PYR10471",
+    "payer_name": "Cedar Health Plan",
+    "plan_name": "Cedar Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1841105"
+  },
+  {
+    "id": "PLN52472",
+    "payer_id": "PYR10472",
+    "payer_name": "Cedar Health",
+    "plan_name": "Cedar Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2590158"
+  },
+  {
+    "id": "PLN52473",
+    "payer_id": "PYR10473",
+    "payer_name": "Oakmont Health",
+    "plan_name": "Oakmont POS",
+    "channel": "Health Exchange",
+    "lives": "2188292"
+  },
+  {
+    "id": "PLN52474",
+    "payer_id": "PYR10474",
+    "payer_name": "Trailhead Wellness",
+    "plan_name": "Trailhead EPO",
+    "channel": "Health Exchange",
+    "lives": "166251"
+  },
+  {
+    "id": "PLN52475",
+    "payer_id": "PYR10475",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1672350"
+  },
+  {
+    "id": "PLN52476",
+    "payer_id": "PYR10476",
+    "payer_name": "Cedar Insurance",
+    "plan_name": "Cedar Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "1475017"
+  },
+  {
+    "id": "PLN52477",
+    "payer_id": "PYR10477",
+    "payer_name": "Prairie Mutual",
+    "plan_name": "Prairie PPO",
+    "channel": "Commercial",
+    "lives": "749149"
+  },
+  {
+    "id": "PLN52478",
+    "payer_id": "PYR10478",
+    "payer_name": "Gateway Care",
+    "plan_name": "Gateway Preferred",
+    "channel": "Commercial",
+    "lives": "2271130"
+  },
+  {
+    "id": "PLN52479",
+    "payer_id": "PYR10479",
+    "payer_name": "Silverpeak Benefit",
+    "plan_name": "Silverpeak Complete",
+    "channel": "Health Exchange",
+    "lives": "1947401"
+  },
+  {
+    "id": "PLN52480",
+    "payer_id": "PYR10480",
+    "payer_name": "Keystone Wellness",
+    "plan_name": "Keystone POS",
+    "channel": "Commercial",
+    "lives": "1744839"
+  },
+  {
+    "id": "PLN52481",
+    "payer_id": "PYR10481",
+    "payer_name": "Cedar Mutual",
+    "plan_name": "Cedar Choice HMO",
+    "channel": "Commercial",
+    "lives": "2340957"
+  },
+  {
+    "id": "PLN52482",
+    "payer_id": "PYR10482",
+    "payer_name": "Wayfarer Insurance",
+    "plan_name": "Wayfarer EPO",
+    "channel": "Health Exchange",
+    "lives": "2880159"
+  },
+  {
+    "id": "PLN52483",
+    "payer_id": "PYR10483",
+    "payer_name": "Bluegrass Wellness",
+    "plan_name": "Bluegrass POS",
+    "channel": "Commercial",
+    "lives": "1062298"
+  },
+  {
+    "id": "PLN52484",
+    "payer_id": "PYR10484",
+    "payer_name": "Ridgeline Health",
+    "plan_name": "Ridgeline Preferred",
+    "channel": "Commercial",
+    "lives": "2037879"
+  },
+  {
+    "id": "PLN52485",
+    "payer_id": "PYR10485",
+    "payer_name": "Ridgeline Health Plan",
+    "plan_name": "Ridgeline Preferred",
+    "channel": "Commercial",
+    "lives": "1683827"
+  },
+  {
+    "id": "PLN52486",
+    "payer_id": "PYR10486",
+    "payer_name": "Quarry Health",
+    "plan_name": "Quarry Preferred",
+    "channel": "Commercial",
+    "lives": "1666368"
+  },
+  {
+    "id": "PLN52487",
+    "payer_id": "PYR10487",
+    "payer_name": "Prairie Benefit",
+    "plan_name": "Prairie PPO",
+    "channel": "Commercial",
+    "lives": "2842393"
+  },
+  {
+    "id": "PLN52488",
+    "payer_id": "PYR10488",
+    "payer_name": "Brightwater Insurance",
+    "plan_name": "Brightwater EPO",
+    "channel": "Managed Medicaid",
+    "lives": "1117468"
+  },
+  {
+    "id": "PLN52489",
+    "payer_id": "PYR10489",
+    "payer_name": "Juniper Health Plan",
+    "plan_name": "Juniper Complete",
+    "channel": "Medicare Advantage",
+    "lives": "898037"
+  },
+  {
+    "id": "PLN52490",
+    "payer_id": "PYR10490",
+    "payer_name": "Oakmont Health Plan",
+    "plan_name": "Oakmont EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2892342"
+  },
+  {
+    "id": "PLN52491",
+    "payer_id": "PYR10491",
+    "payer_name": "Nautilus Mutual",
+    "plan_name": "Nautilus POS",
+    "channel": "Commercial",
+    "lives": "3112669"
+  },
+  {
+    "id": "PLN52492",
+    "payer_id": "PYR10492",
+    "payer_name": "Ridgeline Health Plan",
+    "plan_name": "Ridgeline Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "3037249"
+  },
+  {
+    "id": "PLN52493",
+    "payer_id": "PYR10493",
+    "payer_name": "Wayfarer Health",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Commercial",
+    "lives": "2911348"
+  },
+  {
+    "id": "PLN52494",
+    "payer_id": "PYR10494",
+    "payer_name": "Riverbend Alliance",
+    "plan_name": "Riverbend Choice HMO",
+    "channel": "Commercial",
+    "lives": "1528984"
+  },
+  {
+    "id": "PLN52495",
+    "payer_id": "PYR10495",
+    "payer_name": "Northgate Benefit",
+    "plan_name": "Northgate POS",
+    "channel": "Managed Medicaid",
+    "lives": "2430476"
+  },
+  {
+    "id": "PLN52496",
+    "payer_id": "PYR10496",
+    "payer_name": "Ridgeline Alliance",
+    "plan_name": "Ridgeline HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2588892"
+  },
+  {
+    "id": "PLN52497",
+    "payer_id": "PYR10497",
+    "payer_name": "Monarch Mutual",
+    "plan_name": "Monarch HMO",
+    "channel": "Commercial",
+    "lives": "694475"
+  },
+  {
+    "id": "PLN52498",
+    "payer_id": "PYR10498",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1538223"
+  },
+  {
+    "id": "PLN52499",
+    "payer_id": "PYR10499",
+    "payer_name": "Lakeside Wellness",
+    "plan_name": "Lakeside Select PPO",
+    "channel": "Health Exchange",
+    "lives": "2953935"
+  },
+  {
+    "id": "PLN52500",
+    "payer_id": "PYR10500",
+    "payer_name": "Riverbend Care",
+    "plan_name": "Riverbend Complete",
+    "channel": "Managed Medicaid",
+    "lives": "240760"
+  },
+  {
+    "id": "PLN52501",
+    "payer_id": "PYR10501",
+    "payer_name": "Brightwater Health Plan",
+    "plan_name": "Brightwater HMO",
+    "channel": "Health Exchange",
+    "lives": "1650133"
+  },
+  {
+    "id": "PLN52502",
+    "payer_id": "PYR10502",
+    "payer_name": "Oakmont Health Plan",
+    "plan_name": "Oakmont EPO",
+    "channel": "Managed Medicaid",
+    "lives": "730581"
+  },
+  {
+    "id": "PLN52503",
+    "payer_id": "PYR10503",
+    "payer_name": "Prairie Insurance",
+    "plan_name": "Prairie Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "581712"
+  },
+  {
+    "id": "PLN52504",
+    "payer_id": "PYR10504",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest Complete",
+    "channel": "Managed Medicaid",
+    "lives": "967645"
+  },
+  {
+    "id": "PLN52505",
+    "payer_id": "PYR10505",
+    "payer_name": "Bluegrass Health Plan",
+    "plan_name": "Bluegrass Select PPO",
+    "channel": "Commercial",
+    "lives": "15387"
+  },
+  {
+    "id": "PLN52506",
+    "payer_id": "PYR10506",
+    "payer_name": "Meridian Alliance",
+    "plan_name": "Meridian Complete",
+    "channel": "Commercial",
+    "lives": "53304"
+  },
+  {
+    "id": "PLN52507",
+    "payer_id": "PYR10507",
+    "payer_name": "Juniper Wellness",
+    "plan_name": "Juniper Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "1848356"
+  },
+  {
+    "id": "PLN52508",
+    "payer_id": "PYR10508",
+    "payer_name": "Keystone Wellness",
+    "plan_name": "Keystone Select PPO",
+    "channel": "Commercial",
+    "lives": "1786000"
+  },
+  {
+    "id": "PLN52509",
+    "payer_id": "PYR10509",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood POS",
+    "channel": "Commercial",
+    "lives": "780071"
+  },
+  {
+    "id": "PLN52510",
+    "payer_id": "PYR10510",
+    "payer_name": "Brightwater Alliance",
+    "plan_name": "Brightwater Select PPO",
+    "channel": "Health Exchange",
+    "lives": "2627018"
+  },
+  {
+    "id": "PLN52511",
+    "payer_id": "PYR10511",
+    "payer_name": "Harborview Health",
+    "plan_name": "Harborview EPO",
+    "channel": "Commercial",
+    "lives": "1198274"
+  },
+  {
+    "id": "PLN52512",
+    "payer_id": "PYR10512",
+    "payer_name": "Ironwood Care",
+    "plan_name": "Ironwood EPO",
+    "channel": "Commercial",
+    "lives": "2085222"
+  },
+  {
+    "id": "PLN52513",
+    "payer_id": "PYR10513",
+    "payer_name": "Juniper Alliance",
+    "plan_name": "Juniper PPO",
+    "channel": "Commercial",
+    "lives": "351480"
+  },
+  {
+    "id": "PLN52514",
+    "payer_id": "PYR10514",
+    "payer_name": "Union Alliance",
+    "plan_name": "Union EPO",
+    "channel": "Commercial",
+    "lives": "1063909"
+  },
+  {
+    "id": "PLN52515",
+    "payer_id": "PYR10515",
+    "payer_name": "Keystone Alliance",
+    "plan_name": "Keystone POS",
+    "channel": "Health Exchange",
+    "lives": "155552"
+  },
+  {
+    "id": "PLN52516",
+    "payer_id": "PYR10516",
+    "payer_name": "Quarry Mutual",
+    "plan_name": "Quarry Select PPO",
+    "channel": "Commercial",
+    "lives": "680264"
+  },
+  {
+    "id": "PLN52517",
+    "payer_id": "PYR10517",
+    "payer_name": "Willow Benefit",
+    "plan_name": "Willow PPO",
+    "channel": "Health Exchange",
+    "lives": "928470"
+  },
+  {
+    "id": "PLN52518",
+    "payer_id": "PYR10518",
+    "payer_name": "Pinecrest Insurance",
+    "plan_name": "Pinecrest HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1034590"
+  },
+  {
+    "id": "PLN52519",
+    "payer_id": "PYR10519",
+    "payer_name": "Beacon Benefit",
+    "plan_name": "Beacon HMO",
+    "channel": "Commercial",
+    "lives": "676435"
+  },
+  {
+    "id": "PLN52520",
+    "payer_id": "PYR10520",
+    "payer_name": "Harborview Benefit",
+    "plan_name": "Harborview EPO",
+    "channel": "Health Exchange",
+    "lives": "2264628"
+  },
+  {
+    "id": "PLN52521",
+    "payer_id": "PYR10521",
+    "payer_name": "Vantage Benefit",
+    "plan_name": "Vantage Complete",
+    "channel": "Health Exchange",
+    "lives": "824355"
+  },
+  {
+    "id": "PLN52522",
+    "payer_id": "PYR10522",
+    "payer_name": "Bluegrass Health",
+    "plan_name": "Bluegrass Complete",
+    "channel": "Health Exchange",
+    "lives": "1850008"
+  },
+  {
+    "id": "PLN52523",
+    "payer_id": "PYR10523",
+    "payer_name": "Union Benefit",
+    "plan_name": "Union Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1979589"
+  },
+  {
+    "id": "PLN52524",
+    "payer_id": "PYR10524",
+    "payer_name": "Oakmont Insurance",
+    "plan_name": "Oakmont Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1554782"
+  },
+  {
+    "id": "PLN52525",
+    "payer_id": "PYR10525",
+    "payer_name": "Cascade Benefit",
+    "plan_name": "Cascade POS",
+    "channel": "Commercial",
+    "lives": "3039108"
+  },
+  {
+    "id": "PLN52526",
+    "payer_id": "PYR10526",
+    "payer_name": "Vantage Health Plan",
+    "plan_name": "Vantage Select PPO",
+    "channel": "Commercial",
+    "lives": "1733844"
+  },
+  {
+    "id": "PLN52527",
+    "payer_id": "PYR10527",
+    "payer_name": "Granite Health Plan",
+    "plan_name": "Granite EPO",
+    "channel": "Commercial",
+    "lives": "862580"
+  },
+  {
+    "id": "PLN52528",
+    "payer_id": "PYR10528",
+    "payer_name": "Wayfarer Mutual",
+    "plan_name": "Wayfarer Complete",
+    "channel": "Managed Medicaid",
+    "lives": "2632121"
+  },
+  {
+    "id": "PLN52529",
+    "payer_id": "PYR10529",
+    "payer_name": "Summit Health",
+    "plan_name": "Summit POS",
+    "channel": "Health Exchange",
+    "lives": "2076104"
+  },
+  {
+    "id": "PLN52530",
+    "payer_id": "PYR10530",
+    "payer_name": "Monarch Benefit",
+    "plan_name": "Monarch PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1129911"
+  },
+  {
+    "id": "PLN52531",
+    "payer_id": "PYR10531",
+    "payer_name": "Trailhead Care",
+    "plan_name": "Trailhead HMO",
+    "channel": "Health Exchange",
+    "lives": "983959"
+  },
+  {
+    "id": "PLN52532",
+    "payer_id": "PYR10532",
+    "payer_name": "Wayfarer Health Plan",
+    "plan_name": "Wayfarer Preferred",
+    "channel": "Health Exchange",
+    "lives": "2356015"
+  },
+  {
+    "id": "PLN52533",
+    "payer_id": "PYR10533",
+    "payer_name": "Nautilus Care",
+    "plan_name": "Nautilus EPO",
+    "channel": "Commercial",
+    "lives": "2321722"
+  },
+  {
+    "id": "PLN52534",
+    "payer_id": "PYR10534",
+    "payer_name": "Oakmont Benefit",
+    "plan_name": "Oakmont Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "1376698"
+  },
+  {
+    "id": "PLN52535",
+    "payer_id": "PYR10535",
+    "payer_name": "Zephyr Wellness",
+    "plan_name": "Zephyr Preferred",
+    "channel": "Commercial",
+    "lives": "1588128"
+  },
+  {
+    "id": "PLN52536",
+    "payer_id": "PYR10536",
+    "payer_name": "Meridian Health",
+    "plan_name": "Meridian Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "83377"
+  },
+  {
+    "id": "PLN52537",
+    "payer_id": "PYR10537",
+    "payer_name": "Fairview Benefit",
+    "plan_name": "Fairview PPO",
+    "channel": "Health Exchange",
+    "lives": "1172448"
+  },
+  {
+    "id": "PLN52538",
+    "payer_id": "PYR10538",
+    "payer_name": "Beacon Health Plan",
+    "plan_name": "Beacon Select PPO",
+    "channel": "Commercial",
+    "lives": "2456738"
+  },
+  {
+    "id": "PLN52539",
+    "payer_id": "PYR10539",
+    "payer_name": "Wayfarer Mutual",
+    "plan_name": "Wayfarer POS",
+    "channel": "Health Exchange",
+    "lives": "338806"
+  },
+  {
+    "id": "PLN52540",
+    "payer_id": "PYR10540",
+    "payer_name": "Riverbend Insurance",
+    "plan_name": "Riverbend PPO",
+    "channel": "Health Exchange",
+    "lives": "2432109"
+  },
+  {
+    "id": "PLN52541",
+    "payer_id": "PYR10541",
+    "payer_name": "Nautilus Mutual",
+    "plan_name": "Nautilus HMO",
+    "channel": "Commercial",
+    "lives": "3150991"
+  },
+  {
+    "id": "PLN52542",
+    "payer_id": "PYR10542",
+    "payer_name": "Granite Benefit",
+    "plan_name": "Granite Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "642384"
+  },
+  {
+    "id": "PLN52543",
+    "payer_id": "PYR10543",
+    "payer_name": "Oakmont Care",
+    "plan_name": "Oakmont POS",
+    "channel": "Medicare Advantage",
+    "lives": "1230438"
+  },
+  {
+    "id": "PLN52544",
+    "payer_id": "PYR10544",
+    "payer_name": "Quarry Health",
+    "plan_name": "Quarry Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "1116247"
+  },
+  {
+    "id": "PLN52545",
+    "payer_id": "PYR10545",
+    "payer_name": "Lakeside Alliance",
+    "plan_name": "Lakeside Preferred",
+    "channel": "Commercial",
+    "lives": "2061237"
+  },
+  {
+    "id": "PLN52546",
+    "payer_id": "PYR10546",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "2430995"
+  },
+  {
+    "id": "PLN52547",
+    "payer_id": "PYR10547",
+    "payer_name": "Highland Wellness",
+    "plan_name": "Highland Choice HMO",
+    "channel": "Commercial",
+    "lives": "2505901"
+  },
+  {
+    "id": "PLN52548",
+    "payer_id": "PYR10548",
+    "payer_name": "Oakmont Health Plan",
+    "plan_name": "Oakmont Complete",
+    "channel": "Commercial",
+    "lives": "994326"
+  },
+  {
+    "id": "PLN52549",
+    "payer_id": "PYR10549",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate POS",
+    "channel": "Managed Medicaid",
+    "lives": "634402"
+  },
+  {
+    "id": "PLN52550",
+    "payer_id": "PYR10550",
+    "payer_name": "Everest Alliance",
+    "plan_name": "Everest Complete",
+    "channel": "Commercial",
+    "lives": "1406991"
+  },
+  {
+    "id": "PLN52551",
+    "payer_id": "PYR10551",
+    "payer_name": "Bluegrass Alliance",
+    "plan_name": "Bluegrass EPO",
+    "channel": "Health Exchange",
+    "lives": "2945791"
+  },
+  {
+    "id": "PLN52552",
+    "payer_id": "PYR10552",
+    "payer_name": "Harborview Insurance",
+    "plan_name": "Harborview POS",
+    "channel": "Health Exchange",
+    "lives": "2606932"
+  },
+  {
+    "id": "PLN52553",
+    "payer_id": "PYR10553",
+    "payer_name": "Summit Mutual",
+    "plan_name": "Summit Select PPO",
+    "channel": "Health Exchange",
+    "lives": "2783661"
+  },
+  {
+    "id": "PLN52554",
+    "payer_id": "PYR10554",
+    "payer_name": "Ironwood Mutual",
+    "plan_name": "Ironwood Preferred",
+    "channel": "Health Exchange",
+    "lives": "432768"
+  },
+  {
+    "id": "PLN52555",
+    "payer_id": "PYR10555",
+    "payer_name": "Sequoia Alliance",
+    "plan_name": "Sequoia Preferred",
+    "channel": "Health Exchange",
+    "lives": "105129"
+  },
+  {
+    "id": "PLN52556",
+    "payer_id": "PYR10556",
+    "payer_name": "Lantern Health Plan",
+    "plan_name": "Lantern PPO",
+    "channel": "Commercial",
+    "lives": "2885209"
+  },
+  {
+    "id": "PLN52557",
+    "payer_id": "PYR10557",
+    "payer_name": "Redwood Health",
+    "plan_name": "Redwood Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "138588"
+  },
+  {
+    "id": "PLN52558",
+    "payer_id": "PYR10558",
+    "payer_name": "Lakeside Care",
+    "plan_name": "Lakeside Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "2858716"
+  },
+  {
+    "id": "PLN52559",
+    "payer_id": "PYR10559",
+    "payer_name": "Nautilus Insurance",
+    "plan_name": "Nautilus Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2289293"
+  },
+  {
+    "id": "PLN52560",
+    "payer_id": "PYR10560",
+    "payer_name": "Willow Health Plan",
+    "plan_name": "Willow Select PPO",
+    "channel": "Health Exchange",
+    "lives": "2972556"
+  },
+  {
+    "id": "PLN52561",
+    "payer_id": "PYR10561",
+    "payer_name": "Pinecrest Benefit",
+    "plan_name": "Pinecrest HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2250402"
+  },
+  {
+    "id": "PLN52562",
+    "payer_id": "PYR10562",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry Advantage",
+    "channel": "Commercial",
+    "lives": "1873095"
+  },
+  {
+    "id": "PLN52563",
+    "payer_id": "PYR10563",
+    "payer_name": "Stonegate Health",
+    "plan_name": "Stonegate Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2393351"
+  },
+  {
+    "id": "PLN52564",
+    "payer_id": "PYR10564",
+    "payer_name": "Highland Care",
+    "plan_name": "Highland Complete",
+    "channel": "Commercial",
+    "lives": "2121902"
+  },
+  {
+    "id": "PLN52565",
+    "payer_id": "PYR10565",
+    "payer_name": "Quarry Health Plan",
+    "plan_name": "Quarry EPO",
+    "channel": "Commercial",
+    "lives": "964058"
+  },
+  {
+    "id": "PLN52566",
+    "payer_id": "PYR10566",
+    "payer_name": "Ironwood Wellness",
+    "plan_name": "Ironwood POS",
+    "channel": "Commercial",
+    "lives": "757719"
+  },
+  {
+    "id": "PLN52567",
+    "payer_id": "PYR10567",
+    "payer_name": "Nautilus Mutual",
+    "plan_name": "Nautilus PPO",
+    "channel": "Managed Medicaid",
+    "lives": "3099205"
+  },
+  {
+    "id": "PLN52568",
+    "payer_id": "PYR10568",
+    "payer_name": "Zephyr Health",
+    "plan_name": "Zephyr Preferred",
+    "channel": "Commercial",
+    "lives": "1909187"
+  },
+  {
+    "id": "PLN52569",
+    "payer_id": "PYR10569",
+    "payer_name": "Lantern Health",
+    "plan_name": "Lantern Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "2179792"
+  },
+  {
+    "id": "PLN52570",
+    "payer_id": "PYR10570",
+    "payer_name": "Everest Insurance",
+    "plan_name": "Everest Complete",
+    "channel": "Commercial",
+    "lives": "1786934"
+  },
+  {
+    "id": "PLN52571",
+    "payer_id": "PYR10571",
+    "payer_name": "Cedar Care",
+    "plan_name": "Cedar EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2934714"
+  },
+  {
+    "id": "PLN52572",
+    "payer_id": "PYR10572",
+    "payer_name": "Cascade Health Plan",
+    "plan_name": "Cascade Complete",
+    "channel": "Managed Medicaid",
+    "lives": "3004005"
+  },
+  {
+    "id": "PLN52573",
+    "payer_id": "PYR10573",
+    "payer_name": "Pinecrest Care",
+    "plan_name": "Pinecrest HMO",
+    "channel": "Commercial",
+    "lives": "2977129"
+  },
+  {
+    "id": "PLN52574",
+    "payer_id": "PYR10574",
+    "payer_name": "Sequoia Health Plan",
+    "plan_name": "Sequoia Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "1611381"
+  },
+  {
+    "id": "PLN52575",
+    "payer_id": "PYR10575",
+    "payer_name": "Pinecrest Health Plan",
+    "plan_name": "Pinecrest EPO",
+    "channel": "Health Exchange",
+    "lives": "230211"
+  },
+  {
+    "id": "PLN52576",
+    "payer_id": "PYR10576",
+    "payer_name": "Copperfield Health Plan",
+    "plan_name": "Copperfield HMO",
+    "channel": "Commercial",
+    "lives": "865821"
+  },
+  {
+    "id": "PLN52577",
+    "payer_id": "PYR10577",
+    "payer_name": "Ridgeline Health",
+    "plan_name": "Ridgeline Complete",
+    "channel": "Commercial",
+    "lives": "924634"
+  },
+  {
+    "id": "PLN52578",
+    "payer_id": "PYR10578",
+    "payer_name": "Zephyr Health",
+    "plan_name": "Zephyr POS",
+    "channel": "Managed Medicaid",
+    "lives": "1181490"
+  },
+  {
+    "id": "PLN52579",
+    "payer_id": "PYR10579",
+    "payer_name": "Highland Health",
+    "plan_name": "Highland EPO",
+    "channel": "Commercial",
+    "lives": "2812586"
+  },
+  {
+    "id": "PLN52580",
+    "payer_id": "PYR10580",
+    "payer_name": "Monarch Health Plan",
+    "plan_name": "Monarch EPO",
+    "channel": "Health Exchange",
+    "lives": "1207778"
+  },
+  {
+    "id": "PLN52581",
+    "payer_id": "PYR10581",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "298814"
+  },
+  {
+    "id": "PLN52582",
+    "payer_id": "PYR10582",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "1750426"
+  },
+  {
+    "id": "PLN52583",
+    "payer_id": "PYR10583",
+    "payer_name": "Trailhead Care",
+    "plan_name": "Trailhead Complete",
+    "channel": "Health Exchange",
+    "lives": "2903425"
+  },
+  {
+    "id": "PLN52584",
+    "payer_id": "PYR10584",
+    "payer_name": "Wayfarer Benefit",
+    "plan_name": "Wayfarer EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2374859"
+  },
+  {
+    "id": "PLN52585",
+    "payer_id": "PYR10585",
+    "payer_name": "Ironwood Insurance",
+    "plan_name": "Ironwood POS",
+    "channel": "Commercial",
+    "lives": "510796"
+  },
+  {
+    "id": "PLN52586",
+    "payer_id": "PYR10586",
+    "payer_name": "Brightwater Mutual",
+    "plan_name": "Brightwater Advantage",
+    "channel": "Commercial",
+    "lives": "1415026"
+  },
+  {
+    "id": "PLN52587",
+    "payer_id": "PYR10587",
+    "payer_name": "Copperfield Insurance",
+    "plan_name": "Copperfield HMO",
+    "channel": "Commercial",
+    "lives": "1274482"
+  },
+  {
+    "id": "PLN52588",
+    "payer_id": "PYR10588",
+    "payer_name": "Gateway Mutual",
+    "plan_name": "Gateway PPO",
+    "channel": "Commercial",
+    "lives": "828760"
+  },
+  {
+    "id": "PLN52589",
+    "payer_id": "PYR10589",
+    "payer_name": "Lakeside Alliance",
+    "plan_name": "Lakeside EPO",
+    "channel": "Health Exchange",
+    "lives": "1946971"
+  },
+  {
+    "id": "PLN52590",
+    "payer_id": "PYR10590",
+    "payer_name": "Trailhead Insurance",
+    "plan_name": "Trailhead Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2262666"
+  },
+  {
+    "id": "PLN52591",
+    "payer_id": "PYR10591",
+    "payer_name": "Beacon Insurance",
+    "plan_name": "Beacon PPO",
+    "channel": "Commercial",
+    "lives": "1588873"
+  },
+  {
+    "id": "PLN52592",
+    "payer_id": "PYR10592",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest PPO",
+    "channel": "Commercial",
+    "lives": "1750894"
+  },
+  {
+    "id": "PLN52593",
+    "payer_id": "PYR10593",
+    "payer_name": "Everest Wellness",
+    "plan_name": "Everest Preferred",
+    "channel": "Commercial",
+    "lives": "749056"
+  },
+  {
+    "id": "PLN52594",
+    "payer_id": "PYR10594",
+    "payer_name": "Oakmont Health",
+    "plan_name": "Oakmont Complete",
+    "channel": "Managed Medicaid",
+    "lives": "661249"
+  },
+  {
+    "id": "PLN52595",
+    "payer_id": "PYR10595",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest EPO",
+    "channel": "Commercial",
+    "lives": "2179875"
+  },
+  {
+    "id": "PLN52596",
+    "payer_id": "PYR10596",
+    "payer_name": "Trailhead Care",
+    "plan_name": "Trailhead PPO",
+    "channel": "Commercial",
+    "lives": "199675"
+  },
+  {
+    "id": "PLN52597",
+    "payer_id": "PYR10597",
+    "payer_name": "Trailhead Insurance",
+    "plan_name": "Trailhead PPO",
+    "channel": "Managed Medicaid",
+    "lives": "3196353"
+  },
+  {
+    "id": "PLN52598",
+    "payer_id": "PYR10598",
+    "payer_name": "Copperfield Insurance",
+    "plan_name": "Copperfield Preferred",
+    "channel": "Commercial",
+    "lives": "1865173"
+  },
+  {
+    "id": "PLN52599",
+    "payer_id": "PYR10599",
+    "payer_name": "Northgate Health",
+    "plan_name": "Northgate Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "444393"
+  },
+  {
+    "id": "PLN52600",
+    "payer_id": "PYR10600",
+    "payer_name": "Copperfield Wellness",
+    "plan_name": "Copperfield EPO",
+    "channel": "Commercial",
+    "lives": "1321012"
+  },
+  {
+    "id": "PLN52601",
+    "payer_id": "PYR10601",
+    "payer_name": "Quarry Health",
+    "plan_name": "Quarry HMO",
+    "channel": "Medicare Advantage",
+    "lives": "240653"
+  },
+  {
+    "id": "PLN52602",
+    "payer_id": "PYR10602",
+    "payer_name": "Yellowstone Alliance",
+    "plan_name": "Yellowstone Choice HMO",
+    "channel": "Commercial",
+    "lives": "1408901"
+  },
+  {
+    "id": "PLN52603",
+    "payer_id": "PYR10603",
+    "payer_name": "Cedar Alliance",
+    "plan_name": "Cedar HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1316877"
+  },
+  {
+    "id": "PLN52604",
+    "payer_id": "PYR10604",
+    "payer_name": "Brightwater Insurance",
+    "plan_name": "Brightwater Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "784038"
+  },
+  {
+    "id": "PLN52605",
+    "payer_id": "PYR10605",
+    "payer_name": "Summit Alliance",
+    "plan_name": "Summit HMO",
+    "channel": "Commercial",
+    "lives": "2022612"
+  },
+  {
+    "id": "PLN52606",
+    "payer_id": "PYR10606",
+    "payer_name": "Wayfarer Health Plan",
+    "plan_name": "Wayfarer Preferred",
+    "channel": "Commercial",
+    "lives": "1716570"
+  },
+  {
+    "id": "PLN52607",
+    "payer_id": "PYR10607",
+    "payer_name": "Prairie Mutual",
+    "plan_name": "Prairie Advantage",
+    "channel": "Commercial",
+    "lives": "2619137"
+  },
+  {
+    "id": "PLN52608",
+    "payer_id": "PYR10608",
+    "payer_name": "Gateway Wellness",
+    "plan_name": "Gateway Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2394056"
+  },
+  {
+    "id": "PLN52609",
+    "payer_id": "PYR10609",
+    "payer_name": "Wayfarer Alliance",
+    "plan_name": "Wayfarer HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2515121"
+  },
+  {
+    "id": "PLN52610",
+    "payer_id": "PYR10610",
+    "payer_name": "Everest Mutual",
+    "plan_name": "Everest HMO",
+    "channel": "Managed Medicaid",
+    "lives": "471108"
+  },
+  {
+    "id": "PLN52611",
+    "payer_id": "PYR10611",
+    "payer_name": "Cedar Wellness",
+    "plan_name": "Cedar EPO",
+    "channel": "Managed Medicaid",
+    "lives": "3181651"
+  },
+  {
+    "id": "PLN52612",
+    "payer_id": "PYR10612",
+    "payer_name": "Copperfield Mutual",
+    "plan_name": "Copperfield Complete",
+    "channel": "Commercial",
+    "lives": "877607"
+  },
+  {
+    "id": "PLN52613",
+    "payer_id": "PYR10613",
+    "payer_name": "Cedar Health",
+    "plan_name": "Cedar Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "550007"
+  },
+  {
+    "id": "PLN52614",
+    "payer_id": "PYR10614",
+    "payer_name": "Meridian Benefit",
+    "plan_name": "Meridian HMO",
+    "channel": "Commercial",
+    "lives": "145798"
+  },
+  {
+    "id": "PLN52615",
+    "payer_id": "PYR10615",
+    "payer_name": "Keystone Mutual",
+    "plan_name": "Keystone Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2301393"
+  },
+  {
+    "id": "PLN52616",
+    "payer_id": "PYR10616",
+    "payer_name": "Vantage Mutual",
+    "plan_name": "Vantage Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "662043"
+  },
+  {
+    "id": "PLN52617",
+    "payer_id": "PYR10617",
+    "payer_name": "Cascade Health Plan",
+    "plan_name": "Cascade Complete",
+    "channel": "Health Exchange",
+    "lives": "1846799"
+  },
+  {
+    "id": "PLN52618",
+    "payer_id": "PYR10618",
+    "payer_name": "Prairie Mutual",
+    "plan_name": "Prairie EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2151641"
+  },
+  {
+    "id": "PLN52619",
+    "payer_id": "PYR10619",
+    "payer_name": "Stonegate Mutual",
+    "plan_name": "Stonegate PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2104421"
+  },
+  {
+    "id": "PLN52620",
+    "payer_id": "PYR10620",
+    "payer_name": "Juniper Health",
+    "plan_name": "Juniper PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2041973"
+  },
+  {
+    "id": "PLN52621",
+    "payer_id": "PYR10621",
+    "payer_name": "Beacon Insurance",
+    "plan_name": "Beacon Complete",
+    "channel": "Managed Medicaid",
+    "lives": "343139"
+  },
+  {
+    "id": "PLN52622",
+    "payer_id": "PYR10622",
+    "payer_name": "Union Insurance",
+    "plan_name": "Union PPO",
+    "channel": "Commercial",
+    "lives": "2259092"
+  },
+  {
+    "id": "PLN52623",
+    "payer_id": "PYR10623",
+    "payer_name": "Wayfarer Benefit",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Commercial",
+    "lives": "1250717"
+  },
+  {
+    "id": "PLN52624",
+    "payer_id": "PYR10624",
+    "payer_name": "Everest Insurance",
+    "plan_name": "Everest PPO",
+    "channel": "Health Exchange",
+    "lives": "1999579"
+  },
+  {
+    "id": "PLN52625",
+    "payer_id": "PYR10625",
+    "payer_name": "Cascade Insurance",
+    "plan_name": "Cascade Complete",
+    "channel": "Commercial",
+    "lives": "546927"
+  },
+  {
+    "id": "PLN52626",
+    "payer_id": "PYR10626",
+    "payer_name": "Redwood Insurance",
+    "plan_name": "Redwood Select PPO",
+    "channel": "Commercial",
+    "lives": "3124779"
+  },
+  {
+    "id": "PLN52627",
+    "payer_id": "PYR10627",
+    "payer_name": "Juniper Health Plan",
+    "plan_name": "Juniper Select PPO",
+    "channel": "Health Exchange",
+    "lives": "1005677"
+  },
+  {
+    "id": "PLN52628",
+    "payer_id": "PYR10628",
+    "payer_name": "Beacon Health Plan",
+    "plan_name": "Beacon Complete",
+    "channel": "Medicare Advantage",
+    "lives": "1622118"
+  },
+  {
+    "id": "PLN52629",
+    "payer_id": "PYR10629",
+    "payer_name": "Highland Health",
+    "plan_name": "Highland Select PPO",
+    "channel": "Commercial",
+    "lives": "235298"
+  },
+  {
+    "id": "PLN52630",
+    "payer_id": "PYR10630",
+    "payer_name": "Quarry Wellness",
+    "plan_name": "Quarry Advantage",
+    "channel": "Health Exchange",
+    "lives": "2974533"
+  },
+  {
+    "id": "PLN52631",
+    "payer_id": "PYR10631",
+    "payer_name": "Nautilus Health",
+    "plan_name": "Nautilus Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1617241"
+  },
+  {
+    "id": "PLN52632",
+    "payer_id": "PYR10632",
+    "payer_name": "Nautilus Insurance",
+    "plan_name": "Nautilus Choice HMO",
+    "channel": "Commercial",
+    "lives": "1135247"
+  },
+  {
+    "id": "PLN52633",
+    "payer_id": "PYR10633",
+    "payer_name": "Yellowstone Wellness",
+    "plan_name": "Yellowstone Preferred",
+    "channel": "Commercial",
+    "lives": "2857555"
+  },
+  {
+    "id": "PLN52634",
+    "payer_id": "PYR10634",
+    "payer_name": "Summit Health",
+    "plan_name": "Summit Advantage",
+    "channel": "Commercial",
+    "lives": "2218118"
+  },
+  {
+    "id": "PLN52635",
+    "payer_id": "PYR10635",
+    "payer_name": "Bluegrass Wellness",
+    "plan_name": "Bluegrass PPO",
+    "channel": "Commercial",
+    "lives": "2612940"
+  },
+  {
+    "id": "PLN52636",
+    "payer_id": "PYR10636",
+    "payer_name": "Northgate Care",
+    "plan_name": "Northgate EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2768118"
+  },
+  {
+    "id": "PLN52637",
+    "payer_id": "PYR10637",
+    "payer_name": "Prairie Care",
+    "plan_name": "Prairie Complete",
+    "channel": "Commercial",
+    "lives": "1805898"
+  },
+  {
+    "id": "PLN52638",
+    "payer_id": "PYR10638",
+    "payer_name": "Harborview Mutual",
+    "plan_name": "Harborview Advantage",
+    "channel": "Commercial",
+    "lives": "266904"
+  },
+  {
+    "id": "PLN52639",
+    "payer_id": "PYR10639",
+    "payer_name": "Ridgeline Wellness",
+    "plan_name": "Ridgeline Advantage",
+    "channel": "Commercial",
+    "lives": "2722352"
+  },
+  {
+    "id": "PLN52640",
+    "payer_id": "PYR10640",
+    "payer_name": "Fairview Care",
+    "plan_name": "Fairview Complete",
+    "channel": "Health Exchange",
+    "lives": "1101309"
+  },
+  {
+    "id": "PLN52641",
+    "payer_id": "PYR10641",
+    "payer_name": "Bluegrass Alliance",
+    "plan_name": "Bluegrass PPO",
+    "channel": "Medicare Advantage",
+    "lives": "639340"
+  },
+  {
+    "id": "PLN52642",
+    "payer_id": "PYR10642",
+    "payer_name": "Gateway Mutual",
+    "plan_name": "Gateway PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2982913"
+  },
+  {
+    "id": "PLN52643",
+    "payer_id": "PYR10643",
+    "payer_name": "Union Wellness",
+    "plan_name": "Union PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2905971"
+  },
+  {
+    "id": "PLN52644",
+    "payer_id": "PYR10644",
+    "payer_name": "Lantern Health",
+    "plan_name": "Lantern HMO",
+    "channel": "Commercial",
+    "lives": "2257385"
+  },
+  {
+    "id": "PLN52645",
+    "payer_id": "PYR10645",
+    "payer_name": "Stonegate Health",
+    "plan_name": "Stonegate Advantage",
+    "channel": "Health Exchange",
+    "lives": "816125"
+  },
+  {
+    "id": "PLN52646",
+    "payer_id": "PYR10646",
+    "payer_name": "Ridgeline Care",
+    "plan_name": "Ridgeline Complete",
+    "channel": "Health Exchange",
+    "lives": "809671"
+  },
+  {
+    "id": "PLN52647",
+    "payer_id": "PYR10647",
+    "payer_name": "Silverpeak Alliance",
+    "plan_name": "Silverpeak Advantage",
+    "channel": "Commercial",
+    "lives": "2282239"
+  },
+  {
+    "id": "PLN52648",
+    "payer_id": "PYR10648",
+    "payer_name": "Gateway Health",
+    "plan_name": "Gateway Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "194577"
+  },
+  {
+    "id": "PLN52649",
+    "payer_id": "PYR10649",
+    "payer_name": "Prairie Health Plan",
+    "plan_name": "Prairie POS",
+    "channel": "Commercial",
+    "lives": "169676"
+  },
+  {
+    "id": "PLN52650",
+    "payer_id": "PYR10650",
+    "payer_name": "Granite Wellness",
+    "plan_name": "Granite EPO",
+    "channel": "Commercial",
+    "lives": "737464"
+  },
+  {
+    "id": "PLN52651",
+    "payer_id": "PYR10651",
+    "payer_name": "Pinecrest Care",
+    "plan_name": "Pinecrest HMO",
+    "channel": "Commercial",
+    "lives": "2100170"
+  },
+  {
+    "id": "PLN52652",
+    "payer_id": "PYR10652",
+    "payer_name": "Lantern Benefit",
+    "plan_name": "Lantern HMO",
+    "channel": "Health Exchange",
+    "lives": "2430780"
+  },
+  {
+    "id": "PLN52653",
+    "payer_id": "PYR10653",
+    "payer_name": "Stonegate Benefit",
+    "plan_name": "Stonegate HMO",
+    "channel": "Commercial",
+    "lives": "1163792"
+  },
+  {
+    "id": "PLN52654",
+    "payer_id": "PYR10654",
+    "payer_name": "Vantage Health Plan",
+    "plan_name": "Vantage Complete",
+    "channel": "Commercial",
+    "lives": "2456025"
+  },
+  {
+    "id": "PLN52655",
+    "payer_id": "PYR10655",
+    "payer_name": "Keystone Health Plan",
+    "plan_name": "Keystone PPO",
+    "channel": "Medicare Advantage",
+    "lives": "353575"
+  },
+  {
+    "id": "PLN52656",
+    "payer_id": "PYR10656",
+    "payer_name": "Copperfield Mutual",
+    "plan_name": "Copperfield Complete",
+    "channel": "Health Exchange",
+    "lives": "547225"
+  },
+  {
+    "id": "PLN52657",
+    "payer_id": "PYR10657",
+    "payer_name": "Monarch Wellness",
+    "plan_name": "Monarch EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2916089"
+  },
+  {
+    "id": "PLN52658",
+    "payer_id": "PYR10658",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest Advantage",
+    "channel": "Commercial",
+    "lives": "2354206"
+  },
+  {
+    "id": "PLN52659",
+    "payer_id": "PYR10659",
+    "payer_name": "Brightwater Benefit",
+    "plan_name": "Brightwater Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "934710"
+  },
+  {
+    "id": "PLN52660",
+    "payer_id": "PYR10660",
+    "payer_name": "Northgate Health Plan",
+    "plan_name": "Northgate Complete",
+    "channel": "Medicare Advantage",
+    "lives": "754555"
+  },
+  {
+    "id": "PLN52661",
+    "payer_id": "PYR10661",
+    "payer_name": "Copperfield Wellness",
+    "plan_name": "Copperfield Advantage",
+    "channel": "Commercial",
+    "lives": "1417133"
+  },
+  {
+    "id": "PLN52662",
+    "payer_id": "PYR10662",
+    "payer_name": "Union Health Plan",
+    "plan_name": "Union EPO",
+    "channel": "Commercial",
+    "lives": "2049494"
+  },
+  {
+    "id": "PLN52663",
+    "payer_id": "PYR10663",
+    "payer_name": "Yellowstone Benefit",
+    "plan_name": "Yellowstone Advantage",
+    "channel": "Commercial",
+    "lives": "3148508"
+  },
+  {
+    "id": "PLN52664",
+    "payer_id": "PYR10664",
+    "payer_name": "Riverbend Wellness",
+    "plan_name": "Riverbend Advantage",
+    "channel": "Commercial",
+    "lives": "1590096"
+  },
+  {
+    "id": "PLN52665",
+    "payer_id": "PYR10665",
+    "payer_name": "Harborview Mutual",
+    "plan_name": "Harborview EPO",
+    "channel": "Commercial",
+    "lives": "2571149"
+  },
+  {
+    "id": "PLN52666",
+    "payer_id": "PYR10666",
+    "payer_name": "Prairie Wellness",
+    "plan_name": "Prairie Choice HMO",
+    "channel": "Commercial",
+    "lives": "863133"
+  },
+  {
+    "id": "PLN52667",
+    "payer_id": "PYR10667",
+    "payer_name": "Harborview Insurance",
+    "plan_name": "Harborview EPO",
+    "channel": "Commercial",
+    "lives": "1967592"
+  },
+  {
+    "id": "PLN52668",
+    "payer_id": "PYR10668",
+    "payer_name": "Copperfield Health Plan",
+    "plan_name": "Copperfield EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2333425"
+  },
+  {
+    "id": "PLN52669",
+    "payer_id": "PYR10669",
+    "payer_name": "Fairview Alliance",
+    "plan_name": "Fairview Complete",
+    "channel": "Commercial",
+    "lives": "75833"
+  },
+  {
+    "id": "PLN52670",
+    "payer_id": "PYR10670",
+    "payer_name": "Yellowstone Wellness",
+    "plan_name": "Yellowstone EPO",
+    "channel": "Managed Medicaid",
+    "lives": "36296"
+  },
+  {
+    "id": "PLN52671",
+    "payer_id": "PYR10671",
+    "payer_name": "Granite Mutual",
+    "plan_name": "Granite Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "2025201"
+  },
+  {
+    "id": "PLN52672",
+    "payer_id": "PYR10672",
+    "payer_name": "Vantage Health",
+    "plan_name": "Vantage Advantage",
+    "channel": "Commercial",
+    "lives": "571634"
+  },
+  {
+    "id": "PLN52673",
+    "payer_id": "PYR10673",
+    "payer_name": "Cascade Alliance",
+    "plan_name": "Cascade Select PPO",
+    "channel": "Commercial",
+    "lives": "2964872"
+  },
+  {
+    "id": "PLN52674",
+    "payer_id": "PYR10674",
+    "payer_name": "Lantern Health Plan",
+    "plan_name": "Lantern Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1962397"
+  },
+  {
+    "id": "PLN52675",
+    "payer_id": "PYR10675",
+    "payer_name": "Trailhead Health",
+    "plan_name": "Trailhead Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "3172841"
+  },
+  {
+    "id": "PLN52676",
+    "payer_id": "PYR10676",
+    "payer_name": "Harborview Benefit",
+    "plan_name": "Harborview PPO",
+    "channel": "Commercial",
+    "lives": "1621229"
+  },
+  {
+    "id": "PLN52677",
+    "payer_id": "PYR10677",
+    "payer_name": "Stonegate Care",
+    "plan_name": "Stonegate Preferred",
+    "channel": "Health Exchange",
+    "lives": "873626"
+  },
+  {
+    "id": "PLN52678",
+    "payer_id": "PYR10678",
+    "payer_name": "Quarry Wellness",
+    "plan_name": "Quarry POS",
+    "channel": "Commercial",
+    "lives": "1494379"
+  },
+  {
+    "id": "PLN52679",
+    "payer_id": "PYR10679",
+    "payer_name": "Juniper Benefit",
+    "plan_name": "Juniper Complete",
+    "channel": "Medicare Advantage",
+    "lives": "2118234"
+  },
+  {
+    "id": "PLN52680",
+    "payer_id": "PYR10680",
+    "payer_name": "Juniper Care",
+    "plan_name": "Juniper POS",
+    "channel": "Medicare Advantage",
+    "lives": "381199"
+  },
+  {
+    "id": "PLN52681",
+    "payer_id": "PYR10681",
+    "payer_name": "Riverbend Health Plan",
+    "plan_name": "Riverbend Select PPO",
+    "channel": "Commercial",
+    "lives": "2938774"
+  },
+  {
+    "id": "PLN52682",
+    "payer_id": "PYR10682",
+    "payer_name": "Cascade Insurance",
+    "plan_name": "Cascade Advantage",
+    "channel": "Health Exchange",
+    "lives": "2285942"
+  },
+  {
+    "id": "PLN52683",
+    "payer_id": "PYR10683",
+    "payer_name": "Cascade Insurance",
+    "plan_name": "Cascade POS",
+    "channel": "Commercial",
+    "lives": "107428"
+  },
+  {
+    "id": "PLN52684",
+    "payer_id": "PYR10684",
+    "payer_name": "Foundry Alliance",
+    "plan_name": "Foundry Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "1882540"
+  },
+  {
+    "id": "PLN52685",
+    "payer_id": "PYR10685",
+    "payer_name": "Bluegrass Wellness",
+    "plan_name": "Bluegrass Complete",
+    "channel": "Commercial",
+    "lives": "1223573"
+  },
+  {
+    "id": "PLN52686",
+    "payer_id": "PYR10686",
+    "payer_name": "Pinecrest Health Plan",
+    "plan_name": "Pinecrest Preferred",
+    "channel": "Commercial",
+    "lives": "779539"
+  },
+  {
+    "id": "PLN52687",
+    "payer_id": "PYR10687",
+    "payer_name": "Granite Benefit",
+    "plan_name": "Granite EPO",
+    "channel": "Medicare Advantage",
+    "lives": "1107226"
+  },
+  {
+    "id": "PLN52688",
+    "payer_id": "PYR10688",
+    "payer_name": "Foundry Benefit",
+    "plan_name": "Foundry EPO",
+    "channel": "Commercial",
+    "lives": "1895847"
+  },
+  {
+    "id": "PLN52689",
+    "payer_id": "PYR10689",
+    "payer_name": "Ridgeline Health Plan",
+    "plan_name": "Ridgeline Complete",
+    "channel": "Commercial",
+    "lives": "669534"
+  },
+  {
+    "id": "PLN52690",
+    "payer_id": "PYR10690",
+    "payer_name": "Wayfarer Health Plan",
+    "plan_name": "Wayfarer Complete",
+    "channel": "Commercial",
+    "lives": "2905491"
+  },
+  {
+    "id": "PLN52691",
+    "payer_id": "PYR10691",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2605074"
+  },
+  {
+    "id": "PLN52692",
+    "payer_id": "PYR10692",
+    "payer_name": "Harborview Wellness",
+    "plan_name": "Harborview Preferred",
+    "channel": "Commercial",
+    "lives": "1180711"
+  },
+  {
+    "id": "PLN52693",
+    "payer_id": "PYR10693",
+    "payer_name": "Cedar Mutual",
+    "plan_name": "Cedar POS",
+    "channel": "Medicare Advantage",
+    "lives": "1347772"
+  },
+  {
+    "id": "PLN52694",
+    "payer_id": "PYR10694",
+    "payer_name": "Juniper Mutual",
+    "plan_name": "Juniper Choice HMO",
+    "channel": "Commercial",
+    "lives": "1208910"
+  },
+  {
+    "id": "PLN52695",
+    "payer_id": "PYR10695",
+    "payer_name": "Cedar Wellness",
+    "plan_name": "Cedar Complete",
+    "channel": "Health Exchange",
+    "lives": "1758193"
+  },
+  {
+    "id": "PLN52696",
+    "payer_id": "PYR10696",
+    "payer_name": "Monarch Health Plan",
+    "plan_name": "Monarch HMO",
+    "channel": "Commercial",
+    "lives": "886508"
+  },
+  {
+    "id": "PLN52697",
+    "payer_id": "PYR10697",
+    "payer_name": "Keystone Care",
+    "plan_name": "Keystone PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2694346"
+  },
+  {
+    "id": "PLN52698",
+    "payer_id": "PYR10698",
+    "payer_name": "Wayfarer Health Plan",
+    "plan_name": "Wayfarer POS",
+    "channel": "Commercial",
+    "lives": "1616257"
+  },
+  {
+    "id": "PLN52699",
+    "payer_id": "PYR10699",
+    "payer_name": "Everest Alliance",
+    "plan_name": "Everest Preferred",
+    "channel": "Health Exchange",
+    "lives": "1958857"
+  },
+  {
+    "id": "PLN52700",
+    "payer_id": "PYR10700",
+    "payer_name": "Everest Alliance",
+    "plan_name": "Everest HMO",
+    "channel": "Health Exchange",
+    "lives": "2808043"
+  },
+  {
+    "id": "PLN52701",
+    "payer_id": "PYR10701",
+    "payer_name": "Cascade Care",
+    "plan_name": "Cascade Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "294864"
+  },
+  {
+    "id": "PLN52702",
+    "payer_id": "PYR10702",
+    "payer_name": "Northgate Benefit",
+    "plan_name": "Northgate Preferred",
+    "channel": "Health Exchange",
+    "lives": "2427830"
+  },
+  {
+    "id": "PLN52703",
+    "payer_id": "PYR10703",
+    "payer_name": "Beacon Benefit",
+    "plan_name": "Beacon Complete",
+    "channel": "Health Exchange",
+    "lives": "583317"
+  },
+  {
+    "id": "PLN52704",
+    "payer_id": "PYR10704",
+    "payer_name": "Monarch Benefit",
+    "plan_name": "Monarch PPO",
+    "channel": "Commercial",
+    "lives": "1238327"
+  },
+  {
+    "id": "PLN52705",
+    "payer_id": "PYR10705",
+    "payer_name": "Pinecrest Benefit",
+    "plan_name": "Pinecrest Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1277788"
+  },
+  {
+    "id": "PLN52706",
+    "payer_id": "PYR10706",
+    "payer_name": "Highland Health Plan",
+    "plan_name": "Highland PPO",
+    "channel": "Commercial",
+    "lives": "2188365"
+  },
+  {
+    "id": "PLN52707",
+    "payer_id": "PYR10707",
+    "payer_name": "Pinecrest Care",
+    "plan_name": "Pinecrest POS",
+    "channel": "Commercial",
+    "lives": "2126340"
+  },
+  {
+    "id": "PLN52708",
+    "payer_id": "PYR10708",
+    "payer_name": "Summit Care",
+    "plan_name": "Summit EPO",
+    "channel": "Commercial",
+    "lives": "2026245"
+  },
+  {
+    "id": "PLN52709",
+    "payer_id": "PYR10709",
+    "payer_name": "Zephyr Benefit",
+    "plan_name": "Zephyr EPO",
+    "channel": "Health Exchange",
+    "lives": "1292938"
+  },
+  {
+    "id": "PLN52710",
+    "payer_id": "PYR10710",
+    "payer_name": "Ironwood Insurance",
+    "plan_name": "Ironwood EPO",
+    "channel": "Commercial",
+    "lives": "561174"
+  },
+  {
+    "id": "PLN52711",
+    "payer_id": "PYR10711",
+    "payer_name": "Quarry Mutual",
+    "plan_name": "Quarry PPO",
+    "channel": "Commercial",
+    "lives": "467218"
+  },
+  {
+    "id": "PLN52712",
+    "payer_id": "PYR10712",
+    "payer_name": "Granite Care",
+    "plan_name": "Granite Select PPO",
+    "channel": "Health Exchange",
+    "lives": "58085"
+  },
+  {
+    "id": "PLN52713",
+    "payer_id": "PYR10713",
+    "payer_name": "Stonegate Benefit",
+    "plan_name": "Stonegate PPO",
+    "channel": "Commercial",
+    "lives": "625510"
+  },
+  {
+    "id": "PLN52714",
+    "payer_id": "PYR10714",
+    "payer_name": "Brightwater Wellness",
+    "plan_name": "Brightwater Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "301626"
+  },
+  {
+    "id": "PLN52715",
+    "payer_id": "PYR10715",
+    "payer_name": "Copperfield Health Plan",
+    "plan_name": "Copperfield Preferred",
+    "channel": "Commercial",
+    "lives": "3057335"
+  },
+  {
+    "id": "PLN52716",
+    "payer_id": "PYR10716",
+    "payer_name": "Stonegate Alliance",
+    "plan_name": "Stonegate HMO",
+    "channel": "Commercial",
+    "lives": "1503232"
+  },
+  {
+    "id": "PLN52717",
+    "payer_id": "PYR10717",
+    "payer_name": "Monarch Care",
+    "plan_name": "Monarch Choice HMO",
+    "channel": "Commercial",
+    "lives": "1969133"
+  },
+  {
+    "id": "PLN52718",
+    "payer_id": "PYR10718",
+    "payer_name": "Vantage Health",
+    "plan_name": "Vantage HMO",
+    "channel": "Commercial",
+    "lives": "2085781"
+  },
+  {
+    "id": "PLN52719",
+    "payer_id": "PYR10719",
+    "payer_name": "Everest Alliance",
+    "plan_name": "Everest POS",
+    "channel": "Managed Medicaid",
+    "lives": "1723265"
+  },
+  {
+    "id": "PLN52720",
+    "payer_id": "PYR10720",
+    "payer_name": "Juniper Health Plan",
+    "plan_name": "Juniper PPO",
+    "channel": "Health Exchange",
+    "lives": "2077122"
+  },
+  {
+    "id": "PLN52721",
+    "payer_id": "PYR10721",
+    "payer_name": "Northgate Health Plan",
+    "plan_name": "Northgate Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2930196"
+  },
+  {
+    "id": "PLN52722",
+    "payer_id": "PYR10722",
+    "payer_name": "Gateway Wellness",
+    "plan_name": "Gateway Advantage",
+    "channel": "Commercial",
+    "lives": "991726"
+  },
+  {
+    "id": "PLN52723",
+    "payer_id": "PYR10723",
+    "payer_name": "Yellowstone Insurance",
+    "plan_name": "Yellowstone Advantage",
+    "channel": "Commercial",
+    "lives": "2010760"
+  },
+  {
+    "id": "PLN52724",
+    "payer_id": "PYR10724",
+    "payer_name": "Riverbend Care",
+    "plan_name": "Riverbend Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2100717"
+  },
+  {
+    "id": "PLN52725",
+    "payer_id": "PYR10725",
+    "payer_name": "Summit Alliance",
+    "plan_name": "Summit PPO",
+    "channel": "Commercial",
+    "lives": "1619879"
+  },
+  {
+    "id": "PLN52726",
+    "payer_id": "PYR10726",
+    "payer_name": "Riverbend Care",
+    "plan_name": "Riverbend Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "1969637"
+  },
+  {
+    "id": "PLN52727",
+    "payer_id": "PYR10727",
+    "payer_name": "Bluegrass Benefit",
+    "plan_name": "Bluegrass Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "89114"
+  },
+  {
+    "id": "PLN52728",
+    "payer_id": "PYR10728",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry Complete",
+    "channel": "Medicare Advantage",
+    "lives": "165915"
+  },
+  {
+    "id": "PLN52729",
+    "payer_id": "PYR10729",
+    "payer_name": "Ridgeline Mutual",
+    "plan_name": "Ridgeline EPO",
+    "channel": "Commercial",
+    "lives": "3016960"
+  },
+  {
+    "id": "PLN52730",
+    "payer_id": "PYR10730",
+    "payer_name": "Vantage Alliance",
+    "plan_name": "Vantage Complete",
+    "channel": "Managed Medicaid",
+    "lives": "670615"
+  },
+  {
+    "id": "PLN52731",
+    "payer_id": "PYR10731",
+    "payer_name": "Keystone Benefit",
+    "plan_name": "Keystone Select PPO",
+    "channel": "Commercial",
+    "lives": "272630"
+  },
+  {
+    "id": "PLN52732",
+    "payer_id": "PYR10732",
+    "payer_name": "Yellowstone Health",
+    "plan_name": "Yellowstone Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "423315"
+  },
+  {
+    "id": "PLN52733",
+    "payer_id": "PYR10733",
+    "payer_name": "Harborview Wellness",
+    "plan_name": "Harborview POS",
+    "channel": "Commercial",
+    "lives": "2733256"
+  },
+  {
+    "id": "PLN52734",
+    "payer_id": "PYR10734",
+    "payer_name": "Gateway Health Plan",
+    "plan_name": "Gateway PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1382833"
+  },
+  {
+    "id": "PLN52735",
+    "payer_id": "PYR10735",
+    "payer_name": "Monarch Insurance",
+    "plan_name": "Monarch PPO",
+    "channel": "Health Exchange",
+    "lives": "1985064"
+  },
+  {
+    "id": "PLN52736",
+    "payer_id": "PYR10736",
+    "payer_name": "Foundry Care",
+    "plan_name": "Foundry Complete",
+    "channel": "Commercial",
+    "lives": "2912693"
+  },
+  {
+    "id": "PLN52737",
+    "payer_id": "PYR10737",
+    "payer_name": "Pinecrest Insurance",
+    "plan_name": "Pinecrest Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "861237"
+  },
+  {
+    "id": "PLN52738",
+    "payer_id": "PYR10738",
+    "payer_name": "Harborview Insurance",
+    "plan_name": "Harborview Advantage",
+    "channel": "Commercial",
+    "lives": "2634646"
+  },
+  {
+    "id": "PLN52739",
+    "payer_id": "PYR10739",
+    "payer_name": "Wayfarer Alliance",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Commercial",
+    "lives": "1471750"
+  },
+  {
+    "id": "PLN52740",
+    "payer_id": "PYR10740",
+    "payer_name": "Foundry Wellness",
+    "plan_name": "Foundry Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "1068880"
+  },
+  {
+    "id": "PLN52741",
+    "payer_id": "PYR10741",
+    "payer_name": "Stonegate Alliance",
+    "plan_name": "Stonegate POS",
+    "channel": "Health Exchange",
+    "lives": "3128046"
+  },
+  {
+    "id": "PLN52742",
+    "payer_id": "PYR10742",
+    "payer_name": "Trailhead Wellness",
+    "plan_name": "Trailhead Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "634681"
+  },
+  {
+    "id": "PLN52743",
+    "payer_id": "PYR10743",
+    "payer_name": "Foundry Care",
+    "plan_name": "Foundry POS",
+    "channel": "Medicare Advantage",
+    "lives": "1134605"
+  },
+  {
+    "id": "PLN52744",
+    "payer_id": "PYR10744",
+    "payer_name": "Silverpeak Mutual",
+    "plan_name": "Silverpeak POS",
+    "channel": "Commercial",
+    "lives": "643987"
+  },
+  {
+    "id": "PLN52745",
+    "payer_id": "PYR10745",
+    "payer_name": "Ridgeline Mutual",
+    "plan_name": "Ridgeline Advantage",
+    "channel": "Health Exchange",
+    "lives": "170204"
+  },
+  {
+    "id": "PLN52746",
+    "payer_id": "PYR10746",
+    "payer_name": "Bluegrass Insurance",
+    "plan_name": "Bluegrass Preferred",
+    "channel": "Commercial",
+    "lives": "2717364"
+  },
+  {
+    "id": "PLN52747",
+    "payer_id": "PYR10747",
+    "payer_name": "Foundry Insurance",
+    "plan_name": "Foundry HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1539353"
+  },
+  {
+    "id": "PLN52748",
+    "payer_id": "PYR10748",
+    "payer_name": "Wayfarer Care",
+    "plan_name": "Wayfarer Preferred",
+    "channel": "Health Exchange",
+    "lives": "2449456"
+  },
+  {
+    "id": "PLN52749",
+    "payer_id": "PYR10749",
+    "payer_name": "Northgate Benefit",
+    "plan_name": "Northgate Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "3107193"
+  },
+  {
+    "id": "PLN52750",
+    "payer_id": "PYR10750",
+    "payer_name": "Riverbend Health Plan",
+    "plan_name": "Riverbend POS",
+    "channel": "Commercial",
+    "lives": "1858293"
+  },
+  {
+    "id": "PLN52751",
+    "payer_id": "PYR10751",
+    "payer_name": "Juniper Care",
+    "plan_name": "Juniper Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "1792467"
+  },
+  {
+    "id": "PLN52752",
+    "payer_id": "PYR10752",
+    "payer_name": "Quarry Benefit",
+    "plan_name": "Quarry Select PPO",
+    "channel": "Commercial",
+    "lives": "2721993"
+  },
+  {
+    "id": "PLN52753",
+    "payer_id": "PYR10753",
+    "payer_name": "Keystone Insurance",
+    "plan_name": "Keystone Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "526930"
+  },
+  {
+    "id": "PLN52754",
+    "payer_id": "PYR10754",
+    "payer_name": "Bluegrass Insurance",
+    "plan_name": "Bluegrass HMO",
+    "channel": "Commercial",
+    "lives": "1262482"
+  },
+  {
+    "id": "PLN52755",
+    "payer_id": "PYR10755",
+    "payer_name": "Monarch Health",
+    "plan_name": "Monarch Select PPO",
+    "channel": "Commercial",
+    "lives": "2077305"
+  },
+  {
+    "id": "PLN52756",
+    "payer_id": "PYR10756",
+    "payer_name": "Riverbend Health Plan",
+    "plan_name": "Riverbend Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "293364"
+  },
+  {
+    "id": "PLN52757",
+    "payer_id": "PYR10757",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview Complete",
+    "channel": "Health Exchange",
+    "lives": "585812"
+  },
+  {
+    "id": "PLN52758",
+    "payer_id": "PYR10758",
+    "payer_name": "Foundry Care",
+    "plan_name": "Foundry HMO",
+    "channel": "Commercial",
+    "lives": "1061913"
+  },
+  {
+    "id": "PLN52759",
+    "payer_id": "PYR10759",
+    "payer_name": "Lakeside Insurance",
+    "plan_name": "Lakeside EPO",
+    "channel": "Health Exchange",
+    "lives": "2502307"
+  },
+  {
+    "id": "PLN52760",
+    "payer_id": "PYR10760",
+    "payer_name": "Juniper Health Plan",
+    "plan_name": "Juniper Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2407391"
+  },
+  {
+    "id": "PLN52761",
+    "payer_id": "PYR10761",
+    "payer_name": "Ironwood Care",
+    "plan_name": "Ironwood Complete",
+    "channel": "Commercial",
+    "lives": "1112998"
+  },
+  {
+    "id": "PLN52762",
+    "payer_id": "PYR10762",
+    "payer_name": "Zephyr Insurance",
+    "plan_name": "Zephyr EPO",
+    "channel": "Commercial",
+    "lives": "1558168"
+  },
+  {
+    "id": "PLN52763",
+    "payer_id": "PYR10763",
+    "payer_name": "Nautilus Alliance",
+    "plan_name": "Nautilus Complete",
+    "channel": "Commercial",
+    "lives": "956553"
+  },
+  {
+    "id": "PLN52764",
+    "payer_id": "PYR10764",
+    "payer_name": "Keystone Health Plan",
+    "plan_name": "Keystone Advantage",
+    "channel": "Commercial",
+    "lives": "2531929"
+  },
+  {
+    "id": "PLN52765",
+    "payer_id": "PYR10765",
+    "payer_name": "Monarch Health Plan",
+    "plan_name": "Monarch PPO",
+    "channel": "Commercial",
+    "lives": "1113066"
+  },
+  {
+    "id": "PLN52766",
+    "payer_id": "PYR10766",
+    "payer_name": "Prairie Care",
+    "plan_name": "Prairie PPO",
+    "channel": "Medicare Advantage",
+    "lives": "573701"
+  },
+  {
+    "id": "PLN52767",
+    "payer_id": "PYR10767",
+    "payer_name": "Nautilus Insurance",
+    "plan_name": "Nautilus HMO",
+    "channel": "Commercial",
+    "lives": "2351227"
+  },
+  {
+    "id": "PLN52768",
+    "payer_id": "PYR10768",
+    "payer_name": "Highland Health",
+    "plan_name": "Highland PPO",
+    "channel": "Commercial",
+    "lives": "2131202"
+  },
+  {
+    "id": "PLN52769",
+    "payer_id": "PYR10769",
+    "payer_name": "Lakeside Health",
+    "plan_name": "Lakeside EPO",
+    "channel": "Commercial",
+    "lives": "727471"
+  },
+  {
+    "id": "PLN52770",
+    "payer_id": "PYR10770",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry EPO",
+    "channel": "Commercial",
+    "lives": "505071"
+  },
+  {
+    "id": "PLN52771",
+    "payer_id": "PYR10771",
+    "payer_name": "Juniper Mutual",
+    "plan_name": "Juniper Select PPO",
+    "channel": "Commercial",
+    "lives": "2585821"
+  },
+  {
+    "id": "PLN52772",
+    "payer_id": "PYR10772",
+    "payer_name": "Ridgeline Health Plan",
+    "plan_name": "Ridgeline Preferred",
+    "channel": "Health Exchange",
+    "lives": "2685312"
+  },
+  {
+    "id": "PLN52773",
+    "payer_id": "PYR10773",
+    "payer_name": "Ironwood Health Plan",
+    "plan_name": "Ironwood PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1106458"
+  },
+  {
+    "id": "PLN52774",
+    "payer_id": "PYR10774",
+    "payer_name": "Granite Alliance",
+    "plan_name": "Granite Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "2367394"
+  },
+  {
+    "id": "PLN52775",
+    "payer_id": "PYR10775",
+    "payer_name": "Northgate Benefit",
+    "plan_name": "Northgate HMO",
+    "channel": "Commercial",
+    "lives": "1206670"
+  },
+  {
+    "id": "PLN52776",
+    "payer_id": "PYR10776",
+    "payer_name": "Fairview Health",
+    "plan_name": "Fairview Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "772360"
+  },
+  {
+    "id": "PLN52777",
+    "payer_id": "PYR10777",
+    "payer_name": "Gateway Health",
+    "plan_name": "Gateway Select PPO",
+    "channel": "Health Exchange",
+    "lives": "2869808"
+  },
+  {
+    "id": "PLN52778",
+    "payer_id": "PYR10778",
+    "payer_name": "Foundry Health Plan",
+    "plan_name": "Foundry PPO",
+    "channel": "Commercial",
+    "lives": "1945357"
+  },
+  {
+    "id": "PLN52779",
+    "payer_id": "PYR10779",
+    "payer_name": "Gateway Health",
+    "plan_name": "Gateway Complete",
+    "channel": "Commercial",
+    "lives": "3083323"
+  },
+  {
+    "id": "PLN52780",
+    "payer_id": "PYR10780",
+    "payer_name": "Foundry Health",
+    "plan_name": "Foundry HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2541193"
+  },
+  {
+    "id": "PLN52781",
+    "payer_id": "PYR10781",
+    "payer_name": "Silverpeak Mutual",
+    "plan_name": "Silverpeak HMO",
+    "channel": "Commercial",
+    "lives": "888349"
+  },
+  {
+    "id": "PLN52782",
+    "payer_id": "PYR10782",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate Complete",
+    "channel": "Medicare Advantage",
+    "lives": "3101543"
+  },
+  {
+    "id": "PLN52783",
+    "payer_id": "PYR10783",
+    "payer_name": "Juniper Wellness",
+    "plan_name": "Juniper Complete",
+    "channel": "Medicare Advantage",
+    "lives": "1642765"
+  },
+  {
+    "id": "PLN52784",
+    "payer_id": "PYR10784",
+    "payer_name": "Juniper Health Plan",
+    "plan_name": "Juniper Advantage",
+    "channel": "Health Exchange",
+    "lives": "1801845"
+  },
+  {
+    "id": "PLN52785",
+    "payer_id": "PYR10785",
+    "payer_name": "Beacon Alliance",
+    "plan_name": "Beacon Preferred",
+    "channel": "Health Exchange",
+    "lives": "2729660"
+  },
+  {
+    "id": "PLN52786",
+    "payer_id": "PYR10786",
+    "payer_name": "Quarry Insurance",
+    "plan_name": "Quarry EPO",
+    "channel": "Commercial",
+    "lives": "2885220"
+  },
+  {
+    "id": "PLN52787",
+    "payer_id": "PYR10787",
+    "payer_name": "Harborview Care",
+    "plan_name": "Harborview PPO",
+    "channel": "Managed Medicaid",
+    "lives": "466442"
+  },
+  {
+    "id": "PLN52788",
+    "payer_id": "PYR10788",
+    "payer_name": "Bluegrass Benefit",
+    "plan_name": "Bluegrass Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "357966"
+  },
+  {
+    "id": "PLN52789",
+    "payer_id": "PYR10789",
+    "payer_name": "Lantern Health",
+    "plan_name": "Lantern HMO",
+    "channel": "Medicare Advantage",
+    "lives": "2969377"
+  },
+  {
+    "id": "PLN52790",
+    "payer_id": "PYR10790",
+    "payer_name": "Brightwater Insurance",
+    "plan_name": "Brightwater Choice HMO",
+    "channel": "Commercial",
+    "lives": "900284"
+  },
+  {
+    "id": "PLN52791",
+    "payer_id": "PYR10791",
+    "payer_name": "Nautilus Health",
+    "plan_name": "Nautilus PPO",
+    "channel": "Medicare Advantage",
+    "lives": "504384"
+  },
+  {
+    "id": "PLN52792",
+    "payer_id": "PYR10792",
+    "payer_name": "Zephyr Alliance",
+    "plan_name": "Zephyr Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2601815"
+  },
+  {
+    "id": "PLN52793",
+    "payer_id": "PYR10793",
+    "payer_name": "Lakeside Health",
+    "plan_name": "Lakeside POS",
+    "channel": "Commercial",
+    "lives": "81627"
+  },
+  {
+    "id": "PLN52794",
+    "payer_id": "PYR10794",
+    "payer_name": "Silverpeak Mutual",
+    "plan_name": "Silverpeak Preferred",
+    "channel": "Commercial",
+    "lives": "376102"
+  },
+  {
+    "id": "PLN52795",
+    "payer_id": "PYR10795",
+    "payer_name": "Cascade Care",
+    "plan_name": "Cascade EPO",
+    "channel": "Commercial",
+    "lives": "3113672"
+  },
+  {
+    "id": "PLN52796",
+    "payer_id": "PYR10796",
+    "payer_name": "Yellowstone Wellness",
+    "plan_name": "Yellowstone POS",
+    "channel": "Commercial",
+    "lives": "2403364"
+  },
+  {
+    "id": "PLN52797",
+    "payer_id": "PYR10797",
+    "payer_name": "Nautilus Mutual",
+    "plan_name": "Nautilus Complete",
+    "channel": "Health Exchange",
+    "lives": "2442081"
+  },
+  {
+    "id": "PLN52798",
+    "payer_id": "PYR10798",
+    "payer_name": "Sequoia Alliance",
+    "plan_name": "Sequoia POS",
+    "channel": "Health Exchange",
+    "lives": "269613"
+  },
+  {
+    "id": "PLN52799",
+    "payer_id": "PYR10799",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood Complete",
+    "channel": "Commercial",
+    "lives": "2090294"
+  },
+  {
+    "id": "PLN52800",
+    "payer_id": "PYR10800",
+    "payer_name": "Copperfield Wellness",
+    "plan_name": "Copperfield Complete",
+    "channel": "Commercial",
+    "lives": "1852569"
+  },
+  {
+    "id": "PLN52801",
+    "payer_id": "PYR10801",
+    "payer_name": "Lakeside Insurance",
+    "plan_name": "Lakeside Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2838216"
+  },
+  {
+    "id": "PLN52802",
+    "payer_id": "PYR10802",
+    "payer_name": "Copperfield Care",
+    "plan_name": "Copperfield Complete",
+    "channel": "Commercial",
+    "lives": "741835"
+  },
+  {
+    "id": "PLN52803",
+    "payer_id": "PYR10803",
+    "payer_name": "Ridgeline Insurance",
+    "plan_name": "Ridgeline POS",
+    "channel": "Commercial",
+    "lives": "2350516"
+  },
+  {
+    "id": "PLN52804",
+    "payer_id": "PYR10804",
+    "payer_name": "Pinecrest Health Plan",
+    "plan_name": "Pinecrest Preferred",
+    "channel": "Commercial",
+    "lives": "282032"
+  },
+  {
+    "id": "PLN52805",
+    "payer_id": "PYR10805",
+    "payer_name": "Northgate Wellness",
+    "plan_name": "Northgate Complete",
+    "channel": "Commercial",
+    "lives": "1442423"
+  },
+  {
+    "id": "PLN52806",
+    "payer_id": "PYR10806",
+    "payer_name": "Zephyr Care",
+    "plan_name": "Zephyr PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1932365"
+  },
+  {
+    "id": "PLN52807",
+    "payer_id": "PYR10807",
+    "payer_name": "Sequoia Care",
+    "plan_name": "Sequoia EPO",
+    "channel": "Health Exchange",
+    "lives": "510176"
+  },
+  {
+    "id": "PLN52808",
+    "payer_id": "PYR10808",
+    "payer_name": "Oakmont Alliance",
+    "plan_name": "Oakmont HMO",
+    "channel": "Commercial",
+    "lives": "2729104"
+  },
+  {
+    "id": "PLN52809",
+    "payer_id": "PYR10809",
+    "payer_name": "Oakmont Mutual",
+    "plan_name": "Oakmont PPO",
+    "channel": "Commercial",
+    "lives": "2001688"
+  },
+  {
+    "id": "PLN52810",
+    "payer_id": "PYR10810",
+    "payer_name": "Juniper Mutual",
+    "plan_name": "Juniper Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "2804192"
+  },
+  {
+    "id": "PLN52811",
+    "payer_id": "PYR10811",
+    "payer_name": "Nautilus Mutual",
+    "plan_name": "Nautilus Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2179912"
+  },
+  {
+    "id": "PLN52812",
+    "payer_id": "PYR10812",
+    "payer_name": "Trailhead Care",
+    "plan_name": "Trailhead HMO",
+    "channel": "Commercial",
+    "lives": "1335386"
+  },
+  {
+    "id": "PLN52813",
+    "payer_id": "PYR10813",
+    "payer_name": "Granite Health Plan",
+    "plan_name": "Granite PPO",
+    "channel": "Health Exchange",
+    "lives": "3007088"
+  },
+  {
+    "id": "PLN52814",
+    "payer_id": "PYR10814",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest Choice HMO",
+    "channel": "Commercial",
+    "lives": "1188485"
+  },
+  {
+    "id": "PLN52815",
+    "payer_id": "PYR10815",
+    "payer_name": "Union Alliance",
+    "plan_name": "Union Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1711619"
+  },
+  {
+    "id": "PLN52816",
+    "payer_id": "PYR10816",
+    "payer_name": "Gateway Mutual",
+    "plan_name": "Gateway EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2283238"
+  },
+  {
+    "id": "PLN52817",
+    "payer_id": "PYR10817",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest EPO",
+    "channel": "Commercial",
+    "lives": "131984"
+  },
+  {
+    "id": "PLN52818",
+    "payer_id": "PYR10818",
+    "payer_name": "Sequoia Care",
+    "plan_name": "Sequoia PPO",
+    "channel": "Commercial",
+    "lives": "1104497"
+  },
+  {
+    "id": "PLN52819",
+    "payer_id": "PYR10819",
+    "payer_name": "Oakmont Insurance",
+    "plan_name": "Oakmont PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1436786"
+  },
+  {
+    "id": "PLN52820",
+    "payer_id": "PYR10820",
+    "payer_name": "Wayfarer Health Plan",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "3108350"
+  },
+  {
+    "id": "PLN52821",
+    "payer_id": "PYR10821",
+    "payer_name": "Willow Benefit",
+    "plan_name": "Willow Complete",
+    "channel": "Commercial",
+    "lives": "629688"
+  },
+  {
+    "id": "PLN52822",
+    "payer_id": "PYR10822",
+    "payer_name": "Nautilus Health Plan",
+    "plan_name": "Nautilus Complete",
+    "channel": "Commercial",
+    "lives": "1886347"
+  },
+  {
+    "id": "PLN52823",
+    "payer_id": "PYR10823",
+    "payer_name": "Trailhead Mutual",
+    "plan_name": "Trailhead Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2107233"
+  },
+  {
+    "id": "PLN52824",
+    "payer_id": "PYR10824",
+    "payer_name": "Pinecrest Health Plan",
+    "plan_name": "Pinecrest Preferred",
+    "channel": "Commercial",
+    "lives": "2048249"
+  },
+  {
+    "id": "PLN52825",
+    "payer_id": "PYR10825",
+    "payer_name": "Prairie Alliance",
+    "plan_name": "Prairie PPO",
+    "channel": "Health Exchange",
+    "lives": "672833"
+  },
+  {
+    "id": "PLN52826",
+    "payer_id": "PYR10826",
+    "payer_name": "Juniper Insurance",
+    "plan_name": "Juniper PPO",
+    "channel": "Managed Medicaid",
+    "lives": "658005"
+  },
+  {
+    "id": "PLN52827",
+    "payer_id": "PYR10827",
+    "payer_name": "Copperfield Alliance",
+    "plan_name": "Copperfield PPO",
+    "channel": "Commercial",
+    "lives": "611177"
+  },
+  {
+    "id": "PLN52828",
+    "payer_id": "PYR10828",
+    "payer_name": "Stonegate Alliance",
+    "plan_name": "Stonegate PPO",
+    "channel": "Commercial",
+    "lives": "2311537"
+  },
+  {
+    "id": "PLN52829",
+    "payer_id": "PYR10829",
+    "payer_name": "Wayfarer Insurance",
+    "plan_name": "Wayfarer Complete",
+    "channel": "Commercial",
+    "lives": "1597534"
+  },
+  {
+    "id": "PLN52830",
+    "payer_id": "PYR10830",
+    "payer_name": "Oakmont Alliance",
+    "plan_name": "Oakmont EPO",
+    "channel": "Health Exchange",
+    "lives": "1379055"
+  },
+  {
+    "id": "PLN52831",
+    "payer_id": "PYR10831",
+    "payer_name": "Gateway Health",
+    "plan_name": "Gateway Complete",
+    "channel": "Health Exchange",
+    "lives": "1178395"
+  },
+  {
+    "id": "PLN52832",
+    "payer_id": "PYR10832",
+    "payer_name": "Vantage Care",
+    "plan_name": "Vantage Preferred",
+    "channel": "Commercial",
+    "lives": "822096"
+  },
+  {
+    "id": "PLN52833",
+    "payer_id": "PYR10833",
+    "payer_name": "Northgate Health Plan",
+    "plan_name": "Northgate PPO",
+    "channel": "Commercial",
+    "lives": "878208"
+  },
+  {
+    "id": "PLN52834",
+    "payer_id": "PYR10834",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry PPO",
+    "channel": "Medicare Advantage",
+    "lives": "112573"
+  },
+  {
+    "id": "PLN52835",
+    "payer_id": "PYR10835",
+    "payer_name": "Trailhead Benefit",
+    "plan_name": "Trailhead Advantage",
+    "channel": "Commercial",
+    "lives": "396786"
+  },
+  {
+    "id": "PLN52836",
+    "payer_id": "PYR10836",
+    "payer_name": "Stonegate Insurance",
+    "plan_name": "Stonegate HMO",
+    "channel": "Commercial",
+    "lives": "1301788"
+  },
+  {
+    "id": "PLN52837",
+    "payer_id": "PYR10837",
+    "payer_name": "Stonegate Health",
+    "plan_name": "Stonegate PPO",
+    "channel": "Commercial",
+    "lives": "1650525"
+  },
+  {
+    "id": "PLN52838",
+    "payer_id": "PYR10838",
+    "payer_name": "Bluegrass Mutual",
+    "plan_name": "Bluegrass HMO",
+    "channel": "Commercial",
+    "lives": "864595"
+  },
+  {
+    "id": "PLN52839",
+    "payer_id": "PYR10839",
+    "payer_name": "Keystone Care",
+    "plan_name": "Keystone Select PPO",
+    "channel": "Commercial",
+    "lives": "1350199"
+  },
+  {
+    "id": "PLN52840",
+    "payer_id": "PYR10840",
+    "payer_name": "Monarch Wellness",
+    "plan_name": "Monarch PPO",
+    "channel": "Commercial",
+    "lives": "2338960"
+  },
+  {
+    "id": "PLN52841",
+    "payer_id": "PYR10841",
+    "payer_name": "Monarch Alliance",
+    "plan_name": "Monarch HMO",
+    "channel": "Health Exchange",
+    "lives": "2113965"
+  },
+  {
+    "id": "PLN52842",
+    "payer_id": "PYR10842",
+    "payer_name": "Silverpeak Mutual",
+    "plan_name": "Silverpeak Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "190288"
+  },
+  {
+    "id": "PLN52843",
+    "payer_id": "PYR10843",
+    "payer_name": "Meridian Health",
+    "plan_name": "Meridian Complete",
+    "channel": "Commercial",
+    "lives": "2522639"
+  },
+  {
+    "id": "PLN52844",
+    "payer_id": "PYR10844",
+    "payer_name": "Yellowstone Insurance",
+    "plan_name": "Yellowstone PPO",
+    "channel": "Commercial",
+    "lives": "3115357"
+  },
+  {
+    "id": "PLN52845",
+    "payer_id": "PYR10845",
+    "payer_name": "Lakeside Insurance",
+    "plan_name": "Lakeside Advantage",
+    "channel": "Commercial",
+    "lives": "2575393"
+  },
+  {
+    "id": "PLN52846",
+    "payer_id": "PYR10846",
+    "payer_name": "Redwood Wellness",
+    "plan_name": "Redwood Choice HMO",
+    "channel": "Commercial",
+    "lives": "898420"
+  },
+  {
+    "id": "PLN52847",
+    "payer_id": "PYR10847",
+    "payer_name": "Meridian Alliance",
+    "plan_name": "Meridian PPO",
+    "channel": "Commercial",
+    "lives": "2836535"
+  },
+  {
+    "id": "PLN52848",
+    "payer_id": "PYR10848",
+    "payer_name": "Cedar Care",
+    "plan_name": "Cedar Preferred",
+    "channel": "Commercial",
+    "lives": "2831949"
+  },
+  {
+    "id": "PLN52849",
+    "payer_id": "PYR10849",
+    "payer_name": "Highland Mutual",
+    "plan_name": "Highland EPO",
+    "channel": "Health Exchange",
+    "lives": "50363"
+  },
+  {
+    "id": "PLN52850",
+    "payer_id": "PYR10850",
+    "payer_name": "Meridian Wellness",
+    "plan_name": "Meridian PPO",
+    "channel": "Commercial",
+    "lives": "2869451"
+  },
+  {
+    "id": "PLN52851",
+    "payer_id": "PYR10851",
+    "payer_name": "Ironwood Wellness",
+    "plan_name": "Ironwood Complete",
+    "channel": "Commercial",
+    "lives": "169333"
+  },
+  {
+    "id": "PLN52852",
+    "payer_id": "PYR10852",
+    "payer_name": "Lantern Care",
+    "plan_name": "Lantern Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2113517"
+  },
+  {
+    "id": "PLN52853",
+    "payer_id": "PYR10853",
+    "payer_name": "Zephyr Health Plan",
+    "plan_name": "Zephyr HMO",
+    "channel": "Managed Medicaid",
+    "lives": "552904"
+  },
+  {
+    "id": "PLN52854",
+    "payer_id": "PYR10854",
+    "payer_name": "Trailhead Insurance",
+    "plan_name": "Trailhead POS",
+    "channel": "Health Exchange",
+    "lives": "111961"
+  },
+  {
+    "id": "PLN52855",
+    "payer_id": "PYR10855",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry Advantage",
+    "channel": "Commercial",
+    "lives": "525521"
+  },
+  {
+    "id": "PLN52856",
+    "payer_id": "PYR10856",
+    "payer_name": "Ironwood Health",
+    "plan_name": "Ironwood Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2248090"
+  },
+  {
+    "id": "PLN52857",
+    "payer_id": "PYR10857",
+    "payer_name": "Gateway Care",
+    "plan_name": "Gateway PPO",
+    "channel": "Health Exchange",
+    "lives": "961352"
+  },
+  {
+    "id": "PLN52858",
+    "payer_id": "PYR10858",
+    "payer_name": "Gateway Insurance",
+    "plan_name": "Gateway HMO",
+    "channel": "Health Exchange",
+    "lives": "2637676"
+  },
+  {
+    "id": "PLN52859",
+    "payer_id": "PYR10859",
+    "payer_name": "Yellowstone Benefit",
+    "plan_name": "Yellowstone Select PPO",
+    "channel": "Commercial",
+    "lives": "467316"
+  },
+  {
+    "id": "PLN52860",
+    "payer_id": "PYR10860",
+    "payer_name": "Trailhead Wellness",
+    "plan_name": "Trailhead HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2613650"
+  },
+  {
+    "id": "PLN52861",
+    "payer_id": "PYR10861",
+    "payer_name": "Cedar Health",
+    "plan_name": "Cedar PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1328989"
+  },
+  {
+    "id": "PLN52862",
+    "payer_id": "PYR10862",
+    "payer_name": "Everest Mutual",
+    "plan_name": "Everest HMO",
+    "channel": "Commercial",
+    "lives": "2856911"
+  },
+  {
+    "id": "PLN52863",
+    "payer_id": "PYR10863",
+    "payer_name": "Riverbend Mutual",
+    "plan_name": "Riverbend POS",
+    "channel": "Managed Medicaid",
+    "lives": "2782083"
+  },
+  {
+    "id": "PLN52864",
+    "payer_id": "PYR10864",
+    "payer_name": "Brightwater Care",
+    "plan_name": "Brightwater Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "2849410"
+  },
+  {
+    "id": "PLN52865",
+    "payer_id": "PYR10865",
+    "payer_name": "Riverbend Care",
+    "plan_name": "Riverbend PPO",
+    "channel": "Managed Medicaid",
+    "lives": "3006794"
+  },
+  {
+    "id": "PLN52866",
+    "payer_id": "PYR10866",
+    "payer_name": "Bluegrass Benefit",
+    "plan_name": "Bluegrass Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "3054289"
+  },
+  {
+    "id": "PLN52867",
+    "payer_id": "PYR10867",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1843079"
+  },
+  {
+    "id": "PLN52868",
+    "payer_id": "PYR10868",
+    "payer_name": "Everest Benefit",
+    "plan_name": "Everest Select PPO",
+    "channel": "Commercial",
+    "lives": "48897"
+  },
+  {
+    "id": "PLN52869",
+    "payer_id": "PYR10869",
+    "payer_name": "Harborview Mutual",
+    "plan_name": "Harborview Choice HMO",
+    "channel": "Commercial",
+    "lives": "855420"
+  },
+  {
+    "id": "PLN52870",
+    "payer_id": "PYR10870",
+    "payer_name": "Prairie Benefit",
+    "plan_name": "Prairie Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "1271745"
+  },
+  {
+    "id": "PLN52871",
+    "payer_id": "PYR10871",
+    "payer_name": "Granite Alliance",
+    "plan_name": "Granite POS",
+    "channel": "Commercial",
+    "lives": "2694183"
+  },
+  {
+    "id": "PLN52872",
+    "payer_id": "PYR10872",
+    "payer_name": "Silverpeak Alliance",
+    "plan_name": "Silverpeak Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1591688"
+  },
+  {
+    "id": "PLN52873",
+    "payer_id": "PYR10873",
+    "payer_name": "Meridian Care",
+    "plan_name": "Meridian Choice HMO",
+    "channel": "Commercial",
+    "lives": "2341545"
+  },
+  {
+    "id": "PLN52874",
+    "payer_id": "PYR10874",
+    "payer_name": "Yellowstone Benefit",
+    "plan_name": "Yellowstone PPO",
+    "channel": "Commercial",
+    "lives": "850181"
+  },
+  {
+    "id": "PLN52875",
+    "payer_id": "PYR10875",
+    "payer_name": "Stonegate Benefit",
+    "plan_name": "Stonegate Preferred",
+    "channel": "Commercial",
+    "lives": "763857"
+  },
+  {
+    "id": "PLN52876",
+    "payer_id": "PYR10876",
+    "payer_name": "Cascade Health Plan",
+    "plan_name": "Cascade Advantage",
+    "channel": "Health Exchange",
+    "lives": "480437"
+  },
+  {
+    "id": "PLN52877",
+    "payer_id": "PYR10877",
+    "payer_name": "Juniper Benefit",
+    "plan_name": "Juniper EPO",
+    "channel": "Managed Medicaid",
+    "lives": "2628906"
+  },
+  {
+    "id": "PLN52878",
+    "payer_id": "PYR10878",
+    "payer_name": "Willow Wellness",
+    "plan_name": "Willow Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "2927331"
+  },
+  {
+    "id": "PLN52879",
+    "payer_id": "PYR10879",
+    "payer_name": "Granite Wellness",
+    "plan_name": "Granite Preferred",
+    "channel": "Commercial",
+    "lives": "638134"
+  },
+  {
+    "id": "PLN52880",
+    "payer_id": "PYR10880",
+    "payer_name": "Lakeside Alliance",
+    "plan_name": "Lakeside POS",
+    "channel": "Health Exchange",
+    "lives": "356448"
+  },
+  {
+    "id": "PLN52881",
+    "payer_id": "PYR10881",
+    "payer_name": "Sequoia Benefit",
+    "plan_name": "Sequoia Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1962278"
+  },
+  {
+    "id": "PLN52882",
+    "payer_id": "PYR10882",
+    "payer_name": "Ridgeline Alliance",
+    "plan_name": "Ridgeline Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1696689"
+  },
+  {
+    "id": "PLN52883",
+    "payer_id": "PYR10883",
+    "payer_name": "Silverpeak Mutual",
+    "plan_name": "Silverpeak POS",
+    "channel": "Commercial",
+    "lives": "1797675"
+  },
+  {
+    "id": "PLN52884",
+    "payer_id": "PYR10884",
+    "payer_name": "Cedar Health Plan",
+    "plan_name": "Cedar HMO",
+    "channel": "Commercial",
+    "lives": "1879390"
+  },
+  {
+    "id": "PLN52885",
+    "payer_id": "PYR10885",
+    "payer_name": "Brightwater Benefit",
+    "plan_name": "Brightwater Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "1976050"
+  },
+  {
+    "id": "PLN52886",
+    "payer_id": "PYR10886",
+    "payer_name": "Redwood Mutual",
+    "plan_name": "Redwood PPO",
+    "channel": "Commercial",
+    "lives": "1867575"
+  },
+  {
+    "id": "PLN52887",
+    "payer_id": "PYR10887",
+    "payer_name": "Copperfield Care",
+    "plan_name": "Copperfield Select PPO",
+    "channel": "Commercial",
+    "lives": "427757"
+  },
+  {
+    "id": "PLN52888",
+    "payer_id": "PYR10888",
+    "payer_name": "Willow Benefit",
+    "plan_name": "Willow POS",
+    "channel": "Health Exchange",
+    "lives": "1395938"
+  },
+  {
+    "id": "PLN52889",
+    "payer_id": "PYR10889",
+    "payer_name": "Lakeside Insurance",
+    "plan_name": "Lakeside PPO",
+    "channel": "Commercial",
+    "lives": "1197144"
+  },
+  {
+    "id": "PLN52890",
+    "payer_id": "PYR10890",
+    "payer_name": "Quarry Health Plan",
+    "plan_name": "Quarry Advantage",
+    "channel": "Commercial",
+    "lives": "966797"
+  },
+  {
+    "id": "PLN52891",
+    "payer_id": "PYR10891",
+    "payer_name": "Vantage Alliance",
+    "plan_name": "Vantage Complete",
+    "channel": "Commercial",
+    "lives": "375189"
+  },
+  {
+    "id": "PLN52892",
+    "payer_id": "PYR10892",
+    "payer_name": "Fairview Alliance",
+    "plan_name": "Fairview Complete",
+    "channel": "Managed Medicaid",
+    "lives": "141265"
+  },
+  {
+    "id": "PLN52893",
+    "payer_id": "PYR10893",
+    "payer_name": "Ridgeline Benefit",
+    "plan_name": "Ridgeline Choice HMO",
+    "channel": "Commercial",
+    "lives": "1773031"
+  },
+  {
+    "id": "PLN52894",
+    "payer_id": "PYR10894",
+    "payer_name": "Cascade Health",
+    "plan_name": "Cascade EPO",
+    "channel": "Commercial",
+    "lives": "1400171"
+  },
+  {
+    "id": "PLN52895",
+    "payer_id": "PYR10895",
+    "payer_name": "Union Mutual",
+    "plan_name": "Union POS",
+    "channel": "Medicare Advantage",
+    "lives": "470662"
+  },
+  {
+    "id": "PLN52896",
+    "payer_id": "PYR10896",
+    "payer_name": "Riverbend Health Plan",
+    "plan_name": "Riverbend PPO",
+    "channel": "Health Exchange",
+    "lives": "2545691"
+  },
+  {
+    "id": "PLN52897",
+    "payer_id": "PYR10897",
+    "payer_name": "Keystone Insurance",
+    "plan_name": "Keystone POS",
+    "channel": "Commercial",
+    "lives": "1235985"
+  },
+  {
+    "id": "PLN52898",
+    "payer_id": "PYR10898",
+    "payer_name": "Meridian Health Plan",
+    "plan_name": "Meridian Choice HMO",
+    "channel": "Medicare Advantage",
+    "lives": "1655414"
+  },
+  {
+    "id": "PLN52899",
+    "payer_id": "PYR10899",
+    "payer_name": "Quarry Care",
+    "plan_name": "Quarry Advantage",
+    "channel": "Commercial",
+    "lives": "559975"
+  },
+  {
+    "id": "PLN52900",
+    "payer_id": "PYR10900",
+    "payer_name": "Pinecrest Insurance",
+    "plan_name": "Pinecrest POS",
+    "channel": "Managed Medicaid",
+    "lives": "3021359"
+  },
+  {
+    "id": "PLN52901",
+    "payer_id": "PYR10901",
+    "payer_name": "Oakmont Care",
+    "plan_name": "Oakmont Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "1050322"
+  },
+  {
+    "id": "PLN52902",
+    "payer_id": "PYR10902",
+    "payer_name": "Granite Care",
+    "plan_name": "Granite Select PPO",
+    "channel": "Health Exchange",
+    "lives": "1928888"
+  },
+  {
+    "id": "PLN52903",
+    "payer_id": "PYR10903",
+    "payer_name": "Monarch Wellness",
+    "plan_name": "Monarch EPO",
+    "channel": "Managed Medicaid",
+    "lives": "3090448"
+  },
+  {
+    "id": "PLN52904",
+    "payer_id": "PYR10904",
+    "payer_name": "Wayfarer Care",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Health Exchange",
+    "lives": "198142"
+  },
+  {
+    "id": "PLN52905",
+    "payer_id": "PYR10905",
+    "payer_name": "Copperfield Care",
+    "plan_name": "Copperfield POS",
+    "channel": "Medicare Advantage",
+    "lives": "1740025"
+  },
+  {
+    "id": "PLN52906",
+    "payer_id": "PYR10906",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry Complete",
+    "channel": "Commercial",
+    "lives": "1075180"
+  },
+  {
+    "id": "PLN52907",
+    "payer_id": "PYR10907",
+    "payer_name": "Prairie Mutual",
+    "plan_name": "Prairie Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1689961"
+  },
+  {
+    "id": "PLN52908",
+    "payer_id": "PYR10908",
+    "payer_name": "Northgate Health Plan",
+    "plan_name": "Northgate Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "3155174"
+  },
+  {
+    "id": "PLN52909",
+    "payer_id": "PYR10909",
+    "payer_name": "Vantage Wellness",
+    "plan_name": "Vantage Complete",
+    "channel": "Commercial",
+    "lives": "1989626"
+  },
+  {
+    "id": "PLN52910",
+    "payer_id": "PYR10910",
+    "payer_name": "Riverbend Health Plan",
+    "plan_name": "Riverbend Select PPO",
+    "channel": "Commercial",
+    "lives": "2257500"
+  },
+  {
+    "id": "PLN52911",
+    "payer_id": "PYR10911",
+    "payer_name": "Redwood Health Plan",
+    "plan_name": "Redwood Complete",
+    "channel": "Commercial",
+    "lives": "761335"
+  },
+  {
+    "id": "PLN52912",
+    "payer_id": "PYR10912",
+    "payer_name": "Trailhead Care",
+    "plan_name": "Trailhead Advantage",
+    "channel": "Health Exchange",
+    "lives": "1308205"
+  },
+  {
+    "id": "PLN52913",
+    "payer_id": "PYR10913",
+    "payer_name": "Willow Wellness",
+    "plan_name": "Willow Choice HMO",
+    "channel": "Commercial",
+    "lives": "853800"
+  },
+  {
+    "id": "PLN52914",
+    "payer_id": "PYR10914",
+    "payer_name": "Gateway Wellness",
+    "plan_name": "Gateway HMO",
+    "channel": "Commercial",
+    "lives": "420183"
+  },
+  {
+    "id": "PLN52915",
+    "payer_id": "PYR10915",
+    "payer_name": "Riverbend Benefit",
+    "plan_name": "Riverbend Choice HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2643932"
+  },
+  {
+    "id": "PLN52916",
+    "payer_id": "PYR10916",
+    "payer_name": "Ironwood Wellness",
+    "plan_name": "Ironwood HMO",
+    "channel": "Commercial",
+    "lives": "1371302"
+  },
+  {
+    "id": "PLN52917",
+    "payer_id": "PYR10917",
+    "payer_name": "Meridian Mutual",
+    "plan_name": "Meridian POS",
+    "channel": "Medicare Advantage",
+    "lives": "938150"
+  },
+  {
+    "id": "PLN52918",
+    "payer_id": "PYR10918",
+    "payer_name": "Fairview Mutual",
+    "plan_name": "Fairview Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "2110373"
+  },
+  {
+    "id": "PLN52919",
+    "payer_id": "PYR10919",
+    "payer_name": "Foundry Mutual",
+    "plan_name": "Foundry EPO",
+    "channel": "Commercial",
+    "lives": "750391"
+  },
+  {
+    "id": "PLN52920",
+    "payer_id": "PYR10920",
+    "payer_name": "Zephyr Alliance",
+    "plan_name": "Zephyr Advantage",
+    "channel": "Managed Medicaid",
+    "lives": "2701837"
+  },
+  {
+    "id": "PLN52921",
+    "payer_id": "PYR10921",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate POS",
+    "channel": "Health Exchange",
+    "lives": "1812250"
+  },
+  {
+    "id": "PLN52922",
+    "payer_id": "PYR10922",
+    "payer_name": "Ridgeline Insurance",
+    "plan_name": "Ridgeline POS",
+    "channel": "Commercial",
+    "lives": "1591001"
+  },
+  {
+    "id": "PLN52923",
+    "payer_id": "PYR10923",
+    "payer_name": "Oakmont Benefit",
+    "plan_name": "Oakmont EPO",
+    "channel": "Commercial",
+    "lives": "1346853"
+  },
+  {
+    "id": "PLN52924",
+    "payer_id": "PYR10924",
+    "payer_name": "Gateway Benefit",
+    "plan_name": "Gateway POS",
+    "channel": "Commercial",
+    "lives": "2277037"
+  },
+  {
+    "id": "PLN52925",
+    "payer_id": "PYR10925",
+    "payer_name": "Trailhead Benefit",
+    "plan_name": "Trailhead EPO",
+    "channel": "Medicare Advantage",
+    "lives": "2656499"
+  },
+  {
+    "id": "PLN52926",
+    "payer_id": "PYR10926",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview POS",
+    "channel": "Commercial",
+    "lives": "399866"
+  },
+  {
+    "id": "PLN52927",
+    "payer_id": "PYR10927",
+    "payer_name": "Nautilus Alliance",
+    "plan_name": "Nautilus Select PPO",
+    "channel": "Commercial",
+    "lives": "3041919"
+  },
+  {
+    "id": "PLN52928",
+    "payer_id": "PYR10928",
+    "payer_name": "Silverpeak Insurance",
+    "plan_name": "Silverpeak Select PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1895185"
+  },
+  {
+    "id": "PLN52929",
+    "payer_id": "PYR10929",
+    "payer_name": "Lantern Mutual",
+    "plan_name": "Lantern EPO",
+    "channel": "Medicare Advantage",
+    "lives": "1866265"
+  },
+  {
+    "id": "PLN52930",
+    "payer_id": "PYR10930",
+    "payer_name": "Keystone Mutual",
+    "plan_name": "Keystone HMO",
+    "channel": "Commercial",
+    "lives": "2511379"
+  },
+  {
+    "id": "PLN52931",
+    "payer_id": "PYR10931",
+    "payer_name": "Everest Alliance",
+    "plan_name": "Everest Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2372794"
+  },
+  {
+    "id": "PLN52932",
+    "payer_id": "PYR10932",
+    "payer_name": "Willow Health Plan",
+    "plan_name": "Willow POS",
+    "channel": "Commercial",
+    "lives": "68830"
+  },
+  {
+    "id": "PLN52933",
+    "payer_id": "PYR10933",
+    "payer_name": "Juniper Mutual",
+    "plan_name": "Juniper Complete",
+    "channel": "Commercial",
+    "lives": "2703753"
+  },
+  {
+    "id": "PLN52934",
+    "payer_id": "PYR10934",
+    "payer_name": "Wayfarer Health Plan",
+    "plan_name": "Wayfarer POS",
+    "channel": "Medicare Advantage",
+    "lives": "1085631"
+  },
+  {
+    "id": "PLN52935",
+    "payer_id": "PYR10935",
+    "payer_name": "Keystone Mutual",
+    "plan_name": "Keystone POS",
+    "channel": "Commercial",
+    "lives": "2018726"
+  },
+  {
+    "id": "PLN52936",
+    "payer_id": "PYR10936",
+    "payer_name": "Bluegrass Alliance",
+    "plan_name": "Bluegrass EPO",
+    "channel": "Commercial",
+    "lives": "1052732"
+  },
+  {
+    "id": "PLN52937",
+    "payer_id": "PYR10937",
+    "payer_name": "Lantern Care",
+    "plan_name": "Lantern Preferred",
+    "channel": "Commercial",
+    "lives": "1788959"
+  },
+  {
+    "id": "PLN52938",
+    "payer_id": "PYR10938",
+    "payer_name": "Sequoia Mutual",
+    "plan_name": "Sequoia Select PPO",
+    "channel": "Health Exchange",
+    "lives": "1741413"
+  },
+  {
+    "id": "PLN52939",
+    "payer_id": "PYR10939",
+    "payer_name": "Fairview Mutual",
+    "plan_name": "Fairview Select PPO",
+    "channel": "Commercial",
+    "lives": "721315"
+  },
+  {
+    "id": "PLN52940",
+    "payer_id": "PYR10940",
+    "payer_name": "Trailhead Mutual",
+    "plan_name": "Trailhead Select PPO",
+    "channel": "Health Exchange",
+    "lives": "1822533"
+  },
+  {
+    "id": "PLN52941",
+    "payer_id": "PYR10941",
+    "payer_name": "Willow Alliance",
+    "plan_name": "Willow EPO",
+    "channel": "Managed Medicaid",
+    "lives": "477372"
+  },
+  {
+    "id": "PLN52942",
+    "payer_id": "PYR10942",
+    "payer_name": "Stonegate Wellness",
+    "plan_name": "Stonegate Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "1863557"
+  },
+  {
+    "id": "PLN52943",
+    "payer_id": "PYR10943",
+    "payer_name": "Keystone Care",
+    "plan_name": "Keystone Select PPO",
+    "channel": "Commercial",
+    "lives": "1450089"
+  },
+  {
+    "id": "PLN52944",
+    "payer_id": "PYR10944",
+    "payer_name": "Meridian Health",
+    "plan_name": "Meridian Select PPO",
+    "channel": "Commercial",
+    "lives": "2805563"
+  },
+  {
+    "id": "PLN52945",
+    "payer_id": "PYR10945",
+    "payer_name": "Keystone Insurance",
+    "plan_name": "Keystone Complete",
+    "channel": "Medicare Advantage",
+    "lives": "3189717"
+  },
+  {
+    "id": "PLN52946",
+    "payer_id": "PYR10946",
+    "payer_name": "Foundry Wellness",
+    "plan_name": "Foundry Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "1686309"
+  },
+  {
+    "id": "PLN52947",
+    "payer_id": "PYR10947",
+    "payer_name": "Meridian Alliance",
+    "plan_name": "Meridian Advantage",
+    "channel": "Health Exchange",
+    "lives": "597433"
+  },
+  {
+    "id": "PLN52948",
+    "payer_id": "PYR10948",
+    "payer_name": "Juniper Alliance",
+    "plan_name": "Juniper Complete",
+    "channel": "Managed Medicaid",
+    "lives": "1747778"
+  },
+  {
+    "id": "PLN52949",
+    "payer_id": "PYR10949",
+    "payer_name": "Granite Benefit",
+    "plan_name": "Granite Complete",
+    "channel": "Commercial",
+    "lives": "2559948"
+  },
+  {
+    "id": "PLN52950",
+    "payer_id": "PYR10950",
+    "payer_name": "Quarry Care",
+    "plan_name": "Quarry Advantage",
+    "channel": "Commercial",
+    "lives": "2561671"
+  },
+  {
+    "id": "PLN52951",
+    "payer_id": "PYR10951",
+    "payer_name": "Cedar Insurance",
+    "plan_name": "Cedar Preferred",
+    "channel": "Medicare Advantage",
+    "lives": "719864"
+  },
+  {
+    "id": "PLN52952",
+    "payer_id": "PYR10952",
+    "payer_name": "Silverpeak Wellness",
+    "plan_name": "Silverpeak POS",
+    "channel": "Commercial",
+    "lives": "3174370"
+  },
+  {
+    "id": "PLN52953",
+    "payer_id": "PYR10953",
+    "payer_name": "Pinecrest Benefit",
+    "plan_name": "Pinecrest Advantage",
+    "channel": "Commercial",
+    "lives": "939324"
+  },
+  {
+    "id": "PLN52954",
+    "payer_id": "PYR10954",
+    "payer_name": "Union Alliance",
+    "plan_name": "Union HMO",
+    "channel": "Health Exchange",
+    "lives": "1410869"
+  },
+  {
+    "id": "PLN52955",
+    "payer_id": "PYR10955",
+    "payer_name": "Vantage Mutual",
+    "plan_name": "Vantage POS",
+    "channel": "Commercial",
+    "lives": "1101718"
+  },
+  {
+    "id": "PLN52956",
+    "payer_id": "PYR10956",
+    "payer_name": "Gateway Wellness",
+    "plan_name": "Gateway HMO",
+    "channel": "Managed Medicaid",
+    "lives": "1557400"
+  },
+  {
+    "id": "PLN52957",
+    "payer_id": "PYR10957",
+    "payer_name": "Everest Health",
+    "plan_name": "Everest Preferred",
+    "channel": "Commercial",
+    "lives": "1643000"
+  },
+  {
+    "id": "PLN52958",
+    "payer_id": "PYR10958",
+    "payer_name": "Trailhead Wellness",
+    "plan_name": "Trailhead HMO",
+    "channel": "Medicare Advantage",
+    "lives": "53539"
+  },
+  {
+    "id": "PLN52959",
+    "payer_id": "PYR10959",
+    "payer_name": "Ridgeline Alliance",
+    "plan_name": "Ridgeline EPO",
+    "channel": "Managed Medicaid",
+    "lives": "1203635"
+  },
+  {
+    "id": "PLN52960",
+    "payer_id": "PYR10960",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate Complete",
+    "channel": "Health Exchange",
+    "lives": "919732"
+  },
+  {
+    "id": "PLN52961",
+    "payer_id": "PYR10961",
+    "payer_name": "Beacon Wellness",
+    "plan_name": "Beacon POS",
+    "channel": "Health Exchange",
+    "lives": "3100856"
+  },
+  {
+    "id": "PLN52962",
+    "payer_id": "PYR10962",
+    "payer_name": "Everest Health Plan",
+    "plan_name": "Everest PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1660364"
+  },
+  {
+    "id": "PLN52963",
+    "payer_id": "PYR10963",
+    "payer_name": "Lantern Care",
+    "plan_name": "Lantern Preferred",
+    "channel": "Health Exchange",
+    "lives": "1202155"
+  },
+  {
+    "id": "PLN52964",
+    "payer_id": "PYR10964",
+    "payer_name": "Foundry Health",
+    "plan_name": "Foundry Select PPO",
+    "channel": "Medicare Advantage",
+    "lives": "2760733"
+  },
+  {
+    "id": "PLN52965",
+    "payer_id": "PYR10965",
+    "payer_name": "Copperfield Health Plan",
+    "plan_name": "Copperfield POS",
+    "channel": "Commercial",
+    "lives": "3153943"
+  },
+  {
+    "id": "PLN52966",
+    "payer_id": "PYR10966",
+    "payer_name": "Riverbend Health Plan",
+    "plan_name": "Riverbend Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2864799"
+  },
+  {
+    "id": "PLN52967",
+    "payer_id": "PYR10967",
+    "payer_name": "Stonegate Health",
+    "plan_name": "Stonegate HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2741707"
+  },
+  {
+    "id": "PLN52968",
+    "payer_id": "PYR10968",
+    "payer_name": "Silverpeak Health",
+    "plan_name": "Silverpeak HMO",
+    "channel": "Commercial",
+    "lives": "1678648"
+  },
+  {
+    "id": "PLN52969",
+    "payer_id": "PYR10969",
+    "payer_name": "Cedar Alliance",
+    "plan_name": "Cedar Advantage",
+    "channel": "Commercial",
+    "lives": "2667198"
+  },
+  {
+    "id": "PLN52970",
+    "payer_id": "PYR10970",
+    "payer_name": "Cedar Care",
+    "plan_name": "Cedar Complete",
+    "channel": "Health Exchange",
+    "lives": "2820117"
+  },
+  {
+    "id": "PLN52971",
+    "payer_id": "PYR10971",
+    "payer_name": "Yellowstone Health Plan",
+    "plan_name": "Yellowstone Advantage",
+    "channel": "Medicare Advantage",
+    "lives": "2718634"
+  },
+  {
+    "id": "PLN52972",
+    "payer_id": "PYR10972",
+    "payer_name": "Summit Health Plan",
+    "plan_name": "Summit Advantage",
+    "channel": "Health Exchange",
+    "lives": "97822"
+  },
+  {
+    "id": "PLN52973",
+    "payer_id": "PYR10973",
+    "payer_name": "Union Care",
+    "plan_name": "Union POS",
+    "channel": "Health Exchange",
+    "lives": "507101"
+  },
+  {
+    "id": "PLN52974",
+    "payer_id": "PYR10974",
+    "payer_name": "Foundry Care",
+    "plan_name": "Foundry PPO",
+    "channel": "Commercial",
+    "lives": "2427064"
+  },
+  {
+    "id": "PLN52975",
+    "payer_id": "PYR10975",
+    "payer_name": "Granite Care",
+    "plan_name": "Granite HMO",
+    "channel": "Managed Medicaid",
+    "lives": "1267326"
+  },
+  {
+    "id": "PLN52976",
+    "payer_id": "PYR10976",
+    "payer_name": "Silverpeak Insurance",
+    "plan_name": "Silverpeak PPO",
+    "channel": "Managed Medicaid",
+    "lives": "1245595"
+  },
+  {
+    "id": "PLN52977",
+    "payer_id": "PYR10977",
+    "payer_name": "Trailhead Benefit",
+    "plan_name": "Trailhead Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "895130"
+  },
+  {
+    "id": "PLN52978",
+    "payer_id": "PYR10978",
+    "payer_name": "Beacon Insurance",
+    "plan_name": "Beacon POS",
+    "channel": "Commercial",
+    "lives": "2540576"
+  },
+  {
+    "id": "PLN52979",
+    "payer_id": "PYR10979",
+    "payer_name": "Nautilus Care",
+    "plan_name": "Nautilus Preferred",
+    "channel": "Commercial",
+    "lives": "1108347"
+  },
+  {
+    "id": "PLN52980",
+    "payer_id": "PYR10980",
+    "payer_name": "Bluegrass Mutual",
+    "plan_name": "Bluegrass EPO",
+    "channel": "Managed Medicaid",
+    "lives": "869643"
+  },
+  {
+    "id": "PLN52981",
+    "payer_id": "PYR10981",
+    "payer_name": "Wayfarer Health Plan",
+    "plan_name": "Wayfarer Advantage",
+    "channel": "Commercial",
+    "lives": "1341911"
+  },
+  {
+    "id": "PLN52982",
+    "payer_id": "PYR10982",
+    "payer_name": "Summit Insurance",
+    "plan_name": "Summit HMO",
+    "channel": "Managed Medicaid",
+    "lives": "476332"
+  },
+  {
+    "id": "PLN52983",
+    "payer_id": "PYR10983",
+    "payer_name": "Juniper Benefit",
+    "plan_name": "Juniper Select PPO",
+    "channel": "Commercial",
+    "lives": "961929"
+  },
+  {
+    "id": "PLN52984",
+    "payer_id": "PYR10984",
+    "payer_name": "Keystone Care",
+    "plan_name": "Keystone HMO",
+    "channel": "Commercial",
+    "lives": "2223199"
+  },
+  {
+    "id": "PLN52985",
+    "payer_id": "PYR10985",
+    "payer_name": "Wayfarer Insurance",
+    "plan_name": "Wayfarer Preferred",
+    "channel": "Commercial",
+    "lives": "2562901"
+  },
+  {
+    "id": "PLN52986",
+    "payer_id": "PYR10986",
+    "payer_name": "Stonegate Benefit",
+    "plan_name": "Stonegate Preferred",
+    "channel": "Managed Medicaid",
+    "lives": "2509004"
+  },
+  {
+    "id": "PLN52987",
+    "payer_id": "PYR10987",
+    "payer_name": "Sequoia Health Plan",
+    "plan_name": "Sequoia EPO",
+    "channel": "Commercial",
+    "lives": "1603805"
+  },
+  {
+    "id": "PLN52988",
+    "payer_id": "PYR10988",
+    "payer_name": "Zephyr Mutual",
+    "plan_name": "Zephyr Complete",
+    "channel": "Commercial",
+    "lives": "1856131"
+  },
+  {
+    "id": "PLN52989",
+    "payer_id": "PYR10989",
+    "payer_name": "Trailhead Wellness",
+    "plan_name": "Trailhead Select PPO",
+    "channel": "Health Exchange",
+    "lives": "379662"
+  },
+  {
+    "id": "PLN52990",
+    "payer_id": "PYR10990",
+    "payer_name": "Summit Wellness",
+    "plan_name": "Summit HMO",
+    "channel": "Commercial",
+    "lives": "2428053"
+  },
+  {
+    "id": "PLN52991",
+    "payer_id": "PYR10991",
+    "payer_name": "Meridian Mutual",
+    "plan_name": "Meridian Preferred",
+    "channel": "Health Exchange",
+    "lives": "587222"
+  },
+  {
+    "id": "PLN52992",
+    "payer_id": "PYR10992",
+    "payer_name": "Brightwater Wellness",
+    "plan_name": "Brightwater PPO",
+    "channel": "Health Exchange",
+    "lives": "1797490"
+  },
+  {
+    "id": "PLN52993",
+    "payer_id": "PYR10993",
+    "payer_name": "Pinecrest Wellness",
+    "plan_name": "Pinecrest EPO",
+    "channel": "Commercial",
+    "lives": "1554523"
+  },
+  {
+    "id": "PLN52994",
+    "payer_id": "PYR10994",
+    "payer_name": "Keystone Health Plan",
+    "plan_name": "Keystone Choice HMO",
+    "channel": "Commercial",
+    "lives": "1432501"
+  },
+  {
+    "id": "PLN52995",
+    "payer_id": "PYR10995",
+    "payer_name": "Copperfield Insurance",
+    "plan_name": "Copperfield POS",
+    "channel": "Commercial",
+    "lives": "3110504"
+  },
+  {
+    "id": "PLN52996",
+    "payer_id": "PYR10996",
+    "payer_name": "Granite Alliance",
+    "plan_name": "Granite Complete",
+    "channel": "Commercial",
+    "lives": "1507098"
+  },
+  {
+    "id": "PLN52997",
+    "payer_id": "PYR10997",
+    "payer_name": "Riverbend Health",
+    "plan_name": "Riverbend Choice HMO",
+    "channel": "Health Exchange",
+    "lives": "795802"
+  },
+  {
+    "id": "PLN52998",
+    "payer_id": "PYR10998",
+    "payer_name": "Ridgeline Wellness",
+    "plan_name": "Ridgeline HMO",
+    "channel": "Managed Medicaid",
+    "lives": "2172208"
+  },
+  {
+    "id": "PLN52999",
+    "payer_id": "PYR10999",
+    "payer_name": "Beacon Insurance",
+    "plan_name": "Beacon POS",
+    "channel": "Medicare Advantage",
+    "lives": "1673255"
+  }
+]

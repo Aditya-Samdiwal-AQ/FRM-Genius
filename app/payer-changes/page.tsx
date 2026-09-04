@@ -1,11 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import {
-  CONFLICT_TYPE_LABEL,
-  type Conflict,
-  type ConflictType,
-} from "@/data/synthetic";
+import type { ChangeTypeGroup, PayerChange } from "@/lib/types";
+import { GROUP_ORDER } from "@/lib/types";
+import { formatDate, formatTimestamp } from "@/lib/format";
 import {
   selectOpenCount,
   selectResolvedConflicts,
@@ -17,46 +15,47 @@ import { ValueTransition } from "@/components/ui/ValueTransition";
 import { ProvenanceMeta } from "@/components/ui/ProvenanceMeta";
 import { Accordion } from "@/components/ui/Accordion";
 import { ResolutionSummaryAuditTrail } from "@/features/payer-change/ResolutionSummaryAuditTrail";
+import { ResolvedSummariesTable } from "@/features/payer-change/ResolvedSummariesTable";
 import { AppShell } from "@/components/layout/AppShell";
 import { PayerChangeDrawer } from "@/features/payer-change/PayerChangeDrawer";
 
 function ChangeRow({
-  conflict,
+  change,
   onReview,
 }: {
-  conflict: Conflict;
+  change: PayerChange;
   onReview: (id: string) => void;
 }) {
-  const resolved = conflict.status === "resolved";
+  const resolved = change.status === "resolved";
   return (
     <div className="flex items-start justify-between gap-6 px-6 py-4 [&+&]:border-t [&+&]:border-[var(--border)]">
       <div className="min-w-0 flex-1">
         <div className="mb-1.5 flex items-center gap-2.5">
           <h3 className="text-[14px] font-bold text-[var(--ink)]">
-            {conflict.plan.payer} — {conflict.plan.plan_name}
+            {change.payer_name} — {change.plan_name}
           </h3>
           {resolved && <StatusPill variant="resolved" />}
         </div>
         <ValueTransition
-          old={conflict.old_value}
-          current={conflict.new_value}
+          old={change.previous.value}
+          current={change.authoritative.value}
           tone={resolved ? "resolved" : "open"}
         />
         <div className="mt-1.5">
           {resolved ? (
             <ProvenanceMeta
               parts={[
-                `${conflict.notified_offices ?? conflict.accounts.length} accounts resolved`,
-                `Eff. ${conflict.effective_date}`,
-                `by ${conflict.resolved_by}`,
-                conflict.resolved_at ?? "",
+                `${change.affected_account_ids.length} accounts resolved`,
+                `Eff. ${formatDate(change.effective_date)}`,
+                `by ${change.resolved_by ?? ""}`,
+                change.resolved_at ? formatTimestamp(change.resolved_at) : "",
               ]}
             />
           ) : (
             <ProvenanceMeta
               parts={[
-                `${conflict.accounts.length} accounts affected`,
-                `Eff. ${conflict.effective_date}`,
+                `${change.affected_account_ids.length} accounts affected`,
+                `Eff. ${formatDate(change.effective_date)}`,
               ]}
             />
           )}
@@ -65,7 +64,7 @@ function ChangeRow({
       {!resolved && (
         <button
           type="button"
-          onClick={() => onReview(conflict.id)}
+          onClick={() => onReview(change.id)}
           className="mt-1 shrink-0 rounded-lg border border-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-[var(--indigo)] transition-colors hover:bg-[var(--indigo-bg)]"
         >
           Review →
@@ -76,8 +75,8 @@ function ChangeRow({
 }
 
 export default function PayerChangesPage() {
-  const { conflicts } = useConflictState();
-  const [drawerConflictId, setDrawerConflictId] = useState<string | null>(null);
+  const { conflicts, loading, error } = useConflictState();
+  const [drawerChangeId, setDrawerChangeId] = useState<string | null>(null);
 
   const openCount = selectOpenCount(conflicts);
   const resolvedCount = selectResolvedCount(conflicts);
@@ -86,17 +85,21 @@ export default function PayerChangesPage() {
     [conflicts],
   );
 
+  // Group by change_type_group in canonical GROUP_ORDER.
   const groups = useMemo(() => {
-    const byType = new Map<ConflictType, Conflict[]>();
+    const byGroup = new Map<ChangeTypeGroup, PayerChange[]>();
     for (const c of conflicts) {
-      const list = byType.get(c.conflictType) ?? [];
+      const list = byGroup.get(c.change_type_group) ?? [];
       list.push(c);
-      byType.set(c.conflictType, list);
+      byGroup.set(c.change_type_group, list);
     }
-    return [...byType.entries()];
+    return GROUP_ORDER.filter((g) => byGroup.has(g)).map(
+      (group) => [group, byGroup.get(group) ?? []] as const,
+    );
   }, [conflicts]);
 
-  const drawerConflict = conflicts.find((c) => c.id === drawerConflictId) ?? null;
+  const drawerChange =
+    conflicts.find((c) => c.id === drawerChangeId) ?? null;
 
   return (
     <AppShell>
@@ -115,14 +118,24 @@ export default function PayerChangesPage() {
         </div>
       </section>
 
-      {/* Accordions grouped by conflict type */}
+      {error && (
+        <div className="mt-4 rounded-xl border border-red-300 bg-red-50 px-4 py-3 text-[13px] text-red-700">
+          {error}
+        </div>
+      )}
+
+      {loading && conflicts.length === 0 && (
+        <p className="provenance mt-4">Loading payer changes…</p>
+      )}
+
+      {/* Accordions grouped by change type group */}
       <div className="mt-4 flex flex-col gap-4">
-        {groups.map(([type, list]) => {
+        {groups.map(([group, list]) => {
           const openPlans = list.filter((c) => c.status === "open").length;
           return (
             <Accordion
-              key={type}
-              title={CONFLICT_TYPE_LABEL[type]}
+              key={group}
+              title={group}
               right={
                 <span className="text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--magenta)]">
                   {openPlans} plans open
@@ -133,8 +146,8 @@ export default function PayerChangesPage() {
                 {list.map((c) => (
                   <ChangeRow
                     key={c.id}
-                    conflict={c}
-                    onReview={setDrawerConflictId}
+                    change={c}
+                    onReview={setDrawerChangeId}
                   />
                 ))}
               </div>
@@ -143,16 +156,24 @@ export default function PayerChangesPage() {
         })}
       </div>
 
+      {/* Resolved summaries table */}
+      {resolvedConflicts.length > 0 && (
+        <div className="mt-4">
+          <ResolvedSummariesTable resolvedConflicts={resolvedConflicts} />
+        </div>
+      )}
+
       {/* Resolution Summary & Audit Trail */}
       <div className="mt-4">
         <ResolutionSummaryAuditTrail resolvedConflicts={resolvedConflicts} />
       </div>
 
-      {drawerConflict && (
+      {drawerChange && (
         <PayerChangeDrawer
-          conflict={drawerConflict}
+          key={drawerChange.id}
+          change={drawerChange}
           openCount={openCount}
-          onClose={() => setDrawerConflictId(null)}
+          onClose={() => setDrawerChangeId(null)}
         />
       )}
       </main>
