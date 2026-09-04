@@ -83,6 +83,25 @@ Files under `data/`. Each JSON is an array of records.
   `{ id, payer_change_id, sent_at, sent_by, recipient_account_ids, recipient_emails, message: { to, re, from, corrected_path, source, effective_date, materials: [] }, transport: "smtp" | "mock", message_id }`
 - **`auditEvents.json`** — timeline. `{ id, payer_change_id, actor: "System" | "Jordan Lee", event_type, description, at }` *(As built, events also carry `payer_change_id`-scoped ids `evt-…` and are appended under the write lock in `lib/audit.mjs`.)*
 
+### 5.5 Change priority (added 2026-09-05)
+
+Open conflicts are ranked by a **two-factor priority score** so the most consequential changes surface first. Deliberately simple and explainable — no severity, aging, or confidence factors in v1.
+
+**Factors (equal weight, 50/50):**
+
+1. **Plan lives** — from `plans.json` (`lives`), joined on `plan_id`. Normalized against a cap of **3,000,000** lives (≈ largest plan in the dataset), clamped to 1.0.
+2. **Affected accounts** — `affected_account_ids.length` on the change row. Normalized against a saturation cap of **5 accounts**, clamped to 1.0.
+
+**Score:** `priority = round(100 × (0.5 × lives/3,000,000 + 0.5 × accounts/5))` → integer 0–100.
+
+**Tie-break order:** score → lives → accounts → `detected_at` (newest first) → `id` (stable).
+
+**Where computed:** at **read time** in `GET /api/payer-changes` (`lib/priority.ts`); nothing is persisted, so scores always reflect current lives/account data. Every change in a list response carries `priority: { score, lives, accounts }`. Rows are sorted by priority within each change-type group.
+
+**Home page "Major Policy Changes" section:** shows the **top 5 open conflicts by priority** (globally re-sorted on the client, since the API returns rows grouped by change type). Each row displays the priority score badge (`P<score>`), lives, and affected-account count. The full list remains on `/payer-changes`.
+
+**Worked example (seed data):** Granite MA Complete (2.94M lives, 3 accounts) → 79; Summit Advantage HMO (2.33M lives, 3 accounts) → 69; Cascade Select HMO (0.99M lives, 3 accounts) → 47; Meridian Choice PPO (0.95M lives, 3 accounts) → 46; Harborview Preferred PPO (0.42M lives, 3 accounts) → 37.
+
 ## 6. Change detection (diff engine)
 
 Runs once at seed time and can be re-run via `POST /api/dev/reset`. Located in `lib/diff.js`.
@@ -123,7 +142,7 @@ The diff engine will emit all such changes automatically; the UI list length ref
 
 All under `app/api/`. Read/write through `lib/db.js`. Validation via Zod in `lib/schemas.js`.
 
-- `GET  /api/payer-changes` — list, grouped by `change_type`. Query params: `status=open|resolved|all` (default `open`). *(As built: returns `{ status, total, open_count, resolved_count, groups: [{ group, changes }] }` with groups ordered by the canonical `GROUP_ORDER` and each change carrying its `change_type_group`.)*
+- `GET  /api/payer-changes` — list, grouped by `change_type`. Query params: `status=open|resolved|all` (default `open`). *(As built: returns `{ status, total, open_count, resolved_count, groups: [{ group, changes }] }` with groups ordered by the canonical `GROUP_ORDER` and each change carrying its `change_type_group`. Each change also carries read-time `priority: { score, lives, accounts }` (§5.5), sorted by priority within its group.)*
 - `GET  /api/payer-changes/:id` — detail: `previous`, `authoritative`, affected account list (id, name, email, plan), suggested materials.
 - `GET  /api/materials?change_type=…` — MLR-approved materials for a change type.
 - `POST /api/payer-changes/:id/resolve` — body: `{ corrected_path_source: "MMIT" | "Formulary" | "Internal", corrected_path_value }`. Sets `status=resolved`, appends audit events, does **not** send email. *(As built: idempotent — re-resolving returns the existing state without duplicate audit events; returns `{ change }`.)*
@@ -138,7 +157,7 @@ Audit event types emitted: `mmit_update_detected`, `formulary_update_detected`, 
 
 Routes:
 
-- `/` — Home stub (FRM Genius brand + FRM greeting).
+- `/` — Home dashboard (§5.5): territory health banner + **"Major Policy Changes"** (top 5 open conflicts by priority score) + open cases table.
 - `/payer-changes` — Landing (Screen 1) and post-resolution (Screen 6).
 - `/accounts` — read-only accounts table.
 
@@ -186,6 +205,7 @@ All phases above are implemented and verified end-to-end. Deviations from the or
 - **No shadcn/ui.** Hand-rolled components in `components/ui/` (Drawer instead of Sheet, Accordion, CheckboxCard, StatusPill, Stepper, ValueTransition, ProvenanceMeta, ComplianceBadge, InfoBox, FloatingHelp).
 - **Resolution flow** lives in `features/payer-change/` (`PayerChangeDrawer` + `steps/Step1–3` + `ConfirmSendDialog`), wired to the real APIs through `services/api.ts` and `store/ConflictStore.tsx`.
 - **Resolved-state UI**: `ResolutionSummaryAuditTrail` (per-change audit card) plus a `ResolvedSummariesTable` added beyond the original plan.
+- **Change priority (§5.5, added 2026-09-05)**: two-factor score (plan lives + affected accounts, equal weight) computed at read time in `lib/priority.ts`, attached by `GET /api/payer-changes`; home page "Major Policy Changes" shows the top 5 open conflicts by priority.
 - **Demo Controls panel removed** from the UI after the flow was verified; `POST /api/dev/reset` and `npm run reset` remain.
 - **Verification**: `npm run smoke` (25/25 checks), `npx tsc --noEmit` clean, `npx eslint .` clean (2 pre-existing backend warnings), full resolve flow exercised live in the browser.
 

@@ -1,38 +1,8 @@
 [
   {
-    "id": "ntf-mtn9ugr5-006y",
-    "payer_change_id": "chg-mtn96np1-006r",
-    "sent_at": "2026-09-04T18:12:37.841Z",
-    "sent_by": "Jordan Lee",
-    "recipient_account_ids": [
-      "ACC001",
-      "ACC002",
-      "ACC003"
-    ],
-    "recipient_emails": [
-      "lakeside.associates@lakeside-oncology-associates.example.com",
-      "harbor.center@harbor-cancer-center.example.com",
-      "fairview.suite@fairview-infusion-suite.example.com"
-    ],
-    "message": {
-      "to": "Lakeside Oncology Associates, Harbor Cancer Center, Fairview Infusion Suite",
-      "re": "Onvexa PA / step-therapy requirement Update — Corrected Path",
-      "from": "Jordan Lee, FRM · Territory 14 — Great Lakes",
-      "corrected_path": "Y",
-      "source": "MMIT",
-      "effective_date": "2026-08-01",
-      "materials": [
-        "Onvexa Coding Quick Reference (J9345)",
-        "Prior Authorization Requirements — Onvexa (Aug 2026)"
-      ]
-    },
-    "transport": "mock",
-    "message_id": "ntf-mtn9ugr5-006y"
-  },
-  {
-    "id": "ntf-mtn9uli4-0074",
-    "payer_change_id": "chg-mtn96np1-006s",
-    "sent_at": "2026-09-04T18:12:43.996Z",
+    "id": "ntf-mtneu3nn-003r",
+    "payer_change_id": "chg-mtnetvi4-003l",
+    "sent_at": "2026-09-04T20:32:18.947Z",
     "sent_by": "Jordan Lee",
     "recipient_account_ids": [
       "ACC004",
@@ -57,6 +27,6 @@
       ]
     },
     "transport": "mock",
-    "message_id": "ntf-mtn9uli4-0074"
+    "message_id": "ntf-mtneu3nn-003r"
   }
 ]

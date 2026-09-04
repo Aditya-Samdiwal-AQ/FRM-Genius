@@ -1,6 +1,6 @@
 [
   {
-    "id": "chg-mtna6ix6-0033",
+    "id": "chg-mtnetvi4-003k",
     "change_type": "step_therapy_required",
     "change_type_group": "PA / step-therapy requirement",
     "field": "step_therapy_required",
@@ -26,19 +26,10 @@
       "ACC003"
     ],
     "detected_at": "2026-08-01",
-    "status": "resolved",
-    "resolved_at": "2026-09-04T18:12:37.827Z",
-    "resolved_by": "Jordan Lee",
-    "corrected_path_source": "MMIT",
-    "corrected_path_value": "Y",
-    "resolved_account_ids": [
-      "ACC001",
-      "ACC002",
-      "ACC003"
-    ]
+    "status": "open"
   },
   {
-    "id": "chg-mtna6ix6-0034",
+    "id": "chg-mtnetvi4-003l",
     "change_type": "pa_required",
     "change_type_group": "PA / step-therapy requirement",
     "field": "pa_required",
@@ -65,7 +56,7 @@
     ],
     "detected_at": "2026-08-01",
     "status": "resolved",
-    "resolved_at": "2026-09-04T18:12:43.978Z",
+    "resolved_at": "2026-09-04T20:32:18.934Z",
     "resolved_by": "Jordan Lee",
     "corrected_path_source": "MMIT",
     "corrected_path_value": "Y",
@@ -76,7 +67,7 @@
     ]
   },
   {
-    "id": "chg-mtna6ix6-0035",
+    "id": "chg-mtnetvi4-003m",
     "change_type": "coverage_status",
     "change_type_group": "Coverage status change",
     "field": "coverage_status",
@@ -105,7 +96,7 @@
     "status": "open"
   },
   {
-    "id": "chg-mtna6ix6-0036",
+    "id": "chg-mtnetvi4-003n",
     "change_type": "site_of_care_restriction",
     "change_type_group": "Site-of-care requirement",
     "field": "site_of_care_restriction",
@@ -134,7 +125,7 @@
     "status": "open"
   },
   {
-    "id": "chg-mtna6ix6-0037",
+    "id": "chg-mtnetvi4-003o",
     "change_type": "quantity_limit",
     "change_type_group": "Quantity limit change",
     "field": "quantity_limit",

@@ -59,6 +59,13 @@ export interface Provenance {
   source_date: string; // as_of_date of the snapshot the value came from
 }
 
+/** Read-time priority metadata attached by GET /api/payer-changes (§5.5). */
+export interface ChangePriority {
+  score: number; // 0–100, equal-weight blend of lives + affected accounts
+  lives: number; // plan lives (plans.json)
+  accounts: number; // affected_account_ids.length
+}
+
 export interface PayerChange {
   id: string;
   change_type: ChangeType;

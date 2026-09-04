@@ -1,82 +1,42 @@
 [
   {
-    "id": "aud-mtn9ugqs-006w",
-    "payer_change_id": "chg-mtn96np1-006r",
-    "actor": "Jordan Lee",
-    "event_type": "corrected_path_selected",
-    "description": "Corrected path selected for Step therapy required: \"Y\" (source: MMIT)",
-    "at": "2026-09-04T18:12:37.828Z"
-  },
-  {
-    "id": "aud-mtn9ugqs-006x",
-    "payer_change_id": "chg-mtn96np1-006r",
-    "actor": "Jordan Lee",
-    "event_type": "accounts_resolved",
-    "description": "3 accounts resolved at territory level",
-    "at": "2026-09-04T18:12:37.828Z"
-  },
-  {
-    "id": "aud-mtn9ugrp-006z",
-    "payer_change_id": "chg-mtn96np1-006r",
-    "actor": "Jordan Lee",
-    "event_type": "materials_attached",
-    "description": "2 compliance-reviewed materials attached: \"Onvexa Coding Quick Reference (J9345)\", \"Prior Authorization Requirements — Onvexa (Aug 2026)\"",
-    "at": "2026-09-04T18:12:37.861Z"
-  },
-  {
-    "id": "aud-mtn9ugrp-0070",
-    "payer_change_id": "chg-mtn96np1-006r",
-    "actor": "Jordan Lee",
-    "event_type": "path_communicated",
-    "description": "Corrected path communicated to 3 offices via email (mock)",
-    "at": "2026-09-04T18:12:37.861Z"
-  },
-  {
-    "id": "aud-mtn9ugrp-0071",
-    "payer_change_id": "chg-mtn96np1-006r",
-    "actor": "System",
-    "event_type": "resolution_recorded",
-    "description": "Resolution recorded in audit log for Meridian Choice PPO",
-    "at": "2026-09-04T18:12:37.861Z"
-  },
-  {
-    "id": "aud-mtn9ulhm-0072",
-    "payer_change_id": "chg-mtn96np1-006s",
+    "id": "aud-mtneu3nb-003p",
+    "payer_change_id": "chg-mtnetvi4-003l",
     "actor": "Jordan Lee",
     "event_type": "corrected_path_selected",
     "description": "Corrected path selected for Prior authorization required: \"Y\" (source: MMIT)",
-    "at": "2026-09-04T18:12:43.978Z"
+    "at": "2026-09-04T20:32:18.935Z"
   },
   {
-    "id": "aud-mtn9ulhm-0073",
-    "payer_change_id": "chg-mtn96np1-006s",
+    "id": "aud-mtneu3nb-003q",
+    "payer_change_id": "chg-mtnetvi4-003l",
     "actor": "Jordan Lee",
     "event_type": "accounts_resolved",
     "description": "3 accounts resolved at territory level",
-    "at": "2026-09-04T18:12:43.978Z"
+    "at": "2026-09-04T20:32:18.935Z"
   },
   {
-    "id": "aud-mtn9uli5-0075",
-    "payer_change_id": "chg-mtn96np1-006s",
+    "id": "aud-mtneu3no-003s",
+    "payer_change_id": "chg-mtnetvi4-003l",
     "actor": "Jordan Lee",
     "event_type": "materials_attached",
     "description": "2 compliance-reviewed materials attached: \"Onvexa Coding Quick Reference (J9345)\", \"Prior Authorization Requirements — Onvexa (Aug 2026)\"",
-    "at": "2026-09-04T18:12:43.997Z"
+    "at": "2026-09-04T20:32:18.948Z"
   },
   {
-    "id": "aud-mtn9uli5-0076",
-    "payer_change_id": "chg-mtn96np1-006s",
+    "id": "aud-mtneu3no-003t",
+    "payer_change_id": "chg-mtnetvi4-003l",
     "actor": "Jordan Lee",
     "event_type": "path_communicated",
     "description": "Corrected path communicated to 3 offices via email (mock)",
-    "at": "2026-09-04T18:12:43.997Z"
+    "at": "2026-09-04T20:32:18.948Z"
   },
   {
-    "id": "aud-mtn9uli5-0077",
-    "payer_change_id": "chg-mtn96np1-006s",
+    "id": "aud-mtneu3no-003u",
+    "payer_change_id": "chg-mtnetvi4-003l",
     "actor": "System",
     "event_type": "resolution_recorded",
     "description": "Resolution recorded in audit log for Cascade Select HMO",
-    "at": "2026-09-04T18:12:43.997Z"
+    "at": "2026-09-04T20:32:18.948Z"
   }
 ]

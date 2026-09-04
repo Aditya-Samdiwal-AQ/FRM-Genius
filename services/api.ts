@@ -4,6 +4,7 @@
 import type {
   Account,
   AuditEvent,
+  ChangePriority,
   ChangeSource,
   ChangeType,
   ChangeTypeGroup,
@@ -16,12 +17,15 @@ import type {
 // Envelope types — mirror the route handlers 1:1.
 // ---------------------------------------------------------------------------
 
+/** List responses attach read-time priority metadata to each change (§5.5). */
+export type PrioritizedPayerChange = PayerChange & { priority: ChangePriority };
+
 export interface PayerChangeListResponse {
   status: "open" | "resolved" | "all";
   total: number;
   open_count: number;
   resolved_count: number;
-  groups: { group: ChangeTypeGroup; changes: PayerChange[] }[];
+  groups: { group: ChangeTypeGroup; changes: PrioritizedPayerChange[] }[];
 }
 
 /** Detail accounts are a projection of Account (no hcp_specialty). */

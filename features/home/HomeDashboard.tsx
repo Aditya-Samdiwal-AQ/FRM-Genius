@@ -10,9 +10,14 @@ import {
   X,
 } from "lucide-react";
 import { AppShell } from "@/components/layout/AppShell";
+import { comparePriorityDesc } from "@/lib/priority";
 import { FIELD_LABEL } from "@/lib/types";
-import type { Account, PayerChange } from "@/lib/types";
-import { getAccounts, getPayerChanges } from "@/services/api";
+import type { Account } from "@/lib/types";
+import {
+  getAccounts,
+  getPayerChanges,
+  type PrioritizedPayerChange,
+} from "@/services/api";
 
 type Case = {
   changeId: string;
@@ -43,7 +48,7 @@ export function HomeDashboard() {
   const [selectedCase, setSelectedCase] = useState<Case | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const [accounts, setAccounts] = useState<Account[]>([]);
-  const [changes, setChanges] = useState<PayerChange[]>([]);
+  const [changes, setChanges] = useState<PrioritizedPayerChange[]>([]);
   const [locallyResolvedIds, setLocallyResolvedIds] = useState<string[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
 
@@ -66,6 +71,12 @@ export function HomeDashboard() {
   const openChanges = changes.filter(
     (change) => change.status === "open" && !locallyResolvedIds.includes(change.id),
   );
+  // §5.5: the API attaches priority (lives + affected accounts) but returns
+  // rows grouped by change type; re-sort globally so the top 5 are truly the
+  // five highest-priority conflicts, not the first five by group order.
+  const majorPolicyChanges = [...openChanges]
+    .sort(comparePriorityDesc)
+    .slice(0, 5);
   const affectedAccountIds = new Set(
     openChanges.flatMap((change) => change.affected_account_ids),
   );
@@ -117,9 +128,9 @@ export function HomeDashboard() {
         </section>
 
         <div className="mt-4 space-y-4">
-          <DashboardSection title="Major Policy Changes" meta={`${openChanges.length} open changes`}>
-            {openChanges.map((change) => <div key={change.id} className="flex flex-col justify-between gap-4 px-6 py-4 md:flex-row md:items-start [&+&]:border-t [&+&]:border-[var(--border)]">
-              <div><div className="flex flex-wrap items-center gap-2"><h2 className="text-[14px] font-bold">{change.payer_name} - {change.plan_name}</h2><span className="rounded bg-[var(--magenta-soft)] px-2 py-0.5 text-[10px] font-bold uppercase text-white">Conflict</span></div><div className="mt-2 flex flex-wrap gap-1.5">{[FIELD_LABEL[change.field], `Effective ${change.effective_date}`, change.channel].map((item) => <span key={item} className="rounded bg-[#f3f4f6] px-2 py-0.5 font-mono text-[11px] text-[var(--muted)]">{item}</span>)}</div></div>
+          <DashboardSection title="Major Policy Changes" meta={`Top ${majorPolicyChanges.length} of ${openChanges.length} by priority`}>
+            {majorPolicyChanges.map((change) => <div key={change.id} className="flex flex-col justify-between gap-4 px-6 py-4 md:flex-row md:items-start [&+&]:border-t [&+&]:border-[var(--border)]">
+              <div><div className="flex flex-wrap items-center gap-2"><h2 className="text-[14px] font-bold">{change.payer_name} - {change.plan_name}</h2><span className="rounded bg-[var(--magenta-soft)] px-2 py-0.5 text-[10px] font-bold uppercase text-white">Conflict</span></div><div className="mt-2 flex flex-wrap gap-1.5">{[FIELD_LABEL[change.field], `Effective ${change.effective_date}`, change.channel, `${change.priority.lives.toLocaleString("en-US")} lives`].map((item) => <span key={item} className="rounded bg-[#f3f4f6] px-2 py-0.5 font-mono text-[11px] text-[var(--muted)]">{item}</span>)}</div></div>
               <div className="flex items-center gap-4"><span className="text-[12px] text-[var(--muted)]">{change.affected_account_ids.length} accounts affected</span><button type="button" onClick={() => router.push(`/payer-changes?reviewPlan=${encodeURIComponent(change.plan_id)}`)} className="rounded-lg border border-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-[var(--indigo)] hover:bg-[var(--indigo-bg)]">Review</button></div>
             </div>)}
           </DashboardSection>
