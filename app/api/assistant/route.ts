@@ -233,26 +233,35 @@ function describeChange(change: PayerChange, ctx: ComposeContext): string {
 }
 
 /**
- * Agentic answer: ground the LLM in a FOCUSED live briefing built from the
- * data folder and let it compose the reply. The 2 s budget is the latency
- * contract — the focused briefing keeps prompt tokens low so the gateway
- * can answer inside it. Throws LlmError on any failure (including timeout)
- * — the caller falls back to the deterministic snapshot composer.
+ * Agentic answer: ground the LLM in an ADAPTIVE live briefing built from
+ * the data folder and let it compose the reply. The gateway generates only
+ * ~23 tokens/s, so an LLM-composed answer fits the 2.8 s budget only when
+ * both the briefing and the answer are tiny:
+ * - plan/aggregate modes: micro-briefing (~150-200 tokens) in, one-sentence
+ *   answer out — completes in ~2.3 s (measured).
+ * - conflict/rich modes: a composed answer would need far more output than
+ *   the budget allows, so the deterministic snapshot composer answers
+ *   instantly instead of burning 2.8 s on a guaranteed timeout.
+ * Throws LlmError on any failure (including timeout) — the caller falls
+ * back to the snapshot composer, capping worst-case latency at ~3 s.
  */
 async function agentAnswer(question: string): Promise<string> {
   const briefing = buildAgentBriefing(question);
+  if (briefing.mode === "conflict" || briefing.mode === "rich") {
+    return buildSnapshotAnswer(question);
+  }
   return llmChat(
     [
       { role: "system", content: briefing.systemPrompt },
       { role: "user", content: briefing.userPrompt },
     ],
-    { maxTokens: 300, timeoutMs: 1_800 },
+    { maxTokens: 80, timeoutMs: 2_800 },
   );
 }
 
 /**
  * Deterministic snapshot fallback — reads the live DB directly and answers
- * without the LLM. Guarantees the 2 s latency cap when the gateway is slow
+ * without the LLM. Caps worst-case latency at ~3 s when the gateway is slow
  * or unreachable. Covers the same ground as the agent: conflicts, accounts,
  * notifications, materials, audit trails, and per-plan formulary/policy rows.
  */
@@ -295,8 +304,35 @@ function buildSnapshotAnswer(question: string): string {
   });
 
   // 1. Specific plan asked about — answer straight from its live rows.
+  // When the question asks about a CONFLICT, conflict detail is the richer
+  // answer — lead with it and append the plan's policy/formulary rows.
+  const conflictIntent = /conflict|alert|issue|problem|change\b/.test(q);
   if (planHit || formularyHit) {
     const parts: string[] = [];
+    if (conflictIntent) {
+      const mentioned: PayerChange[] = [];
+      for (const change of changes) {
+        if (changeAliases(change).some((alias) => q.includes(` ${alias} `))) {
+          mentioned.push(change);
+        }
+      }
+      if (mentioned.length > 0) {
+        parts.push(
+          mentioned
+            .map((change) =>
+              describeChange(change, {
+                accounts,
+                notifications,
+                events,
+                materials,
+                wantAudit: /audit|history|trail|log|happened/.test(q),
+                wantMaterials: /material|attach|document|sheet|guide|leaflet/.test(q),
+              }),
+            )
+            .join("  |  "),
+        );
+      }
+    }
     if (planHit) {
       parts.push(
         `${planHit.payer_name} — ${planHit.plan_name} (${planHit.channel}, ${Number(planHit.lives || 0).toLocaleString()} lives): coverage ${planHit.coverage_status}, prior auth ${planHit.pa_required === "Y" ? "required" : "not required"}, step therapy ${planHit.step_therapy_required === "Y" ? "required" : "not required"}, site-of-care ${planHit.site_of_care_restriction || "none"}, quantity limit ${planHit.quantity_limit || "none"} (medical policy as of ${planHit.as_of_date}).`,
@@ -538,9 +574,12 @@ export async function POST(request: NextRequest) {
 
   try {
     // Topic-awareness: FRM-topic questions go to the LLM agent grounded in
-    // the live data briefing; greetings/small talk get a brief reply; gibberish
-    // asks for a rephrase. Any LLM failure falls back to the rule-based
-    // composer so the assistant never breaks.
+    // an adaptive live briefing — micro-briefings (plan rows, aggregates)
+    // get LLM-composed answers inside the 2.8 s budget; rich questions
+    // (conflicts, notifications, materials, audit) are answered instantly by
+    // the rule-based snapshot composer. Greetings/small talk get a brief
+    // reply; gibberish asks for a rephrase. Any LLM failure falls back to
+    // the snapshot composer so the assistant never breaks.
     const intent = classifyIntent(question);
     if (intent === "gibberish") {
       return Response.json({
