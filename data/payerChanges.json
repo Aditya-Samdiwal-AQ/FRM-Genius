@@ -171,7 +171,16 @@
       "ACC012"
     ],
     "detected_at": "2026-08-01",
-    "status": "open"
+    "status": "resolved",
+    "resolved_at": "2026-09-04T21:12:33.215Z",
+    "resolved_by": "Jordan Lee",
+    "corrected_path_source": "MMIT",
+    "corrected_path_value": "Physician Office",
+    "resolved_account_ids": [
+      "ACC010",
+      "ACC011",
+      "ACC012"
+    ]
   },
   {
     "id": "chg-mtnzmv9p-001o",

@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "ntf-mtng9vyt-001h",
+    "payer_change_id": "chg-mtng9l79-001d",
+    "sent_at": "2026-09-04T21:12:35.097Z",
+    "sent_by": "Jordan Lee",
+    "recipient_account_ids": [
+      "ACC010",
+      "ACC011",
+      "ACC012"
+    ],
+    "recipient_emails": [
+      "aakash.sharma@precisionvh.com",
+      "aakash.sharma@precisionvh.com",
+      "aakash.sharma@precisionvh.com"
+    ],
+    "message": {
+      "to": "Pinecrest Oncology, Stonegate Cancer Center, Willow Creek Hematology",
+      "re": "Onvexa Site-of-care requirement Update — Corrected Path",
+      "from": "Jordan Lee, FRM · Territory 14 — Great Lakes",
+      "corrected_path": "Physician Office",
+      "source": "MMIT",
+      "effective_date": "2026-08-01",
+      "materials": [
+        "Onvexa Site-of-Care Guidance Sheet",
+        "Patient Support Enrollment — Site Update"
+      ]
+    },
+    "transport": "mock",
+    "message_id": "ntf-mtng9vyt-001h"
+  }
+]

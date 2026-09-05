@@ -126,6 +126,7 @@ export function PayerChangeDrawer({
     <ConfirmSendDialog
       recipientsCount={change.affected_account_ids.length}
       changeTypeGroup={change.change_type_group}
+      planName={change.plan_name}
       onConfirm={handleConfirmSend}
       onCancel={() => setConfirmOpen(false)}
       sending={sending}
