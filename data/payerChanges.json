@@ -1,6 +1,6 @@
 [
   {
-    "id": "chg-mtnetvi4-003k",
+    "id": "chg-mtnyp8by-0050",
     "change_type": "step_therapy_required",
     "change_type_group": "PA / step-therapy requirement",
     "field": "step_therapy_required",
@@ -29,7 +29,7 @@
     "status": "open"
   },
   {
-    "id": "chg-mtnetvi4-003l",
+    "id": "chg-mtnyp8by-0051",
     "change_type": "pa_required",
     "change_type_group": "PA / step-therapy requirement",
     "field": "pa_required",
@@ -55,19 +55,39 @@
       "ACC006"
     ],
     "detected_at": "2026-08-01",
-    "status": "resolved",
-    "resolved_at": "2026-09-04T20:32:18.934Z",
-    "resolved_by": "Jordan Lee",
-    "corrected_path_source": "MMIT",
-    "corrected_path_value": "Y",
-    "resolved_account_ids": [
+    "status": "open"
+  },
+  {
+    "id": "chg-mtnyp8by-0052",
+    "change_type": "step_therapy_required",
+    "change_type_group": "PA / step-therapy requirement",
+    "field": "step_therapy_required",
+    "plan_id": "PLN52001",
+    "payer_name": "Cascade Care",
+    "plan_name": "Cascade Select HMO",
+    "channel": "Commercial",
+    "previous": {
+      "value": "N",
+      "source": "MMIT",
+      "source_date": "2026-08-01"
+    },
+    "authoritative": {
+      "value": "Y",
+      "source": "MMIT",
+      "source_date": "2026-09-01"
+    },
+    "effective_date": "2026-09-01",
+    "bulletin_url": "https://policies.example/cascade-select-hmo/mp-onc-91001",
+    "affected_account_ids": [
       "ACC004",
       "ACC005",
       "ACC006"
-    ]
+    ],
+    "detected_at": "2026-09-01",
+    "status": "open"
   },
   {
-    "id": "chg-mtnetvi4-003m",
+    "id": "chg-mtnyp8by-0053",
     "change_type": "coverage_status",
     "change_type_group": "Coverage status change",
     "field": "coverage_status",
@@ -96,7 +116,36 @@
     "status": "open"
   },
   {
-    "id": "chg-mtnetvi4-003n",
+    "id": "chg-mtnyp8by-0054",
+    "change_type": "site_of_care_restriction",
+    "change_type_group": "Site-of-care requirement",
+    "field": "site_of_care_restriction",
+    "plan_id": "PLN52002",
+    "payer_name": "Granite State Health",
+    "plan_name": "Granite MA Complete",
+    "channel": "Medicare Advantage",
+    "previous": {
+      "value": "Outpatient Hospital; Physician Office; Home Infusion",
+      "source": "MMIT",
+      "source_date": "2026-08-01"
+    },
+    "authoritative": {
+      "value": "Outpatient Hospital",
+      "source": "MMIT",
+      "source_date": "2026-09-01"
+    },
+    "effective_date": "2026-09-01",
+    "bulletin_url": "https://policies.example/granite-ma-complete/mp-onc-91002",
+    "affected_account_ids": [
+      "ACC007",
+      "ACC008",
+      "ACC009"
+    ],
+    "detected_at": "2026-09-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtnyp8by-0055",
     "change_type": "site_of_care_restriction",
     "change_type_group": "Site-of-care requirement",
     "field": "site_of_care_restriction",
@@ -125,7 +174,36 @@
     "status": "open"
   },
   {
-    "id": "chg-mtnetvi4-003o",
+    "id": "chg-mtnyp8by-0056",
+    "change_type": "coverage_status",
+    "change_type_group": "Coverage status change",
+    "field": "coverage_status",
+    "plan_id": "PLN52003",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview Preferred PPO",
+    "channel": "Commercial",
+    "previous": {
+      "value": "Covered",
+      "source": "MMIT",
+      "source_date": "2026-08-01"
+    },
+    "authoritative": {
+      "value": "Not Covered",
+      "source": "MMIT",
+      "source_date": "2026-09-01"
+    },
+    "effective_date": "2026-09-01",
+    "bulletin_url": "https://policies.example/harborview-preferred-ppo/mp-onc-91003",
+    "affected_account_ids": [
+      "ACC010",
+      "ACC011",
+      "ACC012"
+    ],
+    "detected_at": "2026-09-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtnyp8by-0057",
     "change_type": "quantity_limit",
     "change_type_group": "Quantity limit change",
     "field": "quantity_limit",
@@ -151,6 +229,126 @@
       "ACC015"
     ],
     "detected_at": "2026-08-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtnyp8by-0058",
+    "change_type": "formulary_status",
+    "change_type_group": "Formulary change",
+    "field": "formulary_status",
+    "plan_id": "PLN52010",
+    "payer_name": "Lakeside Alliance",
+    "plan_name": "Lakeside HMO",
+    "channel": "Commercial",
+    "previous": {
+      "value": "On Formulary",
+      "source": "Formulary",
+      "source_date": "2026-08-01"
+    },
+    "authoritative": {
+      "value": "Non-Preferred",
+      "source": "Formulary",
+      "source_date": "2026-09-01"
+    },
+    "effective_date": "2026-09-01",
+    "affected_account_ids": [],
+    "detected_at": "2026-09-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtnyp8by-0059",
+    "change_type": "tier",
+    "change_type_group": "Formulary change",
+    "field": "tier",
+    "plan_id": "PLN52011",
+    "payer_name": "Keystone Mutual",
+    "plan_name": "Keystone Complete",
+    "channel": "Managed Medicaid",
+    "previous": {
+      "value": "Specialty",
+      "source": "Formulary",
+      "source_date": "2026-08-01"
+    },
+    "authoritative": {
+      "value": "Tier 4",
+      "source": "Formulary",
+      "source_date": "2026-09-01"
+    },
+    "effective_date": "2026-09-01",
+    "affected_account_ids": [],
+    "detected_at": "2026-09-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtnyp8by-005a",
+    "change_type": "restriction",
+    "change_type_group": "Formulary change",
+    "field": "restriction",
+    "plan_id": "PLN52012",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate Advantage",
+    "channel": "Commercial",
+    "previous": {
+      "value": "PA;QL",
+      "source": "Formulary",
+      "source_date": "2026-08-01"
+    },
+    "authoritative": {
+      "value": "Step Therapy",
+      "source": "Formulary",
+      "source_date": "2026-09-01"
+    },
+    "effective_date": "2026-09-01",
+    "affected_account_ids": [],
+    "detected_at": "2026-09-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtnyp8by-005b",
+    "change_type": "formulary_status",
+    "change_type_group": "Formulary change",
+    "field": "formulary_status",
+    "plan_id": "PLN52013",
+    "payer_name": "Everest Wellness",
+    "plan_name": "Everest EPO",
+    "channel": "Commercial",
+    "previous": {
+      "value": "On Formulary",
+      "source": "Formulary",
+      "source_date": "2026-08-01"
+    },
+    "authoritative": {
+      "value": "Excluded",
+      "source": "Formulary",
+      "source_date": "2026-09-01"
+    },
+    "effective_date": "2026-09-01",
+    "affected_account_ids": [],
+    "detected_at": "2026-09-01",
+    "status": "open"
+  },
+  {
+    "id": "chg-mtnyp8by-005c",
+    "change_type": "tier",
+    "change_type_group": "Formulary change",
+    "field": "tier",
+    "plan_id": "PLN52014",
+    "payer_name": "Juniper Insurance",
+    "plan_name": "Juniper POS",
+    "channel": "Commercial",
+    "previous": {
+      "value": "Specialty",
+      "source": "Formulary",
+      "source_date": "2026-08-01"
+    },
+    "authoritative": {
+      "value": "Tier 3",
+      "source": "Formulary",
+      "source_date": "2026-09-01"
+    },
+    "effective_date": "2026-09-01",
+    "affected_account_ids": [],
+    "detected_at": "2026-09-01",
     "status": "open"
   }
 ]

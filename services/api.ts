@@ -94,6 +94,34 @@ export interface DevResetResponse {
   resolved_changes: number;
 }
 
+/** POST /api/cases — a newly logged inbound call, with the snapshot as-of date. */
+export interface LoggedCase {
+  id: string;
+  account_id: string;
+  account_name: string;
+  territory: string;
+  hcp_specialty: string;
+  payer_name: string;
+  plan_id: string;
+  plan_name: string;
+  channel: string;
+  issue: ChangeType;
+  issue_label: string;
+  as_of_date: string;
+  logged_at: string;
+}
+
+export interface LogCaseResponse {
+  case: LoggedCase;
+}
+
+export interface LogCaseInput {
+  account_id: string;
+  payer_name: string;
+  plan_id: string;
+  issue: ChangeType;
+}
+
 // ---------------------------------------------------------------------------
 // Fetch helpers.
 // ---------------------------------------------------------------------------
@@ -194,6 +222,10 @@ export function getMaterials(changeType?: ChangeType): Promise<MaterialsResponse
 
 export function getAccounts(): Promise<AccountsResponse> {
   return request<AccountsResponse>("/api/accounts");
+}
+
+export function logCase(input: LogCaseInput): Promise<LogCaseResponse> {
+  return post<LogCaseResponse>("/api/cases", input);
 }
 
 export function resetDemoData(): Promise<DevResetResponse> {

@@ -186,14 +186,16 @@ function writeStore(name, value, dir) {
 function main() {
   console.log("Seeding FRM Genius stores from csv/ …");
 
-  // 1. Snapshot tables (union of Jul + Aug)
+  // 1. Snapshot tables (union of Jul + Aug + Sep)
   const formularySnapshots = [
     ...mapKeys(readCsv("FormularyJul.csv"), FORMULARY_COLS),
     ...mapKeys(readCsv("FormularyAugy.csv"), FORMULARY_COLS),
+    ...mapKeys(readCsv("FormularySep.csv"), FORMULARY_COLS),
   ];
   const medPolicySnapshots = [
     ...mapKeys(readCsv("MedPolicyJul.csv"), MED_POLICY_COLS),
     ...mapKeys(readCsv("MedPolicyaug.csv"), MED_POLICY_COLS),
+    ...mapKeys(readCsv("MedPolicySep.csv"), MED_POLICY_COLS),
   ];
 
   // 2. Accounts (+ dummy email column)

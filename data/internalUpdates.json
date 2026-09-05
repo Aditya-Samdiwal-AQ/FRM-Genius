@@ -42,7 +42,7 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnetvi4-003k"
+    "detection_id": "chg-mtnyp8by-0050"
   },
   {
     "update_date": "2026-08-01",
@@ -57,7 +57,22 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnetvi4-003l"
+    "detection_id": "chg-mtnyp8by-0051"
+  },
+  {
+    "update_date": "2026-09-01",
+    "source": "MMIT",
+    "payer_name": "Cascade Care",
+    "plan_name": "Cascade Select HMO",
+    "plan_id": "PLN52001",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvexa",
+    "field": "step_therapy_required",
+    "prior_value": "N",
+    "new_value": "Y",
+    "note": "Auto-detected by snapshot diff (MMIT 2026-09-01).",
+    "entered_by": "System",
+    "detection_id": "chg-mtnyp8by-0052"
   },
   {
     "update_date": "2026-08-01",
@@ -72,7 +87,22 @@
     "new_value": "Not Covered",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnetvi4-003m"
+    "detection_id": "chg-mtnyp8by-0053"
+  },
+  {
+    "update_date": "2026-09-01",
+    "source": "MMIT",
+    "payer_name": "Granite State Health",
+    "plan_name": "Granite MA Complete",
+    "plan_id": "PLN52002",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvexa",
+    "field": "site_of_care_restriction",
+    "prior_value": "Outpatient Hospital; Physician Office; Home Infusion",
+    "new_value": "Outpatient Hospital",
+    "note": "Auto-detected by snapshot diff (MMIT 2026-09-01).",
+    "entered_by": "System",
+    "detection_id": "chg-mtnyp8by-0054"
   },
   {
     "update_date": "2026-08-01",
@@ -87,7 +117,22 @@
     "new_value": "Physician Office",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnetvi4-003n"
+    "detection_id": "chg-mtnyp8by-0055"
+  },
+  {
+    "update_date": "2026-09-01",
+    "source": "MMIT",
+    "payer_name": "Harborview Health Plan",
+    "plan_name": "Harborview Preferred PPO",
+    "plan_id": "PLN52003",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvexa",
+    "field": "coverage_status",
+    "prior_value": "Covered",
+    "new_value": "Not Covered",
+    "note": "Auto-detected by snapshot diff (MMIT 2026-09-01).",
+    "entered_by": "System",
+    "detection_id": "chg-mtnyp8by-0056"
   },
   {
     "update_date": "2026-08-01",
@@ -102,6 +147,81 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnetvi4-003o"
+    "detection_id": "chg-mtnyp8by-0057"
+  },
+  {
+    "update_date": "2026-09-01",
+    "source": "Formulary",
+    "payer_name": "Lakeside Alliance",
+    "plan_name": "Lakeside HMO",
+    "plan_id": "PLN52010",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvexa",
+    "field": "formulary_status",
+    "prior_value": "On Formulary",
+    "new_value": "Non-Preferred",
+    "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
+    "entered_by": "System",
+    "detection_id": "chg-mtnyp8by-0058"
+  },
+  {
+    "update_date": "2026-09-01",
+    "source": "Formulary",
+    "payer_name": "Keystone Mutual",
+    "plan_name": "Keystone Complete",
+    "plan_id": "PLN52011",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvexa",
+    "field": "tier",
+    "prior_value": "Specialty",
+    "new_value": "Tier 4",
+    "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
+    "entered_by": "System",
+    "detection_id": "chg-mtnyp8by-0059"
+  },
+  {
+    "update_date": "2026-09-01",
+    "source": "Formulary",
+    "payer_name": "Northgate Insurance",
+    "plan_name": "Northgate Advantage",
+    "plan_id": "PLN52012",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvexa",
+    "field": "restriction",
+    "prior_value": "PA;QL",
+    "new_value": "Step Therapy",
+    "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
+    "entered_by": "System",
+    "detection_id": "chg-mtnyp8by-005a"
+  },
+  {
+    "update_date": "2026-09-01",
+    "source": "Formulary",
+    "payer_name": "Everest Wellness",
+    "plan_name": "Everest EPO",
+    "plan_id": "PLN52013",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvexa",
+    "field": "formulary_status",
+    "prior_value": "On Formulary",
+    "new_value": "Excluded",
+    "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
+    "entered_by": "System",
+    "detection_id": "chg-mtnyp8by-005b"
+  },
+  {
+    "update_date": "2026-09-01",
+    "source": "Formulary",
+    "payer_name": "Juniper Insurance",
+    "plan_name": "Juniper POS",
+    "plan_id": "PLN52014",
+    "hcpcs_code": "J9345",
+    "product_name": "Onvexa",
+    "field": "tier",
+    "prior_value": "Specialty",
+    "new_value": "Tier 3",
+    "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
+    "entered_by": "System",
+    "detection_id": "chg-mtnyp8by-005c"
   }
 ]
