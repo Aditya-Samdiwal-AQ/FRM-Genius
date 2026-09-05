@@ -8,12 +8,12 @@ export function LogoHeader() {
         <div className="grid size-14 shrink-0 place-items-center rounded-xl bg-[var(--magenta)] text-white shadow-lg shadow-pink-700/25">
           <Zap size={29} strokeWidth={2.5} aria-hidden />
         </div>
-        <div className="flex min-w-0 flex-wrap items-baseline gap-x-3 gap-y-1">
+        <div className="flex min-w-0 flex-col">
           <span className="text-[28px] font-extrabold leading-none text-[var(--ink)]">
             FRM <span className="text-[var(--magenta-soft)]">Genius</span>
           </span>
-          <span className="font-mono text-[14px] text-[var(--muted)]">
-            Payer conflicts, <strong className="font-bold text-[var(--magenta)]">resolved</strong> before they cost you.
+          <span className="mt-1 font-mono text-[14px] text-[var(--muted)]">
+            <strong className="font-bold text-[var(--magenta)]">From Conflict to Clarity</strong>
           </span>
         </div>
       </div>
