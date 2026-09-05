@@ -322,6 +322,7 @@ export function buildAgentBriefing(question: string): AgentBriefing {
   const minimalSystem = [
     "You are the FRM Assistant for Jordan Lee, Field Reimbursement Manager for Onvexa (HCPCS J9345), Territory 14 — Great Lakes.",
     "Answer ONLY from the data below — it was read live from the FRM database moments ago. Never invent values.",
+    "If the data below has no row for what was asked, say you don't have that plan in the territory data — never guess.",
     "Answer in one or two short sentences. No markdown, no preamble.",
   ].join("\n");
 
