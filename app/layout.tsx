@@ -4,7 +4,7 @@ import { ConflictStoreProvider } from "@/store/ConflictStore";
 import "./globals.css";
 
 import { HomeEntryGuard } from "@/components/layout/HomeEntryGuard";
- 
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -32,7 +32,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <HomeEntryGuard>
           <ConflictStoreProvider>{children}</ConflictStoreProvider>
-        </HomeEntryGuard>      </body>
+        </HomeEntryGuard>      
+      </body>
     </html>
   );
 }
