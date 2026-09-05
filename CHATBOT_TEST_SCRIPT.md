@@ -146,6 +146,13 @@ to double-check the fact yourself in the app.
   the data — Zephyr Care — Zephyr PPO, Specialty tier — so it gives a real
   answer; use Aurora PPO for the missing-plan case.)
 
+### E4b. "What is the tier for a plan that doesn't exist?" (no plan named)
+- **Correct behavior:** it asks you to name a specific plan (it suggests
+  Meridian Choice PPO, Cascade Select HMO, Granite MA Complete, Harborview
+  Preferred PPO, Summit Advantage HMO) — it must NOT dump the territory
+  status message or invent a tier.
+- **Who answers:** rule composer (instant, under 0.1s).
+
 ---
 
 ## F. The 3 checks that matter most (if you only demo 3)

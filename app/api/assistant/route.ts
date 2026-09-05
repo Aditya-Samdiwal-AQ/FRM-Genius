@@ -447,7 +447,7 @@ function buildSnapshotAnswer(question: string): string {
   }
 
   // 5. Accounts affected by open conflicts.
-  if (/account|office|site/.test(q)) {
+  if (/account|office/.test(q)) {
     const perChange = open.map((change) => {
       const names = accounts
         .filter((a) => change.affected_account_ids.includes(a.id))
@@ -537,6 +537,23 @@ function buildSnapshotAnswer(question: string): string {
   }
 
   // 10. Fallback — live territory snapshot.
+  // 8b. Plan-attribute question that matched no plan row, conflict, or
+  // catalog topic — asking for a specific plan beats dumping the generic
+  // territory snapshot, which read as a non-answer to "what is the tier
+  // for a plan that doesn't exist?" style questions. Broad count questions
+  // are excluded — Section 1b and the LLM aggregate path own those.
+  if (
+    /\b(tiers?|coverage|covered|prior\s+auth(orization)?|pa|step\s+therapy|site\s+of\s+care|quantity|formular(y|ies)|restrictions?)\b/.test(
+      q,
+    ) &&
+    !/\bhow many\b|\btotal\b|\bcount\b|\boverall\b|\bacross all\b|\bin total\b|\bsum\b/.test(q)
+  ) {
+    return (
+      "I don't have a matching plan in the territory data. Name a specific plan — for example Meridian Choice PPO, Cascade Select HMO, Granite MA Complete, Harborview Preferred PPO, or Summit Advantage HMO — and I'll pull its live tier, coverage, prior-auth, and site-of-care details."
+    );
+  }
+
+  // 9. Fallback — live territory snapshot.
   const openList = open
     .map((c) => `${c.payer_name} — ${c.plan_name}`)
     .join("; ");
