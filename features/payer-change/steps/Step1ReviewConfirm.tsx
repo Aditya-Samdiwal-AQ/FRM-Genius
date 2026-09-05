@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 import type { PayerChange } from "@/lib/types";
 import type { DetailAccount } from "@/services/api";
 import { formatDate } from "@/lib/format";
-import { PRODUCT, SOURCE, TERRITORY } from "@/data/synthetic";
+import { PRODUCT } from "@/data/synthetic";
 import { ComplianceBadge } from "@/components/ui/ComplianceBadge";
 import { CheckboxCard } from "@/components/ui/CheckboxCard";
 import { InfoBox } from "@/components/ui/InfoBox";
@@ -27,6 +27,8 @@ export function Step1ReviewConfirm({
   const payerLabel = change.payer_name;
   const selectedCount = selectedIds.length;
   const totalCount = accounts.length;
+  const territory = accounts[0]?.territory ?? "Territory unavailable";
+  const source = change.authoritative.source;
 
   return (
     <div className="flex flex-col gap-5 px-6 py-5">
@@ -36,8 +38,8 @@ export function Step1ReviewConfirm({
           {payerLabel} — {planLabel}
         </h2>
         <p className="provenance mt-1">
-          {PRODUCT} · {TERRITORY} · Eff. {formatDate(change.effective_date)} ·
-          Source: {SOURCE}
+          {PRODUCT} · {territory} · Eff. {formatDate(change.effective_date)} ·
+          Source: {source}
         </p>
       </div>
 
@@ -133,7 +135,7 @@ export function Step1ReviewConfirm({
           updated to: {change.authoritative.value}
         </p>
         <p className="mt-0.5 text-[var(--muted)]">
-          System-generated from {SOURCE} data. Jordan Lee remains the
+          System-generated from {source} data. Jordan Lee remains the
           decision-maker.
         </p>
       </InfoBox>

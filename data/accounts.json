@@ -9,7 +9,7 @@
     "payer_name": "Meridian Health",
     "channel": "Commercial",
     "zip_code": "60601",
-    "email": "lakeside.associates@lakeside-oncology-associates.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC002",
@@ -21,7 +21,7 @@
     "payer_name": "Meridian Health",
     "channel": "Commercial",
     "zip_code": "60611",
-    "email": "harbor.center@harbor-cancer-center.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC003",
@@ -33,7 +33,7 @@
     "payer_name": "Meridian Health",
     "channel": "Commercial",
     "zip_code": "60614",
-    "email": "fairview.suite@fairview-infusion-suite.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC004",
@@ -45,7 +45,7 @@
     "payer_name": "Cascade Care",
     "channel": "Commercial",
     "zip_code": "49503",
-    "email": "northgate.hematology@northgate-hematology.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC005",
@@ -57,7 +57,7 @@
     "payer_name": "Cascade Care",
     "channel": "Commercial",
     "zip_code": "61101",
-    "email": "riverbend.group@riverbend-oncology-group.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC006",
@@ -69,7 +69,7 @@
     "payer_name": "Cascade Care",
     "channel": "Commercial",
     "zip_code": "49508",
-    "email": "summit.institute@summit-cancer-institute.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC007",
@@ -81,7 +81,7 @@
     "payer_name": "Granite State Health",
     "channel": "Medicare Advantage",
     "zip_code": "53202",
-    "email": "beacon.oncology@beacon-hill-oncology.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC008",
@@ -93,7 +93,7 @@
     "payer_name": "Granite State Health",
     "channel": "Medicare Advantage",
     "zip_code": "53703",
-    "email": "cedar.care@cedar-valley-cancer-care.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC009",
@@ -105,7 +105,7 @@
     "payer_name": "Granite State Health",
     "channel": "Medicare Advantage",
     "zip_code": "53212",
-    "email": "meadowbrook.infusion@meadowbrook-infusion.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC010",
@@ -117,7 +117,7 @@
     "payer_name": "Harborview Health Plan",
     "channel": "Commercial",
     "zip_code": "48201",
-    "email": "pinecrest.oncology@pinecrest-oncology.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC011",
@@ -129,7 +129,7 @@
     "payer_name": "Harborview Health Plan",
     "channel": "Commercial",
     "zip_code": "48226",
-    "email": "stonegate.center@stonegate-cancer-center.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC012",
@@ -141,7 +141,7 @@
     "payer_name": "Harborview Health Plan",
     "channel": "Commercial",
     "zip_code": "48104",
-    "email": "willow.hematology@willow-creek-hematology.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC013",
@@ -153,7 +153,7 @@
     "payer_name": "Summit Wellness",
     "channel": "Medicare Advantage",
     "zip_code": "43215",
-    "email": "ironwood.center@ironwood-cancer-center.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC014",
@@ -165,7 +165,7 @@
     "payer_name": "Summit Wellness",
     "channel": "Medicare Advantage",
     "zip_code": "44101",
-    "email": "silverpeak.oncology@silverpeak-oncology.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC015",
@@ -177,7 +177,7 @@
     "payer_name": "Summit Wellness",
     "channel": "Medicare Advantage",
     "zip_code": "45202",
-    "email": "copperfield.infusion@copperfield-infusion.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC016",
@@ -189,7 +189,7 @@
     "payer_name": "Beacon Insurance",
     "channel": "Commercial",
     "zip_code": "63101",
-    "email": "highland.hematology@highland-hematology.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC017",
@@ -201,7 +201,7 @@
     "payer_name": "Bluegrass Mutual",
     "channel": "Medicare Advantage",
     "zip_code": "64101",
-    "email": "juniper.care@juniper-cancer-care.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   },
   {
     "id": "ACC018",
@@ -213,6 +213,6 @@
     "payer_name": "Nautilus Alliance",
     "channel": "Commercial",
     "zip_code": "46204",
-    "email": "monarch.oncology@monarch-oncology.example.com"
+    "email": "pratishtha.bhateja@precisionvh.com"
   }
 ]

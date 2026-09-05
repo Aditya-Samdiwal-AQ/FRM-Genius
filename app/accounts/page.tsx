@@ -88,7 +88,7 @@ export default function AccountsPage() {
         <section className="card overflow-hidden" aria-label="Accounts">
           <header className="px-6 pb-4 pt-5">
             <h1 className="text-[18px] font-bold text-[var(--ink)]">
-              {territory}
+              Territory: {territory}
             </h1>
             <p className="provenance mt-1">{PRODUCT} · {accounts.length} accounts</p>
           </header>
@@ -100,7 +100,7 @@ export default function AccountsPage() {
           ) : (
             <div className="max-w-full overflow-x-auto">
               <table className="w-full min-w-[780px] border-collapse text-left">
-                <thead className="bg-[var(--magenta)] text-white">
+                <thead className="border-l-4 border-l-[var(--magenta)] bg-[var(--magenta)] text-white">
                   <tr>
                     {([ ["Account", "account"], ["Channel", "channel"], ["Payer · Plan", "plan"], ["Zip Code", "zip"], ["Conflict type", "conflict"] ] as const).map(([heading, field]) => (
                       <th key={field} className="px-6 py-3.5 text-[13px] font-semibold">
@@ -116,8 +116,8 @@ export default function AccountsPage() {
                     return (
                       <tr
                         key={account.id}
-                        className={`border-b border-[var(--border)] last:border-0 ${
-                          hasConflict ? "border-l-4 border-l-red-600" : "border-l-4 border-l-transparent"
+                        className={`border-b border-[var(--border)] last:border-b-0 ${
+                          hasConflict ? "border-l-4 border-l-red-600" : "border-l-4 border-l-green-600"
                         }`}
                       >
                         <td className="px-6 py-4 text-[14px] font-semibold">{account.name}</td>
@@ -126,7 +126,7 @@ export default function AccountsPage() {
                           {account.payer_name} <span className="text-[var(--muted)]">{account.primary_plan_name}</span>
                         </td>
                         <td className="px-6 py-4 font-mono text-[12px]">{account.zip_code}</td>
-                        <td className={`px-6 py-4 text-[13px] ${hasConflict ? "font-medium text-red-600" : "text-[var(--muted)]"}`}>
+                        <td className={`px-6 py-4 text-[13px] ${hasConflict ? "font-medium text-red-600" : "font-medium text-green-600"}`}>
                           {hasConflict ? types.join(" · ") : "No open conflict"}
                         </td>
                       </tr>
