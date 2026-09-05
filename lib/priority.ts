@@ -1,24 +1,20 @@
-// Priority scoring — Plan.md §5.5.
-// Two factors only: plan lives and affected-account count, equally weighted,
-// each normalized against a cap, expressed as a single 0–100 score.
-// Computed at read time (GET /api/payer-changes); nothing is persisted.
+// Priority scoring — lives-based.
+// Single factor: plan lives, normalized against a cap, expressed as a
+// 0–100 score. Computed at read time (GET /api/payer-changes, assistant
+// composer, Home dashboard); nothing is persisted.
 
 import type { ChangePriority } from "@/lib/types";
 
 /** Normalization cap for plan lives (~largest plan in the dataset). */
 export const LIVES_CAP = 3_000_000;
 
-/** Saturation point for affected-account count. */
-export const ACCOUNTS_CAP = 5;
-
 export function computePriority(
   lives: number,
   accounts: number,
 ): ChangePriority {
   const livesScore = Math.min(lives / LIVES_CAP, 1);
-  const accountsScore = Math.min(accounts / ACCOUNTS_CAP, 1);
   return {
-    score: Math.round(100 * (0.5 * livesScore + 0.5 * accountsScore)),
+    score: Math.round(100 * livesScore),
     lives,
     accounts,
   };

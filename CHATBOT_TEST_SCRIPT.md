@@ -99,11 +99,12 @@ to double-check the fact yourself in the app.
 - **Verify yourself:** the conflict card shows the before → after values.
 
 ### C4. "How many open conflicts are there right now?"
-- **Correct answer must say:** **5 open conflicts** and ideally list all five
-  plans: Meridian Choice PPO, Cascade Select HMO, Granite MA Complete,
-  Harborview Preferred PPO, Summit Advantage HMO
+- **Correct answer must say:** **4 open conflicts** and list the four open
+  plans: Meridian Choice PPO, Granite MA Complete, Harborview Preferred PPO,
+  Summit Advantage HMO (Cascade Select HMO is resolved as of Sep 5, 2026 —
+  if the data is reset, re-count from the Payer Changes panel).
 - **Who answers:** rule composer
-- **Verify yourself:** Payer Changes panel → count the open rows (5).
+- **Verify yourself:** Payer Changes panel → count the open rows (4).
 
 ---
 
@@ -123,6 +124,72 @@ to double-check the fact yourself in the app.
   resolve a conflict and notify offices)
 - **Who answers:** rule composer
 - **Verify yourself:** Notifications panel → empty state.
+
+---
+
+## D+. Internal-update, priority, and snapshot-diff questions
+(rule composer, instant, multi-line pretty answers)
+
+### D3. "What are the latest internal updates?"
+- **Correct answer must list 7 records, newest first**, including:
+  - **Aug 18** · Harborview Preferred PPO · Payer Call · prior-auth note
+    "Peer-to-peer required for step-edit exception" · entered by N. Kumar
+  - **Aug 12** · Cascade Select HMO · Field Intel · site-of-care
+    "Physician Office" → "Physician Office; Outpatient Hospital" · A. Chauhan
+  - **Aug 1** · five MMIT snapshot-diff records (step therapy Meridian,
+    PA Cascade, coverage Granite, site-of-care Harborview, quantity Summit)
+- **Who answers:** rule composer (instant — under 0.1s)
+- **Verify yourself:** Internal Updates panel → same records, same order.
+
+### D4. "Any field intel or rep notes on the plans?"
+- **Correct answer:** same 7-record list as D3 ("field intel" and "rep
+  notes" are aliases for internal updates).
+
+### D5. "What internal updates do we have for Cascade?"
+- **Correct answer must list only Cascade records (2):** the Aug 12 Field
+  Intel site-of-care note and the Aug 1 MMIT PA change.
+- **Who answers:** rule composer
+- **Verify yourself:** Internal Updates panel → filter Cascade.
+
+### D6. "What changed between the July and August snapshots?"
+- **Correct answer must say:** "August 1, 2026 snapshot vs July 1, 2026" and
+  list the 5 MMIT auto-detected changes (not the manual Field Intel / Payer
+  Call records).
+- **Who answers:** rule composer
+- **Verify yourself:** the 5 open/resolved conflicts in the Payer Changes
+  panel are exactly these 5 changes.
+
+### D7. "Which conflicts are the highest priority?" / "Rank the conflicts by priority."
+- **Correct answer must be a ranked list with scores** (0–100 score based
+  on lives affected):
+  1. Granite MA Complete — **98/100** (2,943,208 lives)
+  2. Summit Advantage HMO — **78/100** (2,330,426 lives)
+  3. Cascade Select HMO — **33/100** (990,850 lives, resolved)
+  4. Meridian Choice PPO — **32/100** (951,213 lives)
+  5. Harborview Preferred PPO — **14/100** (420,657 lives)
+- **Who answers:** rule composer
+- **Verify yourself:** Home dashboard "Major Policy Changes" — same order,
+  same lives numbers.
+
+### D8. "What priority is the Granite conflict?" (or Cascade, Meridian, …)
+- **Correct answer must say:** the score (Granite **98/100**), its rank
+  ("#1 of 4 open conflicts"), lives + accounts affected, and the full
+  conflict detail. For a resolved plan (Cascade) the rank counts only open
+  conflicts.
+- **Who answers:** rule composer
+- **Verify yourself:** Home dashboard priority score for that plan.
+
+### D9. "What are top two conflicts that need to get updated?"
+- **Correct answer must list exactly 2 open conflicts** (the 2
+  highest-priority): Granite MA Complete (98/100) and Summit Advantage HMO
+  (78/100). "Top 3 conflicts" lists 3 (may include a resolved one unless
+  the question says "need to get updated").
+- **Who answers:** rule composer
+- **Verify yourself:** Home dashboard — the top rows in priority order.
+
+> **Note:** priority scores are derived from plan lives only (0–100,
+> normalized against ~3M lives) at read time. If the data is reset,
+> re-check the scores on the Home dashboard before quoting them on stage.
 
 ---
 

@@ -306,8 +306,33 @@ export function buildAgentBriefing(question: string): AgentBriefing {
     )
     .filter((text): text is string => text !== null);
 
+  const conflictOverviewIntent =
+    /\b(open|resolved|outstanding|pending|unresolved|conflicts?|alerts?)\b/.test(
+      qLower,
+    );
+  // Internal-update / field-intel / snapshot-diff / priority questions are
+  // owned by the snapshot composer — it serializes internalUpdates and the
+  // §5.5 priority ranking, which the LLM briefings do not carry.
+  const composerOwnedIntent =
+    /\bupdates?\b|\bfield intel\b|\brep notes?\b|\bpayer calls?\b|\bintel\b|\bwhat'?s new\b/.test(
+      qLower,
+    ) ||
+    (/\bjuly\b|\baugust\b/.test(qLower) &&
+      /\bchange|\bdiff|\bupdate|\bsnapshot|\bversus|\bvs\b/.test(qLower)) ||
+    /\bpriorit(y|ies)\b|\brank(?:ed|ing)?\b|\bmost urgent\b|\bmost critical\b/.test(
+      qLower,
+    ) ||
+    ((/\bhighest\b|\btop\b|\bbiggest\b/.test(qLower)) &&
+      /\bconflicts?\b|\balerts?\b/.test(qLower));
+
   const mode: BriefingMode = (() => {
     if (matchedConflicts.length > 0 && !wantsRawRows) return "conflict";
+    if (composerOwnedIntent) return "conflict";
+    // Broad conflict-count questions ("how many open conflicts are there
+    // right now?") are answered instantly by the snapshot composer's
+    // open-conflicts section — the aggregate briefing carries no conflict
+    // counts, so the LLM could only refuse them.
+    if (broadQuestion && conflictOverviewIntent) return "conflict";
     if (broadQuestion) return "aggregate";
     if (
       includeSnapshots &&

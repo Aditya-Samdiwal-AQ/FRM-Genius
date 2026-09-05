@@ -5,14 +5,19 @@ import { ASSISTANT_API_KEY } from "@/lib/assistantConfig";
 import { formatDate, formatTimestamp } from "@/lib/format";
 import { buildAgentBriefing } from "@/lib/agentBriefing";
 import { llmChat } from "@/lib/llm";
+import { comparePriorityDesc, computePriority } from "@/lib/priority";
+import type { PrioritySortable } from "@/lib/priority";
 import type {
   Account,
   AuditEvent,
+  ChangePriority,
   FormularySnapshot,
+  InternalUpdate,
   Material,
   MedPolicySnapshot,
   Notification,
   PayerChange,
+  Plan,
 } from "@/lib/types";
 
 /**
@@ -68,6 +73,8 @@ const TOPIC_WORDS = new Set([
   "source", "compliance", "onvexa", "drug", "medication", "coverage",
   "criteria", "requirement", "requirements", "summary", "summaries",
   "email", "communicate", "communication", "alert", "alerts", "payer",
+  "priority", "priorities", "rank", "ranking", "ranked", "urgent", "critical",
+  "intel", "notes", "snapshot", "diff", "lives", "tier", "restrictions",
 ]);
 
 /** Greeting / small-talk / thanks phrases (meaningful, but not FRM topics). */
@@ -91,6 +98,15 @@ type Intent = "topic" | "smalltalk" | "gibberish";
 
 function classifyIntent(question: string): Intent {
   const q = ` ${norm(question)} `;
+  // Standalone greetings are short by design — check them before the
+  // gibberish heuristic, which rejects short tokens like "hi".
+  if (
+    /^(hi|hello|hey|howdy|greetings|good (morning|afternoon|evening))( there|!)?$/.test(
+      norm(question).trim(),
+    )
+  ) {
+    return "smalltalk";
+  }
   if (isGibberish(question)) return "gibberish";
   for (const word of TOPIC_WORDS) {
     if (q.includes(` ${word} `)) return "topic";
@@ -147,6 +163,34 @@ function accountAliases(account: Account): string[] {
   );
 }
 
+/** Distinctive aliases for one internal update (payer + plan name tokens). */
+function updateAliases(update: InternalUpdate): string[] {
+  const aliases = new Set<string>();
+  aliases.add(norm(update.payer_name));
+  aliases.add(norm(update.plan_name));
+  for (const token of [...words(update.payer_name), ...words(update.plan_name)]) {
+    if (token.length >= 5 && !GENERIC_WORDS.has(token)) aliases.add(token);
+  }
+  return [...aliases];
+}
+
+/** A change ranked by §5.5 priority, sortable with comparePriorityDesc. */
+type RankedChange = PrioritySortable & { change: PayerChange };
+
+/** Number words accepted in count phrases ("top two", "first three"). */
+const COUNT_WORDS: Record<string, number> = {
+  one: 1,
+  two: 2,
+  three: 3,
+  four: 4,
+  five: 5,
+  six: 6,
+  seven: 7,
+  eight: 8,
+  nine: 9,
+  ten: 10,
+};
+
 interface ComposeContext {
   accounts: Account[];
   notifications: Notification[];
@@ -154,6 +198,7 @@ interface ComposeContext {
   materials: Material[];
   wantAudit: boolean;
   wantMaterials: boolean;
+  priority: ChangePriority | null;
 }
 
 /** Full factual briefing for one conflict — live DB values only. */
@@ -166,7 +211,7 @@ function describeChange(change: PayerChange, ctx: ComposeContext): string {
     ctx.notifications.find((n) => n.payer_change_id === change.id) ?? null;
 
   const parts: string[] = [
-    `${change.payer_name} — ${change.plan_name} (${change.change_type_group}): ` +
+    `**${change.payer_name} — ${change.plan_name}** (${change.change_type_group}): ` +
       (change.status === "resolved" ? "resolved conflict" : "open conflict") +
       ".",
     `${fieldLabel} changed from "${change.previous.value}" to ` +
@@ -177,6 +222,13 @@ function describeChange(change: PayerChange, ctx: ComposeContext): string {
       (affected.length > 0 ? `: ${affected.map((a) => a.name).join(", ")}` : "") +
       ".",
   ];
+
+  if (ctx.priority) {
+    parts.push(
+      `Priority ${ctx.priority.score}/100 ` +
+        `(${ctx.priority.lives.toLocaleString()} lives affected).`,
+    );
+  }
 
   if (change.status === "resolved") {
     parts.push(
@@ -229,7 +281,7 @@ function describeChange(change: PayerChange, ctx: ComposeContext): string {
     );
   }
 
-  return parts.join(" ");
+  return parts.join("\n");
 }
 
 /**
@@ -271,9 +323,36 @@ function buildSnapshotAnswer(question: string): string {
   const notifications = db.notifications() as Notification[];
   const events = db.auditEvents() as AuditEvent[];
   const materials = db.materials() as Material[];
+  const internalUpdates = db.internalUpdates() as InternalUpdate[];
+  const plans = db.plans() as Plan[];
   const medPolicyAll = db.medPolicySnapshots() as MedPolicySnapshot[];
   const formularyAll = db.formularySnapshots() as FormularySnapshot[];
   const q = ` ${norm(question)} `;
+
+  // §5.5 priority per conflict — the same read-time computation as
+  // GET /api/payer-changes: plan lives (plans.json) + affected-account
+  // count, equal weight, 0–100. Nothing is persisted.
+  const livesByPlan = new Map<string, number>(
+    plans.map((p) => [p.id, Number(p.lives) || 0]),
+  );
+  const priorityByChangeId = new Map<string, ChangePriority>(
+    changes.map((change) => [
+      change.id,
+      computePriority(
+        livesByPlan.get(change.plan_id) ?? 0,
+        change.affected_account_ids.length,
+      ),
+    ]),
+  );
+  const composeCtx = (change: PayerChange): ComposeContext => ({
+    accounts,
+    notifications,
+    events,
+    materials,
+    wantAudit: /audit|history|trail|log|happened/.test(q),
+    wantMaterials: /material|attach|document|sheet|guide|leaflet/.test(q),
+    priority: priorityByChangeId.get(change.id) ?? null,
+  });
 
   // Latest snapshot rows (one per plan).
   const latestDate = medPolicyAll.reduce(
@@ -303,6 +382,133 @@ function buildSnapshotAnswer(question: string): string {
     return q.includes(` ${payerLower} `) || q.includes(` ${planPrefix} `);
   });
 
+  // 1c. Internal updates / field intel / snapshot-diff questions — answered
+  // from data/internalUpdates.json (rep-entered intel + auto-detected MMIT
+  // snapshot diffs between the July and August snapshots), never from the
+  // canned FAQ deck. Multi-line, human-readable.
+  const internalUpdateIntent =
+    /\bupdates?\b|\bfield intel\b|\brep notes?\b|\bpayer calls?\b|\bintel\b|\bwhat.?s new\b/.test(
+      q,
+    );
+  const snapshotDiffIntent =
+    /\bjuly\b|\baugust\b/.test(q) &&
+    /\bchange|\bdiff|\bupdate|\bsnapshot|\bversus|\bvs\b/.test(q);
+  if (internalUpdateIntent || snapshotDiffIntent) {
+    const all = internalUpdates
+      .slice()
+      .sort((a, b) => b.update_date.localeCompare(a.update_date));
+    let rows = all;
+    if (snapshotDiffIntent && !internalUpdateIntent) {
+      rows = all.filter((u) => u.source === "MMIT" || u.detection_id !== "");
+    }
+    const named = rows.filter((u) =>
+      updateAliases(u).some((alias) => q.includes(` ${alias} `)),
+    );
+    if (named.length > 0) rows = named;
+    if (rows.length === 0) {
+      return "No internal updates have been recorded for that plan yet.";
+    }
+    const header =
+      snapshotDiffIntent && !internalUpdateIntent
+        ? "August 1, 2026 snapshot vs July 1, 2026 — changes auto-detected by snapshot diff:"
+        : `Internal updates (${rows.length} record${rows.length === 1 ? "" : "s"}, newest first):`;
+    const bullets = rows.map((u) => {
+      const labels = FIELD_LABEL as Record<string, string>;
+      const label =
+        labels[u.field.toLowerCase()] ??
+        u.field.replace(/_/g, " ").toLowerCase();
+      const change =
+        u.prior_value === ""
+          ? `${label} set to: "${u.new_value}"`
+          : u.new_value === ""
+            ? `${label} cleared (was "${u.prior_value}")`
+            : `${label}: "${u.prior_value}" → "${u.new_value}"`;
+      return (
+        `• ${formatDate(u.update_date)} · **${u.payer_name} — ${u.plan_name}** · source: ${u.source}\n` +
+        `  ${change}\n` +
+        `  Note: ${u.note} · entered by ${u.entered_by}`
+      );
+    });
+    return `${header}\n\n${bullets.join("\n\n")}`;
+  }
+
+  // 1d. Priority questions — conflicts ranked by the lives-based score
+  // (plan lives normalized 0–100), the same numbers the Home dashboard's
+  // "Major Policy Changes" list is sorted by.
+  const priorityIntent =
+    /\bpriorit(y|ies)\b|\brank(?:ed|ing)?\b|\bmost urgent\b|\bmost critical\b/.test(
+      q,
+    ) ||
+    ((/\bhighest\b|\btop\b|\bbiggest\b/.test(q)) &&
+      /\bconflicts?\b|\balerts?\b/.test(q));
+  if (priorityIntent) {
+    const ranked: RankedChange[] = changes
+      .map((change) => ({
+        change,
+        id: change.id,
+        detected_at: change.detected_at,
+        priority:
+          priorityByChangeId.get(change.id) ??
+          computePriority(0, change.affected_account_ids.length),
+      }))
+      .sort(comparePriorityDesc);
+    const named = ranked.filter(({ change }) =>
+      changeAliases(change).some((alias) => q.includes(` ${alias} `)),
+    );
+    if (named.length > 0) {
+      const openCount = ranked.filter((r) => r.change.status !== "resolved").length;
+      return named
+        .map(({ change, priority }) => {
+          const rank = ranked.findIndex((r) => r.id === change.id) + 1;
+          const head =
+            `Priority: **${priority.score}/100** — #${rank} of ${openCount} open conflicts ` +
+            `(${priority.lives.toLocaleString()} lives affected, ${priority.accounts} accounts).`;
+          return `${head}\n${describeChange(change, composeCtx(change))}`;
+        })
+        .join("\n\n");
+    }
+    // "top two conflicts that need to get updated" → the 2 highest-priority
+    // open conflicts; "top 3" / "five conflicts" parse the same way.
+    const countMatch =
+      /\b(?:top|first)\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b/.exec(q) ??
+      /\b(one|two|three|four|five|six|seven|eight|nine|ten)\s+(?:highest-priority\s+|highest\s+|most\s+urgent\s+)?(?:open\s+)?(?:conflicts?|alerts?)\b/.exec(
+        q,
+      );
+    const requestedCount = countMatch
+      ? (COUNT_WORDS[countMatch[1]] ?? Number.parseInt(countMatch[1], 10))
+      : undefined;
+    // "conflicts that need to get updated" → open conflicts only.
+    const openOnly =
+      /\bneeds?\b|\boutstanding\b|\baction\b|\battention\b|\bget updated\b|\bto fix\b|\baddress\b/.test(
+        q,
+      );
+    const pool = openOnly
+      ? ranked.filter((r) => r.change.status !== "resolved")
+      : ranked;
+    const shown =
+      requestedCount !== undefined && requestedCount > 0
+        ? pool.slice(0, requestedCount)
+        : pool;
+    if (shown.length === 0) {
+      return "There are no open conflicts right now — everything has been resolved.";
+    }
+    const lines = shown.map(({ change, priority }, index) => {
+      const fieldLabel = FIELD_LABEL[change.field] ?? change.field;
+      return (
+        `${index + 1}. **${change.payer_name} — ${change.plan_name}** — ${priority.score}/100\n` +
+        `   ${priority.lives.toLocaleString()} lives affected · ${priority.accounts} accounts affected · ` +
+        `${fieldLabel}: "${change.previous.value}" → "${change.authoritative.value}"` +
+        ` (effective ${formatDate(change.effective_date)})` +
+        (change.status === "resolved" ? " · resolved" : "")
+      );
+    });
+    const scope = openOnly ? "open conflicts" : "conflicts";
+    const header = requestedCount
+      ? `Top ${shown.length} ${scope} by priority (0–100 score based on lives affected):`
+      : `${openOnly ? "Open conflicts ranked" : "Conflicts ranked"} by priority (0–100 score based on lives affected):`;
+    return `${header}\n\n${lines.join("\n")}`;
+  }
+
   // 1. Specific plan asked about — answer straight from its live rows.
   // When the question asks about a CONFLICT, conflict detail is the richer
   // answer — lead with it and append the plan's policy/formulary rows.
@@ -319,16 +525,7 @@ function buildSnapshotAnswer(question: string): string {
       if (mentioned.length > 0) {
         parts.push(
           mentioned
-            .map((change) =>
-              describeChange(change, {
-                accounts,
-                notifications,
-                events,
-                materials,
-                wantAudit: /audit|history|trail|log|happened/.test(q),
-                wantMaterials: /material|attach|document|sheet|guide|leaflet/.test(q),
-              }),
-            )
+            .map((change) => describeChange(change, composeCtx(change)))
             .join("  |  "),
         );
       }
@@ -343,7 +540,7 @@ function buildSnapshotAnswer(question: string): string {
         `Formulary: ${formularyHit.payer_name} — ${formularyHit.formulary_name} is ${formularyHit.formulary_status} on tier ${formularyHit.tier}, restriction ${formularyHit.restriction || "none"} (as of ${formularyHit.as_of_date}).`,
       );
     }
-    return parts.join(" ");
+    return parts.join("\n\n");
   }
 
   // 1b. Broad aggregate questions — answer from precomputed counts (the
@@ -400,14 +597,9 @@ function buildSnapshotAnswer(question: string): string {
     }
   }
   if (mentioned.length > 0) {
-    return mentioned.map((change) => describeChange(change, {
-      accounts,
-      notifications,
-      events,
-      materials,
-      wantAudit: /audit|history|trail|log|happened/.test(q),
-      wantMaterials: /material|attach|document|sheet|guide|leaflet/.test(q),
-    })).join("  |  ");
+    return mentioned
+      .map((change) => describeChange(change, composeCtx(change)))
+      .join("\n\n");
   }
 
   const open = changes.filter((c) => c.status === "open");
@@ -428,22 +620,22 @@ function buildSnapshotAnswer(question: string): string {
           .map((a) => a.name);
         const count = notification.recipient_account_ids.length;
         return (
-          `${change ? `${change.payer_name} — ${change.plan_name}` : notification.payer_change_id}: ` +
+          `• **${change ? `${change.payer_name} — ${change.plan_name}` : notification.payer_change_id}** — ` +
           `${count} office${count === 1 ? "" : "s"} notified on ${formatTimestamp(notification.sent_at)}` +
           (names.length > 0 ? ` (${names.join(", ")})` : "") +
-          `; materials sent: ${notification.message.materials.join("; ")}.`
+          `.\n  Materials sent: ${notification.message.materials.join("; ")}.`
         );
       })
-      .join("  |  ");
+      .join("\n\n");
   }
 
   // 4. Materials catalog.
   if (/material|attach|document|sheet|guide|leaflet/.test(q)) {
     return materials.length === 0
       ? "No compliance-reviewed materials are available right now."
-      : `There are ${materials.length} compliance-reviewed materials: ${materials
-          .map((m) => `${m.title} (${m.category} · ${m.owner})`)
-          .join("; ")}.`;
+      : `There are ${materials.length} compliance-reviewed materials:\n\n${materials
+          .map((m) => `• **${m.title}** (${m.category} · ${m.owner})`)
+          .join("\n")}`;
   }
 
   // 5. Accounts affected by open conflicts.
@@ -457,8 +649,10 @@ function buildSnapshotAnswer(question: string): string {
     return (
       `There are ${accounts.length} accounts in Territory 14 — Great Lakes.` +
       (perChange.length > 0
-        ? ` Accounts affected by open conflicts — ${perChange.join("; ")}.`
-        : " No accounts are currently affected by open conflicts.")
+        ? `\n\nAccounts affected by open conflicts:\n${perChange
+            .map((line) => `• ${line}`)
+            .join("\n")}`
+        : "\nNo accounts are currently affected by open conflicts.")
     );
   }
 
@@ -472,12 +666,12 @@ function buildSnapshotAnswer(question: string): string {
       .filter((x) => x.count > 0);
     return withEvents.length === 0
       ? "The audit trail is empty — no conflicts have been resolved yet."
-      : `Audit trail so far: ${withEvents
+      : `Audit trail so far:\n${withEvents
           .map(
             (x) =>
-              `${x.change.plan_name} (${x.count} event${x.count === 1 ? "" : "s"})`,
+              `• **${x.change.payer_name} — ${x.change.plan_name}** (${x.count} event${x.count === 1 ? "" : "s"})`,
           )
-          .join("; ")}. Ask about a specific plan for the full trail.`;
+          .join("\n")}\n\nAsk about a specific plan for the full trail.`;
   }
 
   // 7. Resolved summary.
@@ -489,19 +683,16 @@ function buildSnapshotAnswer(question: string): string {
     }
     return (
       `${resolved.length} of ${changes.length} plan conflicts ` +
-      `${resolved.length === 1 ? "is" : "are"} resolved: ` +
+      `${resolved.length === 1 ? "is" : "are"} resolved:\n\n` +
       resolved
         .map((change) =>
           describeChange(change, {
-            accounts,
-            notifications,
-            events,
-            materials,
+            ...composeCtx(change),
             wantAudit: false,
             wantMaterials: false,
           }),
         )
-        .join("  |  ")
+        .join("\n\n")
     );
   }
 
@@ -510,19 +701,18 @@ function buildSnapshotAnswer(question: string): string {
     if (open.length === 0) {
       return "There are no open plan conflicts right now.";
     }
+    const lines = open.map((change, index) => {
+      const fieldLabel = FIELD_LABEL[change.field] ?? change.field;
+      return (
+        `${index + 1}. **${change.payer_name} — ${change.plan_name}**\n` +
+        `   ${fieldLabel}: "${change.previous.value}" → "${change.authoritative.value}" · ` +
+        `${change.affected_account_ids.length} accounts affected · ` +
+        `effective ${formatDate(change.effective_date)}`
+      );
+    });
     return (
-      `There are ${open.length} open plan conflicts: ` +
-      open
-        .map(
-          (change) =>
-            `${change.payer_name} — ${change.plan_name} (` +
-            `${FIELD_LABEL[change.field] ?? change.field} ` +
-            `"${change.previous.value}" → "${change.authoritative.value}", ` +
-            `${change.affected_account_ids.length} accounts affected, ` +
-            `effective ${formatDate(change.effective_date)})`,
-        )
-        .join("; ") +
-      "."
+      `There are ${open.length} open plan conflict${open.length === 1 ? "" : "s"}:\n\n` +
+      lines.join("\n")
     );
   }
 

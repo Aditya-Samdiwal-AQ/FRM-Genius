@@ -7,6 +7,21 @@
 
 import type { ChatMsg } from "./types";
 
+/** Render **bold** spans in composer answers; everything else stays plain. */
+function renderBold(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={i} className="font-semibold">
+          {part.slice(2, -2)}
+          </strong>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
+
 interface ChatMessageProps {
   msg: ChatMsg;
   onRetry?: () => void;
@@ -27,7 +42,7 @@ export function ChatMessage({ msg, onRetry }: ChatMessageProps) {
     return (
       <div className="flex flex-col items-start gap-1.5">
         <div className="max-w-[85%] rounded-2xl rounded-bl-sm border border-[var(--danger)] bg-[var(--danger-bg)] px-3.5 py-2.5 text-[13px] leading-relaxed text-[var(--danger)]">
-          {msg.text}
+          {renderBold(msg.text)}
         </div>
         {onRetry && (
           <button
@@ -45,8 +60,8 @@ export function ChatMessage({ msg, onRetry }: ChatMessageProps) {
   return (
     <div className="flex flex-col items-start gap-1">
       {msg.kind === "agent" && <span className="provenance uppercase">AI-generated</span>}
-      <div className="max-w-[85%] rounded-2xl rounded-bl-sm bg-[var(--page-bg)] px-3.5 py-2.5 text-[13px] leading-relaxed text-[var(--ink)]">
-        {msg.text}
+      <div className="max-w-[85%] whitespace-pre-wrap rounded-2xl rounded-bl-sm bg-[var(--page-bg)] px-3.5 py-2.5 text-[13px] leading-relaxed text-[var(--ink)]">
+        {renderBold(msg.text)}
       </div>
     </div>
   );

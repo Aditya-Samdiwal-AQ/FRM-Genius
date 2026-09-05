@@ -31,11 +31,15 @@ and picks the right one for each question:
 
 | | **The AI brain (LLM)** | **The rule brain (deterministic composer)** |
 |---|---|---|
-| What it is | A large language model (an AI that writes text) | Hand-written code that assembles answers from data |
+| What it is | NVIDIA **Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8** (a 30B-parameter AI that writes text) — NOT GPT | **Our own hand-written TypeScript code** — no model, no vendor; lives in the app itself (`buildSnapshotAnswer` in `app/api/assistant/route.ts`) |
 | How it answers | Reads a small "briefing" of live data and writes its own sentences | Looks up the matching records and fills a fixed sentence pattern |
 | Speed | ~1.8–2.2 seconds | ~0.01–0.02 seconds (instant) |
 | Best at | Natural, human-sounding answers | Rich, detailed, multi-part answers |
 | Weakness | Slow to write long answers; can be slow or fail | Sounds formulaic; only handles expected questions |
+
+**Which model exactly?** The AI brain is NVIDIA **Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8** — a 30B-parameter mixture-of-experts model (~3B active parameters, FP8-quantized). It is served through our internal gateway (`llmhub-stg.precisionai.tools`) under the alias **"Developer"**, using an OpenAI-compatible API format — the API *format* is OpenAI-style, but the model itself is **not GPT**. A sibling alias, "Long Form Developer", is the same base model tuned for longer outputs (~6.7s vs ~2.3s); the assistant uses the fast one. Limits: 131,072 input tokens, 8,192 output tokens.
+
+**Why "Developer" and not "Long Form Developer"?** Speed budget, nothing else. We benchmarked both aliases on the identical prompt: Developer answers in ~2.3s, Long Form in ~6.7s — about 3× slower. Our hard rule is answers in ≤2s (the LLM call times out at 2.8s and falls back), so Long Form would miss the budget on every question. And since the assistant only ever asks for one-or-two-sentence answers (`maxTokens: 80`), Long Form's only advantage — sustaining longer generations — is something we never use. Same model either way; we'd pay 3× the latency for zero benefit.
 
 **Why not use only the AI?** Because of a hard limit we measured: the AI model
 can *read* data very fast, but it *writes* very slowly — about 23 words per
@@ -50,6 +54,55 @@ the AI feels much better to the user.
 So: **simple questions → AI writes the answer. Rich questions → rules
 assemble the answer instantly.** Both read the same live data, so both are
 always truthful.
+
+### 2b. Both brains read the same data — so what's actually different?
+
+Both brains read the identical live data. The difference is **who writes the
+answer text**:
+
+| | **Agentic AI (LLM)** | **Rich brain (rule composer)** |
+|---|---|---|
+| Role | A *writer* — reads the briefing and composes its own sentences | A *form-filler* — code copies values into fixed sentence templates |
+| How it receives data | As a text briefing shipped to the model (read as tokens) | Directly from memory (`db.plans()`, `db.payerChanges()`…) — no tokens, no network |
+| Same question twice | Slightly different phrasing (temperature 0.7) | Byte-identical answer |
+| Can it go off-script? | Yes — that's why every fact must trace to the briefing | No — it can only print what the data contains |
+| Speed | ~1.8–2.2s (network + reading + writing ~23 words/sec) | ~0.01s |
+
+One-sentence version: **the AI is a writer who reads a briefing and composes
+its own sentences; the rich brain is a form-filler that copies real values
+into fixed sentence patterns.** The AI adds natural phrasing; the rich brain
+adds speed, detail, and determinism. Both are truthful because both are
+grounded in the same database.
+
+**The key differentiating factor in one line:** *generation vs. assembly* —
+the AI **writes** its own sentences from a briefing (natural phrasing, ~2s,
+slightly different each time); the composer **fills** fixed sentence patterns
+with live values (byte-identical, instant, can't go off-script). Same data —
+different writer. Everything else (speed, determinism, detail) follows from
+that one difference.
+
+**"Fixed sentence pattern" — is the answer stored?** No. What's fixed is the
+sentence *skeleton* (the grammar), not the answer. Think mail-merge: the
+template in code reads `"{payer} — {plan} ({channel}, {lives} lives):
+coverage {coverage}, prior auth {prior_auth}…"` and every blank is filled
+with a value read live from the data at the moment you ask. The same
+template produces a different answer whenever the data changes — tomorrow's
+answer is built from tomorrow's data. The only pre-written text anywhere is
+the FAQ answers (compliance-approved, returned verbatim by design) and the
+greeting scripts; everything else is assembled fresh from live values.
+
+**What if the data changes — will it still answer correctly?** Yes, because
+neither brain caches anything. Both read the data files at the moment the
+question arrives, so a change made a minute ago is already reflected in the
+next answer. We verified this live: a conflict was resolved mid-session and
+the very next question reported it as resolved, with the open-conflict count
+dropping automatically. New rows (a new payer change, a new internal update)
+appear in answers immediately. And for unseen scenarios the system stays
+truthful: a plan that isn't in the data gets an honest "no data" answer,
+never an invented one. If a question's phrasing is too novel for the
+composer's rules, the AI brain handles it; if the AI is slow or down, the
+composer answers from the same live data — the user always gets a correct
+answer either way.
 
 ---
 
@@ -138,6 +191,21 @@ const focusedMedPolicy =
           .slice(0, MAX_FOCUS_ROWS)
       : [];
 ```
+
+**Does the briefing get stored?** No — it is built fresh the moment a
+question arrives, attached to the AI request, and discarded after the
+answer. Nothing is cached or persisted, so the data is always current: if a
+conflict is resolved between two questions, the second briefing already
+reflects it.
+
+What `buildAgentBriefing(question)` returns is one package:
+
+- `systemPrompt` — who the assistant is + the rules ("answer ONLY from the
+data below — never invent values")
+- `userPrompt` — the briefing itself: "LIVE DATA BRIEFING (read from the FRM
+database just now)", the matched rows, pre-computed counts, and
+`QUESTION: <the user's question>` at the end
+- `mode` — which brain should answer (see Section 5)
 
 ---
 
