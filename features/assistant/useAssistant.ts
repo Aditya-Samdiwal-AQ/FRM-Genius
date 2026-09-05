@@ -9,6 +9,14 @@ import { loadFaqs, matchFaq, suggestFaqs } from "@/lib/faq";
 import { askAgent } from "@/services/assistant";
 import type { AssistantMode, ChatMsg, FaqEntry } from "./types";
 
+// Generic payer/plan words that must never act as routing aliases on their
+// own (mirrors GENERIC_WORDS in app/api/assistant/route.ts).
+const GENERIC_NAME_WORDS = new Set([
+  "health", "care", "wellness", "plan", "insurance", "mutual", "alliance",
+  "benefit", "ppo", "hmo", "pos", "select", "choice", "complete",
+  "preferred", "advantage", "state", "ma",
+]);
+
 let nextMsgId = 0;
 function makeId(): string {
   nextMsgId += 1;
@@ -39,14 +47,26 @@ export function useAssistant() {
       const data = (await res.json()) as {
         groups?: { changes?: { payer_name?: string; plan_name?: string }[] }[];
       };
-      const aliases: string[] = [];
+      // Full names AND distinctive tokens: users say "granite state", not
+      // the full payer name "granite state health" — token aliases make the
+      // entity guard fire so those questions route to the live-DB agent
+      // instead of being hijacked by a generic canned FAQ.
+      const aliases = new Set<string>();
       for (const g of data.groups ?? []) {
         for (const c of g.changes ?? []) {
-          if (c.payer_name) aliases.push(c.payer_name.toLowerCase());
-          if (c.plan_name) aliases.push(c.plan_name.toLowerCase());
+          for (const name of [c.payer_name, c.plan_name]) {
+            if (!name) continue;
+            const lowerName = name.toLowerCase();
+            aliases.add(lowerName);
+            for (const token of lowerName.split(/\s+/)) {
+              if (token.length >= 5 && !GENERIC_NAME_WORDS.has(token)) {
+                aliases.add(token);
+              }
+            }
+          }
         }
       }
-      aliasesRef.current = aliases;
+      aliasesRef.current = [...aliases];
     } catch {
       aliasesRef.current = [];
     }

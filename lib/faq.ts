@@ -87,9 +87,14 @@ function scoreFaq(q: string, entry: FaqEntry): number {
 
 /**
  * Keyword matcher — §11.5 step 2. Highest score wins; ties broken by more
- * keywords, then list order. Returns null when nothing matches (score ≥ 1
- * required) — the caller then escalates to the agent.
+ * keywords, then list order. A match needs at least MIN_MATCH_POINTS (2):
+ * every published FAQ's verbatim question self-scores ≥ 4, so real FAQ
+ * questions always clear the bar, while a single generic keyword (e.g.
+ * "plan") can no longer hijack an unrelated question — those escalate to
+ * the agent, which answers from live data or admits it doesn't know.
  */
+const MIN_MATCH_POINTS = 2;
+
 export function matchFaq(text: string, faqs: FaqEntry[] = loadFaqs()): FaqMatch | null {
   const q = normalize(text);
   if (q.length === 0) return null;
@@ -97,7 +102,7 @@ export function matchFaq(text: string, faqs: FaqEntry[] = loadFaqs()): FaqMatch 
   let best: FaqMatch | null = null;
   for (const entry of faqs) {
     const score = scoreFaq(q, entry);
-    if (score < 1) continue;
+    if (score < MIN_MATCH_POINTS) continue;
     if (
       best === null ||
       score > best.score ||
