@@ -95,7 +95,7 @@ export function PayerChangeDrawer({
         correctedPathValue:
           change.corrected_path_value ?? change.authoritative.value,
         materialIds: selectedMaterialIds,
-        accountIds: selectedAccountIds,
+        accountIds: change.affected_account_ids,
       });
       setSending(false);
       setConfirmOpen(false);
@@ -124,7 +124,7 @@ export function PayerChangeDrawer({
 
   const footer = confirmOpen ? (
     <ConfirmSendDialog
-      recipientsCount={selectedAccountIds.length}
+      recipientsCount={change.affected_account_ids.length}
       changeTypeGroup={change.change_type_group}
       onConfirm={handleConfirmSend}
       onCancel={() => setConfirmOpen(false)}

@@ -3,6 +3,8 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import { ConflictStoreProvider } from "@/store/ConflictStore";
 import "./globals.css";
 
+import { HomeEntryGuard } from "@/components/layout/HomeEntryGuard";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -28,7 +30,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <ConflictStoreProvider>{children}</ConflictStoreProvider>
+        <HomeEntryGuard>
+          <ConflictStoreProvider>{children}</ConflictStoreProvider>
+        </HomeEntryGuard>      
       </body>
     </html>
   );

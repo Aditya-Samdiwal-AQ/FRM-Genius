@@ -116,6 +116,7 @@ export interface Account {
   primary_plan_name: string;
   payer_name: string;
   channel: string;
+  zip_code: string;
   email: string;
 }
 

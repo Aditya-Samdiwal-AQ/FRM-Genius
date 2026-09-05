@@ -8,7 +8,6 @@ import {
   FRM_NAME,
   FRM_TITLE,
   PRODUCT,
-  TERRITORY,
 } from "@/data/synthetic";
 import { ComplianceBadge } from "@/components/ui/ComplianceBadge";
 import { InfoBox } from "@/components/ui/InfoBox";
@@ -30,6 +29,7 @@ export function Step3Communicate({
   const source = change.corrected_path_source ?? change.authoritative.source;
   const sourceDate = change.authoritative.source_date;
   const count = recipients.length;
+  const territory = recipients[0]?.territory ?? "Territory unavailable";
 
   return (
     <div className="flex flex-col gap-5 px-6 py-5">
@@ -60,7 +60,7 @@ export function Step3Communicate({
                   <span className="font-semibold text-[var(--ink)]">To:</span>{" "}
                   <span className="text-[var(--muted)]">
                     {count} selected {count === 1 ? "office" : "offices"} —{" "}
-                    {TERRITORY}
+                    {territory}
                   </span>
                 </p>
                 <p>
@@ -72,7 +72,7 @@ export function Step3Communicate({
                 <p>
                   <span className="font-semibold text-[var(--ink)]">From:</span>{" "}
                   <span className="text-[var(--muted)]">
-                    {FRM_NAME}, FRM · {TERRITORY}
+                    {FRM_NAME}, FRM · {territory}
                   </span>
                 </p>
               </div>
@@ -135,7 +135,7 @@ export function Step3Communicate({
               <p className="font-semibold">
                 {FRM_NAME} — {FRM_TITLE}, Oncology &amp; Rare Disease
               </p>
-              <p className="provenance mt-0.5">{TERRITORY} · August 26, 2026</p>
+              <p className="provenance mt-0.5">{territory} · Eff. {formatDate(change.effective_date)}</p>
             </div>
           </div>
         </div>
