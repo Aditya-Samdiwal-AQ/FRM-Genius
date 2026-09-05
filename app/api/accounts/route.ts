@@ -20,6 +20,7 @@ export async function GET() {
       primary_plan_name: a.primary_plan_name,
       payer_name: a.payer_name,
       channel: a.channel,
+      zip_code: a.zip_code,
       email: a.email,
     })),
     total: accounts.length,

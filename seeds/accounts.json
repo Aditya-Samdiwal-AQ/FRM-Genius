@@ -8,6 +8,7 @@
     "primary_plan_name": "Meridian Choice PPO",
     "payer_name": "Meridian Health",
     "channel": "Commercial",
+    "zip_code": "60601",
     "email": "lakeside.associates@lakeside-oncology-associates.example.com"
   },
   {
@@ -19,6 +20,7 @@
     "primary_plan_name": "Meridian Choice PPO",
     "payer_name": "Meridian Health",
     "channel": "Commercial",
+    "zip_code": "60611",
     "email": "harbor.center@harbor-cancer-center.example.com"
   },
   {
@@ -30,6 +32,7 @@
     "primary_plan_name": "Meridian Choice PPO",
     "payer_name": "Meridian Health",
     "channel": "Commercial",
+    "zip_code": "60614",
     "email": "fairview.suite@fairview-infusion-suite.example.com"
   },
   {
@@ -41,6 +44,7 @@
     "primary_plan_name": "Cascade Select HMO",
     "payer_name": "Cascade Care",
     "channel": "Commercial",
+    "zip_code": "49503",
     "email": "northgate.hematology@northgate-hematology.example.com"
   },
   {
@@ -52,6 +56,7 @@
     "primary_plan_name": "Cascade Select HMO",
     "payer_name": "Cascade Care",
     "channel": "Commercial",
+    "zip_code": "61101",
     "email": "riverbend.group@riverbend-oncology-group.example.com"
   },
   {
@@ -63,6 +68,7 @@
     "primary_plan_name": "Cascade Select HMO",
     "payer_name": "Cascade Care",
     "channel": "Commercial",
+    "zip_code": "49508",
     "email": "summit.institute@summit-cancer-institute.example.com"
   },
   {
@@ -74,6 +80,7 @@
     "primary_plan_name": "Granite MA Complete",
     "payer_name": "Granite State Health",
     "channel": "Medicare Advantage",
+    "zip_code": "53202",
     "email": "beacon.oncology@beacon-hill-oncology.example.com"
   },
   {
@@ -85,6 +92,7 @@
     "primary_plan_name": "Granite MA Complete",
     "payer_name": "Granite State Health",
     "channel": "Medicare Advantage",
+    "zip_code": "53703",
     "email": "cedar.care@cedar-valley-cancer-care.example.com"
   },
   {
@@ -96,6 +104,7 @@
     "primary_plan_name": "Granite MA Complete",
     "payer_name": "Granite State Health",
     "channel": "Medicare Advantage",
+    "zip_code": "53212",
     "email": "meadowbrook.infusion@meadowbrook-infusion.example.com"
   },
   {
@@ -107,6 +116,7 @@
     "primary_plan_name": "Harborview Preferred PPO",
     "payer_name": "Harborview Health Plan",
     "channel": "Commercial",
+    "zip_code": "48201",
     "email": "pinecrest.oncology@pinecrest-oncology.example.com"
   },
   {
@@ -118,6 +128,7 @@
     "primary_plan_name": "Harborview Preferred PPO",
     "payer_name": "Harborview Health Plan",
     "channel": "Commercial",
+    "zip_code": "48226",
     "email": "stonegate.center@stonegate-cancer-center.example.com"
   },
   {
@@ -129,6 +140,7 @@
     "primary_plan_name": "Harborview Preferred PPO",
     "payer_name": "Harborview Health Plan",
     "channel": "Commercial",
+    "zip_code": "48104",
     "email": "willow.hematology@willow-creek-hematology.example.com"
   },
   {
@@ -140,6 +152,7 @@
     "primary_plan_name": "Summit Advantage HMO",
     "payer_name": "Summit Wellness",
     "channel": "Medicare Advantage",
+    "zip_code": "43215",
     "email": "ironwood.center@ironwood-cancer-center.example.com"
   },
   {
@@ -151,6 +164,7 @@
     "primary_plan_name": "Summit Advantage HMO",
     "payer_name": "Summit Wellness",
     "channel": "Medicare Advantage",
+    "zip_code": "44101",
     "email": "silverpeak.oncology@silverpeak-oncology.example.com"
   },
   {
@@ -162,6 +176,7 @@
     "primary_plan_name": "Summit Advantage HMO",
     "payer_name": "Summit Wellness",
     "channel": "Medicare Advantage",
+    "zip_code": "45202",
     "email": "copperfield.infusion@copperfield-infusion.example.com"
   },
   {
@@ -173,6 +188,7 @@
     "primary_plan_name": "Beacon POS",
     "payer_name": "Beacon Insurance",
     "channel": "Commercial",
+    "zip_code": "63101",
     "email": "highland.hematology@highland-hematology.example.com"
   },
   {
@@ -184,6 +200,7 @@
     "primary_plan_name": "Bluegrass Advantage",
     "payer_name": "Bluegrass Mutual",
     "channel": "Medicare Advantage",
+    "zip_code": "64101",
     "email": "juniper.care@juniper-cancer-care.example.com"
   },
   {
@@ -195,6 +212,7 @@
     "primary_plan_name": "Nautilus Select PPO",
     "payer_name": "Nautilus Alliance",
     "channel": "Commercial",
+    "zip_code": "46204",
     "email": "monarch.oncology@monarch-oncology.example.com"
   }
 ]

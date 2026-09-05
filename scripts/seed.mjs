@@ -175,6 +175,15 @@ function accountEmail(name) {
   return `${slugify(first)}.${slugify(last)}@${slugify(name)}.example.com`;
 }
 
+const ACCOUNT_ZIP_CODES = {
+  ACC001: "60601", ACC002: "60611", ACC003: "60614",
+  ACC004: "49503", ACC005: "61101", ACC006: "49508",
+  ACC007: "53202", ACC008: "53703", ACC009: "53212",
+  ACC010: "48201", ACC011: "48226", ACC012: "48104",
+  ACC013: "43215", ACC014: "44101", ACC015: "45202",
+  ACC016: "63101", ACC017: "64101", ACC018: "46204",
+};
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -208,6 +217,7 @@ function main() {
     primary_plan_name: r.Primary_Plan_Name,
     payer_name: r.Payer_Name,
     channel: r.Channel,
+    zip_code: ACCOUNT_ZIP_CODES[r.Account_ID] ?? "00000",
     email: accountEmail(r.Account_Name),
   }));
 

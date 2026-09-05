@@ -6,6 +6,8 @@ import {
   CheckCircle2,
   ChevronDown,
   CircleHelp,
+  ArrowDown,
+  ArrowUp,
   TriangleAlert,
   X,
 } from "lucide-react";
@@ -34,6 +36,8 @@ type Case = {
 const ISSUE_OPTIONS = Object.entries(FIELD_LABEL) as [ChangeType, string][];
 
 const STATUS_OPTIONS = ["Needs FRM action", "In progress", "Awaiting payer", "Resolved"] as const;
+type CaseSortField = "account" | "plan" | "issue" | "days";
+type SortDirection = "ascending" | "descending";
 
 function DashboardSection({ title, meta, children }: { title: string; meta: string; children: React.ReactNode }) {
   const [open, setOpen] = useState(true);
@@ -45,6 +49,26 @@ function DashboardSection({ title, meta, children }: { title: string; meta: stri
       </button>
       {open && <div className="border-t border-[var(--border)]">{children}</div>}
     </section>
+  );
+}
+
+function SortButtons({
+  field,
+  activeField,
+  direction,
+  onSort,
+}: {
+  field: CaseSortField;
+  activeField: CaseSortField;
+  direction: SortDirection;
+  onSort: (field: CaseSortField, direction: SortDirection) => void;
+}) {
+  const label = field === "plan" ? "payer and plan" : field === "days" ? "days open" : field;
+  return (
+    <span className="flex items-center">
+      <button type="button" title={`Sort ${label} ascending`} aria-label={`Sort ${label} ascending`} aria-pressed={activeField === field && direction === "ascending"} onClick={() => onSort(field, "ascending")} className={`rounded p-0.5 hover:bg-[var(--page-bg)] ${activeField === field && direction === "ascending" ? "text-[var(--magenta)]" : ""}`}><ArrowUp size={13} aria-hidden /></button>
+      <button type="button" title={`Sort ${label} descending`} aria-label={`Sort ${label} descending`} aria-pressed={activeField === field && direction === "descending"} onClick={() => onSort(field, "descending")} className={`rounded p-0.5 hover:bg-[var(--page-bg)] ${activeField === field && direction === "descending" ? "text-[var(--magenta)]" : ""}`}><ArrowDown size={13} aria-hidden /></button>
+    </span>
   );
 }
 
@@ -63,6 +87,8 @@ export function HomeDashboard() {
   const [formStatus, setFormStatus] = useState<string>(STATUS_OPTIONS[0]);
   const [formError, setFormError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [sortField, setSortField] = useState<CaseSortField>("days");
+  const [sortDirection, setSortDirection] = useState<SortDirection>("descending");
 
   useEffect(() => {
     let active = true;
@@ -106,6 +132,18 @@ export function HomeDashboard() {
         suggestion: `Review the updated ${FIELD_LABEL[change.field].toLowerCase()} and confirm the corrected path with ${account.name}.`,
       })),
   );
+  const sortedCases = [...cases].sort((left, right) => {
+    const leftValue = sortField === "days" ? left.days : left[sortField];
+    const rightValue = sortField === "days" ? right.days : right[sortField];
+    const comparison =
+      typeof leftValue === "number"
+        ? leftValue - (rightValue as number)
+        : leftValue.localeCompare(rightValue as string);
+    return (
+      comparison * (sortDirection === "ascending" ? 1 : -1) ||
+      left.account.localeCompare(right.account)
+    );
+  });
   const openConflicts = openChanges.length;
   const affectedAccounts = affectedAccountIds.size;
   const notify = (message: string) => {
@@ -229,12 +267,28 @@ export function HomeDashboard() {
               </form>
             )}
             <div className="min-w-0 max-w-full overflow-x-auto"><table className="w-full min-w-[760px] border-collapse text-left"><thead className="border-b border-[var(--border)]"><tr>{["Account", "Payer · Plan", "Issue", "Days Open", "Status", ""].map((heading) => <th key={heading} className="px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--muted)]">{heading}</th>)}</tr></thead><tbody>{[...manualCases, ...cases].map((row) => <tr key={row.changeId + row.account} className="border-b border-[var(--border)] last:border-0"><td className="px-6 py-3.5"><p className="text-[14px] font-bold">{row.account}</p><p className="mt-0.5 text-[12px] text-[var(--muted)]">{row.location}</p></td><td className="px-6 py-3.5 text-[13px]">{row.plan}</td><td className="px-6 py-3.5 text-[13px]">{row.issue}</td><td className={`px-6 py-3.5 text-[14px] font-bold ${row.days > 14 ? "text-red-600" : row.days > 7 ? "text-orange-600" : ""}`}>{row.days}d</td><td className="px-6 py-3.5 text-[12px] text-[var(--muted)]">{row.status}</td><td className="px-6 py-3.5 text-right"><button type="button" onClick={() => setSelectedCase(row)} className="rounded-lg border border-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-[var(--indigo)] hover:bg-[var(--indigo-bg)]">View</button></td></tr>)}</tbody></table></div>
+          <DashboardSection title="Open Cases" meta={`${sortedCases.length} open`}>
+            <div className="min-w-0 max-w-full overflow-x-auto">
+              <table className="w-full min-w-[760px] border-collapse text-left">
+                <thead className="border-b border-[var(--border)]">
+                  <tr>
+                    {([ ["Account", "account"], ["Payer · Plan", "plan"], ["Issue", "issue"], ["Days Open", "days"] ] as const).map(([heading, field]) => (
+                      <th key={field} className="px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--muted)]">
+                        <span className="flex items-center gap-1.5">{heading}<SortButtons field={field} activeField={sortField} direction={sortDirection} onSort={(nextField, nextDirection) => { setSortField(nextField); setSortDirection(nextDirection); }} /></span>
+                      </th>
+                    ))}
+                    <th className="px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--muted)]">Status</th>
+                    <th className="px-6 py-3.5" />
+                  </tr>
+                </thead>
+                <tbody>{sortedCases.map((item) => <tr key={`${item.changeId}-${item.account}`} className="border-b border-[var(--border)] last:border-0"><td className="px-6 py-3.5"><p className="text-[14px] font-bold">{item.account}</p><p className="mt-0.5 text-[12px] text-[var(--muted)]">{item.location}</p></td><td className="px-6 py-3.5 text-[13px]">{item.plan}</td><td className="px-6 py-3.5 text-[13px]">{item.issue}</td><td className={`px-6 py-3.5 text-[14px] font-bold ${item.days > 14 ? "text-red-600" : item.days > 7 ? "text-orange-600" : ""}`}>{item.days}d</td><td className="px-6 py-3.5 text-[12px] text-[var(--muted)]">{item.status}</td><td className="px-6 py-3.5 text-right"><button type="button" onClick={() => setSelectedCase(item)} className="rounded-lg border border-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-[var(--indigo)] hover:bg-[var(--indigo-bg)]">View</button></td></tr>)}</tbody>
+              </table>
+            </div>
           </DashboardSection>
         </div>
         {loadError && <p className="mt-4 text-[13px] text-red-700">{loadError}</p>}
       </main>
 
-      <button type="button" onClick={() => notify("The FRM Assistant is available in the lower-right corner.")} aria-label="Help" className="fixed bottom-6 right-6 z-20 grid size-12 place-items-center rounded-full bg-[var(--magenta)] text-white shadow-lg"><CircleHelp size={22} /></button>
       <div className="fixed bottom-6 left-6 z-20 hidden items-center gap-3 rounded-lg bg-[var(--nav-bg)] p-3 shadow-lg sm:flex"><span className="eyebrow text-gray-400">Demo</span><button type="button" onClick={() => { setLocallyResolvedIds([]); notify("Dashboard view reset"); }} className="rounded border border-zinc-700 bg-zinc-800 px-2.5 py-1 text-[12px] font-semibold text-zinc-200">Reset demo</button></div>
 
       {selectedCase && <><button type="button" aria-label="Close case detail" className="fixed inset-0 z-30 bg-black/45" onClick={() => setSelectedCase(null)} /><aside role="dialog" aria-modal="true" aria-label="Case detail" className="fixed inset-y-0 right-0 z-40 flex w-full max-w-[460px] flex-col bg-white shadow-2xl"><header className="flex items-center justify-between bg-[var(--magenta)] px-5 py-3.5 text-white"><h2 className="text-[14px] font-bold">Case Detail</h2><button type="button" aria-label="Close case detail" onClick={() => setSelectedCase(null)}><X size={20} /></button></header><div className="flex-1 overflow-y-auto p-5"><h3 className="text-[18px] font-bold">{selectedCase.account}</h3><p className="mt-0.5 text-[13px] text-[var(--muted)]">{selectedCase.location}</p><div className="mt-3 flex flex-wrap gap-2"><span className="rounded border border-[var(--border)] px-2 py-1 font-mono text-[11px]">{selectedCase.plan}</span><span className="rounded bg-[#f3f4f6] px-2 py-1 text-[10px] font-bold uppercase">{selectedCase.status}</span><span className="rounded bg-red-50 px-2 py-1 font-mono text-[11px] text-red-600">{selectedCase.days} days open</span></div><p className="eyebrow mt-6">Barrier to Therapy</p><div className="mt-2 rounded-lg bg-orange-50 p-4"><p className="text-[12px] font-bold uppercase text-orange-600">{selectedCase.issue}</p><p className="mt-2 text-[13px]">Onvexa · {selectedCase.plan} · Review required</p></div><p className="eyebrow mt-6">System Suggestion</p><div className="mt-2 rounded-lg bg-[var(--indigo-bg)] p-4"><div className="flex items-center gap-2"><p className="text-[12px] font-bold uppercase text-[var(--indigo)]">Suggested next action</p><span className="rounded-full bg-green-100 px-2 py-0.5 text-[9px] font-bold uppercase text-[var(--green)]">Compliance-reviewed</span></div><p className="mt-2 text-[13px] leading-5">{selectedCase.suggestion}</p></div></div><footer className="grid grid-cols-2 gap-2 border-t border-[var(--border)] p-4"><button type="button" onClick={() => notify(`Action logged for ${selectedCase.account}`)} className="rounded-lg border border-[var(--border)] py-2 text-[12px] font-semibold">Log action</button><button type="button" onClick={() => { setSelectedCase(null); setLocallyResolvedIds((ids) => [...ids, selectedCase.changeId]); setManualCases((rows) => rows.filter((row) => row.changeId !== selectedCase.changeId)); notify(`${selectedCase.account} marked resolved`); }} className="rounded-lg bg-[var(--green)] py-2 text-[12px] font-semibold text-white">Mark resolved</button></footer></aside></>}
