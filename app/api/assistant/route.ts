@@ -3,10 +3,14 @@ import { db } from "@/lib/db.mjs";
 import { FIELD_LABEL } from "@/lib/constants.mjs";
 import { ASSISTANT_API_KEY } from "@/lib/assistantConfig";
 import { formatDate, formatTimestamp } from "@/lib/format";
+import { buildAgentBriefing } from "@/lib/agentBriefing";
+import { llmChat } from "@/lib/llm";
 import type {
   Account,
   AuditEvent,
+  FormularySnapshot,
   Material,
+  MedPolicySnapshot,
   Notification,
   PayerChange,
 } from "@/lib/types";
@@ -14,10 +18,11 @@ import type {
 /**
  * POST /api/assistant — FRM Assistant agent endpoint (Plan.md §11.1, §11.9).
  *
- * Answers free-text questions from the live FRM database in real time:
- * open/resolved conflicts, affected accounts, provenance, corrected paths,
- * notifications, audit trails, and compliance-reviewed materials.
- * Requires the team API key (Authorization: Bearer <key> or x-api-key).
+ * Agentic path: builds a live data briefing from the data folder (real-time
+ * DB state) and has the LLM gateway compose a grounded answer. If the LLM is
+ * unreachable or fails, falls back to the deterministic rule-based composer
+ * so the assistant never breaks. Requires the team API key
+ * (Authorization: Bearer <key> or x-api-key).
  */
 
 export const dynamic = "force-dynamic";
@@ -227,27 +232,118 @@ function describeChange(change: PayerChange, ctx: ComposeContext): string {
   return parts.join(" ");
 }
 
-/** Compose a real-time answer from the live DB stores. */
-function composeAnswer(question: string): string {
+/**
+ * Agentic answer: ground the LLM in a FOCUSED live briefing built from the
+ * data folder and let it compose the reply. The 2 s budget is the latency
+ * contract — the focused briefing keeps prompt tokens low so the gateway
+ * can answer inside it. Throws LlmError on any failure (including timeout)
+ * — the caller falls back to the deterministic snapshot composer.
+ */
+async function agentAnswer(question: string): Promise<string> {
+  const briefing = buildAgentBriefing(question);
+  return llmChat(
+    [
+      { role: "system", content: briefing.systemPrompt },
+      { role: "user", content: briefing.userPrompt },
+    ],
+    { maxTokens: 300, timeoutMs: 1_800 },
+  );
+}
+
+/**
+ * Deterministic snapshot fallback — reads the live DB directly and answers
+ * without the LLM. Guarantees the 2 s latency cap when the gateway is slow
+ * or unreachable. Covers the same ground as the agent: conflicts, accounts,
+ * notifications, materials, audit trails, and per-plan formulary/policy rows.
+ */
+function buildSnapshotAnswer(question: string): string {
   const changes = db.payerChanges() as PayerChange[];
   const accounts = db.accounts() as Account[];
   const notifications = db.notifications() as Notification[];
   const events = db.auditEvents() as AuditEvent[];
   const materials = db.materials() as Material[];
+  const medPolicyAll = db.medPolicySnapshots() as MedPolicySnapshot[];
+  const formularyAll = db.formularySnapshots() as FormularySnapshot[];
   const q = ` ${norm(question)} `;
 
-  const wantAudit = /audit|history|trail|log|happened/.test(q);
-  const wantMaterials = /material|attach|document|sheet|guide|leaflet/.test(q);
-  const ctx: ComposeContext = {
-    accounts,
-    notifications,
-    events,
-    materials,
-    wantAudit,
-    wantMaterials,
-  };
+  // Latest snapshot rows (one per plan).
+  const latestDate = medPolicyAll.reduce(
+    (max, row) => (row.as_of_date > max ? row.as_of_date : max),
+    "",
+  );
+  const medPolicy = medPolicyAll.filter((r) => r.as_of_date === latestDate);
+  const formularyDate = formularyAll.reduce(
+    (max, row) => (row.as_of_date > max ? row.as_of_date : max),
+    "",
+  );
+  const formulary = formularyAll.filter((r) => r.as_of_date === formularyDate);
 
-  // 1. Specific conflicts — matched by payer/plan alias or affected account.
+  // Per-plan row lookup: match by payer/plan name tokens in the question.
+  const planHit = medPolicy.find((r) => {
+    const payerLower = r.payer_name.toLowerCase();
+    const planLower = r.plan_name.toLowerCase();
+    return q.includes(` ${payerLower} `) || q.includes(` ${planLower} `);
+  });
+  // Formulary rows are named "<Plan Name> Formulary" — match on the plan-name
+  // prefix so "Meridian Choice PPO" finds "Meridian Choice PPO Formulary".
+  const formularyHit = formulary.find((r) => {
+    const payerLower = r.payer_name.toLowerCase();
+    const planPrefix = r.formulary_name
+      .toLowerCase()
+      .replace(/\s+formulary$/, "");
+    return q.includes(` ${payerLower} `) || q.includes(` ${planPrefix} `);
+  });
+
+  // 1. Specific plan asked about — answer straight from its live rows.
+  if (planHit || formularyHit) {
+    const parts: string[] = [];
+    if (planHit) {
+      parts.push(
+        `${planHit.payer_name} — ${planHit.plan_name} (${planHit.channel}, ${Number(planHit.lives || 0).toLocaleString()} lives): coverage ${planHit.coverage_status}, prior auth ${planHit.pa_required === "Y" ? "required" : "not required"}, step therapy ${planHit.step_therapy_required === "Y" ? "required" : "not required"}, site-of-care ${planHit.site_of_care_restriction || "none"}, quantity limit ${planHit.quantity_limit || "none"} (medical policy as of ${planHit.as_of_date}).`,
+      );
+    }
+    if (formularyHit) {
+      parts.push(
+        `Formulary: ${formularyHit.payer_name} — ${formularyHit.formulary_name} is ${formularyHit.formulary_status} on tier ${formularyHit.tier}, restriction ${formularyHit.restriction || "none"} (as of ${formularyHit.as_of_date}).`,
+      );
+    }
+    return parts.join(" ");
+  }
+
+  // 1b. Broad aggregate questions — answer from precomputed counts (the
+  // same numbers the agent briefing embeds), no LLM needed.
+  const medPolicyCount = medPolicy.length;
+  const coveredNoPa = medPolicy.filter(
+    (r) => r.coverage_status === "Covered" && r.pa_required === "N",
+  );
+  const totalLives = medPolicy.reduce(
+    (sum, r) => sum + Number(r.lives || 0),
+    0,
+  );
+  if (/\bhow many\b|\btotal\b|\bcount\b|\boverall\b/.test(q)) {
+    if (/prior|auth/.test(q) && /cover/.test(q)) {
+      return `${coveredNoPa.length} plans cover Onvexa with no prior auth (medical policy as of ${latestDate}).`;
+    }
+    if (/step/.test(q) && /cover/.test(q)) {
+      const stepYes = medPolicy.filter(
+        (r) => r.coverage_status === "Covered" && r.step_therapy_required === "Y",
+      ).length;
+      return `${stepYes} plans cover Onvexa with step therapy required (medical policy as of ${latestDate}).`;
+    }
+    if (/cover/.test(q)) {
+      const covered = medPolicy.filter(
+        (r) => r.coverage_status === "Covered",
+      ).length;
+      return `${covered} of ${medPolicyCount} plans cover Onvexa (medical policy as of ${latestDate}).`;
+    }
+    if (/lives/.test(q)) {
+      return `Total covered lives across all plans is ${totalLives.toLocaleString()} (medical policy as of ${latestDate}).`;
+    }
+  }
+
+  // 2. Conflicts mentioned by payer/plan alias or affected account.
+  // (Checked after the per-plan rows so a question naming a conflicted plan
+  // gets the conflict detail, which is the richer answer.)
   const mentioned: PayerChange[] = [];
   for (const change of changes) {
     if (changeAliases(change).some((alias) => q.includes(` ${alias} `))) {
@@ -268,13 +364,20 @@ function composeAnswer(question: string): string {
     }
   }
   if (mentioned.length > 0) {
-    return mentioned.map((change) => describeChange(change, ctx)).join("  |  ");
+    return mentioned.map((change) => describeChange(change, {
+      accounts,
+      notifications,
+      events,
+      materials,
+      wantAudit: /audit|history|trail|log|happened/.test(q),
+      wantMaterials: /material|attach|document|sheet|guide|leaflet/.test(q),
+    })).join("  |  ");
   }
 
   const open = changes.filter((c) => c.status === "open");
   const resolved = changes.filter((c) => c.status === "resolved");
 
-  // 2. Notifications — exactly what the Notification records say.
+  // 3. Notifications.
   if (/notif|informed|communicat|email/.test(q)) {
     if (notifications.length === 0) {
       return "No notifications have been sent yet. Resolve a conflict and send the corrected path to its offices, and the notification records will show here.";
@@ -298,8 +401,8 @@ function composeAnswer(question: string): string {
       .join("  |  ");
   }
 
-  // 3. Materials catalog.
-  if (wantMaterials) {
+  // 4. Materials catalog.
+  if (/material|attach|document|sheet|guide|leaflet/.test(q)) {
     return materials.length === 0
       ? "No compliance-reviewed materials are available right now."
       : `There are ${materials.length} compliance-reviewed materials: ${materials
@@ -307,7 +410,7 @@ function composeAnswer(question: string): string {
           .join("; ")}.`;
   }
 
-  // 4. Accounts affected by open conflicts.
+  // 5. Accounts affected by open conflicts.
   if (/account|office|site/.test(q)) {
     const perChange = open.map((change) => {
       const names = accounts
@@ -323,8 +426,8 @@ function composeAnswer(question: string): string {
     );
   }
 
-  // 5. Audit overview.
-  if (wantAudit) {
+  // 6. Audit overview.
+  if (/audit|history|trail|log|happened/.test(q)) {
     const withEvents = changes
       .map((change) => ({
         change,
@@ -341,7 +444,7 @@ function composeAnswer(question: string): string {
           .join("; ")}. Ask about a specific plan for the full trail.`;
   }
 
-  // 6. Resolved summary.
+  // 7. Resolved summary.
   if (/resolv|cleared|complete|done/.test(q)) {
     if (resolved.length === 0) {
       return `No conflicts have been resolved yet — ${open.length} plan conflict${
@@ -351,11 +454,22 @@ function composeAnswer(question: string): string {
     return (
       `${resolved.length} of ${changes.length} plan conflicts ` +
       `${resolved.length === 1 ? "is" : "are"} resolved: ` +
-      resolved.map((change) => describeChange(change, ctx)).join("  |  ")
+      resolved
+        .map((change) =>
+          describeChange(change, {
+            accounts,
+            notifications,
+            events,
+            materials,
+            wantAudit: false,
+            wantMaterials: false,
+          }),
+        )
+        .join("  |  ")
     );
   }
 
-  // 7. Open conflicts.
+  // 8. Open conflicts.
   if (/\bopen\b|outstanding|pending|unresolved|conflict|alert/.test(q)) {
     if (open.length === 0) {
       return "There are no open plan conflicts right now.";
@@ -386,8 +500,16 @@ function composeAnswer(question: string): string {
     return "I did not understand your question. Please rephrase it or ask an FRM-related question.";
   }
 
-  // 10. Unrecognized requests must not expose an unsolicited territory summary.
-  return "I can only help with FRM Genius payer-policy changes, plans, accounts, notifications, materials, and audit trails. Please ask an FRM-related question.";
+  // 10. Fallback — live territory snapshot.
+  const openList = open
+    .map((c) => `${c.payer_name} — ${c.plan_name}`)
+    .join("; ");
+  return (
+    `FRM Genius watches payer-policy changes for Territory 14 — Great Lakes. ` +
+    `Right now: ${open.length} open plan conflict${open.length === 1 ? "" : "s"}` +
+    (open.length > 0 ? ` (${openList})` : "") +
+    `, ${resolved.length} resolved. Ask about a specific payer (Meridian, Cascade, Granite, Harborview, Summit), plan, account, notification, or audit trail for live answers.`
+  );
 }
 
 export async function POST(request: NextRequest) {
@@ -415,8 +537,10 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    // Topic-awareness: answer FRM-topic questions from the live DB; reply
-    // appropriately to greetings/small talk; ask for a rephrase on gibberish.
+    // Topic-awareness: FRM-topic questions go to the LLM agent grounded in
+    // the live data briefing; greetings/small talk get a brief reply; gibberish
+    // asks for a rephrase. Any LLM failure falls back to the rule-based
+    // composer so the assistant never breaks.
     const intent = classifyIntent(question);
     if (intent === "gibberish") {
       return Response.json({
@@ -427,7 +551,16 @@ export async function POST(request: NextRequest) {
     if (intent === "smalltalk") {
       return Response.json({ answer: smallTalkReply(question) });
     }
-    return Response.json({ answer: composeAnswer(question) });
+    try {
+      const answer = await agentAnswer(question);
+      return Response.json({ answer });
+    } catch (error) {
+      console.error(
+        "[assistant] LLM agent failed, using snapshot fallback:",
+        error instanceof Error ? error.message : error,
+      );
+      return Response.json({ answer: buildSnapshotAnswer(question) });
+    }
   } catch {
     return Response.json(
       { error: "The assistant could not compose an answer." },
