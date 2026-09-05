@@ -132,7 +132,7 @@ export function HomeDashboard() {
         suggestion: `Review the updated ${FIELD_LABEL[change.field].toLowerCase()} and confirm the corrected path with ${account.name}.`,
       })),
   );
-  const sortedCases = [...cases].sort((left, right) => {
+  const sortedCases = [...manualCases, ...cases].sort((left, right) => {
     const leftValue = sortField === "days" ? left.days : left[sortField];
     const rightValue = sortField === "days" ? right.days : right[sortField];
     const comparison =
@@ -266,24 +266,7 @@ export function HomeDashboard() {
                 </div>
               </form>
             )}
-            <div className="min-w-0 max-w-full overflow-x-auto"><table className="w-full min-w-[760px] border-collapse text-left"><thead className="border-b border-[var(--border)]"><tr>{["Account", "Payer · Plan", "Issue", "Days Open", "Status", ""].map((heading) => <th key={heading} className="px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--muted)]">{heading}</th>)}</tr></thead><tbody>{[...manualCases, ...cases].map((row) => <tr key={row.changeId + row.account} className="border-b border-[var(--border)] last:border-0"><td className="px-6 py-3.5"><p className="text-[14px] font-bold">{row.account}</p><p className="mt-0.5 text-[12px] text-[var(--muted)]">{row.location}</p></td><td className="px-6 py-3.5 text-[13px]">{row.plan}</td><td className="px-6 py-3.5 text-[13px]">{row.issue}</td><td className={`px-6 py-3.5 text-[14px] font-bold ${row.days > 14 ? "text-red-600" : row.days > 7 ? "text-orange-600" : ""}`}>{row.days}d</td><td className="px-6 py-3.5 text-[12px] text-[var(--muted)]">{row.status}</td><td className="px-6 py-3.5 text-right"><button type="button" onClick={() => setSelectedCase(row)} className="rounded-lg border border-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-[var(--indigo)] hover:bg-[var(--indigo-bg)]">View</button></td></tr>)}</tbody></table></div>
-          <DashboardSection title="Open Cases" meta={`${sortedCases.length} open`}>
-            <div className="min-w-0 max-w-full overflow-x-auto">
-              <table className="w-full min-w-[760px] border-collapse text-left">
-                <thead className="border-b border-[var(--border)]">
-                  <tr>
-                    {([ ["Account", "account"], ["Payer · Plan", "plan"], ["Issue", "issue"], ["Days Open", "days"] ] as const).map(([heading, field]) => (
-                      <th key={field} className="px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--muted)]">
-                        <span className="flex items-center gap-1.5">{heading}<SortButtons field={field} activeField={sortField} direction={sortDirection} onSort={(nextField, nextDirection) => { setSortField(nextField); setSortDirection(nextDirection); }} /></span>
-                      </th>
-                    ))}
-                    <th className="px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--muted)]">Status</th>
-                    <th className="px-6 py-3.5" />
-                  </tr>
-                </thead>
-                <tbody>{sortedCases.map((item) => <tr key={`${item.changeId}-${item.account}`} className="border-b border-[var(--border)] last:border-0"><td className="px-6 py-3.5"><p className="text-[14px] font-bold">{item.account}</p><p className="mt-0.5 text-[12px] text-[var(--muted)]">{item.location}</p></td><td className="px-6 py-3.5 text-[13px]">{item.plan}</td><td className="px-6 py-3.5 text-[13px]">{item.issue}</td><td className={`px-6 py-3.5 text-[14px] font-bold ${item.days > 14 ? "text-red-600" : item.days > 7 ? "text-orange-600" : ""}`}>{item.days}d</td><td className="px-6 py-3.5 text-[12px] text-[var(--muted)]">{item.status}</td><td className="px-6 py-3.5 text-right"><button type="button" onClick={() => setSelectedCase(item)} className="rounded-lg border border-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-[var(--indigo)] hover:bg-[var(--indigo-bg)]">View</button></td></tr>)}</tbody>
-              </table>
-            </div>
+            <div className="min-w-0 max-w-full overflow-x-auto"><table className="w-full min-w-[760px] border-collapse text-left"><thead className="border-b border-[var(--border)]"><tr>{([ ["Account", "account"], ["Payer · Plan", "plan"], ["Issue", "issue"], ["Days Open", "days"] ] as const).map(([heading, field]) => <th key={field} className="px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--muted)]"><span className="flex items-center gap-1.5">{heading}<SortButtons field={field} activeField={sortField} direction={sortDirection} onSort={(nextField, nextDirection) => { setSortField(nextField); setSortDirection(nextDirection); }} /></span></th>)}<th className="px-6 py-3.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--muted)]">Status</th><th className="px-6 py-3.5" /></tr></thead><tbody>{sortedCases.map((row) => <tr key={row.changeId + row.account} className="border-b border-[var(--border)] last:border-0"><td className="px-6 py-3.5"><p className="text-[14px] font-bold">{row.account}</p><p className="mt-0.5 text-[12px] text-[var(--muted)]">{row.location}</p></td><td className="px-6 py-3.5 text-[13px]">{row.plan}</td><td className="px-6 py-3.5 text-[13px]">{row.issue}</td><td className={`px-6 py-3.5 text-[14px] font-bold ${row.days > 14 ? "text-red-600" : row.days > 7 ? "text-orange-600" : ""}`}>{row.days}d</td><td className="px-6 py-3.5 text-[12px] text-[var(--muted)]">{row.status}</td><td className="px-6 py-3.5 text-right"><button type="button" onClick={() => setSelectedCase(row)} className="rounded-lg border border-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-[var(--indigo)] hover:bg-[var(--indigo-bg)]">View</button></td></tr>)}</tbody></table></div>
           </DashboardSection>
         </div>
         {loadError && <p className="mt-4 text-[13px] text-red-700">{loadError}</p>}
