@@ -209,6 +209,22 @@ All phases above are implemented and verified end-to-end. Deviations from the or
 - **Demo Controls panel removed** from the UI after the flow was verified; `POST /api/dev/reset` and `npm run reset` remain.
 - **Verification**: `npm run smoke` (25/25 checks), `npx tsc --noEmit` clean, `npx eslint .` clean (2 pre-existing backend warnings), full resolve flow exercised live in the browser.
 
+## 9.2 Deployment readiness (2026-09-07)
+
+The app runs anywhere Node 20+ + Next.js 16 does. It targets `next start` (long-lived Node process) and also survives serverless bundling (Vercel, AWS Lambda, containerised runtimes) as long as the platform lets the process reach a writable directory. There is no platform-specific config in the repo — `netlify.toml`, `vercel.json`, and Dockerfiles are intentionally absent so the demo owner can pick a target.
+
+Three portability decisions worth flagging before any deployment PR:
+
+- **File-bundle tracing.** `next.config.ts` sets `outputFileTracingIncludes: { "/api/**/*": ["./data/**/*", "./seeds/**/*"] }`. Next's tracer doesn't otherwise see the JSON stores (they're read via `fs`, not `import`), so serverless targets would ship functions missing their DB. This is a no-op on `next start`.
+- **Writable data dir with tmp fallback.** `lib/db.mjs` probes `<cwd>/data` at module load. If it's writable (local dev, `next start`, any container with a persistent volume), it uses it as-is. If not (read-only serverless bundle), `DATA_DIR` becomes `os.tmpdir() + "/frm-genius-data"`, hydrated once from the bundled `data/` (or `seeds/` if a file is missing). `lib/mailer.mjs` imports `DATA_DIR` from `db.mjs`, so mock `.eml` writes land in the same writable dir.
+- **Deterministic change ids.** `lib/diff.mjs` derives change ids from `sha1(plan_id|field|prior|new|detected_at).slice(0, 12)`. On serverless targets that run multiple concurrent instances, list vs detail requests may land on different instances with independent tmp state; deterministic ids make navigation stable across them.
+
+Caveats to keep in mind when picking a target:
+
+- The "DB" is a set of JSON files. On serverless the tmp dir is per-instance and ephemeral, so resolutions persist only while the same warm instance serves subsequent requests. That behaviour is fine for a demo but not real persistence. For durable state, swap `lib/db.mjs` for a proper store (Postgres, Redis, S3, platform blob storage — the API surface is small: `readStore`, `writeStore`, `mutateStore`, `withWriteLock`, `resetFromSeeds`).
+- Emails are sent via Nodemailer when `SMTP_HOST` is configured; otherwise the mock transport writes RFC-822 files to `<DATA_DIR>/outbox/`. Provision SMTP creds via env vars (`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`) if real delivery is required.
+- Baseline demo data (13 open conflicts) is baked into `data/` at build time via `npm run reset` (seed + diff). Any change to CSVs or seed logic must be committed with a fresh `data/` (or the deploy step must run `npm run reset` before `next build`).
+
 ## 10. In scope (v1)
 
 - Conflict detection driven by snapshot diff engine on the 8 tracked fields

@@ -12,6 +12,7 @@ import {
   X,
 } from "lucide-react";
 import { AppShell } from "@/components/layout/AppShell";
+import { LoadingValue, Skeleton } from "@/components/ui/Skeleton";
 import { comparePriorityDesc } from "@/lib/priority";
 import { FIELD_LABEL } from "@/lib/types";
 import type { Account, ChangeType } from "@/lib/types";
@@ -39,7 +40,7 @@ const STATUS_OPTIONS = ["Needs FRM action", "In progress", "Awaiting payer", "Re
 type CaseSortField = "account" | "plan" | "issue" | "days";
 type SortDirection = "ascending" | "descending";
 
-function DashboardSection({ title, meta, children }: { title: string; meta: string; children: React.ReactNode }) {
+function DashboardSection({ title, meta, children }: { title: string; meta: React.ReactNode; children: React.ReactNode }) {
   const [open, setOpen] = useState(true);
   return (
     <section className="card overflow-hidden">
@@ -80,6 +81,7 @@ export function HomeDashboard() {
   const [changes, setChanges] = useState<PrioritizedPayerChange[]>([]);
   const [locallyResolvedIds, setLocallyResolvedIds] = useState<string[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [dataLoading, setDataLoading] = useState(true);
   const [manualCases, setManualCases] = useState<Case[]>([]);
   const [addCaseOpen, setAddCaseOpen] = useState(false);
   const [formAccountId, setFormAccountId] = useState("");
@@ -100,6 +102,9 @@ export function HomeDashboard() {
       })
       .catch(() => {
         if (active) setLoadError("Live dashboard data could not be loaded.");
+      })
+      .finally(() => {
+        if (active) setDataLoading(false);
       });
     return () => {
       active = false;
@@ -198,7 +203,7 @@ export function HomeDashboard() {
   return (
     <AppShell>
       <main className="mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-8">
-        <section className={`card border-t-4 p-7 ${openConflicts === 0 ? "border-[var(--green-border)]" : "border-[var(--magenta)]"}`} aria-label="Territory health">
+        <section className={`card border-t-4 p-7 ${dataLoading ? "border-[var(--border)]" : openConflicts === 0 ? "border-[var(--green-border)]" : "border-[var(--magenta)]"}`} aria-label="Territory health">
           <header className="mb-6 border-b border-[var(--border)] pb-5">
             <p className="provenance uppercase">T-NE-04</p>
             <h1 className="mt-1 text-[30px] font-bold">Good morning, Jordan</h1>
@@ -206,30 +211,56 @@ export function HomeDashboard() {
           </header>
           <div className="grid items-center gap-8 lg:grid-cols-[1fr_1.35fr]">
             <div>
-              <p className={`text-[64px] leading-none font-extrabold ${openConflicts === 0 ? "text-[var(--green)]" : "text-[var(--magenta)]"}`}>{openConflicts}</p>
+              <p className={`text-[64px] leading-none font-extrabold ${dataLoading ? "text-[var(--muted)]" : openConflicts === 0 ? "text-[var(--green)]" : "text-[var(--magenta)]"}`}>
+                <LoadingValue loading={dataLoading} skeletonClassName="h-14 w-20" loadingLabel="Loading open plan conflicts">{openConflicts}</LoadingValue>
+              </p>
               <p className="mt-1.5 text-[15px] font-semibold">open plan conflicts</p>
-              <p className="provenance mt-3">Across {openConflicts} plans · Live data from policy records</p>
+              <p className="provenance mt-3">
+                <LoadingValue loading={dataLoading} skeletonClassName="h-3 w-56" loadingLabel="Loading territory summary">
+                  Across {openConflicts} plans · Live data from policy records
+                </LoadingValue>
+              </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-3 sm:divide-x sm:divide-[var(--border)]">
-              {[[String(accounts.length), 'accounts in territory'], [String(affectedAccounts), 'accounts affected'], [`${changes.filter((change) => change.status === "resolved").length} of ${changes.length}`, 'conflicts resolved']].map(([value, label]) => <div key={label} className="sm:px-5 first:pl-0"><p className="text-[28px] font-extrabold">{value}</p><p className="text-[12px] text-[var(--muted)]">{label}</p></div>)}
+              {[[String(accounts.length), 'accounts in territory'], [String(affectedAccounts), 'accounts affected'], [`${changes.filter((change) => change.status === "resolved").length} of ${changes.length}`, 'conflicts resolved']].map(([value, label]) => <div key={label} className="sm:px-5 first:pl-0"><p className="text-[28px] font-extrabold"><LoadingValue loading={dataLoading} skeletonClassName="h-7 w-14" loadingLabel={`Loading ${label}`}>{value}</LoadingValue></p><p className="text-[12px] text-[var(--muted)]">{label}</p></div>)}
             </div>
           </div>
-          <div className={`mt-6 flex items-start gap-3 rounded-lg px-4 py-3 text-[14px] font-semibold ${openConflicts === 0 ? "bg-[var(--green-bg)] text-[var(--green)]" : "bg-[var(--page-bg)] text-[var(--magenta)]"}`} role="status">
-            {openConflicts === 0 ? <CheckCircle2 size={18} /> : <TriangleAlert size={18} />}
-            <span>{openConflicts === 0 ? "All plan conflicts resolved. Every account is guided by authoritative policy." : `${affectedAccounts} accounts are currently guided by superseded policy.`}</span>
-            {openConflicts > 0 && <span className="ml-auto hidden text-right sm:block">Resolving at territory level takes one action.</span>}
-          </div>
+          {dataLoading ? (
+            <div className="mt-6 flex items-center gap-3 rounded-lg bg-[var(--page-bg)] px-4 py-3 text-[14px] font-semibold text-[var(--muted)]" role="status" aria-live="polite">
+              <Skeleton className="h-4 w-4 rounded-full" />
+              <Skeleton className="h-4 w-64" />
+              <span className="sr-only">Loading territory health summary</span>
+            </div>
+          ) : (
+            <div className={`mt-6 flex items-start gap-3 rounded-lg px-4 py-3 text-[14px] font-semibold ${openConflicts === 0 ? "bg-[var(--green-bg)] text-[var(--green)]" : "bg-[var(--page-bg)] text-[var(--magenta)]"}`} role="status">
+              {openConflicts === 0 ? <CheckCircle2 size={18} /> : <TriangleAlert size={18} />}
+              <span>{openConflicts === 0 ? "All plan conflicts resolved. Every account is guided by authoritative policy." : `${affectedAccounts} accounts are currently guided by superseded policy.`}</span>
+              {openConflicts > 0 && <span className="ml-auto hidden text-right sm:block">Resolving at territory level takes one action.</span>}
+            </div>
+          )}
         </section>
 
         <div className="mt-4 space-y-4">
-          <DashboardSection title="Major Policy Changes" meta={`Top ${majorPolicyChanges.length} of ${openChanges.length} by priority`}>
-            {majorPolicyChanges.map((change) => <div key={change.id} className="flex flex-col justify-between gap-4 px-6 py-4 md:flex-row md:items-start [&+&]:border-t [&+&]:border-[var(--border)]">
+          <DashboardSection
+            title="Major Policy Changes"
+            meta={<LoadingValue loading={dataLoading} skeletonClassName="h-3 w-40" loadingLabel="Loading priority summary">{`Top ${majorPolicyChanges.length} of ${openChanges.length} by priority`}</LoadingValue>}
+          >
+            {dataLoading ? (
+              <div className="space-y-2 px-6 py-4">
+                <Skeleton className="h-4 w-3/5" />
+                <Skeleton className="h-3 w-4/5" />
+                <Skeleton className="h-3 w-2/5" />
+              </div>
+            ) : majorPolicyChanges.map((change) => <div key={change.id} className="flex flex-col justify-between gap-4 px-6 py-4 md:flex-row md:items-start [&+&]:border-t [&+&]:border-[var(--border)]">
               <div><div className="flex flex-wrap items-center gap-2"><h2 className="text-[14px] font-bold">{change.payer_name} - {change.plan_name}</h2><span className="rounded bg-[var(--magenta-soft)] px-2 py-0.5 text-[10px] font-bold uppercase text-white">Conflict</span></div><div className="mt-2 flex flex-wrap gap-1.5">{[FIELD_LABEL[change.field], `Effective ${change.effective_date}`, change.channel, `${change.priority.lives.toLocaleString("en-US")} lives`].map((item) => <span key={item} className="rounded bg-[#f3f4f6] px-2 py-0.5 font-mono text-[11px] text-[var(--muted)]">{item}</span>)}</div></div>
               <div className="flex items-center gap-4"><span className="text-[12px] text-[var(--muted)]">{change.affected_account_ids.length} accounts affected</span><button type="button" onClick={() => router.push(`/payer-changes?reviewPlan=${encodeURIComponent(change.plan_id)}`)} className="rounded-lg border border-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-[var(--indigo)] hover:bg-[var(--indigo-bg)]">Review</button></div>
             </div>)}
           </DashboardSection>
 
-          <DashboardSection title="Open Cases" meta={`${cases.length + manualCases.length} open`}>
+          <DashboardSection
+            title="Open Cases"
+            meta={<LoadingValue loading={dataLoading} skeletonClassName="h-3 w-20" loadingLabel="Loading open cases count">{`${cases.length + manualCases.length} open`}</LoadingValue>}
+          >
             <div className="flex justify-end border-b border-[var(--border)] px-6 py-3">
               <button type="button" onClick={() => { setAddCaseOpen((open) => !open); setFormError(null); }} aria-expanded={addCaseOpen} className="rounded-lg bg-[var(--indigo)] px-4 py-1.5 text-[13px] font-semibold text-white hover:opacity-90">
                 {addCaseOpen ? "Cancel" : "+ Log call"}
