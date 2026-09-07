@@ -42,7 +42,7 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001i"
+    "detection_id": "chg-mtquff1g-0007"
   },
   {
     "update_date": "2026-08-01",
@@ -57,7 +57,7 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001j"
+    "detection_id": "chg-mtquff1g-0008"
   },
   {
     "update_date": "2026-09-01",
@@ -72,7 +72,7 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-09-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001k"
+    "detection_id": "chg-mtquff1g-0009"
   },
   {
     "update_date": "2026-08-01",
@@ -87,7 +87,7 @@
     "new_value": "Not Covered",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001l"
+    "detection_id": "chg-mtquff1g-000a"
   },
   {
     "update_date": "2026-09-01",
@@ -102,7 +102,7 @@
     "new_value": "Outpatient Hospital",
     "note": "Auto-detected by snapshot diff (MMIT 2026-09-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001m"
+    "detection_id": "chg-mtquff1g-000b"
   },
   {
     "update_date": "2026-08-01",
@@ -117,7 +117,7 @@
     "new_value": "Physician Office",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001n"
+    "detection_id": "chg-mtquff1g-000c"
   },
   {
     "update_date": "2026-09-01",
@@ -132,7 +132,7 @@
     "new_value": "Not Covered",
     "note": "Auto-detected by snapshot diff (MMIT 2026-09-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001o"
+    "detection_id": "chg-mtquff1g-000d"
   },
   {
     "update_date": "2026-08-01",
@@ -147,7 +147,7 @@
     "new_value": "Y",
     "note": "Auto-detected by snapshot diff (MMIT 2026-08-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001p"
+    "detection_id": "chg-mtquff1g-000e"
   },
   {
     "update_date": "2026-09-01",
@@ -162,7 +162,7 @@
     "new_value": "Non-Preferred",
     "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001q"
+    "detection_id": "chg-mtquff1g-000f"
   },
   {
     "update_date": "2026-09-01",
@@ -177,7 +177,7 @@
     "new_value": "Tier 4",
     "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001r"
+    "detection_id": "chg-mtquff1g-000g"
   },
   {
     "update_date": "2026-09-01",
@@ -192,7 +192,7 @@
     "new_value": "Step Therapy",
     "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001s"
+    "detection_id": "chg-mtquff1g-000h"
   },
   {
     "update_date": "2026-09-01",
@@ -207,7 +207,7 @@
     "new_value": "Excluded",
     "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001t"
+    "detection_id": "chg-mtquff1g-000i"
   },
   {
     "update_date": "2026-09-01",
@@ -222,6 +222,6 @@
     "new_value": "Tier 3",
     "note": "Auto-detected by snapshot diff (Formulary 2026-09-01).",
     "entered_by": "System",
-    "detection_id": "chg-mtnzmv9p-001u"
+    "detection_id": "chg-mtquff1g-000j"
   }
 ]
